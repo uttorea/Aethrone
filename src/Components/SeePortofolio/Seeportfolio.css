@@ -1,0 +1,9 @@
+.portfolio_heading{
+    border-left: 6px solid #3535DE;
+}
+.portfolio_img{
+    max-width: 100%; /* Ensures the image does not exceed the width of its container */
+    margin: auto; 
+    height: 180px;
+width: 180px;
+}

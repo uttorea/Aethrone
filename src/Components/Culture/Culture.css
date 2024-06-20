@@ -1,0 +1,15 @@
+
+.culture_page{
+    position:relative;
+    /* top: 563px; */
+    /* overflow: hidden; */
+    background-color:#fff;
+
+    /* width: 100%; */
+    border-top: 8px solid #3535DE;
+
+}
+.culture_heading{
+    border-left: 6px solid #3535DE;
+}
+

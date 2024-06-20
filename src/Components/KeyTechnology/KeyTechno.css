@@ -1,0 +1,24 @@
+.keyTechno_page{
+    /* position: relative; */
+    border-top: 8px solid #3535DE;
+    background-color: #fff;
+}
+
+.keytechno_heading{
+    border-left: 6px solid #3535DE;
+}
+
+.key_heading {
+    margin-bottom: 0.5rem;
+}
+
+.card-img {
+    /* padding: 10px; Adjust the padding as needed */
+    width: 100%;
+    height: auto;
+}
+
+.custom-card {
+    max-width: 150px; /* Adjust the max-width to decrease card width */
+    margin: 0 auto;
+}

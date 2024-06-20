@@ -1,0 +1,18 @@
+
+.carrerCard_page{
+    position:relative;
+    /* top: 518px; */
+    background-color: #fff;
+}
+
+.career_heading{
+    border-left: 6px solid #3535DE;
+}
+
+.careerCardimg{
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

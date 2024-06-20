@@ -1,0 +1,28 @@
+
+/* .plane_text{ 
+    border-left:4px solid #3535DE ;
+} */
+.plane{
+    position:relative;
+    top: 100px;
+}
+.carouselbtn{
+    /* position: relative; */
+    /* padding: 10px; */
+    /* margin-top: 20px; */
+    justify-content: space-around;
+
+}
+.carouselbtnimg{
+    /* position: absolute; */
+    height: 50px;
+    width: 50px;
+    display: flex;
+    margin-top: 70px;
+    border: 1px solid black;
+    padding: 10px;
+    
+}
+.corimg{
+height: 200px;
+}

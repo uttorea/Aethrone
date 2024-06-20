@@ -1,0 +1,9 @@
+.journey_page{
+    background-color: #fff;
+    position: relative;
+    top:-25px;
+}
+
+.journey_head{
+    border-left: 6px solid #3535DE;
+}

@@ -1,0 +1,14 @@
+.apart_heading{
+    border-left: 6px solid #3535DE;
+}
+.accordion-button::after {
+    display: none; /* Hide the default arrow */
+}
+.accordion-button .fa-plus {
+    transition: transform 0.2s;
+}
+.accordion-button .expand-text {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}

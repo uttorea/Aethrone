@@ -1,0 +1,42 @@
+.plane_head {
+    position: absolute;
+    top: 930px;
+}
+
+.dd_heading {
+    border-left: 4px solid blue;
+}
+
+.ddimg1 {
+    position: relative;
+    top: 800px;
+    height: 350px;
+    /* width: 600px; */
+}
+
+.ddimg2 {
+    position: relative;
+    height: 350px;
+    top: 800px;
+    left: -198px;
+}
+
+.dd_body {
+    position: relative;
+    top: 570px;
+    /* left: 110px; */
+    /* background-color: #000000; */
+    /* width: 700px; */
+    border-radius:5px ;
+}
+
+.dd_img {
+    width: 500px;
+    height: 300px;
+}
+
+.dd_btn {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}

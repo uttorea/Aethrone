@@ -1,0 +1,50 @@
+.about-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+.aboutbg_img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+  }
+  .about_overlay{
+    position: absolute;
+    top: 140px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    z-index: 1;
+    color: white;
+  }
+  .about_heading{
+    font-size: 60px;
+    letter-spacing: 7px;
+  }
+  .story_heading{
+    border-left: 6px solid #3535DE;
+  }
+  .aboutHead_para{
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    /* color: white; */
+    font-weight: bold;
+    /* border: 3px solid #f1f1f1; */
+    /* position: absolute; */
+    /* top: 50%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    /* z-index: 5; */
+    width: 80%;
+    text-align: center;
+}

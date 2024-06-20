@@ -1,0 +1,21 @@
+.engineer_heading{
+    border-left: 6px solid #3535DE;
+}
+
+.engineer_card{
+    margin: 0 auto;
+}
+.card_img1 {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+  .engineer_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .no-padding {
+    padding: 0;
+}

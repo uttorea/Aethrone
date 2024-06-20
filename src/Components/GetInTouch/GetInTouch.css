@@ -1,0 +1,29 @@
+.touch_page{
+    position: relative;
+    top: 468px;
+    border-top: 8px solid #3535DE;
+    background-color: #fff;
+}
+.touch_heading{
+    border-left: 6px solid #3535DE;
+}
+.contact_icon{
+    background-color: #000;
+    padding: 15px;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact_border{
+    border-bottom: 1px solid black;
+}
+
+.form-label{
+    font-size: 20px;
+    color: #3535DE;
+}
