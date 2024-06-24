@@ -6,7 +6,7 @@ import platformimg3 from '../../assets/platformimg3.png'
 import platformimg4 from '../../assets/platformimg4.png'
 import platformimg5 from '../../assets/platformimg5.png'
 import LifeCycle from '../../Components/LifeCycle/LifeCycle'
-const Platform = () => {
+const   Platform = () => {
   return (
     
     <>

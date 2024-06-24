@@ -1,53 +1,52 @@
-.capability_heading{
-    border-left: 6px solid #3535DE;
-}
-.capability_img{
-    width: 80px;
-    height: 80px;
-}
-.card_title{
-    color: #3535DE;
-}
 
-.card {
-    position: relative;
-    overflow: hidden; /* Ensure the overflow is hidden to contain absolute positioned elements */
+.capability_heading {
+    border-left: 6px solid #3535DE;
 }
 
 .card-body {
-    position: relative;
-    transition: transform 0.3s ease;
-}
-
-.card:hover .card-body {
-    transform: translateY(-20px); /* Move the card body up by 20px on hover */
-}
-
-.content-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: all 0.5s ease;
+    position: relative;
 }
 
-.hover-list {
-    display: none; /* Initially hide the list */
+
+.cap_card:hover .card-body {
+    flex-direction: row;
     position: absolute;
-    bottom: -100%; /* Position the list below the card initially */
-    left: 0;
+    top: 0px;
+}
+
+.card-body>* {
+    margin: 10px;
+}
+
+.capability_img {
+    width: 80px;
+    height: 80px;
+}
+
+.capability_img:hover {
+    width: 50px;
+    height: 50px;
+}
+
+.card_title {
+    color: #3535DE;
+    text-align: center;
+    margin: 0;
+    line-height: 1.2;
     width: 100%;
-    background-color: white;
-    padding: 10px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: bottom 0.3s ease; /* Smooth transition for the list */
 }
 
-.card:hover .hover-list {
-    display: block; /* Show the list on hover */
-    bottom: 0; /* Move the list to the bottom of the card */
+.list-unstyled {
+    display: none;
+    margin-top: 10px;
 }
 
-
-
-
-
+.cap_card:hover .list-unstyled {
+    display: block;
+    position: absolute;
+    top: 80%;
+}

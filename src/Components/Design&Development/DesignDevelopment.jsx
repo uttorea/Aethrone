@@ -10,7 +10,6 @@ const DesignDevelopment = () => {
     <div className='designDevelopment_container'>
       <img src={workwithimg} alt="" className=''/>
       <img src={fullbgimg} alt="" className='DD_img1' />
-      <div className="container">
       <div className='content'>
         <h1 className=''>Design & Development</h1>
         <p>From concept to product to certification </p>
@@ -21,7 +20,6 @@ const DesignDevelopment = () => {
         <p>Working on complex engineering problems through collaboration and co-development, accelerating the innovation lifecycle from <br/> ideation to certification .</p>
         </div>
         </div>
-      </div>
     </div>
     <WhatWeDo />
     </>

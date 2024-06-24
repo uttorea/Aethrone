@@ -1,6 +1,6 @@
 import React from 'react'
 import './Project.css'
-// import Footer from '../Foo   ter/Footer'
+// import Footer from '../Footer/Footer'
 function Project() {
     return (
         <>

@@ -1,0 +1,48 @@
+.industry_bg img{
+    width: 100%;
+}
+
+.industry_bg {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* overflow: hidden; */
+  }
+  
+  .bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    /* align-items: center; */
+    height: 100%;
+  }
+  
+  .blur-card {
+    background: rgba(43, 42, 42, 0.7); /* White with opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    
+  }
+  .heading1{
+    border-left: 6px solid #3535DE;
+  }
+  .heading-nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  
+  

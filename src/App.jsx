@@ -12,13 +12,17 @@ import Design from './Components/Design_development/Design';
 import OwlcarouselComponent from './Components/OwlCarousel/OwlcarouselComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
-
+import Launch from './Components/launchRecoveryDelivery/Launch'
+import Parachute from './Components/Parachute/Parachute';
+import AllBlogs from './Components/AllBlogs/AllBlogs'
+import Composite from './Components/AdvanceComposites/Composite';
+// import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
     <BrowserRouter>
-      <Navbar />
-      <div className="app-container">
+      <div className="container">
+    <Navbar />
         <Routes>
           <Route path="/" element={<>
             <Home />
@@ -28,9 +32,15 @@ function App() {
           <Route path="/contact-us" element={<Contact />} />
           <Route path="/design-development" element={<DesignDevelopment />} />
           <Route path="/precision-manufacturing" element={<PricisionManu />} />
+          <Route path="/launch-recovery-delivery" element={<Launch />} />
+          <Route path="/parachutes" element={<Parachute />} />
+          <Route path="/allBlogs" element={<AllBlogs />} />
+          <Route path="/advance-composites" element={<Composite/>}/>
         </Routes>
       </div>
+      {/* <Footer/> */}
     </BrowserRouter>
+
   );
 }
 

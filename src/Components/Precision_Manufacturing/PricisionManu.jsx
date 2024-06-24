@@ -10,7 +10,6 @@ const PricisionManu = () => {
       <div className='manufacture_container'>
       <img src={manufacturimg} alt="" className=''/>
       <img src={manufacturebgimg} alt="" className='MM_img1' />
-      <div className="container">
       <div className='content'>
         <h1 className=''>Precision <br/> Manufacturing</h1>
         <div className='MMimg_para '>
@@ -19,7 +18,6 @@ const PricisionManu = () => {
             <h5>Get Your Precision parts shipped.</h5>
         </div>
         </div>
-      </div>
     </div>
     <Capabilities />
     </div>

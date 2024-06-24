@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import Footerlogo from "../../assets/Footerlogo.png"
 function Footer() {
     return (
-        <div className="footer_head p-5">
+        <div className="footer_head">
             <div class="container">
                 <div className="main_border">
                     <div class="row">
@@ -42,21 +42,29 @@ function Footer() {
                     </div>
 
                 </div>
-                <div class="row mt-5">
-                    <div class="col-sm-6 d-flex">
-                        <div className='social_icon1'>
-                            <i class="bi bi-linkedin"></i>
-                        </div>
-                        <div className='social_icon2'>
-                            <i class="bi bi-twitter"></i>
+                <div class="position-fixed justify-content-between bottom-0 d-flex w-100 ">
+                    <div class="">
+                        <div className="d-flex align-items-center py-3 ">
+                            <div className='social_icon1'>
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                            <div className='social_icon2'>
+                                <i class="bi bi-twitter"></i>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 text-white">
-                        <h6>© 2015 Aethrone Aerospace. All rights reserved</h6>
+                    <div class="">
+                        <div className="py-3 px-5">
+                            <h6 className='text-light'>© 2015 Aethrone Aerospace. All rights reserved</h6>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+            {/* <div className="container"> */}
+                </div>
+            // </div>
+
+        
     )
 }
 

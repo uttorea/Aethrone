@@ -1,0 +1,35 @@
+.composite_page {
+    position: relative;
+    width: 100%;
+}
+
+.composite_page img {
+    width: 100%;
+}
+
+.compositeimg2 {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    left: 0;
+}
+
+.composite_content {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    top: 120px;
+}
+
+.composite_content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+.compo_para1{
+    border-left: 6px solid #3535DE;
+}
+
+.compo_para2{
+    background-color: rgba(0,0,0,0.85);
+border-radius: 5px;
+}

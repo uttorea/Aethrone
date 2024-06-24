@@ -1,0 +1,43 @@
+.hardware_heading {
+    border-left: 6px solid #3535DE;
+}
+.hardware_body{
+    border-top: 1px solid gray;
+}
+.hardware_img2 {
+    height: 50px;
+    width: 50px;
+}
+
+.card_items {
+    position: absolute;
+    top: 70%;
+    left: 25px;
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.hardware_card {
+    position: relative;
+    width: 300px;
+    transition: filter 0.3s;
+}
+
+.hardware_card:hover .hardware_img {
+    filter: brightness(1.5); 
+}
+
+.hardware_card:hover .card_items {
+    transform: translateY(-10px); 
+}
+
+.hardware_img {
+    width: 100%; 
+    display: block;
+}
+
+h5 {
+    margin-top: 5px; 
+    font-size: 16px; 
+}

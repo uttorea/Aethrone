@@ -14,8 +14,8 @@ import OwlCarouselComponent from '../OwlCarousel/OwlcarouselComponent';
 
 const Home = () => {
     return (
-        <div>
-            <section className='' style={{ backgroundColor: '#0D0E1E', height: '1150px' }}>
+        <div className='row'>
+            <section className='col' style={{ backgroundColor: '#0D0E1E', height: '1150px' }}>
                 <div className='bg_img'>
                     <img src={bgimg1} alt='bgimg1' className='transimg1' />
                     <img src={bgimg5} alt='bgimg5' className='transimg' />

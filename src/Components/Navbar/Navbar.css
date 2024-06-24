@@ -72,22 +72,3 @@
     max-height: 50%;
     z-index: 1;
 }
-
-.dropdown:hover>.dropdown-menu {
-  display: block;
-}
-.dropdown-item:hover>.dropdown-menu {
-  display: block;
-}
-ul li{
-list-style-type:none;
-display: inline;
-}
-
-.navbar-nav .nav-link{display:inline-block;}
-   
-.ml-auto {display:inline-block!important;}
-
-.dropdown>.dropdown-toggle:active {
-  pointer-events: none;
-}

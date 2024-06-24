@@ -1,0 +1,58 @@
+.pp_heading {
+    border-left: 6px solid #3535DE;
+}
+
+.pp_card {
+    margin: 0 auto;
+}
+
+.pp_img {
+    height: 350px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.pp_card_body1 {
+    width: 0;
+    height: 35%;
+    border-left: 162px solid #3535DE;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 227.5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.pp_card_body2 {
+    width: 0;
+    height: 48%;
+    border-left: 162px solid white;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 181px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.ppCard_para1 {
+    position: relative;
+    right: 110px;
+    bottom: 5px;
+    white-space: nowrap;
+    color: #3535DE;
+}
+
+.dotted-line {
+    border-bottom: 2px dotted #3535DE;
+    margin: 10px 0; /* Adjust the margin to control spacing */
+    position: relative;
+    right: 110px;
+}
+
+.ppCard_para2 {
+    position: relative;
+    right: 165px;
+    bottom: 5px;
+    white-space: nowrap;
+    font-size: 13px;
+}

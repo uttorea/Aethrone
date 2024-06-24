@@ -39,3 +39,7 @@
     top: 1800px;
     background-color: rgb(235, 229, 229);
 }
+.blog_btn{
+    position: absolute;
+    left:0;
+}

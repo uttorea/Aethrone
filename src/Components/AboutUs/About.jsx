@@ -8,7 +8,6 @@ const About = () => {
         <div className='about-container'>
             <div className='aboutbg_img' style={{ backgroundImage: `url(${aboutbgimg})` }}></div>
             <div className="about_overlay">
-                <div className="container">
                     <h1 className='about_heading mt-5'>About Us</h1>
                     <div className="aboutHead_content mt-5">
                         <h4 className='story_heading px-2'>Our Story</h4>
@@ -17,7 +16,6 @@ const About = () => {
                         <p>At our inception, we leveraged the disparity between institutional  research, industry capabilities, and customer requirements, including  certifications. Our progression has taken us from offering services and  prototyping to developing crucial mission systems and components.</p>
                         </div>
                     </div>                  
-                </div>
             </div>
         </div>
         <KeyTechno />

@@ -1,0 +1,28 @@
+.work_heading{
+    border-left: 6px solid #3535DE;
+}
+.work_card{   
+    margin: 0 auto;
+}
+
+.work_body1{
+    width: 0;
+    height: 54%;
+    border-left: 162px solid #3535DE;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 160px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+.work_body2{
+    width: 0;
+    height: 51.3%;
+    border-left: 162px solid white;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 170px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+    
+}

@@ -1,0 +1,27 @@
+.blog_heading{
+    border-left: 8px solid #3535DE;
+}
+.blog_page{
+    position: relative;
+    top: 100px;
+}
+.all_blogbtn{
+    position: absolute;
+    top: 0px;
+}
+.card_body_text1{
+    border-left:6px solid #3535DE;
+}
+
+.card_body_text2{
+    border-left: 6px solid #3535DE;
+}
+.card_body_text3{
+    border-left: 6px solid #3535DE;
+}
+.card_body_text4{
+    border-left: 6px solid #3535DE;
+}
+.card_body_text5{
+    border-left: 6px solid #3535DE;
+}
