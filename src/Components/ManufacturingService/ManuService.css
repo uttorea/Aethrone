@@ -1,0 +1,31 @@
+.manufacture_heading{
+    border-left: 6px solid #3535DE;
+}
+
+.manuServic_card img{
+    /* margin: 0 auto; */
+   height: 450px;
+
+}
+
+.manuServic_body1{
+    width: 0;
+    height: 35%;
+    border-left: 482px solid #3535DE;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 265px;
+    /* border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ; */
+}
+
+.manuServic_body2{
+    width: 0;
+    height: 33%;
+    border-left:  482px  solid white;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 275px;
+    /* border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ; */
+}

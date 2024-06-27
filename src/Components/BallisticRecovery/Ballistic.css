@@ -1,0 +1,39 @@
+.ballistic_page{
+    position: relative;
+}
+
+.ballistic_page img{
+    width: 100%;
+}
+.ballistic_heading{
+    border-left: 6px solid #3535DE;
+}
+
+.ballistic_content{
+    position:absolute;
+    top: 100px;
+}
+
+.ballistic_body1{
+    width: 0;
+    height: 54%;
+    border-left: 330px solid #3535DE;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 162px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+.ballistic_body2{
+    width: 0;
+    height: 51.3%;
+    border-left:  330px  solid white;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 170px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+

@@ -1,4 +1,17 @@
-.transimg1 {
+
+.home_page{
+    background-color: #0D0E1E;
+    overflow-x: hidden;
+}
+
+.home_heading{
+    position: absolute;
+    top: 100px;
+    /* letter-spacing: 5px; */
+   margin: 0px;
+}
+
+/* .transimg1 {
     height: 400px;
     background-repeat: no-repeat;
 }
@@ -30,9 +43,6 @@ img.overlay-img3 {
     left: 269px;
 }
 
-/* .overlay-img1, .overlay-img2, .overlay-img3{
-    overflow: hidden;
-} */
 .top-right-images {
     overflow: hidden;
 }
@@ -57,7 +67,6 @@ img.transimg2 {
     position: absolute;
     top: 140px;
     left: 55px;
-    /* font-size: 170px; */
 }
 
 .header_text h1 {
@@ -83,4 +92,6 @@ img.transimg2 {
     background-color: black;
     border-radius: 5px;
     width: 500px;
-}
+} */
+
+

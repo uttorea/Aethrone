@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react' 
+import {Link} from 'react-router-dom';
 import './Launch.css'
 import launchbgimg from '../../assets/launchbgimg.jpg'
 import fullbgimg from '../../assets/fullbgimg.png';
@@ -8,7 +9,7 @@ const Launch = () => {
   return (
     <>
       <div className='launch_container'>
-      <img src={launchbgimg} alt="" className='launchimg1'/>
+      <img src={launchbgimg} alt="" className='launch img1'/>
       <img src={fullbgimg} alt="" className='launchimg2' />
       <div className='launch_content'>
         <h1 className=''>Launch And <br/> Recovery/Delivery</h1>
@@ -19,7 +20,7 @@ const Launch = () => {
         </div>
         <div className="launch_btn mt-5">
         <a href="" className='btn btn-light border-2 border-primary px-5'> Launcher System <i class="bi bi-arrow-down"></i></a>
-        <a href="" className='btn btn-light border-2 border-primary px-5 mx-5'> Parachute Recovery Systems <i class="bi bi-arrow-down"></i></a>
+        <Link className='btn btn-light border-2 border-primary px-5 mx-5' to="/launch-recovery-system"> Parachute Recovery Systems <i class="bi bi-arrow-down"></i></Link>
         </div>
         </div>
     </div>

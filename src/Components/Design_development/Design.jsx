@@ -41,7 +41,7 @@ function Design() {
             </div>
             <div>
     </div>
-      <Furtblog />
+      {/* <Furtblog /> */}
       {/* <OwlcarouselComponent /> */}
       </div>
         </>

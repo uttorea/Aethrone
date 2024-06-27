@@ -17,13 +17,13 @@ function Plane() {
     const [carousetTitle, setCarouselTitle] = useState("");
     return (
         <>
-        <div className='plane'>
+        <div className='plane mt-5'>
             <div className="container">
-                <h3 className='mb-5 p-3 plateform_text' style={{ borderLeft: '4px solid blue' }}>Plateforms We Work On</h3>
+                <h3 className=' plateform_text px-2' style={{ borderLeft: '4px solid blue' }}>Plateforms We Work On</h3>
             </div>
-            <div className="container d-flex justify-content-center">
-
-                <div className="col-6">
+            <div className="d-flex justify-content-center mt-5">
+                <div className="row">
+                <div className="col">
                     <div id="carouselExampleIndicators2" class="carousel slide " data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             {[{
@@ -160,9 +160,11 @@ function Plane() {
                         </button> */}
                     </div>
                 </div>
+
+                </div>
             </div>
         </div>
-        <Design />
+        {/* <Design /> */}
         </>
     )
 }

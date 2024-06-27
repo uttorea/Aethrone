@@ -1,11 +1,38 @@
-.navbar {
-    /* border: 1px solid #3535DE; */
-    border-top: 2px solid #3535DE;
-    /* filter: blur(5px); */
-    z-index: 3;
-    /* background-color: #ffffff10; */
+
+
+@media (max-width:991px){
+    .sidebar{
+        background-color: rgba(225, 225, 225, 0.15);
+    }
 }
-.blurred-nav {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home_bgImg1{
+    width: 100vw;
+}
+.navbar {
+    border-top: 2px solid #3535DE;
+    z-index: 3;
+}
+.navbar {
     background: rgba(255, 255, 255, 0); /* Adjust the transparency */
     backdrop-filter: blur(10px); /* Adjust the blur radius */
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
@@ -58,12 +85,10 @@
 .half-pentagon::before {
     content: '';
     position: absolute;
-    top: -5px;
-    left: -5px;
     width: calc(100% + 10px);
     height: calc(100% + 10px);
     clip-path: inherit;
-    border: 5px solid blue;
+    /* border: 3px solid blue; */
     box-sizing: border-box;
 }
 

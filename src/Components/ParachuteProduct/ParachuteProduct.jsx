@@ -11,7 +11,7 @@ const ParachuteProduct = () => {
       <div className=' mt-5'>
         <h3 className='pp_heading px-2'>Product</h3>
         <p className='mt-4'>We Design Products In Para Vertical</p>
-        <div class="row mt-5 justify-content-center">
+        <div class="row mt-5 justify-content-center ">
           <div class="col-md-2 pp_card">
             <div class="card border-primary border-2">
               <img src={parachuteProduct1} className="pp_img" alt="Card image" />

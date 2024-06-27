@@ -16,17 +16,23 @@ import Launch from './Components/launchRecoveryDelivery/Launch'
 import Parachute from './Components/Parachute/Parachute';
 import AllBlogs from './Components/AllBlogs/AllBlogs'
 import Composite from './Components/AdvanceComposites/Composite';
+import AdvanceManufacture from './Components/AdvanceManufacturing/AdvanceManufacture';
+import ParachuteRecovery from './Components/ParachuteRecovery/ParachuteRecovery'
+// import service from './Components/'
 // import Footer from './Components/Footer/Footer'
 
 function App() {
   return (
+    <div className="vh-100">
     <BrowserRouter>
-      <div className="container">
     <Navbar />
+      <div className="">
         <Routes>
           <Route path="/" element={<>
             <Home />
           </>} />
+
+          {/* <Route path="/career" element={<service />} /> */}
           <Route path="/career" element={<Career />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
@@ -34,13 +40,15 @@ function App() {
           <Route path="/precision-manufacturing" element={<PricisionManu />} />
           <Route path="/launch-recovery-delivery" element={<Launch />} />
           <Route path="/parachutes" element={<Parachute />} />
+          <Route path="//launch-recovery-system" element={<ParachuteRecovery />} />
           <Route path="/allBlogs" element={<AllBlogs />} />
           <Route path="/advance-composites" element={<Composite/>}/>
+          <Route path="/advance-manufacturing" element={<AdvanceManufacture/>}/>
         </Routes>
       </div>
       {/* <Footer/> */}
     </BrowserRouter>
-
+    </div>
   );
 }
 

@@ -14,7 +14,7 @@ const Contact = () => {
                 <i class="bi bi-geo-alt-fill"></i>
                 </div>
                 <div className="location2 p-2 d-flex justify-content-center">
-                <h5 className='text-white'>DJAC, SIIC building,<br/>IIT Kanpur 208016</h5>
+                <h6 className='text-white'>Oz Plaza Viman Nagar<br/>Pune Maharashtra 411014</h6>
                 </div>
                 <div className="location_icon2">
                 <i class="bi bi-geo-alt-fill"></i>

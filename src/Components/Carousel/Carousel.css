@@ -1,5 +1,17 @@
 .body_carousel{
     position: absolute;
     top: 664px;
-    left: 150px;
+    /* left: 150px; */
+}
+
+.csrousel_text{
+    position: absolute;
+    top:70px;
+    left: 80px;
+}
+.carousel_para{
+    background-color: rgba(0, 0, 0,0.70);
+    position: relative;
+    top: 140px;
+    left: 100px;
 }
