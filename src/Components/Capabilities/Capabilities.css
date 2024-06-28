@@ -7,8 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: all 0.5s ease;
+    /* transition: all 0.5s ease; */
     position: relative;
+    transition: .5s;
 }
 
 

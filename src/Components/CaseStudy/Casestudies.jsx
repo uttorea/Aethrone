@@ -5,7 +5,6 @@ import casestudyimg2 from '../../assets/casestudyimg2.png'
 import casestudyimg3 from '../../assets/casestudyimg3.png'
 import casestudyimg4 from '../../assets/casestudyimg4.png'
 import casestudyimg5 from '../../assets/casestudyimg5.png'
-import Seeportfolio from '../../Components/SeePortofolio/Seeportfolio'
 const Casestudies = () => {
     return (
         <>
@@ -48,7 +47,6 @@ const Casestudies = () => {
                     </div>
                 </div>
             </div>
-<Seeportfolio />
         </>
     )
 }

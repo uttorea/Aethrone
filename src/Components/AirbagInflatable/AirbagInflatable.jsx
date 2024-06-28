@@ -1,11 +1,10 @@
 import React from 'react'
 import './AirbagInflatable.css'
 import airbagSystemImg from '../../assets/airbagSystemImg.png'
-import RecoveryInformation from '../../Components/RecoveryInformation/RecoveryInformation'
 const AirbagInflatable = () => {
     return (
         <>
-        <div className='mt-5'>
+        <div className='container mt-5'>
             <h3 className='airbag_heading px-2'>Airbag Inflatable Systems For Drones</h3>
             <div class="row mt-5">
                 <div class="col-sm-8">
@@ -26,7 +25,6 @@ const AirbagInflatable = () => {
                 </div>
             </div>
         </div>
-        <RecoveryInformation/>
         </>
     )
 }

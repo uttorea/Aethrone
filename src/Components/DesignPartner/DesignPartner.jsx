@@ -3,7 +3,8 @@ import './DesignPartner.css'
 import designPartnerimg from '../../assets/designPartnerimg.png'
 const DesignPartner = () => {
     return (
-        <div className='DesignPartner_page'>
+        <div className="container">
+        <div className='DesignPartner_pagemb-5'>
             <h4 className='dp_heading px-2 m-0'>Your Design Partner In Defence</h4>
             <small className='px-3 '>design and development for aerospace, uav , defence sector</small>
             <div class="card border-0">
@@ -28,6 +29,7 @@ const DesignPartner = () => {
                                         <h6 className='position-absolute bottom-0 end-0 text-primary'>By -Suyash Soni</h6>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

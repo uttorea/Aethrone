@@ -7,7 +7,7 @@ import manuCertificateImg4 from '../../assets/manuCertificateImg4.png'
 import manuCertificateImg5 from '../../assets/manuCertificateImg5.png'
 const ManuCertification = () => {
   return (
-    <div>
+    <div className='container'>
       <h3 className='ManuCertifications_heading px-2'>Quality & Manufacturing Certifications</h3>
       <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
   <div class="col">

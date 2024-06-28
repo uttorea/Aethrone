@@ -1,7 +1,6 @@
 import React from 'react';
 import './Industry.css';
 import bgHelicopter from '../../assets/bgHelicopter.jpeg';
-import IndustyWork from '../WorkedOn/IndustyWork';
 
 const Industry = () => {
   return (
@@ -39,7 +38,6 @@ const Industry = () => {
         </div>
       </div>
     </div>
-    <IndustyWork />
     </>
   );
 };

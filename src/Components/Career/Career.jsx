@@ -2,19 +2,29 @@ import React from 'react';
 import './Career.css';
 import careerimg1 from '../../assets/careerimg1.png';
 import Culture from '../../Components/Culture/Culture'
+import CareerCard from '../CareerCard/CareerCard'
+import Internship from "../../Components/OpenInternship/Internship"
+import Position from '../../Components/OpenPosition/Position'
+
 const Career = () => {
   return (
     <>
-    <div className="career-container">
-      <div className="background-image" style={{ backgroundImage: `url(${careerimg1})` }}></div>
-      <div className="overlay">
-        <h1 className="body_heading">Welcome To <br />Aethoren Aerospace</h1>
-        <h4 className=''>Create The Future Of Flight</h4>
-        <h4 className=''>Take Off With Us!</h4>
+      <div className="career-container">
+        <img src={careerimg1} alt="" className='background-image h-75' />
+        <div className="overlay">
+          <div className="container">
+            <h1 className="body_heading">Welcome To <br />Aethoren Aerospace</h1>
+            <h4 className=''>Create The Future Of Flight</h4>
+            <h4 className=''>Take Off With Us!</h4>
+          </div>
+        </div>
       </div>
-    </div>
-    <Culture />
-      </>
+      <Culture />
+      <CareerCard/>
+      <Internship />
+      <Position />
+
+    </>
   );
 };
 

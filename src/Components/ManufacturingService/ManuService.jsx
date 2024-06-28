@@ -2,11 +2,10 @@ import React from 'react'
 import './ManuService.css'
 import manuServiceimg1 from '../../assets/manuServiceimg1.png'
 import manuServiceimg2 from '../../assets/manuServiceimg2.png'
-import FocusArea from '../FocusArea/FocusArea'
 const ManuService = () => {
     return (
     <>
-            <div className='mt-5'>
+            <div className='container mt-5'>
                 <h4 className='manufacture_heading px-2'>Manufacturing Service</h4>
                 <div class="row row-cols-1 row-cols-md-2 g-4 mx-5 mt-4">
                     <div class="col manuServic_card">
@@ -21,7 +20,7 @@ const ManuService = () => {
                                 </ul>
                             </div>
                             <div class="card-footer p-4 text-center border-2 border-primary">
-                                <h5 class=" text-primary">Explore Advance Composite<i className="bi bi-arrow-right-short"></i></h5>
+                                <h5 class=" text-primary ">Explore Advance Composite<i class="bi bi-arrow-right p-2 "></i></h5>
                             </div>
                         </div>
                     </div>
@@ -37,13 +36,12 @@ const ManuService = () => {
                                 </ul>
                             </div>
                             <div class="card-footer p-4 text-center border-2 border-primary">
-                                <h5 class=" text-primary">Explore Precision Manufacturing<i className="bi bi-arrow-right-short"></i></h5>
+                                <h5 class=" text-primary">Explore Precision Manufacturing<i class="bi bi-arrow-right p-2"></i></h5>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <FocusArea/>
             </>
             )
 }

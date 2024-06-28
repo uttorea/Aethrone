@@ -1,13 +1,16 @@
 import React from 'react'
 import './About.css'
-import aboutbgimg from '../../assets/about-bgimg.jpg'
+import aboutbgimg from '../../assets/aboutbgimg.png'
 import KeyTechno from '../../Components/KeyTechnology/KeyTechno'
+import Journey from '../../Components/Journey/Journey'
+import Footer from '../../Components/Footer/Footer'
 const About = () => {
     return (
         <>
         <div className='about-container'>
             <div className='aboutbg_img' style={{ backgroundImage: `url(${aboutbgimg})` }}></div>
             <div className="about_overlay">
+            <div className="container">
                     <h1 className='about_heading mt-5'>About Us</h1>
                     <div className="aboutHead_content mt-5">
                         <h4 className='story_heading px-2'>Our Story</h4>
@@ -17,8 +20,11 @@ const About = () => {
                         </div>
                     </div>                  
             </div>
+            </div>
         </div>
         <KeyTechno />
+        <Journey />
+        <Footer/>
         </>
     )
 }

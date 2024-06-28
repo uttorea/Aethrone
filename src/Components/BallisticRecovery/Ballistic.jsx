@@ -6,12 +6,12 @@ import ballisticImg2 from '../../assets/ballisticImg2.png'
 import ballisticImg3 from '../../assets/ballisticImg3.png'
 import FixedUAV from '../../Components/FixedUAV/FixedUAV'
 import SystemInclude from '../SystemInclude/SystemInclude'
-import AirbagInflatable from '../AirbagInflatable/AirbagInflatable'
 const Ballistic = () => {
     return (
         <>
             <div className='ballistic_page'>
-                <img src={parachuteRecovery2} alt="" className='opacity' />
+                <img src={parachuteRecovery2} alt="" className='w-100' />
+                <div className="container">
                 <div className="ballistic_content">
                     <h3 className='ballistic_heading px-2'>Ballistic Recovery Systems For Fixed Wing & Rotary Wing UVAs</h3>
                     <div className="row row-cols-1 row-cols-md-3 g-3 mt-4">
@@ -58,8 +58,8 @@ const Ballistic = () => {
                     <FixedUAV />
                     <SystemInclude />
                 </div>
+                </div>
             </div>
-            <AirbagInflatable/>
         </>
     )
 }

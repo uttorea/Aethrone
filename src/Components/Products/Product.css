@@ -1,116 +1,129 @@
-.product_head{
-    position:relative;
-    top: 300px;
+
+.pro_heading{
+border-left: 6px solid #3535DE;
 }
-.phead{
-    border-left: 4px solid blue;
+.product_head{
+    position: relative;
+    bottom: 200px;
+}
+.product_card img {
+    /* margin: 0 auto; */
+    height: 350px;
+    transition: .5s;
 }
 
-.transition { transition: .3s cubic-bezier(.3, 0, 0, 1.3) }
-.card {
-    background-color: #fff;
-    bottom: 0;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-  -webkit-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-  -moz-box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.3);
-    height: 300px;
-    left: 0;
-    margin: auto;
+.product_card :hover{
+    cursor: pointer;
+}
+.intro{
+    height: 70px ;
+    /* width: 350px;
+    padding: 6px; */
+    box-sizing: border-box;
+    position: absolute;
+    background: white;
+    color: white;
+    bottom: 0px;
+    transition: .5s;
+}
+.card_text{
+visibility: hidden;
+opacity: 0; 
+}
+
+.product_card:hover .intro{
+    height: 220px;
+    /* bottom: 240px; */
+    background: white;
+    color: #000;
+}
+.product_card:hover .card_text{
+    opacity: 1;
+    visibility: visible;
+}
+.product_card:hover .product_img{
+    transform:scale(1.1) rotate(-3deg);
+    /* background-position: center 100%; */
+}
+/* .product_body1{
+    width: 0;
+    height: 54%;
+    border-left: 257px solid #3535DE;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 162px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+}
+
+.product_body2{
+    width: 0;
+    height: 51.3%;
+    border-left:  257px  solid white;
+    border-top: 70px solid transparent;
+    position: absolute;
+    top: 170px;
+    border-bottom-left-radius:5px ;
+    border-bottom-right-radius:5px ;
+} */
+/* .partner_card {
+    position: relative;
+    height: 350px;
     overflow: hidden;
+    background-color: #fff;
+    background-image: url(../../assets/productimg1.png);
+    background-position: center;
+    box-shadow: 0px 0px 10px 2px rgba(#c5c5c5, 0.5);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    transition: all 0.3s;
+}
+
+.partner_card:hover {
+    background-position: center 100%;
+}
+
+.partner_card:hover .card__button,
+.partner_card:hover .card__text {
+    transform: translateY(0%);
+    color: #3535DE;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.card__button {
     position: absolute;
-    right: 0;
-    top: 0;
-    width: 300px;
-}
-.card:hover {
-    height: 450px;
-    width: 300px;
-}
-.card:hover .cta-container {
-    display: inline;
-    margin-top: 380px;
-}
-.card:hover .card_circle {
-    background-size: cover;
-    border-radius: 0;
-    margin-top: -130px;
-}
-.card:hover h2 {
-    background: #3487f7;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    font-size: 12px;
     color: #fff;
-    margin-top: 100px;
-    padding: 5px;
-}
-.card:hover h2 small { color: #fff }
-.card:hover p { margin-top: 300px }
-.card_circle {
-    background: url('https://picsum.photos/400/200') no-repeat center bottom;
-    background-color: #3487f7;
-    background-size: cover;
-    border-radius: 50%;
-    height: 400px;
-    margin-left: -75px;
-    margin-top: -270px;
-    position: absolute;
-    width: 450px;
-}
-h2 {
-    color: #3487f7;
-    font-family: 'Raleway', sans-serif;
-    font-size: 24px;
-    font-weight: 200;
-    margin-top: 150px;
-    position: absolute;
+    font-weight: 300;
     text-align: center;
-    width: 100%;
-    z-index: 9999;
-}
-p {
-    color: rgba(0,0,0,.6);
-    font-family: 'Raleway', sans-serif;
-    font-size: 100%;
-    font-weight: normal;
-    margin-top: 200px;
-    position: absolute;
-    text-align: center;
-    z-index: 9999;
-}
-.cta-container {
-    display: none;
-    margin-top: 320px;
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    z-index: 9999;
-}
-.cta {
-    -moz-border-radius: 2px;
-    -moz-transition: 0.2s ease-out;
-    -ms-transition: 0.2s ease-out;
-    -o-transition: 0.2s ease-out;
-    -webkit-border-radius: 2px;
-    -webkit-transition: 0.2s ease-out;
-    background-clip: padding-box;
-    border: 2px solid #3487f7;
-    border-radius: 2px;
-    color: #3487f7;
-    display: inline-block;
-    font-family: 'Raleway', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-    height: 36px;
-    letter-spacing: 0.5px;
-    line-height: 36px;
-    margin-bottom: 15px;
-    padding: 0 2rem;
-    text-decoration: none;
     text-transform: uppercase;
-    transition: 0.2s ease-out;
+    transform: translateY(100%);
+    transition: all 0.3s;
 }
-.cta:hover {
-    background-color: #3487f7;
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+.card__text {
+    position: absolute;
+    left: 0;
+    bottom: 60px;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 10px; 
+    font-size: 12px;
     color: #fff;
-    -moz-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateY(100%);
+    transition: all 0.3s;
 }
+ */

@@ -3,9 +3,10 @@ import './RecoveryInformation.css'
 import recoveryInfoImg1 from '../../assets/recoveryInfoImg1.png'
 import recoveryInfoImg2 from '../../assets/recoveryInfoImg2.png'
 import recoveryInfoImg3 from '../../assets/recoveryInfoImg3.png'
+
 const RecoveryInformation = () => {
     return (
-        <div className='mt-5'>
+        <div className='container mt-5'>
             <h3 className='recoveryInformation_heading px-2'>More Information</h3>
             <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 mb-5">
                 <div class="col">

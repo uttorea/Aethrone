@@ -5,11 +5,10 @@ import lighterimg2 from '../../assets/lighterimg2.png'
 import lighterimg3 from '../../assets/lighterimg3.png'
 import lighterimg4 from '../../assets/lighterimg4.png'
 import lighterimg5 from '../../assets/lighterimg5.png'
-import Learn from '../../Components/LearnMore/Learn';
 const ParachuteLighter = () => {
   return (
     <>
-    <div className='mt-5'>
+    <div className='container mt-5'>
       <h4 className='lighter_heading px-2'>Lighter Then Air Product Development</h4>
       <small className='px-3'>Design, Fabrication, and Testing for Airships and AeroStats</small>
       <div class="row mt-5 justify-content-center">
@@ -61,7 +60,6 @@ const ParachuteLighter = () => {
       </div>
     </div>
     </div>
-    <Learn />
     </>
   )
 }

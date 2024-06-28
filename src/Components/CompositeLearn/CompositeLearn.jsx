@@ -6,7 +6,9 @@ import compositeLearnimg3 from '../../assets/compositeLearnimg3.png'
 const CompositeLearn = () => {
   return (
     <div>
-        <div className="mt-5">
+        <div className="container mt-5">
+            <h3 className='learn_heading px-2'>Learn More</h3>
+            <h6>Download Borcher</h6>
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 px-5">
                 <div class="col">
                     <div class="card h-100 border-primary ">

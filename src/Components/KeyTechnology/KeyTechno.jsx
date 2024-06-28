@@ -3,7 +3,8 @@ import './KeyTechno.css';
 import keyTechnoimg2 from '../../assets/keyTechnoimg2.png';
 import keyTechnoimg4 from '../../assets/keyTechnoimg4.png';
 import keyTechnoimg5 from '../../assets/keyTechnoimg5.png';
-import WorkWith from '../WorkWith/WorkWith';
+// import WorkWith from '../WorkWith/WorkWith';
+
 const KeyTechno = () => {
     return (
         <>
@@ -58,7 +59,8 @@ const KeyTechno = () => {
                     </div>
                 </div>
             </div>
-            < WorkWith />
+            {/* < WorkWith /> */}
+
         </>
     );
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 import './ParachuteRecovery.css'
-import parachuteRecovery1 from '../../assets/parachuteRecovery1.jpg'
-import fullbgimg from '../../assets/fullbgimg.png'
+import parachuteRecovery1 from '../../assets/parachuteRecovery1.png'
 import Ballistic from '../BallisticRecovery/Ballistic'
-
+import AirbagInflatable from '../AirbagInflatable/AirbagInflatable'
+import RecoveryInformation from '../../Components/RecoveryInformation/RecoveryInformation'
+import Project from '../../Components/Project/Project'
+import Footer from '../Footer/Footer'
 const ParachuteRecovery = () => {
   return (
     <>
@@ -12,7 +14,7 @@ const ParachuteRecovery = () => {
                 <div className="row">
                     <div className="col">
                         <img src={parachuteRecovery1} alt="" className='paraRecovery1' />
-                        <img src={fullbgimg} alt="" className='paraRecovery2' />
+                        <div className="container">
                         <div className='paraRecovery_content'>
                             <h1 className=''>Recovery Systems</h1>
                             <p>Plug and Plane Solution</p>
@@ -23,12 +25,16 @@ const ParachuteRecovery = () => {
                             </div>
 
                         </div>
-
+                        </div>
                     </div>
                 </div>
             </div> 
     </div>
     <Ballistic/>
+    <AirbagInflatable/>
+    <RecoveryInformation/>
+<Project/>
+<Footer/>
     </>
   )
 }

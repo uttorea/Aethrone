@@ -4,12 +4,11 @@ import workimg1 from '../../assets/workimg1.png'
 import workimg2 from '../../assets/workimg2.png'
 import workimg3 from '../../assets/workimg3.png'
 // import workimg1 from '../../assets/workimg1.png'
-import CompositeLearn from '../../Components/CompositeLearn/CompositeLearn'
 const IndustyWork = () => {
     return (
 
         <>
-            <div className=" mt-5">
+            <div className="container mt-5">
                 <h3 className='work_heading px-2'>Platform We Work On</h3>
                 <div class="row mt-5 justify-content-center">
                     <div class="col-md-2 work_card">
@@ -66,7 +65,6 @@ const IndustyWork = () => {
                     </div>
                 </div>
             </div>
-            <CompositeLearn />
         </>
     )
 }

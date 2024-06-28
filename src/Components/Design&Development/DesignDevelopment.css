@@ -1,34 +1,16 @@
-.designDevelopment_container {
+.designDevelopment_container{
     position: relative;
-    width: 100%;
 }
 
-.designDevelopment_container img {
-    width: 100%;
-}
-
-.DD_img1 {
+.content1 {
     position: absolute;
-    top: 0;
-    width: 100vw;
-    left: 0;
-}
-
-.content {
-    position: absolute;
+    top: 100px;
     color: white;
-    z-index: 2;
+}
+.DD_heading{
+    font-size: 75px;
 }
 
-.content h1 {
-    font-size: 5rem;
-    margin: 0;
-}
 .ddimg_para1{
     border-left: 6px solid #3535DE;
-}
-
-.ddimg_para2{
-    background-color: #00000095;
-
 }

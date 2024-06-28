@@ -4,6 +4,7 @@
 
 .ballistic_page img{
     width: 100%;
+    position: inherit;
 }
 .ballistic_heading{
     border-left: 6px solid #3535DE;

@@ -1,26 +1,23 @@
 .feature_head {
     position: relative;
-    top: 1700px;
-    /* left: 80px; */
 }
 
-.frtbtn1 {
-    margin-left: 280px;
-    border: 1px solid blue;
-    font-size: 9px;
-    border-radius: 3px;
-}
 
-.frtbtn2 {
+/* .frtbtn2 {
     margin-left: 470px;
     border: 1px solid blue;
     font-size: 9px;
     border-radius: 3px;
 
+} */
+.frtbtn1{
+    margin-left: 200px;
 }
-
+.frtbtn2{
+    margin-left: 330px;
+}
 .frt_heading {
-    border-left: 3px solid blue;
+    border-left: 6px solid blue;
 }
 
 .frt_heading2 {
@@ -29,14 +26,13 @@
 
 
 .frt_txt {
-    border-left: 3px solid blue;
-    
+    border-left: 4px solid blue;
 }
 
 .join_team {
     /* border: 3px solid blue; */
     position: relative;
-    top: 1800px;
+    top: 100px;
     background-color: rgb(235, 229, 229);
 }
 .blog_btn{

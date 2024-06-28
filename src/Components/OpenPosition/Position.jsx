@@ -18,7 +18,7 @@ function position() {
                     </div>
                     <div class="col-sm-6">
                         <div class="card border-0 mt-4 ">
-                            <div class="card-body">
+                            <div class="card-body1">
                                 <h4 class="card-title text-primary">Aerosynamic Design Engineer</h4>
                                 <small className='fw-bold text-primary'>Summary</small>
                                 <p class="card-text mx-3 mt-4">As part of a small aerospace engineering team,you will be responsible for the design and analysis of recovery systems for aerospace applications. This will involve you in the entire recovery system design cycle including conceptual design, mathematical modeling, code based qualification, testing and technical documentation.</p>

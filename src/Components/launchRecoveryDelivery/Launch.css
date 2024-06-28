@@ -1,23 +1,6 @@
-.launch_container {
-    position: relative;
-    width: 100%;
-}
-
-.launch_container img {
-    width: 100%;
-}
-
-.launchimg2 {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    left: 0;
-}
 
 .launch_content {
     position: absolute;
-    color: white;
-    z-index: 2;
     top: 120px;
 }
 
@@ -29,7 +12,3 @@
     border-left: 6px solid #3535DE;
 }
 
-.lrdimg_para2{
-    background-color: rgba(0,0,0,0.85);
-border-radius: 5px;
-}

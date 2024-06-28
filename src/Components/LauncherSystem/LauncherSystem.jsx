@@ -8,12 +8,12 @@ import launcherimg5 from '../../assets/launcherimg5.png'
 import launcherimg6 from '../../assets/launcherimg6.png'
 import launcherimg7 from '../../assets/launcherimg7.png'
 import launcherimg8 from '../../assets/launcherimg8.png'
-import LauncherRecovery from '../LauncherRecoverySystem/LauncherRecovery'
 const LauncherSystem = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h4 className='launcher_heading px-2 '>Launcher Systems</h4>
+            <h4 className='launcher_heading px-2 m-0'>Launcher Systems</h4>
+            <small className='px-3'>Systems for UAV & Loitering Munition</small>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">
                     <div class="card mt-5 border-0">
@@ -27,13 +27,13 @@ const LauncherSystem = () => {
                     <div class="card border-0">
                         <img src={launcherimg2} class="card-img-top" alt="..." />
                         <div class="card-body">
-                            <ol>
+                            <ul>
                                 <li>Land Based Bungee Catapult Launcher </li>
                                 <li>Land Based Pneumatic Catapult Launcher</li>
                                 <li>Land Based Pneumatic Tube Launcher</li>
                                 <li>Air Based Underwing Pylon Pneumatic Carriage and Release</li>
-                            </ol>
-                            <a href="" className='btn btn-primary border-dark'>Explore Launcher System <i class="bi bi-arrow-down"></i></a>
+                            </ul>
+                            <a href="" className='btn btn-primary border-dark'>Explore Launcher System <i class="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -65,7 +65,6 @@ const LauncherSystem = () => {
                 </div>
             </div>
         </div>
-        <LauncherRecovery/>
         </>
     )
 }

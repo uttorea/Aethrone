@@ -4,14 +4,13 @@ import pillarImg1 from '../../assets/pillarImg1.png'
 import pillarImg2 from '../../assets/pillarImg2.png'
 import pillarImg3 from '../../assets/pillarImg3.png'
 import pillarImg4 from '../../assets/pillarImg4.png'
-import ManuService from '../ManufacturingService/ManuService'
 
 
 const FourPillars = () => {
     return (
         <>
-        <div className='mt-5'>
-            <h4 className='pillar_heading px-2'>Built Our Four Pillars</h4>
+        <div className='container mt-5'>
+            <h3 className='pillar_heading px-2'>Built Our Four Pillars</h3>
             <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
                 <div class="col pillar_card">
                     <div class="card border-2 border-primary">
@@ -54,7 +53,6 @@ const FourPillars = () => {
                 </div>
             </div>
         </div>
-        <ManuService/>
         </>
     )
 }

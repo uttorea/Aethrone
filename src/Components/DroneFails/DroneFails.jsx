@@ -1,10 +1,10 @@
 import React from 'react'
 import './DroneFails.css';
 import droneFailsimg from '../../assets/droneFailsimg.png'
-import DesignPartner from '../../Components/DesignPartner/DesignPartner'
 const DroneFails = () => {
     return (
         <>
+        <div className="container">
         <div className='droneFails_page'>
             <div className="mt-5">
                 <div className="droneFail_mainHeading">
@@ -40,7 +40,7 @@ const DroneFails = () => {
                 </div>
             </div>
         </div>
-<DesignPartner/>
+        </div>
         </>
     )
 }

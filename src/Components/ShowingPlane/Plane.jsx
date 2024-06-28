@@ -8,8 +8,8 @@ import planeimg5 from '../../assets/planeimg5.png';
 import planeimg6 from '../../assets/planeimg6.png';
 import planeimg7 from '../../assets/planeimg7.png';
 import planeimg8 from '../../assets/planeimg8.png';
-import planeimg9 from '../../assets/planeimg9.png';
-import Design from '../Design_development/Design';
+// import planeimg9 from '../../assets/planeimg9.png';
+// import Design from '../Design_development/Design';
 
 
 
@@ -143,9 +143,9 @@ function Plane() {
                             <div class="carousel-item">
                                 <img src={planeimg8} className="corimg" alt="..." />
                             </div>
-                            <div class="carousel-item">
+                            {/* <div class="carousel-item">
                                 <img src={planeimg9} className="corimg" alt="..." />
-                            </div>
+                            </div> */}
                         </div>
                         <div className="CaroPlane mb-5" style={{position:'absolute', left:'250px'}}>
                             <h4 className='text-primary'>{carousetTitle}</h4>

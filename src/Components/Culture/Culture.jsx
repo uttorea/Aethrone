@@ -2,7 +2,6 @@ import React from 'react'
 import './Culture.css'
 import cultureimg1 from '../../assets/cultureimg1.png'
 import cultureimg2 from '../../assets/cultureimg2.png'
-import CareerCard from '../CareerCard/CareerCard'
 function Culture() {
     return (
         <>
@@ -16,8 +15,8 @@ function Culture() {
                         <div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
                             <div class="col">
                                 <div class="card border-0">
-                                    <img src={cultureimg1} class="card-img-top" alt="..." />
-                                    <div class="card-body">
+                                    <img src={cultureimg1} class="card-img-top rounded" alt="..." />
+                                    <div class="card-body1 mt-3 ">
                                         <h5 class="card-title text-primary">Team Oriented</h5>
                                         <p class="card-text">We believe that collaboration is key to achieving our goals. Our team-oriented culture encourages open communication, mutual support, and collective problem-solving.</p>
                                     </div>
@@ -25,8 +24,8 @@ function Culture() {
                             </div>
                             <div class="col">
                                 <div class="card border-0">
-                                    <img src={cultureimg2} class="card-img-top" alt="..." />
-                                    <div class="card-body">
+                                    <img src={cultureimg2} class="card-img-top rounded" alt="..." />
+                                    <div class="card-body1 mt-3 ">
                                         <h5 class="card-title text-primary">Fostering Innovation</h5>
                                         <p class="card-text">Innovation is at the heart of everything we do. We provide an environment where ideas are welcomed, experimentation is encouraged, and creativity flourishes. We're constantly pushing boundaries and exploring new possibilities.</p>
                                     </div>
@@ -36,7 +35,6 @@ function Culture() {
                     </div>
                 </div>
             </div>
-<CareerCard/>
         </>
     )
 }

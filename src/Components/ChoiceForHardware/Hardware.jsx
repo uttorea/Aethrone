@@ -1,10 +1,12 @@
 import React from 'react'
 import './Hardware.css'
+import { Link } from "react-router-dom";
+
 import hardwareimg1 from '../../assets/hardwareimg1.png'
 import hardwareimg2 from '../../assets/hardwareimg2.png'
 import hardwareimg3 from '../../assets/hardwareimg3.png'
 import hardwareimg4 from '../../assets/hardwareimg4.png'
-import Project from '../../Components/Project/Project'
+
 const Hardware = () => {
   return (
     <>
@@ -51,7 +53,6 @@ const Hardware = () => {
     </div>
     </div>
     
-    <Project />
     </>
   )
 }

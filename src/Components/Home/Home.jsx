@@ -4,8 +4,12 @@ import homeBgImg from '../../assets/homeBgImg.png'
 // import { Carousel } from 'bootstrap'
 import Carousel from '../Carousel/Carousel';
 import Plane from '../../Components/ShowingPlane/Plane';
-
-
+import Design from '../../Components/Design_development/Design'
+import Products from '../Products/Products';
+import OwlcarouselComponent from '../../Components/OwlCarousel/OwlcarouselComponent';
+import Furtblog from '../../Components/Feature-Blog/Furtblog'
+import Project from '../../Components/Project/Project'
+import Footer from '../../Components/Footer/Footer'
 const Home = () => {
     return (
         <div>
@@ -20,13 +24,18 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <Carousel/>
+                        <Carousel />
                     </div>
 
                 </div>
             </div>
-                    <Plane/>
-
+            <Plane />
+            <Design />
+            <Products/>
+            <OwlcarouselComponent/>
+            <Furtblog/>
+            <Project/>
+            <Footer/>
         </div>
     )
 }

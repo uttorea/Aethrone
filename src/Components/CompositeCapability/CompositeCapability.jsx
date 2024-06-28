@@ -9,7 +9,6 @@ import scrollImg4 from '../../assets/scrollImg4.png'
 import scrollImg5 from '../../assets/scrollImg5.png'
 import scrollImg6 from '../../assets/scrollImg6.png'
 import scrollImg7 from '../../assets/scrollImg7.png'
-import Industry from '../../Components/Industries/Industry'
 
 const CompositeCapability = () => {
     useEffect(() => {
@@ -26,7 +25,7 @@ const CompositeCapability = () => {
 
     return (
 <>
-            <div className="mycontainer ">
+            <div className="container ">
                 <div className="row p-3 mt-5 myrow shadow-lg custom-row">
                     <div className="col-md-7">
                         <div id="list-example" class="list-group">
@@ -96,7 +95,6 @@ const CompositeCapability = () => {
                     </div>
                 </div>
             </div>
-            <Industry />
             </>
     );
 };

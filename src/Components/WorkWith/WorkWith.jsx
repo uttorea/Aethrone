@@ -1,7 +1,6 @@
 import React from 'react'
 import './WorkWith.css';
-import workwithimg from '../../assets/workwithimg.webp'
-import Journey from '../../Components/Journey/Journey'
+import workwithimg from '../../assets/workwithimg.png'
 const WorkWith = () => {
   return (
     <>
@@ -19,7 +18,6 @@ const WorkWith = () => {
       </div>
       </div>
     </div>
-    <Journey />
     </>
   )
 }

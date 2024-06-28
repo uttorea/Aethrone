@@ -1,13 +1,6 @@
 .parachute_container{
     position: relative;
-    width: 100%;
+    /* width: 100%; */
 }
-.parachute_container img {
-    width: 100%;
-}
-.parachuteimg2{
-    position: absolute;
-    top: 40px;
-    width: 100vw;
-    left: 0;
-}
+
+

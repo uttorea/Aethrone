@@ -2,9 +2,12 @@ import React from 'react'
 import './AllBlogs.css'
 import frtimg1 from '../../assets/frtimg1.png'
 import DroneFails from '../DroneFails/DroneFails'
+import DesignPartner from '../../Components/DesignPartner/DesignPartner'
+import Footer from '../Footer/Footer'
 const AllBlogs = () => {
     return (
         <>
+        <div className="container">
             <div className="blog_page mt-5">
                     <h1 className='blog_heading px-2 fw-bold mt-5'>Blogs</h1>
                     <div class="row mt-4">
@@ -46,8 +49,10 @@ const AllBlogs = () => {
                         </div>
                     </div>
             </div>
-            
+            </div>
             <DroneFails/>
+            <DesignPartner/>
+<Footer/>
         </>
     )
 }

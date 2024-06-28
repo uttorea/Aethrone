@@ -4,8 +4,7 @@ import launcherimg4 from '../../assets/launcherimg4.jpg'
 import launcherimg5 from '../../assets/launcherimg5.png'
 import launcherimg9 from '../../assets/launcherimg9.png'
 import launcherimg10 from '../../assets/launcherimg10.png'
-import Project from '../Project/Project'
-import Footer from '../../Components/Footer/Footer'
+
 const LauncherRecovery = () => {
   return (
     <>
@@ -24,12 +23,12 @@ const LauncherRecovery = () => {
             <div class="card border-0">
                 <img src={launcherimg10} class="card-img-top" alt="..." />
                 <div class="card-body">
-                    <ol>
+                    <ul>
                         <li>Parachute Based Land Recovery</li>
                         <li>Parachute Based Sea Recovery</li>
                         <li>Airbag Based Land Recovery</li>
                         <li>Airbag Based Sea Recovery</li>
-                    </ol>
+                    </ul>
                     <a href="" className='btn btn-primary border-dark'>Explore Recovery System <i class="bi bi-arrow-down"></i></a>
                 </div>
             </div>
@@ -62,8 +61,7 @@ const LauncherRecovery = () => {
         </div>
     </div>
 </div>
-<Project />
-<Footer />
+
 
 </>
   )

@@ -14,22 +14,22 @@
 
 .pp_card_body1 {
     width: 0;
-    height: 35%;
+    height: 40%;
     border-left: 162px solid #3535DE;
     border-top: 70px solid transparent;
     position: absolute;
-    top: 227.5px;
+    top: 185px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
 .pp_card_body2 {
     width: 0;
-    height: 48%;
+    height: 45%;
     border-left: 162px solid white;
     border-top: 70px solid transparent;
     position: absolute;
-    top: 181px;
+    top: 192px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -52,7 +52,7 @@
 .ppCard_para2 {
     position: relative;
     right: 165px;
-    bottom: 5px;
+    bottom: 25px;
     white-space: nowrap;
     font-size: 13px;
 }
