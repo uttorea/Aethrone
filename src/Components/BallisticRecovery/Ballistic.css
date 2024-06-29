@@ -4,7 +4,6 @@
 
 .ballistic_page img{
     width: 100%;
-    position: inherit;
 }
 .ballistic_heading{
     border-left: 6px solid #3535DE;
@@ -18,7 +17,7 @@
 .ballistic_body1{
     width: 0;
     height: 54%;
-    border-left: 330px solid #3535DE;
+    border-left: 328px solid #3535DE;
     border-top: 70px solid transparent;
     position: absolute;
     top: 162px;
@@ -29,7 +28,7 @@
 .ballistic_body2{
     width: 0;
     height: 51.3%;
-    border-left:  330px  solid white;
+    border-left: 328px  solid white;
     border-top: 70px solid transparent;
     position: absolute;
     top: 170px;

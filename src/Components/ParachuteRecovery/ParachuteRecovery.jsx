@@ -11,8 +11,6 @@ const ParachuteRecovery = () => {
     <>
     <div>
        <div className='paraRecovery_page'>
-                <div className="row">
-                    <div className="col">
                         <img src={parachuteRecovery1} alt="" className='paraRecovery1' />
                         <div className="container">
                         <div className='paraRecovery_content'>
@@ -26,8 +24,7 @@ const ParachuteRecovery = () => {
 
                         </div>
                         </div>
-                    </div>
-                </div>
+                
             </div> 
     </div>
     <Ballistic/>
