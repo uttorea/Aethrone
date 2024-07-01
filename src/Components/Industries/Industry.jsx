@@ -8,9 +8,9 @@ const Industry = () => {
     <div className='industry_bg mt-5'>
       <img src={bgHelicopter} alt="Background" className="bg-image" />
       <div className="content justify-content-center d-flex">
-        <div className="row">
+        <div className="row mt-5">
           <div className="col-sm-6">
-            <h4 className='heading1 px-2'>Industries</h4>
+            <h4 className='heading1 px-2 '>Industries</h4>
             <div className="card blur-card card-margin">
               <div className="card-body text-light">
                 <h6>Aerospace</h6>

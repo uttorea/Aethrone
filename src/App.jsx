@@ -1,4 +1,5 @@
 import React from 'react';
+import './App.css'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './Components/Navbar/Navbar';
 import Home from './Components/Home/Home';
@@ -7,9 +8,6 @@ import About from './Components/AboutUs/About'
 import Contact from './Components/ContactUs/Contact'
 import DesignDevelopment from './Components/Design&Development/DesignDevelopment'
 import PricisionManu from './Components/Precision_Manufacturing/PricisionManu'
-import Plane from './Components/ShowingPlane/Plane';
-import Design from './Components/Design_development/Design';
-import OwlcarouselComponent from './Components/OwlCarousel/OwlcarouselComponent';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import Launch from './Components/launchRecoveryDelivery/Launch'
@@ -41,9 +39,10 @@ function App() {
           <Route path="/launch-recovery-delivery" element={<Launch />} />
           <Route path="/parachutes" element={<Parachute />} />
           <Route path="//launch-recovery-system" element={<ParachuteRecovery />} />
-          <Route path="/allBlogs" element={<AllBlogs />} />
+          <Route path="/all-blog" element={<AllBlogs />} />
           <Route path="/advance-composites" element={<Composite/>}/>
           <Route path="/advance-manufacturing" element={<AdvanceManufacture/>}/>
+          
         </Routes>
       </div>
       {/* <Footer/> */}

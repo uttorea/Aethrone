@@ -40,7 +40,7 @@ const ManuCertification = () => {
   <div class="col">
     <div class="card border-dark">
       <img src={manuCertificateImg1} class="manuCertificateImg m-3" alt="..."/>
-      <img src={manuCertificateImg5} class=" m-3 " alt="..."/>
+      <img src={manuCertificateImg5} class=" m-3 " alt="..." style={{height:"95px"}}/>
       
       <div class="card-footer mt-5 border-dark">
         <h6 class="p-3 text-center">Quality Management Systems Aviation, Space, & Defense</h6>

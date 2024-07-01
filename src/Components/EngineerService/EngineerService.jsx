@@ -11,19 +11,19 @@ const EngineerService = () => {
         <div className='container mt-5'>
             <h3 className='engineer_heading px-2'>Engineering Service</h3>
             <p>Our leadership comes from a background of physics based simulation with Ability to work with a wide range of materials including metals, composites, elastomers, technical textiles and plastics.</p>
-            <div className="row justify-content-center mt-3 ">
-                <div className="col-lg-2 col-md-4 col-sm-6  m-auto engineer_card">
-                    <div className="card border-primary">
+            <div className="row justify-content-center mt-3 " >
+                <div className="col-lg-2 col-md-4 col-sm-6   engineer_card">
+                    <div className="card border-primary " >
                         <div className="card-body1 no-padding">
-                            <img src={engineerimg1} className="card_img1 w-100 rounded-2" alt="Card Image" />
+                            <img src={engineerimg1} className="card_img1 w-100 rounded-top" alt="Card Image" style={{height:"185px"}}/>
                         </div>
                         <div className="card-footer border-primary justify-content-center text-primary">Computer Aided Designer</div>
                     </div>
                 </div>
                 <div className="col-lg-2 col-md-4 col-sm-6 m-auto engineer_card">
-                    <div className="card border-primary mb-3">
+                    <div className="card border-primary mb-3" >
                         <div className="card-body1 no-padding">
-                            <img src={engineerimg2} className="card_img1 w-100 rounded-2" alt="Card Image" />
+                            <img src={engineerimg2} className="card_img1 w-100 rounded-top" alt="Card Image" style={{height:"185px"}}/>
                         </div>
                         <div className="card-footer border-primary  text-primary">Composite Matrix Design</div>
                     </div>
@@ -31,7 +31,7 @@ const EngineerService = () => {
                 <div className="col-lg-2 col-md-4 col-sm-6 m-auto engineer_card">
                     <div className="card border-primary mb-3">
                         <div className="card-body1 no-padding">
-                            <img src={engineerimg3} className="card_img1 w-100 rounded-2" alt="Card Image" />
+                            <img src={engineerimg3} className="card_img1 w-100 rounded-top" alt="Card Image" style={{height:"185px"}}/>
                         </div>
                         <div className="card-footer border-primary  text-primary">Fuild Structure Integration</div>
                     </div>
@@ -39,7 +39,7 @@ const EngineerService = () => {
                 <div className="col-lg-2 col-md-4 col-sm-6 m-auto engineer_card">
                     <div className="card border-primary mb-3">
                         <div className="card-body1 no-padding">
-                            <img src={engineerimg4} className="card_img1 w-100 rounded-2" alt="Card Image" />
+                            <img src={engineerimg4} className="card_img1 w-100 rounded-top" alt="Card Image" />
                         </div>
                         <div className="card-footer border-primary text-primary">Noise~Vibrations~ Harshness</div>
                     </div>
@@ -47,7 +47,7 @@ const EngineerService = () => {
                 <div className="col-lg-2 col-md-4 col-sm-6 m-auto engineer_card">
                     <div className="card border-primary mb-3">
                         <div className="card-body1 no-padding">
-                            <img src={engineerimg5} className="card_img1 w-100 rounded-2" alt="Card Image" />
+                            <img src={engineerimg5} className="card_img1 w-100 rounded-top" alt="Card Image" />
                         </div>
                         <div className="card-footer border-primary  text-primary">Artificial Intelligence</div>
                     </div>

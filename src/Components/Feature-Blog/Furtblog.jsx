@@ -1,6 +1,6 @@
 import React from 'react'
 import './Furtblog.css';
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 // import frtimg1 from '../assets/frtimg1.png';
 import frtimg1 from '../../assets/frtimg1.png'
 import frtimg2 from '../../assets/frtimg2.png';
@@ -8,10 +8,10 @@ import frtimg3 from '../../assets/frtimg3.png';
 import frtimg4 from '../../assets/frtimg4.png';
 import frtimg5 from '../../assets/frtimg5.png';
 function Furtblog() {
-    const navigate = useNavigate()
-    function goToBlog() {
-        navigate("/allBlogs")
-    }
+    // const navigate = useNavigate()
+    // function goToBlog() {
+    //     navigate("/allBlogs")
+    // }
     return (
         <>
             <div className="container">
@@ -20,11 +20,11 @@ function Furtblog() {
                         <div class="col-sm-6">
                             <div className='d-flex'>
                                 <h3 className='frt_heading fw-bold px-2'>Featured Blogs</h3>
-                                <a className='btn border-primary frtbtn1'>ALL BLOG<i class="bi bi-arrow-right-short"></i></a>
+                                <a className='btn border-primary frtbtn1' >ALL BLOG<i class="bi bi-arrow-right-short"></i></a>
                             </div>
                             <div class="card1 mt-4">
                                 <img src={frtimg1} alt=""/>
-                                <a href="" className='btn btn-primary blog_btn px-3' onClick={goToBlog}>Blog</a>
+                                <Link href="" className='btn btn-primary blog_btn px-3' to="/all-blog">Blog</Link>
                             </div>
 
                             <div className='frt_heading2 mt-4 px-2'>

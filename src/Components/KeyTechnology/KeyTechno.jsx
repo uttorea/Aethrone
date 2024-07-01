@@ -42,15 +42,15 @@ const KeyTechno = () => {
                         <div className="col-lg-2 col-md-4 col-sm-6 mb-4 custom-card">
                             <div className="card border-primary mb-3">
                                 <div className="card-body">
-                                    <img src={keyTechnoimg4} className="card-img mt-5" alt="Card Image" />
+                                    <img src={keyTechnoimg4} className="card-img mt-5" alt="Card Image" style={{height:"100px"}}/>
                                 </div>
-                                <div className="card-footer border-primary justify-content-center">Helicopters</div>
+                                <div className="card-footer border-primary justify-content-center py-3">Helicopters</div>
                             </div>
                         </div>
                         <div className="col-lg-2 col-md-4 col-sm-6 mb-4 custom-card">
                             <div className="card border-primary mb-3">
                                 <div className="card-body">
-                                    <img src={keyTechnoimg5} className="card-img mt-5" alt="Card Image" />
+                                    <img src={keyTechnoimg5} className="card-img mt-5" alt="Card Image"  style={{height:"87px"}}/>
                                 </div>
                                 <div className="card-footer border-primary justify-content-center">Artificial Intelligence</div>
                             </div>

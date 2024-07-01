@@ -13,7 +13,7 @@ const FocusArea = () => {
                 <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
                     <div class="col">
                         <div class="card align-items-center border-2 border-primary">
-                            <img src={focusImg1} class="card-img-top w-50 mt-5" alt="..." />
+                            <img src={focusImg1} class="card-img-top w-50 mt-5" alt="..." style={{height:"155px"}}/>
                             <div class="card-body">
                                 <h5 class="card-title mt-5 fw-bold text-primary">Aerospace & Defence</h5>
                             </div>
@@ -29,7 +29,7 @@ const FocusArea = () => {
                     </div>
                     <div class="col">
                         <div class="card align-items-center border-2 border-primary">
-                            <img src={focusImg3} class="card-img-top w-75 mt-5" alt="..." />
+                            <img src={focusImg3} class="card-img-top w-75 mt-5" alt="..." style={{height:"155px"}}/>
                             <div class="card-body">
                                 <h5 class="card-title mt-5 fw-bold text-primary">Clean Energy</h5>
                             </div>
@@ -37,7 +37,7 @@ const FocusArea = () => {
                     </div>
                     <div class="col">
                         <div class="card align-items-center border-2 border-primary">
-                            <img src={focusImg4} class="card-img-top w-50 mt-5" alt="..." />
+                            <img src={focusImg4} class="card-img-top w-50 mt-5" alt="..." style={{height:"155px"}}/>
                             <div class="card-body">
                                 <h5 class="card-title mt-5 fw-bold text-primary">Industry 4.0</h5>
                             </div>

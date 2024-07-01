@@ -58,7 +58,7 @@ const DDProject = () => {
                 <h6 className='mt-5'>This engineering vertical is based on below principals</h6>
                 <div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
                     <div class="col">
-                        <div class="card p-1">
+                        <div class="card p-1 border-primary ">
                             <img src={ddprojectimg4} className="pro_cardimg m-auto " alt="..." />
                             <div class="card-body">
                                 <h6 className='text-primary fw-bold'>Turn Ideas into Reality</h6>
@@ -67,7 +67,7 @@ const DDProject = () => {
                         </div>
                     </div>
                     <div class="col">
-                    <div class="card p-1">
+                    <div class="card p-1 border-primary">
                             <img src={ddprojectimg5} className="pro_cardimg m-auto " alt="..." />
                             <div class="card-body">
                                 <h6 className='text-primary fw-bold'>Develop Cutting-Edge Products</h6>
@@ -76,7 +76,7 @@ const DDProject = () => {
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card p-1">
+                        <div class="card p-1 border-primary h-100" >
                             <img src={ddprojectimg6} className="pro_cardimg m-auto " alt="..." />
                             <div class="card-body">
                                 <h6 className='text-primary fw-bold'>sustenance & product Upgrade </h6>
@@ -85,7 +85,7 @@ const DDProject = () => {
                         </div>
                     </div>
                     <div class="col">
-                    <div class="card p-1">
+                    <div class="card p-1 border-primary">
                             <img src={ddprojectimg7} className="pro_cardimg m-auto " alt="..." />
                             <div class="card-body">
                                 <h6 className='text-primary fw-bold'>Test with Confidence </h6>
@@ -94,7 +94,7 @@ const DDProject = () => {
                         </div>
                     </div>
                     <div class="col">
-                    <div class="card p-1">
+                    <div class="card p-1 border-primary">
                             <img src={ddprojectimg8} className="pro_cardimg m-auto " alt="..." />
                             <div class="card-body">
                                 <h6 className='text-primary fw-bold'>Seamless Product Launch</h6>
@@ -103,7 +103,7 @@ const DDProject = () => {
                         </div>
                     </div>
                     <div class="col">
-                    <div class="card p-1">
+                    <div class="card p-1 border-primary">
                             <img src={ddprojectimg9} className="pro_cardimg m-auto " alt="..." />
                             <div class="card-body">
                                 <h6 className='text-primary fw-bold'>Protect Your Innovation:</h6>
