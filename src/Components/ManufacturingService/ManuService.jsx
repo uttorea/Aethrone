@@ -6,7 +6,7 @@ const ManuService = () => {
     return (
     <>
             <div className='container mt-5'>
-                <h4 className='manufacture_heading px-2'>Manufacturing Service</h4>
+                <h3 className='manufacture_heading px-2 fw-bold'>Manufacturing Service</h3>
                 <div class="row row-cols-1 row-cols-md-2 g-4 mx-5 mt-4">
                     <div class="col manuServic_card">
                         <div class="card border-2 border-primary">

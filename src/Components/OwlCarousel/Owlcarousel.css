@@ -5,3 +5,8 @@
 .ptr_head{
     border-left: 6px solid #3535DE;
 }
+
+.owl_img img{
+    height:250px ;
+    width: 200px!important;
+}

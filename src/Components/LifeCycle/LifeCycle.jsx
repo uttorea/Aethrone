@@ -6,7 +6,7 @@ const LifeCycle = () => {
     return (
         <>
             <div className='container mt-5'>
-                <h3 className='lifecycle_heading px-2'>Lifecycle Program Support Services</h3>
+                <h3 className='lifecycle_heading px-2 fw-bold'>Lifecycle Program Support Services</h3>
                 <p>We provide a comprehensive suite of services to ensure your equipment operates at peak efficiency throughout its lifecycle. Our expert <br /> engineers offer:</p>
                 <div class="row">
                     <div class="col">

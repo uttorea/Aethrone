@@ -10,7 +10,7 @@ const FourPillars = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h3 className='pillar_heading px-2'>Built Our Four Pillars</h3>
+            <h3 className='pillar_heading px-2 fw-bold'>Built Our Four Pillars</h3>
             <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
                 <div class="col pillar_card">
                     <div class="card border-2 border-primary">

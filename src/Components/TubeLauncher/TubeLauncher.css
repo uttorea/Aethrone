@@ -1,0 +1,16 @@
+.launcherAction {
+    position: relative;
+    top: 100px;
+    background-color: rgb(235, 229, 229);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+}
+.bungeeAction {
+    display: flex;
+    gap: 10px; /* Adjust the gap between buttons as needed */
+}
+.launcherAction h4 {
+    margin: 0;
+}

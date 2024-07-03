@@ -24,6 +24,7 @@ function OwlCarouselComponent() {
                     items={4}
                     autoplay={true}
                     loop
+                    dots={false}
                 >
                     <div className='owl_img p-3'>
                         <img src={prtimg1} alt="" />

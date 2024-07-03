@@ -11,7 +11,7 @@ const   Platform = () => {
     
     <>
       <div className="container mt-5">
-        <h3 className='platform_heading px-2'>Platform We Work On</h3>
+        <h3 className='platform_heading px-2 fw-bold'>Platform We Work On</h3>
         <div class="row mt-5 justify-content-center">
       <div class="col-md-2 platform_card">
         <div class="card border-primary border-2">

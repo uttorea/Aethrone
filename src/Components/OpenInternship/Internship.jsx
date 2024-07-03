@@ -4,7 +4,7 @@ import interimg from '../../assets/internimg.png'
 function Internship() {
     return (
         <>
-            <div className="inetrnship_page border-top">
+            <div className="inetrnship_page mt-5">
                 <div className="container">
                     <h4 className='intern_heading fw-bold px-2 m-0'>Open Lap Internships</h4>
                     <p className='px-3'>Industrial experience</p>

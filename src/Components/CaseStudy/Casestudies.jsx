@@ -34,9 +34,9 @@ const Casestudies = () => {
 
     return (
         <div className=' mt-5'>
-            <h3 className='case_heading px-2 container'>Case Studies</h3>
+            <h3 className='case_heading px-2 container fw-bold'>Case Studies</h3>
           
-            <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleIndicators" className="carousel slide mt-5" data-bs-ride="carousel">
                 <div className="carousel-indicators" style={{ position: 'absolute', right: '540px' }}>
                     {caseStudies.map((_, index) => (
                         <button

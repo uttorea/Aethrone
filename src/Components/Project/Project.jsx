@@ -1,6 +1,5 @@
 import React from 'react'
 import './Project.css'
-// import Footer from '../Footer/Footer'
 function Project() {
     return (
         <>
@@ -9,7 +8,7 @@ function Project() {
                     <div class="row">
                         <div class="col-4 mt-5">
                             <div class="card-body1">
-                                <h3 class="card-title text-primary fw-bold text-start">Have <br />A Project!</h3>
+                                <h3 class="card-title text-primary fw-bold text-start ">Have <br />A Project!</h3>
                                 <h3 class="card-title text-white mt-4 fw-bold">Let's <br />Discuss<br />Your Ideas <br />& Solution</h3>
                                 <h6 className='text-white mt-5'>Whether you're seeking innovative solutions, collaboration opportunities, or simply have a query, our team is here to assist you every step of the way.</h6>
                             </div>
@@ -44,7 +43,6 @@ function Project() {
                     </div>
                 </div>
             </div>
-            {/* <Footer/> */}
         </>
     )
 }

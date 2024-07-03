@@ -41,12 +41,12 @@
     width: 100%;
 }
 
-.list-unstyled {
+.list-styled {
     display: none;
     margin-top: 10px;
 }
 
-.cap_card:hover .list-unstyled {
+.cap_card:hover .list-styled {
     display: block;
     position: absolute;
     top: 80%;

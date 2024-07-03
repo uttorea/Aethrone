@@ -8,8 +8,8 @@ const ParachuteProduct = () => {
   return (
     <>
       <div className='container mt-5'>
-        <h3 className='pp_heading px-2'>Product</h3>
-        <p className='mt-4'>We Design Products In Para Vertical</p>
+        <h3 className='pp_heading px-2 fw-bold m-0'>Product</h3>
+        <small className='mt-4 px-3'>We Design Products In Para Vertical</small>
         <div class="row mt-5 ">
           <div class="col-md-2 pp_card">
             <div class="card border-primary border-2">

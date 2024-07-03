@@ -7,7 +7,7 @@ const CompositeLearn = () => {
   return (
     <div>
         <div className="container mt-5">
-            <h3 className='learn_heading px-2'>Learn More</h3>
+            <h3 className='learn_heading px-2 fw-bold'>Learn More</h3>
             <h6>Download Borcher</h6>
               <div class="row row-cols-1 row-cols-md-3 g-4 mt-4 px-5">
                 <div class="col">

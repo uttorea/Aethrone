@@ -8,7 +8,7 @@ const Accordion = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h3 className='apart_heading px-2 m-0'>What Sets Us Apart</h3>
+            <h3 className='apart_heading px-2 m-0 fw-bold'>What Sets Us Apart</h3>
             <p className='px-3'>D&D</p>
             <div className="row">
                 <div className="col-sm-4">

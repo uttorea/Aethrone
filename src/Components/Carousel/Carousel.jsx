@@ -53,7 +53,7 @@ function Carousel() {
               <div class="carousel-item active">
                 <img src={carouselimg4} class=" d-block w-100" alt="..." />
                 <div className="csrousel_text text-light ">
-                <h1 className=''>Advance <br/> omposites</h1>
+                <h1 className=''>Advance <br/> Composites</h1>
                 <h6 className=''>From Concept To Product To Certification </h6>
                 <div className='w-75 carousel_para p-3 rounded-2'>
                 <p>We Design, Develope and manufacture rotary-propulsion composites componens, critical aero-structure members and sub-systems. We utilize out-of-autoclave methods with tooling capacity of upto 5m in length.</p>

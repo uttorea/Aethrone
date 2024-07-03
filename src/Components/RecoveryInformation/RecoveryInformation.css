@@ -1,3 +1,56 @@
-.recoveryInformation_heading{
-    border-left:6px solid #3535DE;
+.popup1 {
+    position: absolute;
+    top: 45%; 
+    left: 555px; 
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    background-color: white;
+    width: 100vw; 
+    height: 70vh;
+    max-width: 800px;
+}
+.popup2 {
+    position: absolute;
+    top: 45%; 
+    left: 180px; 
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    background-color: white;
+    padding: 50px;
+    width: 100vw; 
+    height: 70vh;
+    border-radius: 10px;
+    max-width: 800px;
+    
+}
+.popup3 {
+    position: absolute;
+    top: 45%; 
+    left:-200px; 
+    transform: translate(-50%, -50%);
+    z-index: 1000; 
+    background-color: white;
+    padding: 50px;
+    width: 100vw; 
+    height: 70vh;
+    max-width: 800px;
+    
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3535DE;
+}
+
+.card {
+    position: relative; /* Ensure cards have relative positioning */
+}
+.brochure_btn{
+    position: absolute;
+    right: 40px;
 }

@@ -9,7 +9,7 @@ const ParachuteLighter = () => {
   return (
     <>
     <div className='container mt-5'>
-      <h4 className='lighter_heading px-2'>Lighter Then Air Product Development</h4>
+      <h3 className='lighter_heading px-2 fw-bold m-0'>Lighter Then Air Product Development</h3>
       <small className='px-3'>Design, Fabrication, and Testing for Airships and AeroStats</small>
       <div class="row mt-5 justify-content-center">
       <div class="col-md-2 lighter_card">

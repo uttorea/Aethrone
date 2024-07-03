@@ -18,7 +18,7 @@ const Home = () => {
                 <div className="container ">
                     <div className="row">
                         <div className='home_heading'>
-                            <p className='text-white ' style={{ fontSize: '75px', margin: '0' }}>AETHRONE<br />AEROSPACE</p>
+                            <p className='text-white ' style={{ fontSize: '75px', margin: '0',fontFamily:'poor Richard' }}>AETHRONE<br />AEROSPACE</p>
                             <p className='text-light fs-4'>Ingenuity | Dynamism | perfection</p>
                             <div>
                             </div>

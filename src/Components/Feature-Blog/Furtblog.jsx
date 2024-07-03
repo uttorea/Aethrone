@@ -35,7 +35,7 @@ function Furtblog() {
                         </div>
                         <div class="col-sm-6">
                             <div className='d-flex '>
-                                <h3 className='frt_heading fw-bold'>News</h3>
+                                <h3 className='frt_heading fw-bold px-1'>News</h3>
                                 <a className='btn border-primary frtbtn2'>MORE NEWS <i class="bi bi-arrow-right-short"></i></a>
                             </div>
                             <div class="mt-4">

@@ -7,7 +7,7 @@ const Seeportfolio = () => {
   return (
     <>
     <div className='container mt-5'>
-      <h3 className='portfolio_heading px-2'>See Detailed Solution Portfolio</h3>
+      <h3 className='portfolio_heading px-2 fw-bold'>See Detailed Solution Portfolio</h3>
       <div class="row">
       <div class="col p-5">
           <div class="card border-primary border-1">

@@ -8,11 +8,11 @@ import launcherimg5 from '../../assets/launcherimg5.png'
 import launcherimg6 from '../../assets/launcherimg6.png'
 import launcherimg7 from '../../assets/launcherimg7.png'
 import launcherimg8 from '../../assets/launcherimg8.png'
-const LauncherSystem = () => {
+const   LauncherSystem = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h4 className='launcher_heading px-2 m-0'>Launcher Systems</h4>
+            <h3 className='launcher_heading px-2 m-0 fw-bold'>Launcher Systems</h3>
             <small className='px-3'>Systems for UAV & Loitering Munition</small>
             <div class="row row-cols-1 row-cols-md-2 g-4">
                 <div class="col">

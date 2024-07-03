@@ -9,11 +9,13 @@
     width: 50px;
     border-radius:50% ;
 }
-.main_border{
-    border-top: 2px solid #414042;
-    border-bottom: 2px solid #414042;
-    padding: 40px;
+.main_border {
+    /* border-top: 2px solid #414042;
+    border-bottom: 2px solid #414042; */
+    padding: 40px;   
 }
+
+
 .social_icon1 {
     width: 30px; 
     height: 30px;
@@ -44,3 +46,4 @@
     font-size: 13px; 
     color: white;
 }
+

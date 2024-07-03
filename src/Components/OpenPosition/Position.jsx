@@ -8,8 +8,8 @@ function position() {
         <>
         <div className='positions_page py-5'>
             <div className="container">
-                <h3 className='fw-bold position_heading px-1'>Open Positions</h3>
-                <h6>Career which might interest you</h6>
+                <h3 className='fw-bold position_heading px-2'>Open Positions</h3>
+                <h6 className='px-3'>Career which might interest you</h6>
                 <div class="row">
                     <div class="col-sm-6 ">
                         <div class="card border-0">

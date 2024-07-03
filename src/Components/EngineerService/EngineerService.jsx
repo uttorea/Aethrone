@@ -9,7 +9,7 @@ const EngineerService = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h3 className='engineer_heading px-2'>Engineering Service</h3>
+            <h3 className='engineer_heading px-2 fw-bold'>Engineering Service</h3>
             <p>Our leadership comes from a background of physics based simulation with Ability to work with a wide range of materials including metals, composites, elastomers, technical textiles and plastics.</p>
             <div className="row justify-content-center mt-3 " >
                 <div className="col-lg-2 col-md-4 col-sm-6   engineer_card">

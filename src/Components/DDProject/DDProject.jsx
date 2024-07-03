@@ -14,7 +14,7 @@ const DDProject = () => {
         <>
         <div>
             <div className="container">
-                <h3 className='mt-5 ddProject_img px-2'>Projects</h3>
+                <h3 className='mt-5 ddProject_img px-2 fw-bold'>Projects</h3>
                 <p>We have actualized projects in Aerospace, defence and UAV verticals which extends from engineering analysis to certifying of the sub system.</p>
                 <div class="row row-cols-1 row-cols-md-3 g-4">
                     <div class="col">

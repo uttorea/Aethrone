@@ -6,7 +6,7 @@ import careerCardimg3 from '../../assets/careerCardimg3.png'
 function CareerCard() {
     return (
 <>
-        <div className="carrerCard_page">
+        <div className="carrerCard_page mt-5">
             <div class="container">
                 <h3 className='career_heading fw-bold mb-5 px-2'>Career</h3>
                 <div class="row row-cols-1 row-cols-md-3 g-4">

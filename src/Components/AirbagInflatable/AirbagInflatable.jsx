@@ -5,7 +5,7 @@ const AirbagInflatable = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h3 className='airbag_heading px-2'>Airbag Inflatable Systems For Drones</h3>
+            <h3 className='airbag_heading px-2 fw-bold'>Airbag Inflatable Systems For Drones</h3>
             <div class="row mt-5">
                 <div class="col-sm-8">
                     <div class="card border-0">

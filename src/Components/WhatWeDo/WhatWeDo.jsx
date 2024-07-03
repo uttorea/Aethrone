@@ -8,11 +8,11 @@ const WhatWeDo = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h3 className='wwd_main_heading px-2'>What We Do</h3>
+            <h3 className='wwd_main_heading px-2 fw-bold'>What We Do</h3>
             <div class="row">
                 <div class="col-sm-4">
-                    <h3 className='wwd_heading1 fw-bold mt-4'>Share your concept,</h3>
-                    <h3 className='fw-bold'>we design, <br /> prototype & <br /> optimize it To <br />production ready solution</h3>
+                    <h3 className='wwd_heading1  mt-4'>Share your concept,</h3>
+                    <h3 className=''>we design, <br /> prototype & <br /> optimize it To <br />production ready solution</h3>
                     <p className='mt-5'>We tie up with OEMs and emerging StartUps worldwide as strategic partners to introduce products or optimize industrial products to Aerospace and Defence standards by conceptualizing,designing, qualifying our design by International Codes/ MIL standards and certifying the product after rigorous inspection and performance testing</p>
                     <a href="#" class="btn btn-primary px-5 py-2 mt-4">Contact Us</a>
                 </div>

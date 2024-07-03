@@ -1,0 +1,13 @@
+.recovery_content {
+    position: absolute;
+    top: 120px;
+}
+
+.recovery_content h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+.recovery_para1{
+    border-left: 6px solid #3535DE;
+}
+

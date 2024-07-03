@@ -9,7 +9,7 @@ const FocusArea = () => {
     return (
         <>
             <div className='container mt-5'>
-                <h3 className='focus_heading px-2'>Our Focus Area</h3>
+                <h3 className='focus_heading px-2 fw-bold'>Our Focus Area</h3>
                 <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
                     <div class="col">
                         <div class="card align-items-center border-2 border-primary">

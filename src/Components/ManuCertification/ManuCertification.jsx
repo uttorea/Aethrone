@@ -8,7 +8,7 @@ import manuCertificateImg5 from '../../assets/manuCertificateImg5.png'
 const ManuCertification = () => {
   return (
     <div className='container'>
-      <h3 className='ManuCertifications_heading px-2'>Quality & Manufacturing Certifications</h3>
+      <h3 className='ManuCertifications_heading px-2 fw-bold'>Quality & Manufacturing Certifications</h3>
       <div class="row row-cols-1 row-cols-md-4 g-4 mt-5">
   <div class="col">
     <div class="card border-dark">
@@ -22,7 +22,7 @@ const ManuCertification = () => {
   <div class="col">
     <div class="card border-dark">
       <img src={manuCertificateImg1} class="manuCertificateImg m-3" alt="..."/>
-      <img src={manuCertificateImg3} class=" m-3 " alt="..."/>
+      <img src={manuCertificateImg3} class=" m-3 " alt="..." style={{height:"95px"}}/>
       <div class="card-footer mt-5 border-dark">
         <h6 class="p-3 text-center">Environmental Management Systems</h6>
       </div>

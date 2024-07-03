@@ -16,6 +16,8 @@ import AllBlogs from './Components/AllBlogs/AllBlogs'
 import Composite from './Components/AdvanceComposites/Composite';
 import AdvanceManufacture from './Components/AdvanceManufacturing/AdvanceManufacture';
 import ParachuteRecovery from './Components/ParachuteRecovery/ParachuteRecovery'
+import DeliveryLauncherSystem from './Components/DeliveryLauncherSystem/DeliveryLauncherSystem'
+
 // import service from './Components/'
 // import Footer from './Components/Footer/Footer'
 
@@ -42,6 +44,7 @@ function App() {
           <Route path="/all-blog" element={<AllBlogs />} />
           <Route path="/advance-composites" element={<Composite/>}/>
           <Route path="/advance-manufacturing" element={<AdvanceManufacture/>}/>
+          <Route path='/delivery-launcher-system' element={<DeliveryLauncherSystem/>}/>
           
         </Routes>
       </div>
