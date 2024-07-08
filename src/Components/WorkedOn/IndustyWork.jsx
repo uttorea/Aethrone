@@ -13,7 +13,7 @@ const IndustyWork = () => {
                 <div class="row mt-5 justify-content-center">
                     <div class="col-md-2 work_card">
                         <div class="card border-primary border-2">
-                            <img src={workimg1} className="plaform_img" alt="Card image" />
+                            <img src={workimg1} style={{width:'200px'}} className="plaform_img" alt="Card image" />
                             <div class="work_body1"></div>
                             <div class="work_body2">
                                 <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Rotary Propulsion <br />Composite</h6>
@@ -26,7 +26,7 @@ const IndustyWork = () => {
                     </div>
                     <div class="col-md-2 work_card">
                         <div class="card border-primary border-2">
-                            <img src={workimg2} className="plaform_img" alt="Card image" />
+                            <img src={workimg2} style={{width:'200px'}} className="plaform_img" alt="Card image" />
                             <div class="work_body1"></div>
                             <div class="work_body2">
                                 <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Aero-structures</h6>
@@ -39,7 +39,7 @@ const IndustyWork = () => {
                     </div>
                     <div class="col-md-2 work_card">
                         <div class="card border-primary border-2">
-                            <img src={workimg3} className="plaform_img" alt="Card image" />
+                            <img src={workimg3} style={{width:'200px'}} className="plaform_img" alt="Card image" />
                             <div class="work_body1"></div>
                             <div class="work_body2">
                                 <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Avionics Composite</h6>
@@ -52,7 +52,7 @@ const IndustyWork = () => {
                     </div>
                     <div class="col-md-2 work_card">
                         <div class="card border-primary border-2">
-                            <img src={workimg1} className="plaform_img" alt="Card image" />
+                            <img src={workimg1} style={{width:'200px'}} className="plaform_img" alt="Card image" />
                             <div class="work_body1"></div>
                             <div class="work_body2">
                                 <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Airframes</h6>
