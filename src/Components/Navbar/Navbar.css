@@ -1,74 +1,69 @@
 
-
 .home_bgImg1{
-    width: 100vw;
+  width: 100vw;
 }
 .navbar {
-    border-top: 2px solid #3535DE;
-    z-index: 3;
+  border-top: 2px solid #3535DE;
+  z-index: 3;
 }
 .navbar {
-    background: rgba(255, 255, 255, 0); /* Adjust the transparency */
-    backdrop-filter: blur(10px); /* Adjust the blur radius */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    border-bottom: 1px solid #414042; /* Optional border for better separation */
+  background: rgba(255, 255, 255, 0); /* Adjust the transparency */
+  backdrop-filter: blur(10px); /* Adjust the blur radius */
+  -webkit-backdrop-filter: blur(10px); /* For Safari support */
+  border-bottom: 1px solid #414042; /* Optional border for better separation */
 }
 
 
-.logo_img {
-    height: 80px;
-    width: 50px;
-}
+
 .dropdown-item{
-    
+  
 }
 
 .navbar-nav .nav-item {
-    margin-right: 50px;
-    /* Adds space between navigation links */
+  margin-right: 50px;
+  /* Adds space between navigation links */
 }
 
 .navbar-nav .nav-item:last-child {
-    margin-right: 0;
-    /* Removes the margin from the last item */
+  margin-right: 0;
+  /* Removes the margin from the last item */
 }
 
 .bg-img {
-    position: absolute;
-    top: 0px;
-    right: 0px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
 }
 
 .bg-logo {
-    width: 86px;
-    height: 50px;
+  width: 86px;
+  height: 50px;
 }
 
 
 .half-pentagon {
-    position: relative;
-    width: 260px;
-    height: 80px;
-    clip-path: polygon(15% 0%, 85% 0%, 100% 0%, 70% 100%, 30% 100%, 0% 0%);
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    top: -2px;
+  position: relative;
+  width: 260px;
+  height: 80px;
+  clip-path: polygon(15% 0%, 85% 0%, 100% 0%, 70% 100%, 30% 100%, 0% 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -2px;
 }
 
 .half-pentagon::before {
-    content: '';
-    position: absolute;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
-    clip-path: inherit;
-    /* border: 3px solid blue; */
-    box-sizing: border-box;
+  content: '';
+  position: absolute;
+  width: calc(100% + 10px);
+  height: calc(100% + 10px);
+  clip-path: inherit;
+  /* border: 3px solid blue; */
+  box-sizing: border-box;
 }
 
 .half-pentagon img {
-    max-width: 50%;
-    max-height: 50%;
-    z-index: 1;
+  max-width: 50%;
+  max-height: 50%;
+  z-index: 1;
 }

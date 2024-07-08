@@ -8,6 +8,7 @@ const Navbar = () => {
     const [navBackground, setNavBackground] = useState('');
     const [textColor, setTextColor] = useState('text-light');
     const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
+    const [logoWidth,setLogoWidth] = useState('50px')//Initial logo width
 
     useEffect(() => {
         const handleScroll = () => {
@@ -15,10 +16,12 @@ const Navbar = () => {
                 setNavBackground('bg-white');
                 setTextColor('text-dark');
                 setLogoSrc(changeLogo); // Change the logo when scrolling past 400px
+                setLogoWidth('300px'); //Change the width when scrolling past 400px
             } else {
                 setNavBackground('');
                 setTextColor('text-light');
                 setLogoSrc(logo); // Revert to the original logo
+                setLogoWidth('50px'); //Revert to the original logo
             }
         };
 
@@ -30,7 +33,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`navbar navbar-expand-lg ${navBackground} fixed-top p-0`}>
+        <nav className={`navbar navbar-expand-lg ${navBackground} fixed-top p-0`} style={{height:'100px'}}>
             <div className="container">
                 <div className='gap-5 d-flex'>
                     <Link className={`nav-item nav-link ${textColor} active`} to="/">Home</Link>
@@ -90,9 +93,9 @@ const Navbar = () => {
                     {/* Sidebar-body */}
                     <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
                         <div className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-                            <div className="half-pentagon" style={{ backgroundColor: 'blue' }}>
+                            <div className="half-pentagon" style={{ backgroundColor:navBackground==='bg-white'? '':'blue' }}>
                                 <div className="half-pentagon" style={{ height: '80px', backgroundColor: 'white', width: '250px', marginBottom: '5px' }}>
-                                    <img src={logoSrc} alt="Centered Logo" className='logo_img' />
+                                    <img style={{width:logoWidth}} src={logoSrc} alt="Centered Logo" className='logo_img' />
                                 </div>
                             </div>
                         </div>
