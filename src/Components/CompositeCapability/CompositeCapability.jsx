@@ -67,11 +67,11 @@ const CompositeCapability = () => {
                         <a className="list-group-item-action card-img-top scroll_img" href="#list-item-2">
                         <h3>Capability:</h3>
                             <p>Our advanced composites exhibit exceptional strength-to-weight ratios, ideal for aerospace and automotive applications, ensuring superior performance and durability.</p>
-                            <h3 className='px-4' style={{color:"blue",marginBottom:'400px'}}>Build to<br /> Specification</h3>                        </a>
+                            <h3 className='px-4' style={{color:"blue",marginBottom:'200px'}}>Build to<br /> Specification</h3>                        </a>
                         <a className="list-group-item-action card-img-top scroll_img" href="#list-item-3">
                         <h3>Capability:</h3>
                             <p>Our advanced composites exhibit exceptional strength-to-weight ratios, ideal for aerospace and automotive applications, ensuring superior performance and durability.</p>
-                            <h3 className='px-4' style={{color:"blue",marginBottom:'190px'}}>Build to<br /> Specification</h3>                        </a>
+                            <h3 className='px-4' style={{color:"blue",marginBottom:'390px'}}>Build to<br /> Specification</h3>                        </a>
                         <a className="list-group-item-action card-img-top scroll_img" href="#list-item-4">
                         <h3>Capability:</h3>
                             <p>Our advanced composites exhibit exceptional strength-to-weight ratios, ideal for aerospace and automotive applications, ensuring superior performance and durability.</p>
@@ -80,7 +80,7 @@ const CompositeCapability = () => {
                         <h3>Capability:</h3>
                             <p>Our advanced composites exhibit exceptional strength-to-weight ratios, ideal for aerospace and automotive applications, ensuring superior performance and <durability className="sdf"></durability></p>
                             <h3 className='px-4' style={{color:"blue",marginBottom:'350px'}}>Build to<br /> Specification</h3>                        </a>
-                        <a className="list-group-item-actio card-img-top scroll_img" href="#list-item-6">
+                        <a className="list-group-item-action card-img-top scroll_img" href="#list-item-6">
                         <h3>Capability:</h3>
                             <p>Our advanced composites exhibit exceptional strength-to-weight ratios, ideal for aerospace and automotive applications, ensuring superior performance and durability.</p>
                             <h3 className='px-4' style={{color:"blue",marginBottom:'300px'}}>Build to<br /> Specification</h3>                        </a>
