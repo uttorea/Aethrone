@@ -1,4 +1,5 @@
 import React from 'react';
+import HeadingComponent from '../HeadingComponent/HeadingComponent';
 import './Owlcarousel.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
@@ -12,13 +13,11 @@ import prtimg5 from '../../assets/prtimg5.png';
 function OwlCarouselComponent() {
     return (
         <>
-            <div className='owlcarousel_main container'>
-                <div className=''>
-                    <div className='ptr_head '>
-                        <h3 className='fw-bold m-0 px-2'>Our Partners</h3>
-                    </div>
-                        <small className='px-3'>We have actualized projects with</small>
-                </div>
+            <div className='owlcarousel_main '>
+              
+
+                    <HeadingComponent heading='Our Partners' subheading='We have actualized projects with'/>
+
                 <OwlCarousel
                     className="owl-theme mt-4"
                     items={4}

@@ -1,33 +1,36 @@
 .pro_heading {
-    border-left: 6px solid #3535DE;
-}
-
-.product_head {
+    border-left: 6px solid #3535de;
+  }
+  
+  .product_head {
     position: relative;
     bottom: 200px;
-}
+    width: 80%;
+    margin: auto;
+  }
+  
+  .product_card img {
+    height: 350px;
+    transition: 0.5s;
+  }
+  
+  .product_card:hover .intro {
+    height:240px;
+    background: white;
+    color: #000;
+  }
+  
+  .product_card:hover .card_text {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .product_card:hover .product_img {
+    transform: scale(1.1) rotate(-3deg);
+  }
+  
 
-.product_card1 img {
-    height: 350px;
-    transition: .5s;
-}
-.product_card2 img {
-    height: 350px;
-    transition: .5s;
-}
-.product_card3 img {
-    height: 350px;
-    transition: .5s;
-}
-.product_card4 img {
-    height: 350px;
-    transition: .5s;
-}
-
-.product_card1 :hover {
-    cursor: pointer;
-}
-
+ 
 .intro {
     height: 70px;
     box-sizing: border-box;
@@ -35,70 +38,15 @@
     background: white;
     color: white;
     bottom: 0px;
-    transition: .5s;
-}
+    transition: 0.9s;
+    overflow: hidden;
+  }
+  
 
-.card_text {
+  
+  .card_text {
     visibility: hidden;
     opacity: 0;
-
-}
-
-.product_card1:hover .intro {
-    height: 220px;
-    background: white;
-    color: #000;
-}
-
-.product_card1:hover .card_text {
-    opacity: 1;
-    visibility: visible;
-}
-
-.product_card1:hover .product_img {
-    transform: scale(1.1) rotate(-3deg);
-}
-.product_card2:hover .intro {
-    height: 245px;
-    background: white;
-    color: #000;
-}
-
-.product_card2:hover .card_text {
-    opacity: 1;
-    visibility: visible;
-}
-
-.product_card2:hover .product_img {
-    transform: scale(1.1) rotate(-3deg);
-}
-.product_card3:hover .intro {
-    height: 172px;
-    background: white;
-    color: #000;
-}
-
-.product_card3:hover .card_text {
-    opacity: 1;
-    visibility: visible;
+  }
+ 
   
-}
-
-.product_card3:hover .product_img {
-    transform: scale(1.1) rotate(-3deg);
-}
-
-.product_card4:hover .intro {
-    height: 220px;
-    background: white;
-    color: #000;
-}
-
-.product_card4:hover .card_text {
-    opacity: 1;
-    visibility: visible;
-}
-
-.product_card4:hover .product_img {
-    transform: scale(1.1) rotate(-3deg);
-}

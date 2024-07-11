@@ -1,0 +1,78 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.carousel-container {
+    padding-bottom:60px;
+}
+.carousel-inner{
+    height:300px;
+}
+
+.header-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    padding-top: 80px;
+}
+
+.header-bar {
+    width: 10px;
+    height: 70px;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.header-text {
+    font-size: 48px;
+    font-family: "Poor Richard", serif;
+    line-height: 1.2;
+}
+
+.sub-header-text {
+    font-size: 18.11px;
+}
+
+.carousel {
+    width: 60%;
+    margin: auto;
+    margin-top: 100px;
+    /* height: 60vh; */
+    position: relative;
+}
+
+.carousel-caption {
+    position:absolute;
+    bottom: 5px;
+    top:250px;
+    width: 100%;
+    text-align: center;
+    
+}
+
+.carousel-caption-text {
+   
+    color: #3535DE;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 120px;
+}
+
+.carousel-thumbnails img {
+    width: 100px;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+    border: 2px solid transparent; /* Initially transparent border */
+    border-radius: 5%; /* Make the buttons circular */
+}
+
+.carousel-thumbnails img.active {
+    border-color: blue; /* Blue border for the active indicator */
+}

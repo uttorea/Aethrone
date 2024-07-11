@@ -2,23 +2,18 @@
     position: relative;
 }
 
-
-/* .frtbtn2 {
-    margin-left: 470px;
-    border: 1px solid blue;
-    font-size: 9px;
-    border-radius: 3px;
-
-} */
+ .furtblog{
+    width:80%;
+    margin:auto;
+ }
 .frtbtn1{
     margin-left: 200px;
 }
 .frtbtn2{
-    margin-left: 330px;
+    margin-left: 390px;
+    
 }
-.frt_heading {
-    border-left: 6px solid blue;
-}
+
 
 .frt_heading2 {
     border-left: 3px solid blue;
@@ -30,12 +25,17 @@
 }
 
 .join_team {
-    /* border: 3px solid blue; */
+    
     position: relative;
     top: 100px;
-    background-color: rgb(235, 229, 229);
+    /* background:rgb(205, 209, 209); */
+    border:1px solid  rgb(235, 229, 229);
+   
+
 }
 .blog_btn{
     position: absolute;
     left:0;
+    top:77px;
+   
 }

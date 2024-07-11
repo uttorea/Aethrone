@@ -8,19 +8,20 @@ import carouselimg4 from '../../assets/carouselimg4.png';
 
 function Carousel() {
   return (
-    <div className="body_carousel">
+    <div className="body_carousel"
+    style={{marginTop:'120px'}}>
       <div className=" d-flex justify-content-center ">
         <div className="col-8">
-          <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <div id="carouselExampleIndicators1" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src={carouselimg1} class=" d-block w-100" alt="..." />
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src={carouselimg1} className=" d-block w-100" alt="..." />
                 <div className="csrousel_text text-light ">
                 <h1 className=''>Design & <br/> Development</h1>
                 <h6 className=''>From Concept To Product To certification</h6>
@@ -30,8 +31,8 @@ function Carousel() {
                 </div>
 
               </div>
-              <div class="carousel-item active">
-                <img src={carouselimg2} class=" d-block w-100" alt="..." />
+              <div className="carousel-item active">
+                <img src={carouselimg2} className=" d-block w-100" alt="..." />
                 <div className="csrousel_text text-light ">
                 <h1 className=''>Parachute & <br/> Lighter Then Air Technology</h1>
                 <h6 className=''>Design, Fabrication, And Testing For Parachutes And Airspace</h6>
@@ -40,8 +41,8 @@ function Carousel() {
                 </div>
                 </div>
               </div>
-              <div class="carousel-item active">
-                <img src={carouselimg3} class=" d-block w-100" alt="..." />
+              <div className="carousel-item active">
+                <img src={carouselimg3} className=" d-block w-100" alt="..." />
                 <div className="csrousel_text text-light ">
                 <h1 className=''>Launcher <br/> Systems</h1>
                 <h6 className=''>End-to-End Solution For Launcher Systems</h6>
@@ -50,8 +51,8 @@ function Carousel() {
                 </div>
                 </div>
               </div>
-              <div class="carousel-item active">
-                <img src={carouselimg4} class=" d-block w-100" alt="..." />
+              <div className="carousel-item active">
+                <img src={carouselimg4} className=" d-block w-100" alt="..." />
                 <div className="csrousel_text text-light ">
                 <h1 className=''>Advance <br/> Composites</h1>
                 <h6 className=''>From Concept To Product To Certification </h6>
@@ -61,13 +62,13 @@ function Carousel() {
                 </div>
               </div>
             </div>
-            <button class="carousel-control-prev fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-              <i class="bi bi-arrow-left-circle-fill"  aria-hidden="true"></i>
-              <span class="visually-hidden">Previous</span>
+            <button className="carousel-control-prev fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+              <i className="bi bi-arrow-left-circle-fill"  aria-hidden="true"></i>
+              <span className="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-            <i class="bi bi-arrow-right-circle-fill"  aria-hidden="true"></i>
-            <span class="visually-hidden">Next</span>
+            <button className="carousel-control-next fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+            <i className="bi bi-arrow-right-circle-fill"  aria-hidden="true"></i>
+            <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>

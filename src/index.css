@@ -3,14 +3,26 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* .app-container{
-  background: #0D0E1E;
-  height:1150px;
-} */
+
 
 
 .design_development{
   position: absolute;
   /* top: 400px; */
 
+}
+.maincolor{
+  color:#3535DE;
+}
+.bordermaincolor{
+  border-color:#3535DE;
+}
+.backgroundcolormain{
+  background-color:#3535DE;
+}
+.fontfamilyPrimary{
+  font-family:"poor Richard"
+}
+.fontfamilySecondary{
+  font-family:'Arimo'
 }

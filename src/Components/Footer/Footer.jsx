@@ -5,9 +5,10 @@ import Footerlogo from "../../assets/Footerlogo.png"
 function Footer() {
     return (
         <div className="footer_head">
-            <div class="container">
+            <div className="footermain">
             <div className="main_border">
-                <div className="row" style={{ borderTop: "3px solid #414042", borderBottom: "3px solid #414042" }} >
+                <hr className='w-full'  style={{border:"2px solid #414042", }}/>
+                <div className="row" style={{width:'80%', margin:'auto'}} >
                     <div className="col-lg-3 col-md-6 foot_logo mt-4">
                         <img src={Footerlogo} className="card-img-top" alt="Card Image" />
                         <div className="card-body1 mt-4 text-white ">
@@ -38,28 +39,28 @@ function Footer() {
                         </div>
                     </div>
                 </div>
+                <hr className='w-full'  style={{border:"2px solid #414042", }}/>
             </div>
-                <div class="justify-content-between d-flex" style={{padding:"40px"}}>
-                    <div class="">
+                <div className="justify-content-between d-flex" style={{padding:"20px", width:'80%', margin:'auto'}}>
+                    <div className="">
                         <div className="d-flex align-items-center  ">
                             <div className='social_icon1'>
-                                <i class="bi bi-linkedin"></i>
+                                <i className="bi bi-linkedin"></i>
                             </div>
                             <div className='social_icon2'>
-                                <i class="bi bi-twitter"></i>
+                                <i className="bi bi-twitter"></i>
                             </div>
                         </div>
                     </div>
-                    <div class="">
+                    <div className="">
                         <h6 className='text-light'>© 2015 Aethrone Aerospace. All rights reserved</h6>
                     </div>
                 </div>
         
             </div>
-            {/* <div className="container"> */}
+           
         </div>
-        // </div>
-
+       
 
     )
 }

@@ -1,12 +1,13 @@
 .owlcarousel_main{
     position: relative;
     bottom: 100px;
-}
-.ptr_head{
-    border-left: 6px solid #3535DE;
+    width:80%;
+    margin:auto;
 }
 
+
 .owl_img img{
-    height:250px ;
-    width: 200px!important;
+    height:337.5px ;
+    width: 237.75px;
+    
 }
