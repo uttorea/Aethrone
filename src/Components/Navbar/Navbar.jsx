@@ -8,20 +8,23 @@ const Navbar = () => {
   const [navBackground, setNavBackground] = useState("");
   const [textColor, setTextColor] = useState("text-light");
   const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
-  const [logoWidth, setLogoWidth] = useState("50px"); //Initial logo width
+  const [logoWidth, setLogoWidth] = useState("50px"); // Initial logo width
+  const [borderTop, setBorderTop] = useState("3px solid #3535DE");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 400) {
+      if (window.scrollY > 300) {
         setNavBackground("bg-white");
         setTextColor("text-dark");
-        setLogoSrc(changeLogo); // Change the logo when scrolling past 400px
-        setLogoWidth("300px"); //Change the width when scrolling past 400px
+        setLogoSrc(changeLogo); 
+        setBorderTop("3px solid white"); // Correct value for border-top
+        setLogoWidth("300px"); // Change the width when scrolling past 400px
       } else {
         setNavBackground("");
         setTextColor("text-light");
         setLogoSrc(logo); // Revert to the original logo
-        setLogoWidth("50px"); //Revert to the original logo
+        setLogoWidth("50px"); // Revert to the original logo width
+        setBorderTop("3px solid #3535DE"); // Revert to the original border-top value
       }
     };
 
@@ -35,11 +38,9 @@ const Navbar = () => {
   return (
     <nav
       className={`navbar navbar-expand-lg ${navBackground} fixed-top p-0`}
-      style={{ height: "80px"}}
+      style={{ height: "80px", borderTop: borderTop }}
     >
-      <div className="container p-0"
-      style={{ width:'80%',margin:'auto'} }
-      >
+      <div className="container p-0" style={{ width: '80%', margin: 'auto' }}>
         <div className="gap-5 d-flex">
           <Link className={`nav-item nav-link ${textColor} active`} to="/">
             Home

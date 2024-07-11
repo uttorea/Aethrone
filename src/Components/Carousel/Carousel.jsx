@@ -1,74 +1,84 @@
 import React from 'react'
-// import 'bootstrap/dist/css/bootstrap.min.css.'
 import './Carousel.css'
 import carouselimg1 from '../../assets/carouselimg1.png';
 import carouselimg2 from '../../assets/carouselimg2.png';
 import carouselimg3 from '../../assets/carouselimg3.png';
 import carouselimg4 from '../../assets/carouselimg4.png';
+import next from '../../assets/Vector (1).png';
+import prev from '../../assets/Vector.png'
+
+const carouselData = [
+  {
+    img: carouselimg1,
+    title: "Design &",
+    title1:'Development',
+    subtitle: "From Concept To Product To certification",
+    description: "We Provide Value- added Modal Based Systems Engineering Service from Multi Disciplinary Optimization to prototyping, testing and certification support, qualifying your design by international Codes/ MIL standards."
+  },
+  {
+    img: carouselimg2,
+    title: "Parachute & ",
+    title1:'Lighter Than Air Technology',
+    subtitle: "Design, Fabrication, And Testing For Parachutes And Airspace",
+    description: "Our strategy employs in-house Aerodynamic structural Design, Analysis and Optimization techniques which includes CAD and CFD. We collaborate with the industry partners for rapid prototyping and testing."
+  },
+  {
+    img: carouselimg3,
+    title: "Launcher ",
+    title1:'Systems',
+    subtitle: "End-to-End Solution For Launcher Systems",
+    description: "We Offer custom Off The Shelf launchers for different categories of drones based on configuration from 10kg to 30kg. Our launchers are portable and require low maintenance."
+  },
+  {
+    img: carouselimg4,
+    title: "Advance ",
+    title1:'Composites',
+    subtitle: "From Concept To Product To Certification",
+    description: "We Design, Develop and manufacture rotary-propulsion composites components, critical aero-structure members and sub-systems. We utilize out-of-autoclave methods with tooling capacity of up to 5m in length."
+  }
+];
 
 function Carousel() {
   return (
-    <div className="body_carousel"
-    style={{marginTop:'120px'}}>
-      <div className=" d-flex justify-content-center ">
-        <div className="col-8">
+    <div className="body_carousel mt-5" >
+      <div className="d-flex justify-content-center" >
+        <div className="col-12" >
           <div id="carouselExampleIndicators1" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 3"></button>
+            <div className="carousel-indicators" style={{alignItems:'center', marginLeft:'350px'}}>
+              {carouselData.map((item, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators1"
+                  data-bs-slide-to={index}
+                  className={index === 0 ? 'active' : ''}
+                  aria-current={index === 0 ? 'true' : ''}
+                  aria-label={`Slide ${index + 1}`}
+                ></button>
+              ))}
             </div>
-            <div className="carousel-inner">
-              <div className="carousel-item active">
-                <img src={carouselimg1} className=" d-block w-100" alt="..." />
-                <div className="csrousel_text text-light ">
-                <h1 className=''>Design & <br/> Development</h1>
-                <h6 className=''>From Concept To Product To certification</h6>
-                <div className='w-75 carousel_para p-3 rounded-2'>
-                <p>We Provide Value- added Modal Based Systems Engineering Service from Multi Disciplinary Optimization to prototyping, testing and certification support, qualifing your design by international Codes/ MIL standards.</p>
+            <div className="carousel-inner" style={{width:'944.3px', height: '598.5px' }}>
+              {carouselData.map((item, index) => (
+                <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
+                  <img src={item.img} className="d-block w-100" alt="..." />
+                  <div className="csrousel_text text-light">
+                    <h1>{item.title}</h1>
+                    <h1>{item.title1}</h1>
+                    <h6>{item.subtitle}</h6>
+                    <div className='w-75 carousel_para p-3 rounded-2 mt-5'>
+                      <p>{item.description}</p>
+                    </div>
+                  </div>
                 </div>
-                </div>
-
-              </div>
-              <div className="carousel-item active">
-                <img src={carouselimg2} className=" d-block w-100" alt="..." />
-                <div className="csrousel_text text-light ">
-                <h1 className=''>Parachute & <br/> Lighter Then Air Technology</h1>
-                <h6 className=''>Design, Fabrication, And Testing For Parachutes And Airspace</h6>
-                <div className='w-75 carousel_para p-3 rounded-2'>
-                <p>Our strategy employs in-house Aerodynamic structural Design, Analysis and Optimization techniques which includes CAD and CFD. We collaborate with the industry partners for rapid prototyping and testing </p>
-                </div>
-                </div>
-              </div>
-              <div className="carousel-item active">
-                <img src={carouselimg3} className=" d-block w-100" alt="..." />
-                <div className="csrousel_text text-light ">
-                <h1 className=''>Launcher <br/> Systems</h1>
-                <h6 className=''>End-to-End Solution For Launcher Systems</h6>
-                <div className='w-75 carousel_para p-3 rounded-2'>
-                <p>We Offer custom Off The Shelf launchers for different catecories of drones based on configuration from 10kg to 30kg. Our launchers are portable and require low maintenance.</p>
-                </div>
-                </div>
-              </div>
-              <div className="carousel-item active">
-                <img src={carouselimg4} className=" d-block w-100" alt="..." />
-                <div className="csrousel_text text-light ">
-                <h1 className=''>Advance <br/> Composites</h1>
-                <h6 className=''>From Concept To Product To Certification </h6>
-                <div className='w-75 carousel_para p-3 rounded-2'>
-                <p>We Design, Develope and manufacture rotary-propulsion composites componens, critical aero-structure members and sub-systems. We utilize out-of-autoclave methods with tooling capacity of upto 5m in length.</p>
-                </div>
-                </div>
-              </div>
+              ))}
             </div>
             <button className="carousel-control-prev fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-              <i className="bi bi-arrow-left-circle-fill"  aria-hidden="true"></i>
+              <img src={prev} aria-hidden="true" style={{marginLeft:'130px'}}/>
               <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-            <i className="bi bi-arrow-right-circle-fill"  aria-hidden="true"></i>
-            <span className="visually-hidden">Next</span>
+            <button className="carousel-control-next fs-1 " type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+              <img src={next} style={{marginLeft:'600px'}} aria-hidden="true"/>
+              <span className="visually-hidden">Next</span>
             </button>
           </div>
         </div>

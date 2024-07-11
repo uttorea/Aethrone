@@ -1,16 +1,16 @@
-
 .home_bgImg1{
   width: 100vw;
 }
 .navbar {
-  border-top: 3px solid #3535DE;
+  /* border-top: 3px solid #3535DE; */
   z-index: 3;
 }
+
 .navbar {
-  background: rgba(255, 255, 255, 0); /* Adjust the transparency */
-  backdrop-filter: blur(10px); /* Adjust the blur radius */
-  -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border-bottom: 1px solid #414042; /* Optional border for better separation */
+  background: rgba(255, 255, 255, 0); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border-bottom: 1px solid #414042; 
 }
 
 

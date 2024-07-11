@@ -3,13 +3,24 @@ import "./Plane.css";
 import planeimg1 from "../../assets/planeimg1.png";
 import planeimg2 from "../../assets/planeimg2.png";
 import planeimg3 from "../../assets/planeimg3.png";
+import planeimg4 from "../../assets/planeimg4.png";
+import planeimg5 from "../../assets/planeimg5.png";
+import planeimg6 from "../../assets/planeimg6.png";
+import planeimg7 from "../../assets/planeimg7.png";
+import planeimg8 from "../../assets/planeimg8.png";
+
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 
-// Create an array of image data
+
 const images = [
   { src: planeimg1, alt: "Plane 1", caption: "Light Combat Helicopter" },
-  { src: planeimg2, alt: "Plane 2", caption: "Light Combat Helicopter" },
-  { src: planeimg3, alt: "Plane 3", caption: "Light Combat Helicopter" },
+  { src: planeimg2, alt: "Plane 2", caption: "Light Utility Helicopter" },
+  { src: planeimg3, alt: "Plane 3", caption: "Advance Light Helicopter" },
+  { src: planeimg4, alt: "Plane 4", caption: "Loitering Munition" },
+  { src: planeimg5, alt: "Plane 5", caption: "RUAVs" },
+  { src: planeimg6, alt: "Plane 6", caption: "Cruise Missiles" },
+  { src: planeimg7, alt: "Plane 7", caption: "Target UAV" },
+  { src: planeimg8, alt: "Plane 8", caption: "Advance Air Mobility" },
 ];
 
 function Plane() {
@@ -31,8 +42,7 @@ function Plane() {
        
         <div className="mx-2">
           <HeadingComponent heading="Platform We Work On" subheading="Our Specialty"/>
-          {/* <div className="header-text">Platform We Work On</div>
-          <div className="sub-header-text">Our Specialty</div> */}
+        
         </div>
       </div>
 
@@ -43,16 +53,16 @@ function Plane() {
         data-bs-ride="carousel"
         data-bs-interval="2000"
       >
-        <div className="carousel-inner">
+        <div className="carousel-inner" style={{height:'60vh'}}>
           {images.map((image, index) => (
             <div
               className={`carousel-item ${index === activeIndex ? "active" : ""}`}
               key={index}
             >
-              <img src={image.src} className="w-80" alt={image.alt} />
-              {/* <div className="carousel-caption">
+              <img src={image.src} className="w-80 " alt={image.alt} />
+              <div className="carousel-caption " style={{marginTop:'110px', marginLeft:'-120px'}}>
                 <div className="carousel-caption-text">{image.caption}</div>
-              </div> */}
+              </div>
             </div>
           ))}
         </div>

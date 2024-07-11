@@ -18,8 +18,7 @@ import AdvanceManufacture from './Components/AdvanceManufacturing/AdvanceManufac
 import ParachuteRecovery from './Components/ParachuteRecovery/ParachuteRecovery'
 import DeliveryLauncherSystem from './Components/DeliveryLauncherSystem/DeliveryLauncherSystem'
 
-// import service from './Components/'
-// import Footer from './Components/Footer/Footer'
+
 
 function App() {
   return (
@@ -31,8 +30,6 @@ function App() {
           <Route path="/" element={<>
             <Home />
           </>} />
-
-          {/* <Route path="/career" element={<service />} /> */}
           <Route path="/career" element={<Career />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
@@ -48,7 +45,6 @@ function App() {
           
         </Routes>
       </div>
-      {/* <Footer/> */}
     </BrowserRouter>
     </div>
   );

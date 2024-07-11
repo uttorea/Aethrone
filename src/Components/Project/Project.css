@@ -1,7 +1,32 @@
-.main_project{
+.main_project {
     position: relative;
     top: 100px;
     background-color: #0D0E1E;
-    
-}
-
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .form-control {
+    background-color: transparent;
+    border-bottom: 1px solid;
+    border-radius: 0;
+    color: white;
+  }
+  
+  
+  ::placeholder {
+    color: white;
+    opacity: 1; 
+  }
+  
+  :-ms-input-placeholder {
+    color: white;
+  }
+  
+  ::-ms-input-placeholder {
+    color: white;
+  }
+  

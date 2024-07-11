@@ -3,9 +3,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.carousel-container {
-    padding-bottom:60px;
-}
+
 .carousel-inner{
     height:300px;
 }
@@ -61,12 +59,13 @@ body {
 .carousel-thumbnails {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    padding-top: 120px;
+    gap: 5px;
+    padding-top: 50px;
 }
 
 .carousel-thumbnails img {
-    width: 100px;
+    width: 80px;
+    padding:10px;
     cursor: pointer;
     transition: border-color 0.3s ease-in-out;
     border: 2px solid transparent; /* Initially transparent border */

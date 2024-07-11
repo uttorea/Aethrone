@@ -1,5 +1,6 @@
 import React from "react";
 import "./Project.css";
+
 function Project() {
   return (
     <>
@@ -8,11 +9,11 @@ function Project() {
           <div className="row">
             <div className="col-4 mt-5">
               <div className="card-body1">
-                <h3 className="card-title maincolor  fontfamilySecondary  ">
+                <h3 className="card-title maincolor fontfamilySecondary">
                   Have <br />A Project!
                 </h3>
                 <h3
-                  className="card-title text-white fontfamilySecondary mt-4 fw-bold "
+                  className="card-title text-white fontfamilySecondary mt-4 fw-bold"
                   style={{ fontSize: "48px" }}
                 >
                   Let's <br />
@@ -39,11 +40,11 @@ function Project() {
               <div className="row">
                 <div className="col-sm-6">
                   <div className="">
-                    <label className="form-label text-white" >Name</label>
+                    <label className="form-label text-white">Name</label>
                     <input
                       type="text"
                       className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"
-                      placeholder="Enter your Name" 
+                      placeholder="Enter your Name"
                     />
                   </div>
                 </div>
@@ -51,10 +52,9 @@ function Project() {
                   <div className="">
                     <label className="form-label text-white">Subject</label>
                     <input
-                      type="email"
-                      className="form-control bg-transparent  border-bottom border-0 rounded-0"
-                     
-                      placeholder="your Massege"
+                      type="text"
+                      className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"
+                      placeholder="Your Message"
                     />
                   </div>
                 </div>
@@ -63,23 +63,22 @@ function Project() {
                 <label className="form-label text-white">Email</label>
                 <input
                   type="email"
-                  className="form-control bg-transparent  border-bottom border-0 rounded-0"
-                 
+                  className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"
+                  placeholder="Enter your Email"
                 />
               </div>
               <div className="mt-5">
                 <label className="form-label text-white">Message</label>
                 <textarea
-                  className="form-control p-3 text-white w-100 bg-transparent rounded mt-3 "
+                  className="form-control p-3 text-white w-100 bg-transparent rounded mt-3"
                   id="floatingTextarea2"
-                  placeholder="Write Your Message... "
-                  rows={5} 
-                  cols={50} 
-                  style={{resize:'none'}}
-                  
+                  placeholder="Write Your Message..."
+                  rows={5}
+                  cols={50}
+                  style={{ resize: 'none' }}
                 ></textarea>
               </div>
-              <div className="d-flex justify-content-end  mt-5">
+              <div className="d-flex justify-content-end mt-4">
                 <a className="mb-5 backgroundcolormain px-4 py-2 project_btn text-white text-decoration-none rounded">
                   Send Message
                 </a>
