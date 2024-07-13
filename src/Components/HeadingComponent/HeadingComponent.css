@@ -1,0 +1,27 @@
+/* HeadingComponent.css */
+
+.headingmain{
+    font-size:36px;
+    margin-top:15px;
+    line-height:5px;
+}
+.line{
+height:52px;
+width:10px;
+background-color:#3535DE;
+border-radius:100px;
+}
+.subheadingmain{
+font-size:13.58px;
+}
+
+@media (max-width: 450px) {
+  .headingmain{
+    font-size:26px;
+   
+}
+    .line{
+        height:45px;
+    }
+  }
+  

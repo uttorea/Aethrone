@@ -40,11 +40,11 @@ const carouselData = [
 
 function Carousel() {
   return (
-    <div className="body_carousel mt-5" >
+    <div className="body_carousel" >
       <div className="d-flex justify-content-center" >
-        <div className="col-12" >
+        <div className="col-lg-12" >
           <div id="carouselExampleIndicators1" className="carousel slide" data-bs-ride="carousel">
-            <div className="carousel-indicators" style={{alignItems:'center', marginLeft:'350px'}}>
+            <div className="carousel-indicators indicator" style={{alignItems:'center'}}>
               {carouselData.map((item, index) => (
                 <button
                   key={index}
@@ -57,28 +57,28 @@ function Carousel() {
                 ></button>
               ))}
             </div>
-            <div className="carousel-inner" style={{width:'944.3px', height: '598.5px' }}>
+            <div className="carousel-inner carousaliner" >
               {carouselData.map((item, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                  <img src={item.img} className="d-block w-100" alt="..." />
-                  <div className="csrousel_text text-light">
-                    <h1>{item.title}</h1>
-                    <h1>{item.title1}</h1>
-                    <h6>{item.subtitle}</h6>
-                    <div className='w-75 carousel_para p-3 rounded-2 mt-5'>
-                      <p>{item.description}</p>
+                  <img src={item.img} className="d-block w-100 carouselimg" alt="..." />
+                  <div className="csrousel_text  text-light carausaltext-head">
+                    <h1 className='carausaltext-heading'>{item.title}</h1>
+                    <h1 className='carausaltext-heading'>{item.title1}</h1>
+                    <h6 className='carausaltext-subheading'>{item.subtitle}</h6>
+                    <div className=' carousel_para rounded-2 '>
+                      <p className='description'>{item.description}</p>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
             <button className="carousel-control-prev fs-1" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
-              <img src={prev} aria-hidden="true" style={{marginLeft:'130px'}}/>
-              <span className="visually-hidden">Previous</span>
+              <img src={prev} aria-hidden="true"  className='previ' />
+              {/* <span className="visually-hidden">Previous</span> */}
             </button>
             <button className="carousel-control-next fs-1 " type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
-              <img src={next} style={{marginLeft:'600px'}} aria-hidden="true"/>
-              <span className="visually-hidden">Next</span>
+              <img src={next}  aria-hidden="true" className='next'/>
+              {/* <span className="visually-hidden">Next</span> */}
             </button>
           </div>
         </div>

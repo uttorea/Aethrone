@@ -2,3 +2,30 @@
     font-size:18px;
     font-weight:100;
 }
+@media only screen and (max-width: 450px) {
+    .plane_head{
+        width:100%
+    }
+    .designimg{
+        gap:160px;
+    }
+    .ddimg1{
+        width:50%;
+    }
+    .ddimg2{
+        width:70%;
+    }
+    .dd_heading{
+        font-size:26px;
+    }
+    .disingtext{
+        font-size:14px;
+    }
+    .designbutton{
+        font-size:14px;
+        margin-top:-20px;
+    }
+    .ddimg_heading{
+        font-size:14px;
+    }
+}

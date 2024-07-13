@@ -38,14 +38,14 @@ function Products() {
       <div className="product_head">
         <div className="container">
           <HeadingComponent heading="Products" subheading="What We Offer"/>
-          <div className="row row-cols-1 row-cols-md-4 g-4 mt-4">
+          <div className="row row-cols-2 row-cols-md-4 g-4 mt-4 productimg">
             {productData.map((product) => (
               <div className="col product_card" key={product.id}>
                 <div className="card border-2 bordermaincolor  overflow-hidden">
                   <img src={product.img} alt={product.title} className="product_img" />
                   <div className="intro border-top border-5 border-primary d-flex flex-column"> 
-                    <h6 className="text-center mt-4 maincolor">{product.title}</h6>
-                    <div className="card_text text-center flex-grow-1" style={{fontSize: '16px'}}>
+                    <h6 className="text-center mt-1 mt-lg-4 maincolor producttitle">{product.title}</h6>
+                    <div className="card_text text-center flex-grow-1" >
                       <p>{product.description}</p>
                     </div>
                     <p className="border-top text-center  border-primary border-2 discover-text">

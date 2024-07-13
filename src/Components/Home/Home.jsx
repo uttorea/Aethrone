@@ -18,7 +18,7 @@ const Home = () => {
         <div
           className="container "
           style={{
-            width: "80%",
+            width: "  80%",
             marginRight: "auto",
             marginLeft: "auto",
             padding: "0",
@@ -26,57 +26,75 @@ const Home = () => {
         >
           <div className="carouselitem">
             <div className="home_heading text-white ">
-              <p
-                className="text-white "
-                style={{
-                  fontSize: "75px",
-                  letterSpacing: "5px",
-                  margin: "0",
-                  fontFamily: "poor Richard",
-                }}
-              >
+              <p className="headingtext fontfamilyPrimary">
                 AETHRONE
                 <br />
                 AEROSPACE
               </p>
 
-              <p className="text-light fs-4 " style={{ fontSize: "27px" }}>
-                <span className="mx-3  ">Ingenuity</span>
-                <span className="mx-3">|</span>
-                <span className="mx-3">Dynamism</span>
-                <span className="mx-3">|</span>
-                <span className="mx-3 ">Perfection</span>
+              <p className="text-light ingenuity">
+                <span className=" ingenuityspan">Ingenuity</span>
+                <span className="ingenuityspan">|</span>
+                <span className="ingenuityspan">Dynamism</span>
+                <span className="ingenuityspan">|</span>
+                <span className="ingenuityspan">Perfection</span>
               </p>
 
-                <div className="mt-5 d-flex">
+              <div className="mt-5 d-flex">
                 <div className="col-2"></div>
-              <div className=" col-7 " style={{marginLeft:"130px"}}>
-                <HeadingComponent heading="Who We Are" />
-                <div className="mt-4 p-5 fontfamilySecondary" style={{backgroundColor:'#0E0E0E', }}>
-                  <p className="fontfamilySecondary font-weight-light" style={{fontSize:'18px',letterSpacing: '1px'}}>
-                    We are a deep tech start-up incubated from SIIC-IIT Kanpur
-                  </p>
-                  <p className="fontfamilySecondary font-weight-light" style={{fontSize:'18px',letterSpacing: '1px'}}>
-
-                    We design, develop, manufacture and support critical mission
-                    systems, platforms and components for the Aerospace and
-                    Defence Sector.
-                  </p>
+                <div className="col-sm-12 col-lg-7 whoWeare  " >
+                  <HeadingComponent heading="Who We Are" />
+                  <div
+                    className=" fontfamilySecondary We-are-a-deep"
+                    style={{ backgroundColor: "#0E0E0E" }}
+                  >
+                    <p
+                      className="fontfamilySecondary font-weight-light fontsecondry"
+                      style={{  letterSpacing: "1px" }}
+                    >
+                      We are a deep tech start-up incubated from SIIC-IIT Kanpur
+                    </p>
+                    <p
+                      className="fontfamilySecondary font-weight-light fontsecondry"
+                      style={{ letterSpacing: "1px" }}
+                    >
+                      We design, develop, manufacture and support critical
+                      mission systems, platforms and components for the
+                      Aerospace and Defence Sector.
+                    </p>
+                  </div>
                 </div>
-              </div>
               </div>
             </div>
             <Carousel />
           </div>
         </div>
+
+
       </div>
+      <div>
+          <div>
       <Plane />
+          </div>
+          <div>
       <Design />
+          </div>
+          <div>
       <Products />
+          </div>
+          <div>
       <OwlcarouselComponent />
+          </div>
+          <div>
+
       <Furtblog />
+          </div>
+          <div>
+
       <Project />
+          </div>
       <Footer />
+      </div>
     </div>
   );
 };

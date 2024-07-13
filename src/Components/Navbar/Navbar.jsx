@@ -10,13 +10,15 @@ const Navbar = () => {
   const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
   const [logoWidth, setLogoWidth] = useState("50px"); // Initial logo width
   const [borderTop, setBorderTop] = useState("3px solid #3535DE");
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setNavBackground("bg-white");
         setTextColor("text-dark");
-        setLogoSrc(changeLogo); 
+        setLogoSrc(changeLogo);
         setBorderTop("3px solid white"); // Correct value for border-top
         setLogoWidth("300px"); // Change the width when scrolling past 400px
       } else {
@@ -28,212 +30,155 @@ const Navbar = () => {
       }
     };
 
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 450);
+    };
+
     window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav
-      className={`navbar navbar-expand-lg ${navBackground} fixed-top p-0`}
-      style={{ height: "80px", borderTop: borderTop }}
+      className={`navbar ${navBackground} fixed-top p-0`}
+      style={{ height: "95px", borderTop: borderTop }}
     >
-      <div className="container p-0" style={{ width: '80%', margin: 'auto' }}>
-        <div className="gap-5 d-flex">
-          <Link className={`nav-item nav-link ${textColor} active`} to="/">
-            Home
-          </Link>
-          <div className="nav-item dropdown">
-            <a
-              className={`nav-link dropdown-toggle ${textColor}`}
-              to="/service"
-              id="navbarDropdownMenuLinkService"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Service
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLinkService"
-            >
-              <Link className="dropdown-item" to="/design-development">
-                Design & Development
-              </Link>
-              <Link className="dropdown-item" to="/precision-manufacturing">
-                Precision Manufacturing
-              </Link>
-            </div>
-          </div>
-          <div className="nav-item dropdown">
-            <a
-              className={`nav-link dropdown-toggle ${textColor}`}
-              href="#"
-              id="navbarDropdownMenuLinkProduct"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Product
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLinkProduct"
-            >
-              <Link className="dropdown-item" to="/launch-recovery-delivery">
-                Launch & Recovery/Delivery
-              </Link>
-              <Link className="dropdown-item" to="/parachutes">
-                Parachutes
-              </Link>
-              <Link className="dropdown-item" to="/advance-manufacturing">
-                Advance Manufacturing
-              </Link>
-              <Link className="dropdown-item" to="/advance-composites">
-                Advance Composites
-              </Link>
-            </div>
-          </div>
-        </div>
-        <button
-          className="navbar-toggler shadow-none border-0"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div
-          className="sidebar offcanvas offcanvas-start"
-          tabIndex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
-        >
-          {/* <div className="offcanvas-header">
-            <div className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
-              <div className="gap-5">
-                <Link className="nav-item nav-link active" to="/">
-                  Home
-                </Link>
-                <div className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    to="/service"
-                    id="navbarDropdownMenuLinkService"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Service
-                  </a>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLinkService"
-                  >
-                    <Link className="dropdown-item" to="/design-development">
-                      Design & Development
-                    </Link>
-                    <Link
-                      className="dropdown-item"
-                      to="/precision-manufacturing"
-                    >
-                      Precision Manufacturing
-                    </Link>
-                  </div>
-                </div>
-                <div className="nav-item dropdown">
-                  <a
-                    className="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLinkProduct"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    Product
-                  </a>
-                  <div
-                    className="dropdown-menu"
-                    aria-labelledby="navbarDropdownMenuLinkProduct"
-                  >
-                    <Link
-                      className="dropdown-item"
-                      to="/launch-recovery-delivery"
-                    >
-                      Launch & Recovery/Delivery
-                    </Link>
-                    <Link className="dropdown-item" to="/parachutes">
-                      Parachutes
-                    </Link>
-                    <Link className="dropdown-item" to="/advance-manufacturing">
-                      Advance Manufacturing
-                    </Link>
-                    <Link className="dropdown-item" to="/advance-composites">
-                      Advance Composites
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="container d-flex align-items-center justify-content-between p-0">
+        {isMobile ? (
+          <>
+            <img
+              style={{ width: logoWidth }}
+              src={logoSrc}
+              alt="Logo"
+              className="logo_img"
+            />
             <button
+              className="navbar-toggler"
               type="button"
-              className="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div> */}
-          {/* Sidebar-body */}
-          <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-            <div className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 ">
-              <div
-                className="half-pentagon"
-                style={{
-                  backgroundColor: navBackground === "bg-white" ? "" : "blue",
-                }}
-              >
-                <div
-                  className="half-pentagon"
-                  style={{
-                    height: "80px",
-                    backgroundColor: "white",
-                    width: "250px",
-                    marginBottom: "5px",
-                  }}
+              onClick={toggleMenu}
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>
+          </>
+        ) : (
+          <>
+            <div className="navbar-nav d-flex flex-row align-items-center gap-3 ps-5">
+              <Link className={`nav-item nav-link ${textColor} active`} to="/">
+                Home
+              </Link>
+              <div className="nav-item dropdown">
+                <a
+                  className={`nav-link dropdown-toggle ${textColor}`}
+                  to="/service"
+                  id="navbarDropdownMenuLinkService"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
                 >
-                  <img
-                    style={{ width: logoWidth }}
-                    src={logoSrc}
-                    alt="Centered Logo"
-                    className="logo_img"
-                  />
+                  Service
+                </a>
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLinkService"
+                >
+                  <Link className="dropdown-item" to="/design-development">
+                    Design & Development
+                  </Link>
+                  <Link className="dropdown-item" to="/precision-manufacturing">
+                    Precision Manufacturing
+                  </Link>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <a
+                  className={`nav-link dropdown-toggle ${textColor}`}
+                  href="#"
+                  id="navbarDropdownMenuLinkProduct"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <div
+                  className="dropdown-menu"
+                  aria-labelledby="navbarDropdownMenuLinkProduct"
+                >
+                  <Link className="dropdown-item" to="/launch-recovery-delivery">
+                    Launch & Recovery/Delivery
+                  </Link>
+                  <Link className="dropdown-item" to="/parachutes">
+                    Parachutes
+                  </Link>
+                  <Link className="dropdown-item" to="/advance-manufacturing">
+                    Advance Manufacturing
+                  </Link>
+                  <Link className="dropdown-item" to="/advance-composites">
+                    Advance Composites
+                  </Link>
                 </div>
               </div>
             </div>
-            <div
-              className={`d-flex flex-column flex-lg-row justify-content-center align-items-center pe-3 gap-5 ${textColor}`}
-            >
-              <Link className="nav-item nav-link" to="/career">
+
+            <img
+              style={{ width: logoWidth }}
+              src={logoSrc}
+              alt="Logo"
+              className="logo_img centered-logo"
+            />
+
+            <div className="d-flex flex-row justify-content-end align-items-center gap-5 pe-5">
+              <Link className={`nav-item nav-link ${textColor}`} to="/career">
                 Career
               </Link>
-              <Link className="nav-item nav-link" to="/about-us">
+              <Link className={`nav-item nav-link ${textColor}`} to="/about-us">
                 About Us
               </Link>
-              <Link className="nav-item nav-link" to="/contact-us">
+              <Link
+                className={`nav-item nav-link ${textColor}`}
+                to="/contact-us"
+              >
                 Contact Us
               </Link>
             </div>
+          </>
+        )}
+      </div>
+      {isMobile && isMenuOpen && (
+        <div className="mobile-menu mobail ">
+          <div className="navbar-nav d-flex flex-column align-items-start gap-3 ps-5 ">
+            <Link className={`nav-item nav-link ${textColor}`} to="/">
+              Home
+            </Link>
+            <Link className={`nav-item nav-link ${textColor}`} to="/service">
+              Service
+            </Link>
+            <Link className={`nav-item nav-link ${textColor}`} to="/product">
+              Product
+            </Link>
+            <Link className={`nav-item nav-link ${textColor}`} to="/career">
+              Career
+            </Link>
+            <Link className={`nav-item nav-link ${textColor}`} to="/about-us">
+              About Us
+            </Link>
+            <Link className={`nav-item nav-link ${textColor}`} to="/contact-us">
+              Contact Us
+            </Link>
           </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };

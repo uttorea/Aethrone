@@ -7,14 +7,14 @@ function Project() {
       <div className="main_project ">
         <div className="fomcontainer" style={{ width: "80%", margin: "auto" }}>
           <div className="row">
-            <div className="col-4 mt-5">
+            <div className="col-lg-4 col-12 text-center text-lg-start mt-lg-5 mt-3">
               <div className="card-body1">
-                <h3 className="card-title maincolor fontfamilySecondary">
+                <h3 className="maincolor fontfamilySecondary">
                   Have <br />A Project!
                 </h3>
                 <h3
-                  className="card-title text-white fontfamilySecondary mt-4 fw-bold"
-                  style={{ fontSize: "48px" }}
+                  className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold"
+                  
                 >
                   Let's <br />
                   Discuss
@@ -22,13 +22,8 @@ function Project() {
                   Your Ideas <br />& Solution
                 </h3>
                 <p
-                  className="text-white fontfamilySecondary mt-5"
-                  style={{
-                    fontSize: "18px",
-                    fontWeight: "100",
-                    lineHeight: "37.5px",
-                    paddingRight: "50px",
-                  }}
+                  className="text-white fontfamilySecondary mt-lg-5 mt-2 projecttext"
+                 
                 >
                   Whether you're seeking innovative solutions, collaboration
                   opportunities, or simply have a query, our team is here to
@@ -50,7 +45,7 @@ function Project() {
                 </div>
                 <div className="col-sm-6">
                   <div className="">
-                    <label className="form-label text-white">Subject</label>
+                    <label className="form-label text-white mt-lg-0 mt-5">Subject</label>
                     <input
                       type="text"
                       className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"

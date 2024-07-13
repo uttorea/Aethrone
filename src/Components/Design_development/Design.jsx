@@ -9,6 +9,15 @@ import DDcardImg4 from "../../assets/DDcardImg4.png";
 import DDcardImg5 from "../../assets/DDcardImg5.png";
 import DDcardImg6 from "../../assets/DDcardImg6.png";
 
+const cardData = [
+  { img: DDcardImg1, title: "Computer Aided Designer" },
+  { img: DDcardImg2, title: "Computational Fluid Dynamics" },
+  { img: DDcardImg3, title: "Multi Disciplinary Optimization" },
+  { img: DDcardImg4, title: "Composite Matrix Design" },
+  { img: DDcardImg5, title: "Fluid Structure Interaction" },
+  { img: DDcardImg6, title: "Noise-Vibrations-Harshness" },
+];
+
 function Design() {
   return (
     <>
@@ -18,130 +27,47 @@ function Design() {
           <img src={DD2} alt="" className="ddimg2" />
         </div>
 
-        <div className="container">
-          <div className=" dd_body">
-            <div className="card p-5 text-dark bg-opacity-75 "style={{backgroundColor:'#0D0E1E', width:'90%', margin:'auto'}}>
+        <div className="container container-fluid-sm">
+          <div className="dd_body">
+            <div className="card p-5 text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
               <div className="row">
                 <div className="col-sm-5 px-3">
-                  <h2 className="text-white dd_heading px-2">
-                    Design & Development
-                  </h2>
-                  <small className="text-white">
-                    From concept to product to certification
-                  </small>
+                  <h2 className="text-white dd_heading px-2">Design & Development</h2>
+                  <small className="text-white disingtext">From concept to product to certification</small>
                   <div className="dd_para mt-4">
-                    <p className="text-white">
-                      Our comprehensive design and simulation services include
-                      conceptual design, <br />
-                      feasibility studies, new product development, product
-                      upgrades,
-                      <br /> legacy product maintenance, and smart testing rig
-                      development.{" "}
+                    <p className="text-white disingtext">
+                      Our comprehensive design and simulation services include conceptual design,
+                      <br />
+                      feasibility studies, new product development, product upgrades,
+                      <br />
+                      legacy product maintenance, and smart testing rig development.
                     </p>
-                    <p className="text-white">
-                      We also provide product qualification, integration,
-                      testing, certification, IP transfer, and long-term
-                      support.
+                    <p className="text-white disingtext">
+                      We also provide product qualification, integration, testing, certification, IP transfer, and long-term support.
                     </p>
                   </div>
-                  <a
-                    className=" btn bg-primary text-white border-0 rounded-2 mt-4"
-                    style={{ fontFamily: "arimo" }}
-                  >
-                    Discover Design & Development{" "}
+                  <a className="btn bg-primary text-white border-0 rounded-2 mt-1 mb-4 mt-lg-4 designbutton" style={{ fontFamily: "arimo" }}>
+                    Discover Design & Development
                   </a>
                 </div>
-                <div className="col-sm-7 " >
-                  {/* <img src={DD3} alt="" className='dd_img w-100 h-75'/> */}
-                  <div className="row row-cols-1 row-cols-md-3">
-                    <div className="col">
-                      <div className="card h-100 bg-transparent border-0 w-100">
-                        <img
-                          src={DDcardImg1}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
-                          Computer Aided
-                          <br /> Designer
-                        </h6>
+                <div className="col-sm-7">
+                  <div className="row row-cols-2 row-cols-md-3">
+                    {cardData.map((card, index) => (
+                      <div className="col" key={index}>
+                        <div className="card h-100 bg-transparent border-0 w-100">
+                          <img src={card.img} className="card-img-top" alt={card.title} />
+                          <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
+                            {card.title}
+                          </h6>
+                        </div>
                       </div>
-                    </div>
-                    <div className="col">
-                      <div className="card h-100 bg-transparent border-0 w-100">
-                        <img
-                          src={DDcardImg2}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
-                          Computational Fluid <br />
-                          Dynamics
-                        </h6>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="card h-100 bg-transparent border-0 w-100">
-                        <img
-                          src={DDcardImg3}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
-                          Multi Disciplinary <br />
-                          Optimization
-                        </h6>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="row row-cols-1 row-cols-md-3">
-                    <div className="col">
-                      <div className="card h-100 bg-transparent border-0 w-100">
-                        <img
-                          src={DDcardImg4}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
-                          Composite Matrix <br />
-                          Design
-                        </h6>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="card h-100 bg-transparent border-0 w-100">
-                        <img
-                          src={DDcardImg5}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
-                          Fluid Structure
-                          <br /> Interaction 
-                        </h6>
-                      </div>
-                    </div>
-                    <div className="col">
-                      <div className="card h-100 bg-transparent border-0 w-100">
-                        <img
-                          src={DDcardImg6}
-                          className="card-img-top"
-                          alt="..."
-                        />
-                        <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
-                          Noise-Vibrations-
-                          <br />
-                          Harshness 
-                        </h6>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div></div>
       </div>
     </>
   );

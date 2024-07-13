@@ -1,38 +1,29 @@
-.home_bgImg1{
+/* Navbar.css */
+
+.home_bgImg1 {
   width: 100vw;
 }
+
 .navbar {
-  /* border-top: 3px solid #3535DE; */
   z-index: 3;
-}
-
-.navbar {
-  background: rgba(255, 255, 255, 0); 
+  background: rgba(255, 255, 255, 0);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); 
-  border-bottom: 1px solid #414042; 
-}
-
-
-
-.dropdown-item{
-  
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid #414042;
 }
 
 .navbar-nav .nav-item {
   margin-right: 50px;
-  /* Adds space between navigation links */
 }
 
 .navbar-nav .nav-item:last-child {
   margin-right: 0;
-  /* Removes the margin from the last item */
 }
 
 .bg-img {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 0;
+  right: 0;
 }
 
 .bg-logo {
@@ -40,30 +31,46 @@
   height: 50px;
 }
 
-
-.half-pentagon {
-  position: relative;
-  width: 260px;
-  height: 80px;
-  clip-path: polygon(15% 0%, 85% 0%, 100% 0%, 70% 100%, 30% 100%, 0% 0%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: -2px;
-}
-
-.half-pentagon::before {
-  content: '';
+.centered-logo {
   position: absolute;
-  width: calc(100% + 10px);
-  height: calc(100% + 10px);
-  clip-path: inherit;
-  /* border: 3px solid blue; */
-  box-sizing: border-box;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.half-pentagon img {
-  max-width: 50%;
-  max-height: 50%;
-  z-index: 1;
+@media only screen and (max-width: 450px) {
+  .navbar {
+    width: 100%;
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+  }
+
+  .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #414042;
+    z-index: 2;
+  }
+
+  .mobile-menu .navbar-nav {
+    padding: 10px;
+  }
+
+  .logo_img {
+    position: relative; /* Change to relative for left alignment */
+    left: 0; /* Align to left */
+    width: 60px; /* Adjust width as needed */
+  }
+  .mobail{
+    background-color:red;
+  }
 }

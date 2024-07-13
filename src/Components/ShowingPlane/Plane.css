@@ -75,3 +75,30 @@ body {
 .carousel-thumbnails img.active {
     border-color: blue; /* Blue border for the active indicator */
 }
+.innercarousal{
+    height:60vh;
+}
+@media only screen and (max-width: 450px) {
+    .carousel-thumbnails img {
+        width: 40px;
+        padding:5px;
+        }
+        .carousel-caption {
+            top:40px;   
+        }
+        .carousel-caption-text {
+            margin-left:150px;
+            /* color: #3535DE; */
+            font-size: 14px;
+            /* font-weight: bold; */
+        }
+        .carousel-thumbnails {
+           
+            gap: 0px;
+            
+        }
+        .innercarousal{
+            height:40vh;
+        }
+
+}

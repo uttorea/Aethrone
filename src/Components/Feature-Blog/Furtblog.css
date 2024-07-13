@@ -10,9 +10,16 @@
     margin-left: 200px;
 }
 .frtbtn2{
-    margin-left: 390px;
+    margin-left: 380px;
     
 }
+.furtblogbtn{
+
+    /* marginLeft: 170px; */
+    gap:220px;
+    align-item:center;
+}
+
 
 
 .frt_heading2 {
@@ -28,7 +35,6 @@
     
     position: relative;
     top: 100px;
-    /* background:rgb(205, 209, 209); */
     border:1px solid  rgb(235, 229, 229);
    
 
@@ -38,4 +44,34 @@
     left:0;
     top:77px;
    
+}
+.join-team-heading{
+    font-size:36px;
+}
+.join-team-sub{
+    font-size:18px;
+}
+@media only screen and (max-width: 450px) {
+    .furtblogbtn{        
+        gap:75px;
+    }
+    .furtimg{
+        width:100%;
+    }
+    .furtimg img{
+        width:380px;
+    }
+    .blog_btn{
+        top:70px;
+    }
+    .frtbtn2{
+        margin-left: 100px;
+        
+    }
+    .join-team-heading{
+        font-size:26px;
+    }
+    .join-team-sub{
+        font-size:14px;
+    }
 }

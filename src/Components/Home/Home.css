@@ -1,1 +1,53 @@
+.headingtext{
+   
+    font-size:75px;
+    color:white;
+    margin:0;
+    letter-spacing:5px;
+}
+.ingenuity{
+    font-size:27px;
+}
+.ingenuityspan{
+    margin-left:16px;
+        margin-right:16px
+}
+.whoWeare{
+    margin-left:130px;
+}
+.We-are-a-deep{
+    padding:48px;
+    margin-top:30px;
+}
 
+@media only screen and (max-width: 450px) {
+    .home_page{
+        width:100%;
+    }
+    .home_bgImg1{
+        width:100%;
+    }
+    .homeheading{
+        width:100%;
+    }
+    .headingtext{
+        font-size:40px;
+    }
+    .ingenuity{
+        font-size:18px;
+        
+    }
+    .ingenuityspan{
+        margin-left:5px;
+        margin-right:5px
+    }
+    .whoWeare{
+        margin-left:0px;
+        width:100%;
+        margin-right:20px;
+    }
+    .We-are-a-deep{
+        padding:18px;
+        margin-top:10px;
+    }
+}

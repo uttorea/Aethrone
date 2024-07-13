@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import './HeadingComponent.css'
 
 const HeadingComponent = ({ heading, subheading }) => {
   return (
     <div className=''>
        <div className="row ">
         <div className="col-auto">
-          <div className="" style={{ height: '52.5px', width: '10px', backgroundColor:"#3535DE", borderRadius:'100px'}}></div>
+          <div className=" line"></div>
         </div>
         <div className="col">
-          <h1 className="h3 font-weight-medium" style={{fontSize:'36px', fontFamily:"poor richard", lineHeight:'.5', marginTop:'15px'}}>{heading}</h1>
-          <p className="small font-weight-light" style={{fontSize:'13.58px', fontFamily:'Arimo Hebrew Subset'}}>{subheading}</p>
+          <h1 className="h3 font-weight-medium headingmain fontfamilyPrimary" >{heading}</h1>
+          <p className="small font-weight-light subheadingmain fontfamilySecondary" >{subheading}</p>
         </div>
       </div>
     </div>

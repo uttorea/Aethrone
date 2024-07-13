@@ -11,3 +11,25 @@
     width: 237.75px;
     
 }
+.owlnames{
+font-size:24px;
+line-height:25px;
+}
+/* style={{fontSize:'24px', lineHeight:'25px'}} */
+@media only screen and (max-width: 450px) {
+    .owl_img img{
+        height:107.5px ;
+        width: 137.75px;
+        
+    }
+    .owlcarousel_main{
+       
+        width:90%;
+        bottom: 0px;
+       
+    }
+    .owlnames{
+        font-size:14px;
+        line-height:15px;
+        }
+}

@@ -37,8 +37,8 @@ function OwlCarouselComponent() {
             >
                 {partners.map((partner, index) => (
                     <div key={index} className='owl_img p-3'>
-                        <img src={partner.img} alt="" style={{gap:'200px', height:'250px'}}/>
-                        <p className='fontfamilySecondary text-center mt-4'style={{fontSize:'24px', lineHeight:'25px'}} dangerouslySetInnerHTML={{ __html: partner.text }}></p>
+                        <img src={partner.img} alt="" style={{gap:'200px'}}/>
+                        <p className='fontfamilySecondary text-center mt-4 owlnames' dangerouslySetInnerHTML={{ __html: partner.text }}></p>
                     </div>
                 ))}
             </OwlCarousel>

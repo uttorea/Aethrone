@@ -40,8 +40,8 @@ function Plane() {
     <div className="carousel-container">
       <div className="header-container">
        
-        <div className="mx-2">
-          <HeadingComponent heading="Platform We Work On" subheading="Our Specialty"/>
+        <div className="mx-2 w-100">
+          <HeadingComponent heading="Platform We Work on" subheading="Our Specialty"/>
         
         </div>
       </div>
@@ -53,7 +53,7 @@ function Plane() {
         data-bs-ride="carousel"
         data-bs-interval="2000"
       >
-        <div className="carousel-inner" style={{height:'60vh'}}>
+        <div className="carousel-inner innercarousal" >
           {images.map((image, index) => (
             <div
               className={`carousel-item ${index === activeIndex ? "active" : ""}`}

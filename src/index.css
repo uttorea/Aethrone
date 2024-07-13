@@ -26,3 +26,26 @@
 .fontfamilySecondary{
   font-family:'Arimo'
 }
+.fontsecondry{
+font-size:18px;
+}
+.carousaliner{
+  width:944.3px;
+  height:598.5px;
+}
+.indicator{
+  margin-left:350px;
+}
+@media only screen and (max-width: 450px) {
+  .fontsecondry{
+    font-size:14px;
+    }
+    .carousaliner{
+      width:360px;
+      height:auto;
+    }
+    .indicator{
+     
+      margin-left:100px;
+    }
+}

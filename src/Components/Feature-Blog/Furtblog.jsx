@@ -10,7 +10,7 @@ import frtimg4 from "../../assets/frtimg4.png";
 import frtimg5 from "../../assets/frtimg5.png";
 
 function Furtblog() {
-  // Define an array of blog items
+
   const blogItems = [
     {
       imgSrc: frtimg1,
@@ -47,21 +47,16 @@ function Furtblog() {
         <div className="feature_head">
           <div className="row">
             <div className="col-sm-6">
-              <div className="d-flex">
+              <div className="d-flex furtblogbtn">
                 <HeadingComponent heading="Featured Blogs" />
                 <a
-                  className="btn bordermaincolor"
-                  style={{
-                    height: "40px",
-                    width: "120px",
-                    marginLeft: "170px",
-                    
-                  }}
+                  className="btn bordermaincolor mt-2"
+                  
                 >
                   ALL BLOG <i className="bi bi-arrow-right-short"></i>
                 </a>
               </div>
-              <div className="mt-4 col-sm-6">
+              <div className="mt-4 col-lg-6 furtimg ">
                 <img src={blogItems[0].imgSrc} alt="" />
                 <Link
                   className="btn blog_btn px-3 backgroundcolormain"
@@ -81,8 +76,8 @@ function Furtblog() {
               </div>
             </div>
 
-            <div className="col-sm-6">
-              <div className="d-flex">
+            <div className="col-lg-6 col-12">
+              <div className="d-flex mt-lg-0 mt-4">
                 <h3 className="fw-bold px-1">News</h3>
                 <a className="btn frtbtn2 bordermaincolor" >
                   MORE NEWS <i className="bi bi-arrow-right-short"></i>
@@ -112,13 +107,13 @@ function Furtblog() {
           </div>
         </div>
       </div>
-      <div className="join_team p-5">
-        <div className="d-flex justify-content-center">
-          <h6 className="maincolor fontfamilyPrimary" style={{fontSize:'36px'}} >Join The Team</h6>
-          <div className="px-4 fw-bold fontfamilySecondary mt-3" style={{fontSize:'18px'}} >
+      <div className="join_team p-3">
+        <div className="d-flex d-lg-flex justify-content-center">
+          <p className="px-3 fw-bold fontfamilySecondary mt-2 join-team-sub" >
+          <span className="maincolor fontfamilyPrimary join-team-heading pe-2">Join The Team</span>
             Interested in an exciting opportunity to design and build future air
             solutions? <a className="maincolor">View open roles</a>
-          </div>
+          </p>
         </div>
       </div>
     </>

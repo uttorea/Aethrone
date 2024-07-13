@@ -48,5 +48,31 @@
     visibility: hidden;
     opacity: 0;
   }
+  .card_text{
+    font-size:16px;
+  }
+  @media only screen and (max-width: 450px) {
+    .product_card img {
+      height: 220px;
+      
+    }
+    .intro {
+      height: 40px;
+     
+    }
+    
+    .product_card:hover .intro {
+      height:180px;
+      
+    }
+
+    .producttitle{
+      font-size:14px;
+    }
+    .card_text{
+      font-size:12px;
+      line-height:12px;
+    }
+  }
  
   
