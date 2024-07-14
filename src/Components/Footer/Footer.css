@@ -1,3 +1,4 @@
+
 .footermaincontaint{
     width:80%;
     margin-left: auto;
@@ -75,12 +76,12 @@
         
     }
     .card-body2 p{
-        font-size:8px;
+        font-size:7px;
         line-height:1px;
         
     }
     .card-body3 p{
-        font-size:8px;
+        font-size:7px;
         line-height:15px;
     }
     .row{
@@ -91,20 +92,20 @@
         padding: 10px;   
     }
     .emailtext{
-        font-size:8px;
+        font-size:7px;
     }
     .card-body4{
-        font-size:8px;
+        font-size:7px;
         line-height:10px;
     }
     .headingfooter{
-        font-size:16px;
+        font-size:14px;
     }
     .lastfooter{
         width:100%;
     }
     .lastfooter2{
-        font-size:14px;
+        font-size:10px;
         margin-left:30px;
     }
 }

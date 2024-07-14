@@ -2,9 +2,13 @@
     font-size:18px;
     font-weight:100;
 }
+.design_head{
+    padding-top:50px;
+}
 @media only screen and (max-width: 450px) {
-    .plane_head{
-        width:100%
+    .design_head{
+        width:100%;
+
     }
     .designimg{
         gap:160px;

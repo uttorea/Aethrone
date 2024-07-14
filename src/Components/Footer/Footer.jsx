@@ -10,8 +10,8 @@ function Footer() {
                 <div className="main_border">
                     <hr className='w-full' style={{ border: "2px solid #414042" }} />
                     <div className='footermaincontaint'>
-                        <div className="row">
-                            <div className="col-lg-3 col-md-6 col-3 foot_logo mt-4">
+                        <div className="row " >
+                            <div className="col-lg-3 col-md-6 col-3 foot_logo mt-4 ">
                                 <img src={Footerlogo} className="card-img-top" alt="Card Image" />
                                 <div className="card-body2 mt-4 text-white">
                                     <p>+91 721 928 6003</p>

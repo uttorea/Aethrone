@@ -21,13 +21,13 @@ const cardData = [
 function Design() {
   return (
     <>
-      <div className="plane_head">
+      <div className="design_head">
         <div className="designimg d-flex">
           <img src={DD1} alt="" className="ddimg1" />
           <img src={DD2} alt="" className="ddimg2" />
         </div>
 
-        <div className="container container-fluid-sm">
+        <div className="container-lg container-fluid">
           <div className="dd_body">
             <div className="card p-5 text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
               <div className="row">
@@ -54,7 +54,7 @@ function Design() {
                   <div className="row row-cols-2 row-cols-md-3">
                     {cardData.map((card, index) => (
                       <div className="col" key={index}>
-                        <div className="card h-100 bg-transparent border-0 w-100">
+                        <div className="card  bg-transparent border-0 w-100">
                           <img src={card.img} className="card-img-top" alt={card.title} />
                           <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
                             {card.title}

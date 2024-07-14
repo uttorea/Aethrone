@@ -100,5 +100,10 @@ body {
         .innercarousal{
             height:40vh;
         }
+        .header-container {
+           
+            padding-top:20px;
+            
+        }
 
 }

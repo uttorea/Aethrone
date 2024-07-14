@@ -26,7 +26,7 @@ const Home = () => {
         >
           <div className="carouselitem">
             <div className="home_heading text-white ">
-              <p className="headingtext fontfamilyPrimary">
+              <p className="headingtext fontfamilyPrimary  mt-4">
                 AETHRONE
                 <br />
                 AEROSPACE
@@ -77,7 +77,7 @@ const Home = () => {
       <Plane />
           </div>
           <div>
-      <Design />
+      <Design  />
           </div>
           <div>
       <Products />

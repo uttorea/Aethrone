@@ -52,21 +52,21 @@ const Navbar = () => {
       className={`navbar ${navBackground} fixed-top p-0`}
       style={{ height: "95px", borderTop: borderTop }}
     >
-      <div className="container d-flex align-items-center justify-content-between p-0">
+      <div className="container d-flex align-items-center justify-content-between p-0 pe-3">
         {isMobile ? (
           <>
             <img
               style={{ width: logoWidth }}
               src={logoSrc}
               alt="Logo"
-              className="logo_img"
+              className="logo_img ps-3"
             />
             <button
-              className="navbar-toggler"
+              className="navbar-toggler "
               type="button"
               onClick={toggleMenu}
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon "></span>
             </button>
           </>
         ) : (

@@ -20,16 +20,18 @@
     margin-top:30px;
 }
 
+
 @media only screen and (max-width: 450px) {
     .home_page{
         width:100%;
+        height:855px;
     }
     .home_bgImg1{
         width:100%;
     }
-    .homeheading{
+    /* .home_heading{
         width:100%;
-    }
+    } */
     .headingtext{
         font-size:40px;
     }
