@@ -1,6 +1,5 @@
 
 .contact_bgimg{
-    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
@@ -9,7 +8,7 @@
     background-position: center;
     z-index: -1;
 }
-.location1{
+/* .location1{
     position: relative;
     top: 120px;
     left: 700px;
@@ -40,7 +39,7 @@
     top:200px ;
     font-size:30px;
     color: #3535DE;
-}
+} */
 
 .contact_overlay{
     position: absolute;
@@ -48,9 +47,6 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
     z-index: 1;
     color: white;
 }
@@ -58,4 +54,14 @@
 .contact_heading{
     font-size: 80px;
     letter-spacing: 8px;
+}
+@media only screen and (max-width:425px){
+    .contact_heading{
+        font-size: 40px;
+        /* letter-spacing: 8px; */
+    }   
+    .contact_bgimg{
+        
+        height:50vh;
+    }
 }

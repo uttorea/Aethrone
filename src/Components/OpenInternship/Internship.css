@@ -3,3 +3,8 @@
 .intern_heading{
     border-left: 6px solid #3535DE;
 }
+@media only screen and (max-width:425px){
+    .card img{
+        width:100%;
+    }
+}

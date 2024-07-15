@@ -62,11 +62,11 @@ const Navbar = () => {
               className="logo_img ps-3"
             />
             <button
-              className="navbar-toggler "
+              className="navbar-toggler"
               type="button"
               onClick={toggleMenu}
             >
-              <span className="navbar-toggler-icon "></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
           </>
         ) : (
@@ -76,7 +76,7 @@ const Navbar = () => {
                 Home
               </Link>
               <div className="nav-item dropdown">
-                <a
+                <Link
                   className={`nav-link dropdown-toggle ${textColor}`}
                   to="/service"
                   id="navbarDropdownMenuLinkService"
@@ -86,7 +86,7 @@ const Navbar = () => {
                   aria-expanded="false"
                 >
                   Service
-                </a>
+                </Link>
                 <div
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLinkService"
@@ -100,9 +100,9 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="nav-item dropdown">
-                <a
+                <Link
                   className={`nav-link dropdown-toggle ${textColor}`}
-                  href="#"
+                  to="#"
                   id="navbarDropdownMenuLinkProduct"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -110,7 +110,7 @@ const Navbar = () => {
                   aria-expanded="false"
                 >
                   Product
-                </a>
+                </Link>
                 <div
                   className="dropdown-menu"
                   aria-labelledby="navbarDropdownMenuLinkProduct"
@@ -156,8 +156,8 @@ const Navbar = () => {
         )}
       </div>
       {isMobile && isMenuOpen && (
-        <div className="mobile-menu mobail ">
-          <div className="navbar-nav d-flex flex-column align-items-start gap-3 ps-5 ">
+        <div className="mobile-menu mobail">
+          <div className="navbar-nav d-flex flex-column align-items-start gap-3 ps-5">
             <Link className={`nav-item nav-link ${textColor}`} to="/">
               Home
             </Link>

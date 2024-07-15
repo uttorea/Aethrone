@@ -1,6 +1,12 @@
-.touch_page{
-   
+.titlecontact{
+    font-size:14.25px;
 }
+.subaddrescontact{
+    font-size:12px;
+    
+}
+
+
 .touch_heading{
     border-left: 6px solid #3535DE;
 }
@@ -23,4 +29,18 @@
 .form-label{
     font-size: 20px;
     color: #3535DE;
+}
+.hrliness{
+    width:5px;
+    height:85%;
+    background-color:lightgray;
+    border:2px solid lightgray;
+}
+@media only screen and(max-width:425px){
+    .touch_page{
+        width:100%;
+    }
+    
+    
+    
 }

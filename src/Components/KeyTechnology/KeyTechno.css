@@ -1,6 +1,4 @@
 .keyTechno_page{
-    /* position: relative; */
-    /* border-top: 8px solid #3535DE; */
     background-color: #fff;
 }
 
@@ -13,12 +11,35 @@
 }
 
 .card-img {
-    /* padding: 10px; Adjust the padding as needed */
+    
     width: 100%;
     height: auto;
 }
 
 .custom-card {
-    max-width: 150px; /* Adjust the max-width to decrease card width */
+    max-width: 150px; 
     margin: 0 auto;
 }
+.card-footer {
+    display: flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    height: 60px;
+}
+@media only screen and (max-width:425px){
+    .card-footer {        
+        height: 60px;
+        font-size:12px;
+    }
+    .card-body{
+        height:100px;
+        margin:0;
+        padding:0;
+    }
+    
+    
+   
+}
+
