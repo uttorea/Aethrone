@@ -56,15 +56,14 @@
     .product_head {
       position: relative;
       bottom: 100px;
-      width: 90%;
+      width: 100%;
       margin: auto;
       margin-top:-100px;
+      padding-left:10px;
       
     }
     .product_card img {
-      height: 240px;
-      
-      
+      height: 200px;
     }
     .intro {
       height: 40px;
@@ -72,16 +71,20 @@
     }
     
     .product_card:hover .intro {
-      height:180px;
+      height:140px;
       
     }
 
     .producttitle{
-      font-size:14px;
+      font-size:12px;
     }
     .card_text{
+      font-size:8px;
+      line-height:10px;
+    }
+    .discover-text{
       font-size:12px;
-      line-height:12px;
+     
     }
   }
  

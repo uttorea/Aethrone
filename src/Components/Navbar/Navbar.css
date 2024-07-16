@@ -3,6 +3,10 @@
 .home_bgImg1 {
   width: 100vw;
 }
+.navbarmain{
+  height:85px;
+
+}
 
 .navbar {
   z-index: 3;
@@ -40,6 +44,10 @@
 @media only screen and (max-width: 450px) {
   .navbar {
     width: 100%;
+  }
+  .navbarmain{
+    height:54px;
+  
   }
 
   .navbar-toggler {

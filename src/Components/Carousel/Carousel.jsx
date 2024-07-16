@@ -43,7 +43,7 @@ function Carousel() {
     <div className="body_carousel" >
       <div className="d-flex justify-content-center" >
         <div className="col-lg-12" >
-          <div id="carouselExampleIndicators1" className="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators1" className="carousel slide " data-bs-ride="carousel">
             <div className="carousel-indicators indicator" style={{alignItems:'center'}}>
               {carouselData.map((item, index) => (
                 <button
@@ -64,9 +64,9 @@ function Carousel() {
                   <div className="csrousel_text  text-light carausaltext-head">
                     <h1 className='carausaltext-heading'>{item.title}</h1>
                     <h1 className='carausaltext-heading'>{item.title1}</h1>
-                    <h6 className='carausaltext-subheading'>{item.subtitle}</h6>
+                    <h6 className='carausaltext-subheading '>{item.subtitle}</h6>
                     <div className=' carousel_para rounded-2 '>
-                      <p className='description'>{item.description}</p>
+                      <p className='description mb-0 fontfamilySecondary'>{item.description}</p>
                     </div>
                   </div>
                 </div>

@@ -44,8 +44,8 @@ function Furtblog() {
 
   return (
     <>
-      <div className="furtblog">
-        <div className="feature_head">
+      <div className="furtblog container-fluid container-md">
+        <div className="feature_head ">
           <div className="row">
             <div className="col-sm-6">
               <div className="d-flex col-12 furtblogbtn">
@@ -68,7 +68,7 @@ function Furtblog() {
                 </Link>
               </div>
 
-              <div className="frt_heading2 mt-4 px-2">
+              <div className="frt_heading2 mt-4 px-md-2 px-0 ">
                 <h4 className="maincolor">{blogItems[0].heading}</h4>
                 {blogItems[0].subheading && (
                   <h6 className="maincolor">{blogItems[0].subheading}</h6>
@@ -77,27 +77,27 @@ function Furtblog() {
               </div>
             </div>
 
-            <div className="col-lg-6 col-12">
-              <div className="d-flex mt-lg-0 mt-4">
+            <div className="col-lg-6 col-12 container-fluid px-md-3 px-0">
+              <div className="d-flex mt-lg-0 mt-4 justify-content-between">
                 <h3 className="fw-bold px-1">News</h3>
-                <a className="btn frtbtn2 bordermaincolor">
+                <a className="btn frtbtn21 bordermaincolor">
                   MORE NEWS <i className="bi bi-arrow-right-short"></i>
                 </a>
               </div>
 
-              <div className="mt-4 p-lg-0 ps-4 furtcards">
-                <div className="row row-cols-1 row-cols-md-2 g-4 ">
+              <div className="mt-4 p-lg-0 ps-0 ps-md-4 furtcards">
+                <div className="row row-cols-4 row-cols-md-2 g-4  ms-2">
                   {blogItems.slice(1).map((item, index) => (
-                    <div className="col" key={index}>
+                    <div className="col px-md-3 p-1 " key={index}>
                       <img
                         src={item.imgSrc}
-                        className="card-img-top rounded-2"
+                        className="card-img-top rounded-2 "
                         alt="..."
-                        style={{ height: "170px" }}
+                    
                       />
-                      <div className="frt_txt mt-2 px-2">
+                      <div className="frt_txt mt-2 px-md-2 px-1">
                         <h6 className="card-text maincolor">{item.heading}</h6>
-                        <h6>{item.date}</h6>
+                        <h6 className="card-text1">{item.date}</h6>
                       </div>
                     </div>
                   ))}
@@ -108,11 +108,11 @@ function Furtblog() {
         </div>
       </div>
       <div className="join_team p-3">
-        <div className="d-flex d-lg-flex justify-content-center">
-          <p className="px-3 fw-bold fontfamilySecondary mt-2 join-team-sub">
-            <span className="maincolor fontfamilyPrimary join-team-heading pe-2">
+        <div className="d-block d-lg-flex justify-content-center">
+            <div className="maincolor fontfamilyPrimary join-team-heading pe-2 text-center ">
               Join The Team
-            </span>
+            </div>
+          <p className="px-3 fw-bold fontfamilySecondary mt-lg-3 mt-0 join-team-sub">
             Interested in an exciting opportunity to design and build future air
             solutions? <a className="maincolor">View open roles</a>
           </p>

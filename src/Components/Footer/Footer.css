@@ -70,18 +70,19 @@
 
 @media only screen and (max-width:450px){
     .footermaincontaint{
-        width:100%;
+        width:90%;
         margin-left: auto;
         margin-right: auto;
         
     }
-    .card-body2 p{
-        font-size:7px;
-        line-height:1px;
+    .card-body2 li{
+        font-size:12px;
+        line-height:20px;
+        padding:0px
         
     }
     .card-body3 p{
-        font-size:7px;
+        font-size:12px;
         line-height:15px;
     }
     .row{
@@ -92,21 +93,28 @@
         padding: 10px;   
     }
     .emailtext{
-        font-size:7px;
+        font-size:12px;
     }
     .card-body4{
-        font-size:7px;
+        font-size:12px;
         line-height:10px;
     }
     .headingfooter{
-        font-size:14px;
+        font-size:18px;
     }
     .lastfooter{
         width:100%;
     }
     .lastfooter2{
-        font-size:10px;
+        font-size:12px;
         margin-left:30px;
     }
+    .number1,.number2{
+line-height:10px;
+font-size:12px;
+margin:10px;
+
+    }
+   
 }
 

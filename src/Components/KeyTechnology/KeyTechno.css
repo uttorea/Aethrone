@@ -16,10 +16,7 @@
     height: auto;
 }
 
-.custom-card {
-    max-width: 150px; 
-    margin: 0 auto;
-}
+
 .card-footer {
     display: flex;
     width:100%;

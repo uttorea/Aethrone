@@ -59,7 +59,7 @@ function Plane() {
               className={`carousel-item ${index === activeIndex ? "active" : ""}`}
               key={index}
             >
-              <img src={image.src} className="w-80 " alt={image.alt} />
+              <img src={image.src} className="w-md-80 w-100 " alt={image.alt} />
               <div className="carousel-caption " style={{marginTop:'110px', marginLeft:'-120px'}}>
                 <div className="carousel-caption-text">{image.caption}</div>
               </div>

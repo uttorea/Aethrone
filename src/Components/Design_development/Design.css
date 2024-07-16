@@ -5,6 +5,7 @@
 .design_head{
     padding-top:50px;
 }
+
 @media only screen and (max-width: 450px) {
     .design_head{
         width:100%;
@@ -23,13 +24,15 @@
         font-size:26px;
     }
     .disingtext{
-        font-size:14px;
+        font-size:12px;
     }
     .designbutton{
         font-size:14px;
         margin-top:-20px;
     }
     .ddimg_heading{
-        font-size:14px;
+        font-size:12px;
+     
     }
+   
 }

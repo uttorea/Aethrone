@@ -5,22 +5,30 @@ function Project() {
   return (
     <>
       <div className="main_project ">
-        <div className="fomcontainer" style={{ width: "80%", margin: "auto" }}>
+        <div className="fomcontainer" >
           <div className="row">
-            <div className="col-lg-4 col-12 text-center text-lg-start mt-lg-5 mt-3">
-              <div className="card-body1">
+            <div className="col-lg-4 col-12  text-lg-start mt-lg-5 mt-3">
+              <div className="card-body1 ">
+                <div className="d-flex d-md-block">
+
                 <h3 className="maincolor fontfamilySecondary">
-                  Have <br />A Project!
+                  Have 
                 </h3>
-                <h3
-                  className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold"
-                  
-                >
-                  Let's <br />
-                  Discuss
-                  <br />
-                  Your Ideas <br />& Solution
-                </h3>
+                <h3 className="maincolor fontfamilySecondary ms-1 ms-md-0"> A Project!</h3>
+                </div>
+                <div className="">
+                  <div className="d-flex d-md-block">
+                <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold" >
+                  Let's 
+                  </h3>
+                  <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold ms-1 ms-md-0">Discuss</h3>
+                  </div>
+                  <div className="d-flex d-md-block">
+                  <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold">Your Ideas</h3>
+                   <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold ms-1 ms-md-0">& Solution</h3>
+                   </div>
+                   </div>
+                
                 <p
                   className="text-white fontfamilySecondary mt-lg-5 mt-2 projecttext"
                  
@@ -31,8 +39,8 @@ function Project() {
                 </p>
               </div>
             </div>
-            <div className="col-sm-8 mt-5">
-              <div className="row">
+            <div className="col-md-8 col-12 mt-5">
+              <div className="row row-cols-2">
                 <div className="col-sm-6">
                   <div className="">
                     <label className="form-label text-white">Name</label>
@@ -43,9 +51,9 @@ function Project() {
                     />
                   </div>
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-6 px-md-3 px-0">
                   <div className="">
-                    <label className="form-label text-white mt-lg-0 mt-5">Subject</label>
+                    <label className="form-label text-white ">Subject</label>
                     <input
                       type="text"
                       className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"

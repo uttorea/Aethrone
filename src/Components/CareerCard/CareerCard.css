@@ -16,3 +16,11 @@
     align-items: center;
     justify-content: center;
 }
+.careerpara{
+    font-size:18px;
+}
+@media only screen and (max-width:425px){
+    .careerpara{
+        font-size:12px;
+    }
+}

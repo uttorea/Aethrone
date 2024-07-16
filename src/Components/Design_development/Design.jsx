@@ -29,7 +29,7 @@ function Design() {
 
         <div className="container-lg container-fluid">
           <div className="dd_body">
-            <div className="card p-5 text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
+            <div className="card p-md-5 p-1 pt-3  text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
               <div className="row">
                 <div className="col-sm-5 px-3">
                   <h2 className="text-white dd_heading px-2">Design & Development</h2>
@@ -51,11 +51,11 @@ function Design() {
                   </a>
                 </div>
                 <div className="col-sm-7">
-                  <div className="row row-cols-2 row-cols-md-3">
+                  <div className="row row-cols-3 row-cols-md-3 ms-1 ms-md-0 ">
                     {cardData.map((card, index) => (
-                      <div className="col" key={index}>
-                        <div className="card  bg-transparent border-0 w-100">
-                          <img src={card.img} className="card-img-top" alt={card.title} />
+                      <div className="col p-md-3 p-1 " key={index}>
+                        <div className=" bg-transparent border-0 w-100  cardheight">
+                          <img src={card.img} className="card-img-top  " alt={card.title} />
                           <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
                             {card.title}
                           </h6>

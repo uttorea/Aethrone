@@ -6,13 +6,7 @@
     width:80%;
     margin:auto;
  }
-.frtbtn1{
-    margin-left: 200px;
-}
-.frtbtn2{
-    margin-left: 380px;
-    
-}
+
 .furtblogbtn{        
     gap:65px;
 }
@@ -47,6 +41,9 @@
 .join-team-sub{
     font-size:18px;
 }
+.card-img-top{
+    height:170px;
+}
 @media only screen and (max-width: 450px) {
     .furtblog{
         width:90%;
@@ -69,13 +66,14 @@
         width:100%;
     }
     .furtimg img{
-        width:350px;
+        width:360px;
     }
     .blog_btn{
         top:70px;
     }
-    .frtbtn2{
-        margin-left: 120px;
+    .frtbtn21{
+        margin-left: 200px;
+        font-size:12px;
         
     }
     .join-team-heading{
@@ -83,5 +81,14 @@
     }
     .join-team-sub{
         font-size:14px;
+    }
+    .card-img-top{
+        height:120px;
+    }
+    .card-text {
+        font-size:12px;
+    }
+    .card-text1 {
+        font-size:8px;
     }
 }

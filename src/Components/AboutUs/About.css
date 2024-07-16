@@ -40,6 +40,23 @@
 @media only screen and (max-width:425px){
   .aboutHead_para{
     width:100%;
+    font-size:12px;
     font-weight: 100;
   }
+  .aboutbg_img {
+   
+    height: 85vh;
+   
+  }
+  .about_overlay{
+   
+    height: 60%;
+   
+  }
+  .about-container{
+   
+    height: 80vh;
+    
+}
+ 
 }

@@ -1,12 +1,7 @@
 .body_carousel{
     margin-top:40px;
 }
-.innercards{
 
-}
-.carousel-item img{
-
-}
 .previ{
     margin-left:130px
 }
@@ -28,7 +23,11 @@
     }
    .carousel-item img {
         width: 100%;
+        width:360px;
         
+      }
+      .carouselimg{
+        height:229px;
       }
       .carousaliner{
         margin-top:-170px;
@@ -36,38 +35,41 @@
       }
       .carausaltext-head{
         margin-top:-60px;
-        margin-left:-30px;
-        line-heading:10px;
+        margin-left:-40px;
+        
       }
       .carausaltext-heading{
         font-size:26px;
-        line-heading:10px;
         padding:0px;
-        line-height:15px;
+        line-height:20px;
         
       }
       .carausaltext-subheading{
         font-size:12px;
       }
-      .caraouselpara{
-        margin-top:-200px;
-      }
+      
       .previ{
-        margin-top:-60px;
+        margin-top:-30px;
         margin-left:20px;
         width:20px;
       }
       .next{
         margin-left:280px;
         width:20px;
-        margin-top:-60px;
+        margin-top:-30px;
     }
       .carousel_para{
         width:100%;
         padding:10px;
-        margin-top:-135px;
+        margin-top:-115px;
         margin-left:-120px;
         font-size:12px;
     }
+    .description{
+      line-height:15px;
+      font-weight:100;
+      
+    }
+    
       
 }

@@ -17,22 +17,17 @@ const Home = () => {
         <img src={homeBgImg} alt="" className="home_bgImg1 w-100  " />
         <div
           className="container "
-          style={{
-            width: "  80%",
-            marginRight: "auto",
-            marginLeft: "auto",
-            padding: "0",
-          }}
+          
         >
           <div className="carouselitem">
             <div className="home_heading text-white ">
-              <p className="headingtext fontfamilyPrimary  mt-4">
+              <p className="headingtext fontfamilyPrimary  mt-4 ms-md-0 ms-3">
                 AETHRONE
                 <br />
                 AEROSPACE
               </p>
 
-              <p className="text-light ingenuity">
+              <p className="text-light ingenuity  ms-md-0 ms-3">
                 <span className=" ingenuityspan">Ingenuity</span>
                 <span className="ingenuityspan">|</span>
                 <span className="ingenuityspan">Dynamism</span>
@@ -41,7 +36,7 @@ const Home = () => {
               </p>
 
               <div className="mt-5 d-flex">
-                <div className="col-2"></div>
+                <div className="col-md-2 col-1"></div>
                 <div className="col-sm-12 col-lg-7 whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div

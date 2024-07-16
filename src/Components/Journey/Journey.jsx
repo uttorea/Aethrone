@@ -7,8 +7,8 @@ import journey2019 from "../../assets/journey2019.png";
 import journey2020 from "../../assets/journey2020.png";
 import journey2021 from "../../assets/journey2021.png";
 import journey2022 from "../../assets/journey2022.png";
-import journey_quote2 from "../../assets/journey_quote2.png";
-import journey_quote from "../../assets/journey_quote.png";
+// import journey_quote2 from "../../assets/journey_quote2.png";
+// import journey_quote from "../../assets/journey_quote.png";
 import "./Journey.css";
 import CoFounder from "../../assets/CoFounder.png";
 
@@ -82,7 +82,7 @@ const Journey = () => {
                 className="card-body1 mt-md-5 mt-0 px-md-4 px-2  m-0"
                 style={{ borderLeft: "6px solid #3535DE" }}
               >
-                <h4 className="px-md-4 px-0 quotepara">
+                <h4 className="px-md-4 px-2 quotepara">
                 {/* <img src={journey_quote} className="quoteimg" alt="" /> */}
                 <span className="quote maincolor"> " </span> We At Aethrone Aerospace Aspire To Be Creative Thinkers,
                   Dynamic In ur Workspace, Durable In Our Products And Vouch For

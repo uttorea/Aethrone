@@ -7,4 +7,13 @@
     .card img{
         width:100%;
     }
+    .intern_heading {
+        font-size:24px;
+    }
+    .intern_subheading{
+        font-size:12px;
+    }
+    .interimg{
+        /* height:200px; */
+    }
 }
