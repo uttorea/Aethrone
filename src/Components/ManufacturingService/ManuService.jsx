@@ -2,48 +2,63 @@ import React from 'react'
 import './ManuService.css'
 import manuServiceimg1 from '../../assets/manuServiceimg1.png'
 import manuServiceimg2 from '../../assets/manuServiceimg2.png'
+
+const cardData = [
+  {
+    img: manuServiceimg1,
+    title: 'Advance Composites',
+    listItems: [
+      'Lightweight and high-strength components',
+      'Ideal for demanding applications needs',
+    ],
+    footerText: 'Explore Advance Composite',
+  },
+  {
+    img: manuServiceimg2,
+    title: 'Precising Manufacturing',
+    listItems: [
+      'Exceptional accuracy and repeatability',
+      'Tailored to your specific hardware',
+    ],
+    footerText: 'Explore Precision Manufacturing',
+  },
+];
+
 const ManuService = () => {
-    return (
-    <>
-            <div className='container mt-5'>
-                <h3 className='manufacture_heading px-2 fw-bold'>Manufacturing Service</h3>
-                <div class="row row-cols-1 row-cols-md-2 g-4 mx-5 mt-4">
-                    <div class="col manuServic_card">
-                        <div class="card border-2 border-primary">
-                            <img src={manuServiceimg1} class="card-img-top" alt="..." />
-                            <div class="manuServic_body1"></div>
-                            <div class="manuServic_body2">
-                                <h5 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '250px', whiteSpace: 'nowrap' }}>Advance Composites </h5>
-                                <ul className='' style={{ position: 'relative', right: '450px', whiteSpace: 'nowrap' }}>
-                                    <li>Lightweight and high-strength components</li>
-                                    <li>Ideal for demanding applications needs</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer p-4 text-center border-2 border-primary">
-                                <h5 class=" text-primary ">Explore Advance Composite<i class="bi bi-arrow-right p-2 "></i></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col manuServic_card">
-                        <div class="card border-2 border-primary">
-                            <img src={manuServiceimg2} class="card-img-top" alt="..." />
-                            <div class="manuServic_body1"></div>
-                            <div class="manuServic_body2">
-                                <h5 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '250px', whiteSpace: 'nowrap' }}>Precising Manufacturing </h5>
-                                <ul className='' style={{ position: 'relative', right: '450px', whiteSpace: 'nowrap' }}>
-                                    <li>Exceptional accuracy and  repeatability</li>
-                                    <li>Tailored to your specific hardware</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer p-4 text-center border-2 border-primary">
-                                <h5 class=" text-primary">Explore Precision Manufacturing<i class="bi bi-arrow-right p-2"></i></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  return (
+    <div className='container mt-5'>
+      <h3 className='manufacture_heading px-2 fw-bold'>Manufacturing Service</h3>
+      <div className='d-flex'>
+        <div className='col-1'> 
+        </div>
+      <div className="row row-cols-2 row-cols-md-2 g-5 mx-md-5 mx-0 mt-1 col-md-9 col-10 ">
+        {cardData.map((card, index) => (
+          <div className="col manuServic_card px-md-4 px-1" key={index}>
+            <div className="card border-2 border-primary">
+              <img src={card.img} className="card-img-top" alt={card.title} />
+              
+              <div className="manuServic_body2 ">
+                <h5 className='d-flex justify-content-center maincolor card-titlemanu'>
+                  {card.title}
+                </h5>
+                <ul className='justify-content-center ultext ps-3 ps-md-4' >
+                  {card.listItems.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+              <div className="card-footer p-4 text-center border-2 border-primary">
+                <h5 className="maincolor footertextmanu">
+                  {card.footerText}<i className="bi bi-arrow-right p-2"></i>
+                </h5>
+              </div>
             </div>
-            </>
-            )
+          </div>
+        ))}
+      </div>
+      </div>
+    </div>
+  );
 }
 
-            export default ManuService
+export default ManuService;

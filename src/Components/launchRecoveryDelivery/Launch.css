@@ -5,10 +5,18 @@
 }
 
 .launch_content h1 {
-    font-size: 4rem;
+    font-size: 72px;
     margin: 0;
 }
 .lrdimg_para1{
     border-left: 6px solid #3535DE;
+}
+.lrdimg_para2{
+    font-size:18px;
+}
+@media and only screen (max-width:425px){
+    .launch_container{
+        height:100vh;
+    }
 }
 

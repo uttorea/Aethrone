@@ -1,8 +1,40 @@
+
+.card-titlefocus{
+    font-size:24px;
+}
+.whyfocusmain{
+    position:relative;
+    width:100%;
+    height:90vh;
+    
+}
+.focusimg{
+    height:90vh;
+    object-fit:cover;
+}
+.aethron_card1{
+    position:absolute;
+    top:40%;
+    left:20%;
+    transform:translate(-50%,-50%)
+}
+.cardfocus{
+    width:288px;
+    height:200px;
+    background-color:rgba(0,0,0,0.85);
+}
+.accordion_card{
+    position:absolute;
+    top:80%;
+    left:65%;
+    transform:translate(-50%,-50%);
+    width:50%;
+}
 .focus_heading{
     border-left: 6px solid #3535DE;
 }
 .accordion-button::after {
-    display: none; /* Hide the default arrow */
+    display: none;
 }
 .accordion-button .fa-plus {
     transition: transform 0.2s;
@@ -11,4 +43,51 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+}
+.card-img-top{
+height:155px;
+}
+.focuswhy{
+    font-size:26px;
+}
+.foryour{
+    font-size:18px;
+}
+@media only screen and (max-width:425px){
+    .whyfocusmain{
+        
+        height:70vh;
+        
+    }
+    
+    .card-img-top{
+        height:70px;
+        }
+        .card-titlefocus{
+            font-size:18px;
+        }
+        .cardfocus{
+            width:120px;
+            height:140px;
+        }
+        .focusimg{
+            height:70vh;
+            object-fit:cover;
+        }
+        .focuswhy{
+            font-size:18px;
+        }
+        .foryour{
+            font-size:12px;
+        }
+        .accordion_card{
+            top:70%;
+            width:60%;
+        }
+        .aethron_card1{
+            top:35%;
+        }
+        .focustcardtitle{
+            font-size:18px;
+        }
 }

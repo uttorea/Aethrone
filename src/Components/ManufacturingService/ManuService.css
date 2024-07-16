@@ -3,29 +3,26 @@
 }
 
 .manuServic_card img{
-    /* margin: 0 auto; */
-   height: 450px;
+   
+   height: 250px;
 
 }
-
-.manuServic_body1{
-    width: 0;
-    height: 35%;
-    border-left: 482px solid #3535DE;
-    border-top: 70px solid transparent;
-    position: absolute;
-    top: 265px;
-    /* border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ; */
+.ultext{
+    font-size:18px;
 }
-
-.manuServic_body2{
-    width: 0;
-    height: 33%;
-    border-left:  482px  solid white;
-    border-top: 70px solid transparent;
-    position: absolute;
-    top: 275px;
-    /* border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ; */
+@media only screen and (max-width:425px){
+    .manuServic_card img{
+   
+        height: 150px;
+     
+     }
+     .ultext{
+        font-size:12px;
+    }
+    .card-titlemanu{
+        font-size:14px;
+    }
+    .footertextmanu{
+        font-size:12px;
+    }
 }
