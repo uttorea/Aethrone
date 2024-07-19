@@ -1,4 +1,5 @@
 import React from 'react';
+import Heading from '../../Components/HeadingComponent/HeadingComponent' 
 import './DesignDevelopment.css';
 import WhatWeDo from '../../Components/WhatWeDo/WhatWeDo'
 import workwithimg from '../../assets/workwithimg.png';
@@ -16,8 +17,10 @@ const DesignDevelopment = () => {
       <img src={workwithimg} alt="" className='w-100'/>
       <div className="container">
       <div className='content1'>
-        <p className='DD_heading m-0'>Design & Development</p>
-        <p className=""> From concept to product to certification </p>
+        <div>
+
+        <Heading heading='Design & Development' subheading='From concept to product to certification '/>
+        </div>
         <h3 className='ddimg_para1 mt-5 px-2 '>What We Do</h3>
         <div className='ddimg_para2 p-4 bg-black bg-opacity-50 rounded mt-4'>
         <p>We offer Multi Physics based Design and Engineering Solutions for Unmanned - Manned Aerospace and Defence Products</p>

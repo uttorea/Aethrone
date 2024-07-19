@@ -1,72 +1,59 @@
-import React from 'react'
-import './IndustryWork.css'
-import workimg1 from '../../assets/workimg1.png'
-import workimg2 from '../../assets/workimg2.png'
-import workimg3 from '../../assets/workimg3.png'
-// import workimg1 from '../../assets/workimg1.png'
+import React from 'react';
+import './IndustryWork.css';
+import Heading from '../../Components/HeadingComponent/HeadingComponent'
+
+import workimg1 from '../../assets/workimg1.png';
+import workimg2 from '../../assets/workimg2.png';
+import workimg3 from '../../assets/workimg3.png';
+
+const workData = [
+    {
+        img: workimg1,
+        title: "Rotary Propulsion Composite",
+        items: ["Rotor Blades", "Propellers"]
+    },
+    {
+        img: workimg2,
+        title: "Aero-structures",
+        items: ["Spars and Tubes", "Ducts"]
+    },
+    {
+        img: workimg3,
+        title: "Avionics Composite",
+        items: ["Flame Smoke", "Flat Radome"]
+    },
+    {
+        img: workimg1,
+        title: "Airframes",
+        items: ["Fixed Wing UAV", "Folding Wing UAV"]
+    }
+];
+
 const IndustyWork = () => {
     return (
-
-        <>
-            <div className="container mt-5">
-                <h3 className='work_heading px-2 fw-bold'>Platform We Work On</h3>
-                <div class="row mt-5 justify-content-center">
-                    <div class="col-md-2 work_card">
-                        <div class="card border-primary border-2">
-                            <img src={workimg1} style={{width:'200px'}} className="plaform_img" alt="Card image" />
-                            <div class="work_body1"></div>
-                            <div class="work_body2">
-                                <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Rotary Propulsion <br />Composite</h6>
-                                <ul className='justify-content-center' style={{ position: 'relative', right: '170px', bottom: '5px', whiteSpace: 'nowrap' }}>
-                                    <li className=''>Rotor Blades</li>
-                                    <li>Propellers</li>
+        <div className='container-md mt-5 container-fluid'>
+            <Heading heading='We have worked on' subheading='Past work'/>
+            <div className="row  row-cols-4 mt-0 ms-1">
+                {workData.map((work, index) => (
+                    <div key={index} className="col industrywork px-1 px-md-3">
+                        <div className="card border-2 bordermaincolor">
+                            <img src={work.img} className="card-imgs" alt={work.title} />
+                            <div className="industrywork_body2 position-absolute bg-white w-100 end-0 bottom-0">
+                                <h5 className='d-flex justify-content-center fourpillarspara'>
+                                {work.title}
+                                </h5>
+                                <ul className='justify-content-center li-items ps-3 ps-md-4' >
+                                    {work.items.map((item, index) => (
+                                        <li key={index}>{item}</li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 work_card">
-                        <div class="card border-primary border-2">
-                            <img src={workimg2} style={{width:'200px'}} className="plaform_img" alt="Card image" />
-                            <div class="work_body1"></div>
-                            <div class="work_body2">
-                                <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Aero-structures</h6>
-                                <ul className='justify-content-center' style={{ position: 'relative', right: '170px', bottom: '5px', whiteSpace: 'nowrap' }}>
-                                    <li className=''> Spars and Tubes</li>
-                                    <li>Ducts</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 work_card">
-                        <div class="card border-primary border-2">
-                            <img src={workimg3} style={{width:'200px'}} className="plaform_img" alt="Card image" />
-                            <div class="work_body1"></div>
-                            <div class="work_body2">
-                                <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Avionics Composite</h6>
-                                <ul className='justify-content-center' style={{ position: 'relative', right: '170px', bottom: '5px', whiteSpace: 'nowrap' }}>
-                                    <li className=''>Flame Smoke</li>
-                                    <li>Flat Radome</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-2 work_card">
-                        <div class="card border-primary border-2">
-                            <img src={workimg1} style={{width:'200px'}} className="plaform_img" alt="Card image" />
-                            <div class="work_body1"></div>
-                            <div class="work_body2">
-                                <h6 className='d-flex justify-content-center text-primary' style={{ position: 'relative', right: '86px', bottom: '5px', whiteSpace: 'nowrap' }}>Airframes</h6>
-                                <ul className='justify-content-center' style={{ position: 'relative', right: '170px', bottom: '5px', whiteSpace: 'nowrap' }}>
-                                    <li className=''> Fixed Wing UAV</li>
-                                    <li>Folding Wing UAV</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
-        </>
-    )
+        </div>
+    );
 }
 
-export default IndustyWork
+export default IndustyWork;

@@ -7,3 +7,8 @@ border-left:6px sokid #3535DE
     height: 150px;
     width: 150px;
 }
+@media only screen and (max-width:425px){
+    .compositcardtitle{
+        font-size:12px;
+    }
+}

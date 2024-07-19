@@ -9,6 +9,7 @@
     /* overflow: hidden; */
   }
   
+  
   .bg-image {
     position: absolute;
     top: 0;
@@ -23,13 +24,12 @@
     position: relative;
     z-index: 1;
     display: flex;
-    /* align-items: center; */
     height: 100%;
   }
   
   .blur-card {
-    background: rgba(43, 42, 42, 0.7); /* White with opacity */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background: rgba(43, 42, 42, 0.7); 
+    backdrop-filter: blur(10px); 
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,4 +45,16 @@
     text-overflow: ellipsis; 
   }
   
+
+  @media only screen and (max-width:425px){
+    .card-industry h6 {
+      font-size:12px;
+    }
+    .industry_bg {
+      
+      height: 80vh;
+     
+     
+    }
+  }
   

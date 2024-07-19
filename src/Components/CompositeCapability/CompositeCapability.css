@@ -1,4 +1,4 @@
-.scroll_img, .scroll_heading {
+/* .scroll_img, .scroll_heading {
   opacity: 0;
   transform: scale(0.8);
   transition: transform 0.9s, opacity 0.5s;
@@ -8,13 +8,65 @@
   opacity: 1;
   transform: scale(1);
 }
-
-.list-group-item, .card {
+.card{
   display: flex;
   align-items: center;
-  min-height: 200px; /* Adjust this value based on your image height */
+  min-height: 200px; 
+}
+.list-group-item,  {
+
+  align-items: center;
+  min-height: 200px; 
 }
 
 .list-group-item h3, .card h3 {
   margin-bottom: 0;
+} */
+
+
+.composititem {
+  text-decoration: none;
+}
+
+.composititem:hover {
+  text-decoration: none;
+}
+.custom-row {
+  position: relative;
+}
+
+.scroll_img,
+.composititem p {
+  transition: transform 0.3s ease;
+}
+
+.visible .scroll_img,
+.visible .composititem p {
+  transform: scale(1.1);
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollspy-example {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.scroll_img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.composititem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
