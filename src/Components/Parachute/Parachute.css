@@ -1,6 +1,18 @@
 .parachute_container{
     position: relative;
-    /* width: 100%; */
+    
+    
 }
+
+.parachute_container{
+    height:100vh;
+}
+.launchimg1{
+    height:100vh;
+
+}
+
+
+
 
 

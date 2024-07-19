@@ -1,78 +1,63 @@
-import React from 'react'
-import './ParachuteProduct.css'
-import parachuteProduct1 from '../../assets/parachuteProduct1.png'
-import parachuteProduct2 from '../../assets/parachuteProduct2.png'
-import parachuteProduct3 from '../../assets/parachuteProduct3.png'
-import parachuteProduct4 from '../../assets/parachuteProduct4.png'
+import React from 'react';
+import './ParachuteProduct.css';
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
+
+import parachuteProduct1 from '../../assets/parachuteProduct1.png';
+import parachuteProduct2 from '../../assets/parachuteProduct2.png';
+import parachuteProduct3 from '../../assets/parachuteProduct3.png';
+import parachuteProduct4 from '../../assets/parachuteProduct4.png';
+
+const products = [
+  {
+    img: parachuteProduct1,
+    title: 'Adventure',
+    items: ['Paraglider', 'Para Sail Canopy', 'Paramotor canopy']
+  },
+  {
+    img: parachuteProduct2,
+    title: 'Military',
+    items: ['Ejection Seat Canopies', 'Deceleration canopies', 'Ordnance canopies']
+  },
+  {
+    img: parachuteProduct3,
+    title: 'Space',
+    items: ['Sounding Rocket Recovery', 'Low Orbit Payload parachute']
+  },
+  {
+    img: parachuteProduct4,
+    title: 'Inflatables',
+    items: ["Airship's", 'Aerostats']
+  }
+];
+
 const ParachuteProduct = () => {
   return (
     <>
-      <div className='container mt-5'>
-        <h3 className='pp_heading px-2 fw-bold m-0'>Product</h3>
-        <small className='mt-4 px-3'>We Design Products In Para Vertical</small>
-        <div class="row mt-5 ">
-          <div class="col-md-2 pp_card">
-            <div class="card border-primary border-2">
-              <img src={parachuteProduct1} className="pp_img" alt="Card image" />
-              <div class="pp_card_body1"></div>
-              <div class="pp_card_body2">
-                <h6 class='d-flex justify-content-center ppCard_para1'>Adventure</h6>
-                <div class="dotted-line"></div>
-                <ul class='justify-content-center ppCard_para2'>
-                  <li>Paraglider</li>
-                  <li>Para Sail Canopy</li>
-                  <li>Paramotor canopy</li>
-                </ul>
+      <div className='container mt-5 px-md-3 px-0 '>
+     <div className='ms-1 ms-md-0'>
+
+        <Heading heading='Product' subheading='We Design Products In Para Vertical'/>
+     </div>
+
+        <div className="row row-cols-4 mt-5 parchuteitems ms-1 ms-md-0">
+          {products.map((product, index) => (
+            <div key={index} className="col-md-3 px-md-3 px-1   ">
+              <div className="card border-primary border-2 pp_card">
+                <img src={product.img} className="pp_img" alt="Card image" />
+                  <h6 className='d-flex justify-content-center product-titleparachut'>{product.title}</h6>
+                  <ul className='justify-content-center product-list-parchut ps-md-4 ps-3'>
+                    {product.items.map((item, i) => (
+                      <li key={i}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-2 pp_card">
-            <div class="card border-primary border-2">
-              <img src={parachuteProduct2} className="pp_img" alt="Card image" />
-              <div class="pp_card_body1"></div>
-              <div class="pp_card_body2">
-                <h6 className='d-flex justify-content-center ppCard_para1'>Military</h6>
-                <div class="dotted-line"></div>
-                <ul class='justify-content-center ppCard_para2'>
-                  <li>Ejection Seat Canopies</li>
-                  <li>Deceleration canopies</li>
-                  <li>Ordnance canopies</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 pp_card">
-            <div class="card border-primary border-2">
-              <img src={parachuteProduct3} className="pp_img" alt="Card image" />
-              <div class="pp_card_body1"></div>
-              <div class="pp_card_body2">
-                <h6 className='d-flex justify-content-center ppCard_para1'>Space</h6>
-                <div class="dotted-line"></div>
-                <ul class='justify-content-center ppCard_para2'>
-                  <li>Sounding Rocket<br/> Recovery</li>
-                  <li>Low Orbit Payload<br/> parachute</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-2 pp_card">
-            <div class="card border-primary border-2">
-              <img src={parachuteProduct4} className="pp_img" alt="Card image" />
-              <div class="pp_card_body1"></div>
-              <div class="pp_card_body2">
-                <h6 className='d-flex justify-content-center ppCard_para1' >Inflatables</h6>
-                <div class="dotted-line"></div>
-                <ul class='justify-content-center ppCard_para2'>
-                  <li>Airship's </li>
-                  <li>Aerostats</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+            
+          ))}
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default ParachuteProduct
+export default ParachuteProduct;

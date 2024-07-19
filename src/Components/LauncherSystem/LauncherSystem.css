@@ -5,3 +5,27 @@
     width:100%;
     height:400px;
 }
+@media only screen and (max-width:425px){
+    .card-img-top1{
+        width:100%;
+        height:200px;
+    }
+    .card-body-launcher{
+        font-size:12px;
+    }
+    .btn-explore-launch{
+        font-size:12px;
+
+    }
+    .card-img-top-launch{
+        height:100px;
+    }
+    .footerlaunch{
+        font-size:12px;
+        
+    }
+    .footerlaunch-head{
+        font-size:12px;
+        margin-top:30px;
+    }
+}

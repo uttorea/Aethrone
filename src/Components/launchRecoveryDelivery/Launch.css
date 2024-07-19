@@ -14,9 +14,24 @@
 .lrdimg_para2{
     font-size:18px;
 }
-@media and only screen (max-width:425px){
-    .launch_container{
-        height:100vh;
+@media only screen and (max-width: 425px) {
+    .launch_container {
+       height: 100vh;
     }
-}
+    .launch-img1 {
+       height: 100vh;
+    }
+    .launch_content h1 {
+        font-size: 36px;
+        /* margin: 0; */
+    }
+    .lrdimg_para2{
+        font-size:12px;
+    }
+    .launch_btn1{
+        font-size:12px;
+
+    }
+ }
+ 
 

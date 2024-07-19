@@ -1,32 +1,103 @@
-.lighter_heading{
-    border-left: 6px solid #3535DE;
+.containerparachute{
+  width:98%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.lighter_card {
+    height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.lighter_card{   
-    margin: 0 auto;
+.lighter_img {
+  max-width: 100%;
+  height: auto;
 }
-.lighter_img{
-    height: 350px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+
+/* Specific size classes with margin and padding */
+.img-small {
+  width: 140px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 5px;
 }
-.lighter_card_body1{
-    width: 0;
-    height: 35%;
-    border-left: 162px solid #3535DE;
-    border-top: 70px solid transparent;
-    position: absolute;
-    top: 227.5px;
-    border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ;
+
+.img-medium {
+    width: 250px;
+    margin-top: 80px;
+    margin-bottom:70px;
+    padding: 5px;
 }
-.lighter_card_body2{
-    width: 0;
-    height: 33%;
-    border-left: 162px solid white;
-    border-top: 70px solid transparent;
-    position: absolute;
-    top: 234px;
-    border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ;
+.img-medi{
+    width: 250px;
+    margin-top: 80px;
+    padding: 5px;
+}
+
+.img-large {
+    width: 240px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 5px;
+}
+
+.img-xlarge {
+    width: 250px;
+    margin-top: 80px;
+    padding: 5px;
+}
+.card-body-text{
+    width:100%;
+    border-top: 4px solid blue;
+    height:80px;
+}
+
+@media only screen and (max-width:425px){
+  .lighter_card {
+    height:100%;
+ width:100%;
+}
+
+.img-small {
+width: 140px;
+margin-top: 0px;
+margin-bottom: 0px;
+padding: 5px;
+
+}
+
+.img-medium {
+  width: 250px;
+  margin-top: 0px;
+  margin-bottom:30px;
+  padding: 5px;
+}
+.img-medi{
+  width: 250px;
+  margin-top: 0px;
+  padding: 5px;
+}
+
+.img-large {
+  width: 240px;
+  margin-top: 0px;
+  margin-bottom:0px;
+  padding: 5px;
+}
+
+.img-xlarge {
+  width: 250px;
+  margin-top: 0px;
+  padding: 5px;
+}
+.card-body-text{
+  width:100%;
+  border-top: 4px solid blue;
+  height:40px;
+}
+.card-body-textfont{
+  font-size:12px;
+}
+
 }

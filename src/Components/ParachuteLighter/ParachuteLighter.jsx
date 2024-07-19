@@ -1,67 +1,45 @@
-import React from 'react'
-import './ParachuteLighter.css'
-import lighterimg1 from '../../assets/lighterimg1.png'
-import lighterimg2 from '../../assets/lighterimg2.png'
-import lighterimg3 from '../../assets/lighterimg3.png'
-import lighterimg4 from '../../assets/lighterimg4.png'
-import lighterimg5 from '../../assets/lighterimg5.png'
+import React from 'react';
+import './ParachuteLighter.css';
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
+import lighterimg1 from '../../assets/lighterimg1.png';
+import lighterimg2 from '../../assets/lighterimg2.png';
+import lighterimg3 from '../../assets/lighterimg3.png';
+import lighterimg4 from '../../assets/lighterimg4.png';
+import lighterimg5 from '../../assets/lighterimg5.png';
+
+const lighterImages = [
+  { img: lighterimg1, title: 'Envelope Design and Fabrication', size: 'img-small' },
+  { img: lighterimg2, title: 'Control Surfaces Design and Fabrication', size: 'img-medium' },
+  { img: lighterimg3, title: 'Thrust Vectoring System', size: 'img-large' },
+  { img: lighterimg4, title: 'Gondola Design and Fabrication', size: 'img-medi' },
+  { img: lighterimg5, title: 'Mooring Systems for Airships/Aerostats', size: 'img-xlarge' },
+];
+
 const ParachuteLighter = () => {
   return (
-    <>
-    <div className='container mt-5'>
-      <h3 className='lighter_heading px-2 fw-bold m-0'>Lighter Then Air Product Development</h3>
-      <small className='px-3'>Design, Fabrication, and Testing for Airships and AeroStats</small>
-      <div class="row mt-5 justify-content-center">
-      <div class="col-md-2 lighter_card">
-        <div class="card border-primary border-2">
-          <img src={lighterimg1} className="lighter_img" alt="Card image" />
-          <div class="lighter_card_body1"></div>
-          <div class="lighter_card_body2">
-            <h6 className='d-flex justify-content-center' style={{position:'relative',right:'86px',bottom:'5px',whiteSpace: 'nowrap'}}>Airborne Plateform</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 lighter_card">
-        <div class="card border-primary border-2">
-          <img src={lighterimg2} className="lighter_img" alt="Card image" />
-          <div class="lighter_card_body1"></div>
-          <div class="lighter_card_body2">
-            <h6 className='d-flex justify-content-center' style={{position:'relative',right:'86px',bottom:'5px', whiteSpace: 'nowrap'}}>Mission Systems</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 lighter_card">
-        <div class="card border-primary border-2">
-          <img src={lighterimg3} className="lighter_img" alt="Card image" />
-          <div class="lighter_card_body1"></div>
-          <div class="lighter_card_body2">
-            <h6 className='d-flex justify-content-center' style={{position:'relative',right:'86px',bottom:'5px', whiteSpace: 'nowrap'}}>Space Systems</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 lighter_card">
-        <div class="card border-primary border-2">
-          <img src={lighterimg4} className="lighter_img" alt="Card image" />
-          <div class="lighter_card_body1"></div>
-          <div class="lighter_card_body2">
-            <h6 className='d-flex justify-content-center' style={{position:'relative',right:'86px',bottom:'5px',whiteSpace: 'nowrap'}}>Defence Systems</h6>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-2 lighter_card">
-        <div class="card border-primary border-2">
-          <img src={lighterimg5} className="lighter_img" alt="Card image" />
-          <div class="lighter_card_body1"></div>
-          <div class="lighter_card_body2">
-            <h6 className='d-flex justify-content-center' style={{position:'relative',right:'86px',bottom:'5px', whiteSpace: 'nowrap'}}>Aeriel Mobility</h6>
-          </div>
+    <div className='containerparachute mt-5 px-md-3 px-0 ms-md-0 ms-1 ms-md-5'>
+   <div className='ms-0 ms-md-5'>
 
-        </div>
+      <Heading heading='Lighter Than Air Product Development' subheading='Design, Fabrication, and Testing for Airships and AeroStats' />
+   </div>
+      <div className="row row-cols-5 mt-5 justify-content-center ms-1 ms-md-0 " >
+        {lighterImages.map((item, index) => (
+          <div key={index} className="col-md-2 px-md-3 px-1">
+            <div className="card border-primary border-2 lighter_card">
+              <div className="d-flex justify-content-center">
+                <img src={item.img} className={`lighter_img ${item.size}`} alt="Card image" />
+              </div>
+              <div className="card-body-text text-center">
+                <h6 className='mt-3 card-body-textfont'>
+                  {item.title}
+                </h6>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
-    </div>
-    </>
-  )
-}
+  );
+};
 
-export default ParachuteLighter
+export default ParachuteLighter;
