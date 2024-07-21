@@ -1,3 +1,41 @@
 .lifecycle_heading{
     border-left: 6px solid #3535DE;
 }
+.life-cycle-container{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:120px;
+}
+.lifetext{
+    font-size:24px;
+}
+.card-lificycle{
+    margin-top:100px;
+}
+.headlife{
+    font-size:24px;
+}
+.Triangle{
+    width:450px;
+    padding:0px;
+}
+
+@media only screen and (max-width:425px){
+    .life-cycle-container{
+        width:100%;
+        
+    }
+    .lifetext,.headlife{
+        font-size:12px;
+    }
+    .Triangle{
+        margin-top:80px;
+        margin-left:-20px;
+        width:150px;
+        padding:0px;
+    }
+    .card-lificycle{
+        margin-top:40px;
+    }
+}

@@ -1,80 +1,85 @@
-import React from 'react'
-import './WhatWeDo.css'
-import wwdimg1 from '../../assets/wwdimg1.png'
-import wwdimg2 from '../../assets/wwdimg2.png'
-import wwdimg3 from '../../assets/wwdimg3.png'
-import wwdimg4 from '../../assets/wwdimg4.png'
+import React from 'react';
+import './WhatWeDo.css';
+import Heading from '../../Components/HeadingComponent/HeadingComponent'
+import wwdimg1 from '../../assets/wwdimg1.png';
+import wwdimg2 from '../../assets/wwdimg2.png';
+import wwdimg3 from '../../assets/wwdimg3.png';
+import wwdimg4 from '../../assets/wwdimg4.png';
+
+const cardData = [
+    {
+        img: wwdimg1,
+        heading: 'Product Development',
+        listItems: [
+            'New Product Creation',
+            'Upgrades',
+            'Legacy Product Maintenance'
+        ]
+    },
+    {
+        img: wwdimg2,
+        heading: 'Market Entry',
+        listItems: [
+            'Product Qualification',
+            'Integration',
+            'Testing'
+        ]
+    },
+    {
+        img: wwdimg3,
+        heading: 'Product Support',
+        listItems: [
+            'Certification',
+            'IP Transfer',
+            'Long-Term Support'
+        ]
+    },
+    {
+        img: wwdimg4,
+        heading: 'Ideation & Feasibility',
+        listItems: [
+            'Conceptual Design',
+            'Feasibility Studies',
+            'Smart Testing Rig Development'
+        ]
+    }
+];
+
 const WhatWeDo = () => {
     return (
-        <>
-        <div className='container mt-5'>
-            <h3 className='wwd_main_heading px-2 fw-bold'>What We Do</h3>
-            <div class="row">
-                <div class="col-sm-4">
-                    <h3 className='wwd_heading1  mt-4'>Share your concept,</h3>
-                    <h3 className=''>we design, <br /> prototype & <br /> optimize it To <br />production ready solution</h3>
-                    <p className='mt-5'>We tie up with OEMs and emerging StartUps worldwide as strategic partners to introduce products or optimize industrial products to Aerospace and Defence standards by conceptualizing,designing, qualifying our design by International Codes/ MIL standards and certifying the product after rigorous inspection and performance testing</p>
-                    <a href="#" class="btn btn-primary px-5 py-2 mt-4">Contact Us</a>
+        <div className=' whatwedomain mt-5'>
+            <Heading heading='What We Do'/>
+            <div className="row">
+                <div className="col-5">
+                    <h3 className='wwd_heading1 mt-4'>Share your concept,</h3>
+                    <h3 className='wwd_para'>we design, <br /> prototype & <br /> optimize it to <br /> production ready solution</h3>
+                    <p className='mt-5 wwd_para1'>
+                        We tie up with OEMs and emerging StartUps worldwide as strategic partners to introduce products or optimize industrial products to Aerospace and Defence standards by conceptualizing, designing, qualifying our design by International Codes/ MIL standards and certifying the product after rigorous inspection and performance testing.
+                    </p>
+                    <a href="#" className="btn backgroundcolormain px-3 px-md-5 py-2 mt-4 text-white contactwhat">Contact Us</a>
                 </div>
-                <div class="col-sm-8">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="card border-dark">
-                                <div class="card-body1 p-4">
-                                    <img src={wwdimg1} alt="" />
-                                    <ul>
-                                        <li>New Product Creation</li>
-                                        <li>Upgrades</li>
-                                        <li>Legacy Product<br />Maintenance</li>
-                                    </ul>
+                <div className="col-7 px-0 px-md-3 mt-5 mt-md-0">
+                    <div className="row">
+                        {cardData.map((card, index) => (
+                            <div className={`col-6 px-md-3 px-1 ${index >= 2 ? 'mt-4' : ''}`} key={index}>
+                                <div className="card border-dark p-0">
+                                    <div className="card-bod p-0">
+                                        <img src={card.img} alt={card.heading || 'Card Image'} className='whatwedoimg  mt-3' />
+                                        {card.heading && <h4 className='wwdCard_heading text-center'>{card.heading}</h4>}
+                                        <ul className='mt-3 wwdCard_subheading ps-3 ps-md-4'>
+                                            {card.listItems.map((item, i) => (
+                                                <li key={i}>{item}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card border-dark">
-                                <div class="card-body1 p-4">
-                                    <img src={wwdimg2} alt="" />
-                                    <h4 className='wwdCard_heading'>Market Entry</h4>
-                                    <ul>
-                                        <li>Product <br />Qualification</li>
-                                        <li>Integration</li>
-                                        <li>Testing</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card border-dark mt-4">
-                                <div class="card-body1 p-4">
-                                    <img src={wwdimg3} alt="" />
-                                    <h4 className='wwdCard_heading'>Product Support</h4>
-                                    <ul>
-                                        <li>Certification</li>
-                                        <li>IP Transfer</li>
-                                        <li>Long-Term Support</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="card mt-1 border-dark">
-                                <div class="card-body1 p-4">
-                                    <img src={wwdimg4} alt="" />
-                                    <h4 className='wwdCard_heading'>Ideation & Feasibility </h4>
-                                    <ul>
-                                        <li>Conceptual Design</li>
-                                        <li>feasibility Studies</li>
-                                        <li>Smart Testing Rig <br/>Development</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
+                        ))}
                     </div>
                 </div>
             </div>
         </div>
-        </>
-    )
+    );
 }
 
-export default WhatWeDo
+export default WhatWeDo;

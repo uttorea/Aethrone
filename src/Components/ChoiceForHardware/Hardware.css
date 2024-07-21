@@ -1,115 +1,171 @@
-.hardware_heading {
-    border-left: 6px solid #3535DE;
+.hardware_body{
+  width:100%;
+}
+.container-hardware{
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
 }
 
-.hardware_img2 {
-    height: 50px;
-    width: 50px;
+.hardware_img21,.hardware_img2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate {
+  transform: rotate(180deg);
 }
 
 .card_items {
-    position: absolute;
-    top: 70%;
-    left: 25px;
-    color: #fff;
-    text-align: center;
-    transition: transform 0.3s ease-in-out; 
+  position: absolute;
+  top: 70%;
+  left: 25px;
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .hardware_card {
-    position: relative;
-    width: 300px;
-    transition: filter 0.3s;
+  position: relative;
+  width: 300px;
+  transition: filter 0.3s;
 }
 
 .hardware_card:hover .hardware_img {
-    filter: brightness(1.5); 
+  filter: brightness(1.5);
 }
 
 .hardware_card:hover .card_items {
-    transform: translateY(-10px); 
+  transform: translateY(-10px);
 }
 
 .hardware_img {
-    width: 100%; 
-    display: block;
+  width: 100%;
+  height:378px;
+  display: block;
 }
 
 h5 {
-    margin-top: 5px; 
-    font-size: 16px; 
+  margin-top: 5px;
+  font-size: 16px;
 }
 
 .accordion.width {
-    /* border: 4px solid #3535DE; */
-    display: flex;
-    border-radius: 8px;
-  }
-  
-  .accordion.width .card {
-    flex-direction: row;
-    flex-grow: 0;
-    flex-shrink: 1;
-    min-width: min-content;
-    border: 2px solid #3535DE;
-  }
-  
-  .accordion.width .card .card-header {
-    cursor: pointer;
-    transform: rotate(180deg);
-    writing-mode: vertical-rl;
+  display: flex;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+}
 
-  }
-  
-  .accordion.width .card .card-header:not(.collapsed) {
-    /* pointer-events: none; */
+.accordion.width .card {
+  flex-direction: row;
+  flex-grow: 0;
+  flex-shrink: 1;
+  min-width: min-content;
+  border: 2px solid #3535DE;
+}
 
-  }
-  
-  .collapsing.width {
-    transition: width 0.35s ease;
-    height: auto;
-    width: 0;
-  }
-  .accordion.width {
-    width: 100%; /* Ensure the accordion takes full width */
-    max-width: 100%; /* Optionally, set max-width to prevent overflowing */
-    margin: 0 auto; /* Center align if needed */
-  }
-  
-  /* Update to Hardware.css */
+.accordion.width .card .card-header {
+  cursor: pointer;
+  transform: rotate(180deg);
+  writing-mode: vertical-rl;
+}
+
+.accordion.width .card .card-header:not(.collapsed) {
+  /* pointer-events: none; */
+}
+
+.collapsing.width {
+  transition: width 0.35s ease;
+  height: auto;
+  width: 0;
+}
 
 .card-header {
-    cursor: pointer;
-    padding: 1rem;
-    background-color: #f0f0f0;
-    border-bottom: 1px solid #ddd;
-    transition: background-color 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  border-bottom: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.card-header:hover {
+  background-color: #e0e0e0;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+}
+
+.accordion-icon.active {
+  transform: rotate(180deg);
+}
+.hardware-subheading, .hardware-heading{
+  font-size:24px;
+
+}
+
+@media only screen and (max-width:425px){
+  .container-hardware{
+    width:100%;
   }
-  
-  .card-header:hover {
-    background-color: #e0e0e0;
+  .hardware_img {
+    width: 50%;
+    height:210;
+    
   }
-  
-  .accordion-icon {
-    transition: transform 0.3s ease;
+  .hardware_card {
+    position: relative;
+    width:100%;
+    transition: filter 0.3s;
   }
-  
-  .accordion-icon.active {
-    transform: rotate(180deg);
-  }
-  
-  
-  
-  .hardware_img2 {
-    height: 50px;
-    width: 50px;
+  .hardwarecardimg
+  .hardware_img21 {
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
-    margin-right: 10px; /* Adjust this margin as needed */
-    transition: transform 0.3s ease-in-out; /* Transition effect for rotation */
+   
   }
-  
-  .rotate {
-    transform: rotate(180deg); /* Rotate image when active */
+  .hardware_img2{
+    height: 20px;
+    width: 20px;
+    margin:0px;
+    
   }
+  .card_items {
+    
+    top: 50%;
+    left: 0px;
+   
+  }
+  .hardware-card-tile{
+    font-size:16px;
+  }
+  .hardwareintitle{
+    font-size:10px;
+    
+
+  }
+  .hardware-card-in{
+    width:30px;
+   
+  }
+  .hardware-subheading, .hardware-heading{
+    font-size:12px;
   
+  }
+  .hardware-card-in ul{
+    width:290px;
+    margin-top:0px;
+    padding:0px;
+    padding-left:5px;
+    margin-top:-105px
+  }
+ 
+ 
+}
+ 

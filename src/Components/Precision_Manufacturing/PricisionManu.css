@@ -4,7 +4,15 @@
     /* padding: 70px;    */
 }
 .pre_heading{
-    font-size: 75px;
+    font-size: 128px;
+}
+.pmcontaint{
+    font-size:36px;
+    font-family:arimo;
+}
+.pmcontaintpara{
+    font-size:48px;
+    font-weight:bold;
 }
 
 .content1 {
@@ -12,5 +20,28 @@
     top: 100px;
     color: white;
 }
+.pricioncontainer{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
 
-
+@media only screen and (max-width:425px){
+    .pricioncontainer{
+        width:100%;
+    }
+    .manufactureimg{
+        height:95vh;
+    }
+    .pre_heading{
+        font-size:48px;
+    }
+    .pmcontaint{
+        font-size:18px;
+       
+    }
+    .pmcontaintpara{
+        font-size:26px;
+        
+    }
+}

@@ -1,5 +1,43 @@
-.engineer_heading{
-    border-left: 6px solid #3535DE;
+
+
+.Engineering-Service {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
- 
+.engineer_card {
+    margin-bottom: 20px;
+}
+
+.card-body1 {
+    padding: 0;
+}
+
+.card_img1 {
+    width: 100%;
+    height: 185px;
+    object-fit: cover;
+}
+
+.no-padding {
+    padding: 0;
+}
+.eng-para1{
+    font-size:24px;
+}
+@media only screen and (max-width:425px){
+ .Engineering-Service {
+    width: 100%;
+    
+}  
+.eng-para1{
+    font-size:12px;
+} 
+.card_img1 {
+    width: 100%;
+    height: 125px;
+  
+}
+
+}

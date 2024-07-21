@@ -1,3 +1,42 @@
-.ddProject_img {
-    border-left: 6px solid #3535DE;
+.container-ddproject{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.paraddproject{
+    font-size:22px;
+}
+.projecthead{
+font-size:24px;
+font-family:poor richard;
+}
+.projrctheading{
+    font-size:24px;
+}
+.ddprojectcard{
+    height:200px;
+
+}
+.cardddproject{
+    height:340px;
+}
+@media only screen and (max-width:425px){
+    .container-ddproject{
+        width:100%;
+    }
+    .paraddproject{
+        font-size:12px;
+    }
+    .projecthead{
+    font-size:16px;
+    }
+    .projrctheading{
+        font-size:12px;
+    }
+    .pro_cardimg{
+        width:70px;
+    }
+    .cardddproject{
+        height:270px;
+    }
 }

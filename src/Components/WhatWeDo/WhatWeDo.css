@@ -1,9 +1,54 @@
-.wwd_main_heading{
-    border-left: 6px solid #3535DE;
-}
-.wwd_heading1{
+
+.wwd_heading1, .wwd_para{
     color:#3535DE;
+    font-size:48px;
+    font-weight:700px;
+    font-family:Arimo;
+}
+.wwd_para{
+    color:black;
+}
+.wwd_para1{
+    font-size:24px;
 }
 .wwdCard_heading{
     color: #3535DE;
+}
+.whatwedomain{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.contactwhat{
+    font-size:24px;
+}
+
+@media only screen and (max-width:425px){
+    
+    .whatwedomain{
+        width:95%;  
+    }
+    .wwd_heading1, .wwd_para{
+      
+        font-size:18px;
+       
+    }
+    .wwd_para1{
+        font-size:12px;
+    }
+    .contactwhat{
+        font-size:12px;
+    }
+    .whatwedoimg{
+        width:50px;
+        height:50px;
+    }
+    .wwdCard_heading{
+        font-size:12px;
+    }
+    .wwdCard_subheading{
+        font-size:11px;
+    }
+
+
 }

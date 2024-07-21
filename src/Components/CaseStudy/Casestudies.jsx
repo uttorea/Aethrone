@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Casestudies.css';
+import Heading from '../../Components/HeadingComponent/HeadingComponent'
 import casestudyimg1 from '../../assets/casestudyimg1.png';
 import casestudyimg2 from '../../assets/casestudyimg2.png';
 import casestudyimg3 from '../../assets/casestudyimg3.png';
@@ -33,8 +34,9 @@ const Casestudies = () => {
     };
 
     return (
-        <div className=' mt-5'>
-            <h3 className='case_heading px-2 container fw-bold'>Case Studies</h3>
+        <div className=' casestudies'>
+            
+            <Heading heading='Case Studies'/>
           
             <div id="carouselExampleIndicators" className="carousel slide mt-5" data-bs-ride="carousel">
                 <div className="carousel-indicators" style={{ position: 'absolute', right: '540px' }}>

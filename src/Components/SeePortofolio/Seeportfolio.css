@@ -1,8 +1,34 @@
-.portfolio_heading{
-    border-left: 6px solid #3535DE;
-}
+
 .portfolio_img{
     margin: auto; 
-    height: 180px;
+    height: 230px;
 width: 180px;
+}
+.seeportfolio{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:200px;
+}
+.portfolio_card{
+    height:300px;
+}
+@media only screen and (max-width:425px){
+    .seeportfolio{
+        width:90%;
+        margin-top:100px;
+    }
+
+    .portfolio_img{
+        margin: auto; 
+        height: 180px;
+        width:120px;
+    
+    }
+    .seetext{
+        font-size:12px;
+    }
+    .portfolio_card{
+        height:250px;
+    }
 }

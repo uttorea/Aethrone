@@ -1,5 +1,19 @@
 .designDevelopment_container{
     position: relative;
+   
+}
+
+.container-design{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.Designheadingtext{
+   
+    font-size:75px;
+    color:white;
+    margin:0;
+    letter-spacing:5px;
 }
 
 .content1 {
@@ -7,10 +21,25 @@
     top: 100px;
     color: white;
 }
-.DD_heading{
-    font-size: 75px;
+.ddimg_para2{
+    font-size:24px;
 }
 
-.ddimg_para1{
-    border-left: 6px solid #3535DE;
+
+@media only screen and (max-width:425px){
+    .Designheadingtext{
+        font-size:47.67px;
+        line-height:50px;
+    }
+    .container-design{
+        width:95%;
+       
+    }
+    .designDevelopment_container{
+       height:100vh;
+
+    }
+    .ddimg_para2{
+        font-size:12px;
+    }
 }

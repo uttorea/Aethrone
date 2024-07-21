@@ -1,14 +1,37 @@
-.apart_heading{
-    border-left: 6px solid #3535DE;
+
+.according-container{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
 }
-.accordion-button::after {
-    display: none; /* Hide the default arrow */
+.whyAccording{
+    font-size:48px;
+    font-family:arimo;
+    font-weight:bold;
 }
-.accordion-button .fa-plus {
-    transition: transform 0.2s;
+.foryouraccording{
+    font-size:36px;
+    font-family:arimo;
 }
-.accordion-button .expand-text {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
+
+@media only screen and (max-width:425px){
+    .according-container{
+        width:100%;
+    }
+    .whyAccording , .foryouraccording{
+        font-size:24px;
+    }
+    .accordion{
+        width:100%;
+    }
+    .accordinimg{
+        width:37px;
+        height:35px;
+    }
+    .acordinmaincard{
+        margin-top:60px;
+    }
+    .accordingheading{
+        font-size:12px; 
+    }
 }

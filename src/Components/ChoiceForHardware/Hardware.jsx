@@ -1,20 +1,90 @@
 import React, { useState, useEffect } from 'react';
 import './Hardware.css';
+import Heading from '../../Components/HeadingComponent/HeadingComponent'
 import hardwareimg1 from '../../assets/hardwareimg1.png';
 import hardwareimg2 from '../../assets/hardwareimg2.png';
 import hardwareimg3 from '../../assets/hardwareimg3.png';
 import hardwareimg4 from '../../assets/hardwareimg4.png';
 
+const accordionData = [
+  {
+    index: 1,
+    title: "Dedicated Engineering Expertise",
+    content: (
+      <>
+        <ul>
+          <li className="fw-bold hardware-heading">Build to Specification / Print: </li>
+          <p className='hardware-subheading'>Our team of highly qualified engineers are well versed with Modelling and simulation to work as an extended development team. From design optimization to troubleshooting complex challenges, we offer expert guidance every step of the way.</p>
+        </ul>
+        <ul className="mt-0 mt-md-5">
+          <li className="fw-bold hardware-heading">Advanced Manufacturing Knowledge: </li>
+          <p className='hardware-subheading'>We stay at the forefront of advanced manufacturing technologies, allowing us to recommend the most suitable processes and materials for your specific needs.</p>
+        </ul>
+      </>
+    )
+  },
+  {
+    index: 2,
+    title: "Uncompromising Quality",
+    content: (
+      <>
+        <ul>
+          <li className="fw-bold hardware-heading">Stringent Quality Control: </li>
+          <p className='hardware-subheading'>We adhere to the highest quality standards, including [mention specific certifications, e.g., AS9100]. Inline rigorous inspections throughout the manufacturing process ensure every component meets your exact specifications.</p>
+        </ul>
+        <ul className="mt-0 mt-md-5">
+          <li className="fw-bold hardware-heading">Traceability & Documentation: </li>
+          <p className='hardware-subheading'>We maintain complete traceability records for all materials and processes, providing you with peace of mind and compliance with industry regulations.</p>
+        </ul>
+      </>
+    )
+  },
+  {
+    index: 3,
+    title: "On-Time Delivery and Project Management",
+    content: (
+      <>
+        <ul className=''>
+          <li className="fw-bold hardware-heading">Reliable Scheduling: </li>
+          <p className='hardware-subheading'>We understand the importance of meeting deadlines. Our experienced project managers work closely with you to ensure on-time delivery, keeping your project running smoothly.</p>
+        </ul>
+        <ul className="mt-0 mt-md-5">
+          <li className="fw-bold hardware-heading">Open Communication: </li>
+          <p className='hardware-subheading'>We maintain clear and consistent communication throughout the entire process, keeping you informed of progress and addressing any questions promptly.</p>
+        </ul>
+      </>
+    )
+  }
+];
+
+const hardwareData = [
+  {
+    imgSrc: hardwareimg1,
+    title: "Dedicated Engineering Expertise",
+    index: 1
+  },
+  {
+    imgSrc: hardwareimg2,
+    title: "Uncompromising Quality",
+    index: 2
+  },
+  {
+    imgSrc: hardwareimg3,
+    title: "On-Time Delivery and Project Management",
+    index: 3
+  }
+];
+
 const AccordionItem = ({ index, title, content, isActive, onToggle }) => (
-  <div className="card">
+  <div className="card hardware-card-in">
     <div
-      className="card-header fw-bold text-primary justify-content-center d-flex"
+      className="card-header fw-bold text-primary flex-column justify-content-between  d-flex h-100 py-md-2 px-md-3 px-0 py-0"
       onClick={() => onToggle(index)}
       aria-expanded={isActive}
     >
-      <div className="">
-        <span className=''>{title}</span>
-        <img src={hardwareimg4} className="hardware_img2  justify-content-end" alt="Hardware Image" />
+      <div className="d-flex justify-content-between  w-100">
+        <span className='hardwareintitle'>{title}</span>
+        <img src={hardwareimg4} className={`hardware_img2 ${isActive ? 'rotate' : ''} `} alt="Hardware Icon" />
       </div>
       <span className={`accordion-icon ${isActive ? 'active' : ''}`}>
       </span>
@@ -24,71 +94,27 @@ const AccordionItem = ({ index, title, content, isActive, onToggle }) => (
       className={`collapse ${isActive ? 'show' : ''} width`}
       data-bs-parent="#accordionHorizontalExample"
     >
-      <div className="card-body">
+      <div className="card-body p-md-3 p-0 w-100">
         {content}
       </div>
     </div>
   </div>
 );
+
 const Accordion = ({ activeIndex, handleToggle }) => (
   <div className="accordion width" id="accordionHorizontalExample">
-    <AccordionItem
-      index={1}
-      title="Dedicated Engineering Expertise"
-      content={
-        <>
-          <ul>
-            <li className="fw-bold">Build to Specification / Print: </li>
-            <p>Our team of highly qualified engineers are well versed with Modelling and simulation to work as an extended development team. From design optimization to troubleshooting complex challenges, we offer expert guidance every step of the way.</p>
-          </ul>
-          <ul className="mt-5">
-            <li className="fw-bold">Advanced Manufacturing Knowledge: </li>
-            <p>We stay at the forefront of advanced manufacturing technologies, allowing us to recommend the most suitable processes and materials for your specific needs.</p>
-          </ul>
-        </>
-      }
-      isActive={activeIndex === 1}
-      onToggle={handleToggle}
-    />
-<AccordionItem
-     index={2}
-      title="Uncompromising Quality"
-      content={
-        <>
-          <ul>
-            <li className="fw-bold">Stringent Quality Control: </li>
-            <p>We adhere to the highest quality standards, including [mention specific certifications, e.g., AS9100]. Inline rigorous inspections throughout the manufacturing process ensure every component meets your exact specifications.</p>
-          </ul>
-          <ul className="mt-5">
-            <li className="fw-bold">Traceability & Documentation: </li>
-            <p>We maintain complete traceability records for all materials and processes, providing you with peace of mind and compliance with industry regulations.</p>
-          </ul>
-        </>
-      }
-      isActive={activeIndex === 2}
-      onToggle={handleToggle}
-    />
-    <AccordionItem
-      index={3}
-      title="On-Time Delivery and Project Management"
-      content={
-        <>
-          <ul>
-            <li className="fw-bold">Reliable Scheduling: </li>
-            <p>We understand the importance of meeting deadlines. Our experienced project managers work closely with you to ensure on-time delivery, keeping your project running smoothly.</p>
-          </ul>
-          <ul className="mt-5">
-            <li className="fw-bold">Open Communication: </li>
-            <p>We maintain clear and consistent communication throughout the entire process, keeping you informed of progress and addressing any questions promptly.</p>
-          </ul>
-        </>
-      }
-      isActive={activeIndex === 3}
-      onToggle={handleToggle}
-    />  </div>
+    {accordionData.map(item => (
+      <AccordionItem
+        key={item.index}
+        index={item.index}
+        title={item.title}
+        content={item.content}
+        isActive={activeIndex === item.index}
+        onToggle={handleToggle}
+      />
+    ))}
+  </div>
 );
-
-
 
 const Hardware = () => {
   const [accordionVisible, setAccordionVisible] = useState(false);
@@ -122,60 +148,29 @@ const Hardware = () => {
 
   return (
     <div className="hardware_body mt-5">
-      <div className="container">
-        <h3 className="hardware_heading px-2 fw-bold">Aethrone: Your Choice For Hardware Needs</h3>
-        <div className="row row-cols-1 row-cols-md-3 g-5 mt-4">
+      <div className="container-hardware">
+        <Heading heading='Aethrone: Your Choice For Hardware Needs' />
+        <div className="row row-cols-3 row-cols-md-3 g-1 g-md-5 mt-4">
           {!accordionVisible && (
             <>
-              <div className="col">
-                <div className="hardware_card">
-                  <div className="card border-primary border-2">
-                    <img src={hardwareimg1} className="hardware_img rounded" alt="..." />
-                    <div className="card_items">
-                      <img
-                        src={hardwareimg4}
-                        className="hardware_img2"
-                        alt="..."
-                        onClick={() => handleImageClick(1)}
-                      />
-                      <h5>Dedicated Engineering Expertise </h5>
-
+              {hardwareData.map(item => (
+                <div className="col" key={item.index}>
+                  <div className="hardware_card">
+                    <div className="card border-primary border-2 col hardwarecardimg">
+                      <img src={item.imgSrc} className="hardware_img rounded" alt="..." onClick={() => handleImageClick(item.index)} />
+                      <div className="card_items">
+                        <img
+                          src={hardwareimg4}
+                          className="hardware_img21"
+                          alt="..."
+                          onClick={() => handleImageClick(item.index)}
+                        />
+                        <h5 onClick={() => handleImageClick(item.index)} className='hardware-card-tile'>{item.title}</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="col">
-                <div className="hardware_card">
-                  <div className="card border-primary border-2">
-                    <img src={hardwareimg2} className="hardware_img rounded" alt="..." />
-                    <div className="card_items">
-                      <img
-                        src={hardwareimg4}
-                        className="hardware_img2"
-                        alt="..."
-                        onClick={() => handleImageClick(2)}
-                      />
-                      <h5>Uncompromising Quality</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="hardware_card">
-                  <div className="card border-primary border-2">
-                    <img src={hardwareimg3} className="hardware_img rounded" alt="..." />
-                    <div className="card_items">
-                      <img
-                        src={hardwareimg4}
-                        className="hardware_img2"
-                        alt="..."
-                        onClick={() => handleImageClick(3)}
-                      />
-                      <h5>On-Time Delivery and Project Management</h5>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </>
           )}
           {accordionVisible && (
