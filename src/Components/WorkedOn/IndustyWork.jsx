@@ -37,7 +37,7 @@ const IndustyWork = () => {
                 {workData.map((work, index) => (
                     <div key={index} className="col industrywork px-1 px-md-3">
                         <div className="card border-2 bordermaincolor">
-                            <img src={work.img} className="card-imgs" alt={work.title} />
+                            <img src={work.img} className="industryworkimg" alt={work.title} />
                             <div className="industrywork_body2 position-absolute bg-white w-100 end-0 bottom-0">
                                 <h5 className='d-flex justify-content-center fourpillarspara'>
                                 {work.title}

@@ -78,7 +78,7 @@ const Navbar = () => {
               </Link>
               <div className="nav-item dropdown">
             <a
-              className={`nav-link dropdown-toggle ${textColor}`}
+              className={`nav-link dropdown-toggle  ${textColor}`}
               to="/service"
               id="navbarDropdownMenuLinkService"
               role="button"

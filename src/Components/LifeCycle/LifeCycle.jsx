@@ -12,7 +12,7 @@ const LifeCycle = () => {
 
         <Heading heading='Lifecycle Program Support Services'/>
                 </div>
-                <p className='lifetext'>
+                <p className='lifetext ms-1 ms-md-0'>
                     We provide a comprehensive suite of services to ensure your equipment operates at peak efficiency throughout its lifecycle. Our expert 
                     engineers offer:
                 </p>

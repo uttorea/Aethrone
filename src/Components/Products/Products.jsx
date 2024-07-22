@@ -38,7 +38,7 @@ function Products() {
       <div className="product_head">
         <div className="container-md container-fluid p-0">
           <HeadingComponent heading="Products" subheading="What We Offer"/>
-          <div className="row row-cols-4 row-cols-md-4 g-2 g-lg-4 mt-4 productimg">
+          <div className="row row-cols-4 row-cols-md-4 g-2 g-lg-4 mt-4 product-card_main">
             {productData.map((product) => (
               <div className="col product_card" key={product.id}>
                 <div className="card border-2 bordermaincolor  overflow-hidden">

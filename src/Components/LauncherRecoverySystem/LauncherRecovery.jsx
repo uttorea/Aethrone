@@ -1,5 +1,6 @@
 import React from "react";
 import "./LauncherRecovery.css";
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
 import launcherimg3 from "../../assets/launcherimg3.png";
 import launcherimg4 from "../../assets/launcherimg4.jpg";
 import launcherimg5 from "../../assets/launcherimg5.png";
@@ -31,8 +32,9 @@ const LauncherRecovery = () => {
   return (
     <>
       <div className="container mt-5">
-        <h3 className="launcher_heading px-2 fw-bold">Recovery Systems</h3>
-        <small>Plug And Play Solutions</small>
+        {/* <h3 className="launcher_heading px-2 fw-bold"></h3>
+        <small></small> */}
+        <Heading heading="Recovery Systems" subheading="Plug And Play Solutions"/>
         <div className="row row-cols-2 row-cols-md-2 g-4">
           <div className="col">
             <div className="card mt-5 border-0">
@@ -65,7 +67,7 @@ const LauncherRecovery = () => {
             </div>
           </div>
         </div>
-        <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1 mt-4 px-md-5 px-1">
+        <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1  px-md-5 px-1 launch-card-recovery">
     {launchers.map((launcher) => (
       <div className="col" key={launcher.id}>
         <div className="card h-100 border-primary">

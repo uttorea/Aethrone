@@ -5,12 +5,11 @@
     font-size:18px;
     line-height:0px;
 }
-.card-imgs{
+.industryworkimg{
     width:100%;
+    height:400px;
 }
-.card{
-    height:380px;
-}
+
 .industrywork_body2{
     border-top:8px solid  #3535DE;
 }
@@ -21,13 +20,11 @@
     font-size:12px;
    }
   
-.card{
-    height:220px;
-}
+
 .li-items{
     font-size:12px;
 }
-.card-imgs{
+.industryworkimg{
     height:120px;
 }
 .industrywork_body2{

@@ -51,7 +51,7 @@ EngineerService = () => {
                             <div className="card-body1 no-padding">
                                 <img src={card.img} className="card_img1 w-100 rounded-top" alt={card.alt} />
                             </div>
-                            <div className="card-footer border-primary border-top maincolor">{card.footer}</div>
+                            <div className="card-footer eng-para2 border-primary border-top maincolor">{card.footer}</div>
                         </div>
                     </div>
                 ))}

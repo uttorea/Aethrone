@@ -1,5 +1,6 @@
 import React from "react";
 import "./Design.css";
+import Heading from '../../Components/HeadingComponent/HeadingComponent'
 import DD1 from "../../assets/DD1.png";
 import DD2 from "../../assets/DD2.png";
 import DDcardImg1 from "../../assets/DDcardImg1.png";
@@ -29,11 +30,13 @@ function Design() {
 
         <div className="container-lg container-fluid">
           <div className="dd_body">
-            <div className="card p-md-5 p-1 pt-3  text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
+            <div className="rounded p-md-5 p-1 pt-3  text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
               <div className="row">
                 <div className="col-sm-5 px-3">
-                  <h2 className="text-white dd_heading px-2">Design & Development</h2>
-                  <small className="text-white disingtext">From concept to product to certification</small>
+                <div className="text-white">
+                  <Heading heading="Design & Development" subheading="From concept to product to certification"/>
+                </div>
+                  
                   <div className="dd_para mt-4">
                     <p className="text-white disingtext">
                       Our comprehensive design and simulation services include conceptual design,

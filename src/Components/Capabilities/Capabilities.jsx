@@ -20,7 +20,7 @@ const capabilitiesData = [
         features: [
             'Tig Welding, Spot Welding, Al Welding',
             'Conventional Milling --1 No',
-            'Conventional Drilling -3 No',
+            'Conventional Drilling  -3 No',
             'CNC Turning -1 No'
         ]
     },

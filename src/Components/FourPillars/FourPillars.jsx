@@ -21,7 +21,7 @@ const FourPillars = () => {
                 {pillars.map((pillar, index) => (
                     <div key={index} className="col pillar_card px-1 px-md-3">
                         <div className="card border-2 bordermaincolor">
-                            <img src={pillar.img} className="card-img-top" alt="..." />
+                            <img src={pillar.img} className="piller-card-img" alt="..." />
                             
                             <div className="pillar_body2 position-absolute bg-white w-100 end-0 bottom-0">
                                 <h5 className='d-flex justify-content-center fourpillarspara' >

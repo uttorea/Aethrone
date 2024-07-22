@@ -34,6 +34,9 @@
 .custom-row {
   position: relative;
 }
+.compositecard{
+  height:375px;
+}
 
 .scroll_img,
 .composititem p {

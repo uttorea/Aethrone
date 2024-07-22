@@ -15,19 +15,19 @@ const DDProject = () => {
   const projectData = [
     {
       img: ddprojectimg1,
-      title: "45 +",
+      title: "45+",
       subtitle: "Customers",
       text: "Trust us with engineering program",
     },
     {
       img: ddprojectimg2,
-      title: "110 +",
+      title: "110+",
       subtitle: "Projects",
       text: "Trust us with engineering program",
     },
     {
       img: ddprojectimg3,
-      title: "12 +",
+      title: "12+",
       subtitle: "Multi Disciplinary Domain",
       text: "Trust us with engineering program",
     },
@@ -102,7 +102,7 @@ const DDProject = () => {
               </div>
             ))}
           </div>
-          <h6 className="mt-5 paraddproject">
+          <h6 className="mt-5 paraddproject ms-1 ms-md-0">
             This engineering vertical is based on below principals
           </h6>
           <div className="row row-cols-3 row-cols-md-3 g-4 mt-1 ms-1 ms-md-0 ">

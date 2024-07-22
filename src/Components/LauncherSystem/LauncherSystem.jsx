@@ -1,5 +1,6 @@
 import React from 'react'
 import './LauncherSystem.css'
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
 import launcherimg1 from '../../assets/launcherimg1.png'
 import launcherimg2 from '../../assets/launcherimg2.png'
 import launcherimg6 from '../../assets/launcherimg6.png'
@@ -28,9 +29,9 @@ const   LauncherSystem = () => {
     return (
         <>
         <div className='container mt-5'>
-            <h3 className='launcher_heading px-2 m-0 fw-bold'>Launcher Systems</h3>
-            <small className='px-3'>Systems for UAV & Loitering Munition</small>
-            <div className="row row-cols-2 row-cols-md-2 g-1 g-md-4">
+         
+            <Heading heading='Launcher Systems' subheading='Systems for UAV & Loitering Munition'/>
+            <div className="row row-cols-2 row-cols-md-2 g-1 g-md-4 ">
                 <div className="col">
                     <div className="card mt-5 border-0">
                         <img src={launcherimg1} className="card-img-top1" alt="..." />
@@ -54,7 +55,7 @@ const   LauncherSystem = () => {
                     </div>
                 </div>
             </div>
-            <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1 mt-4 px-md-5 px-1">
+            <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1  px-md-5 px-1 lunchsystemcards" >
     {cardData.map((card, index) => (
       <div className="col" key={index}>
         <div className="card h-100 border-primary">

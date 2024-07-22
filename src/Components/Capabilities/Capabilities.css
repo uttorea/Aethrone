@@ -74,14 +74,17 @@
     }
 
     .list-styled {
-        font-size: 11px;
+        width:90%;
+        font-size: 9px;
         top: 50%;
+      
+       
     }
 
     .cap_card:hover .list-styled {
         display: block;
         position: absolute;
-        top: 60%;
+        top:10%;
     }
 
     .cardimg .capability_img {
@@ -97,14 +100,17 @@
     }
 
     .card_title {
-        font-size: 11px;
+        font-size: 16px;
+    }
+    .cap_card:hover .card_title{
+        font-size:8px;
     }
     .cap_card:hover .capability_img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
     .cap_card:hover .productimg {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 }

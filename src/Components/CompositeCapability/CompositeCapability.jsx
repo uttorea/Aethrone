@@ -109,7 +109,7 @@ const CompositeCapability = () => {
               <div
                 key={image.id}
                 id={image.id}
-                className="card align-items-center d-flex"
+                className="compositecard border align-items-center d-flex"
                 style={{ padding: "60px" }}
               >
                 <img

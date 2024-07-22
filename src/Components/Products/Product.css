@@ -11,8 +11,9 @@
   }
   
   .product_card img {
-    height: 350px;
+    height: 380px;
     transition: 0.5s;
+    object-fit:cover;
   }
   
   .product_card:hover .intro {
@@ -29,6 +30,10 @@
   .product_card:hover .product_img {
     transform: scale(1.1) rotate(-3deg);
   }
+  /* .product_img{
+    width:100%;
+    object-fit:cover;
+  } */
   
 
  
@@ -63,7 +68,7 @@
       
     }
     .product_card img {
-      height: 200px;
+      height: 240px;
     }
     .intro {
       height: 40px;
@@ -71,7 +76,7 @@
     }
     
     .product_card:hover .intro {
-      height:140px;
+      height:160px;
       
     }
 

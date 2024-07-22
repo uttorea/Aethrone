@@ -7,8 +7,12 @@
 }
 
 .pillar_card img{
-    height: 350px;
+    
 
+}
+.piller-card-img{
+    height: 380px;
+    width:100%;
 }
 .pillar_body2{
     border-top:8px solid  #3535DE;
