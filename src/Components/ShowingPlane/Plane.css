@@ -111,7 +111,7 @@ body {
     }
 
     .carousel-caption {
-        top: 40px;
+        top: -40px;
     }
 
     .carousel-caption-text {
@@ -129,5 +129,9 @@ body {
 
     .header-container {
         padding-top: 20px;
+    }
+    .carauelplanmain{
+      margin-top:-40px;
+     
     }
 }

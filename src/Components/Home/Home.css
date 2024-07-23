@@ -41,7 +41,7 @@
 @media only screen and (max-width: 425px) {
     .home_page{
         width:100%;
-        height:855px;
+        height:955px;
     }
     .home_bgImg1{
         width:100%;
@@ -67,4 +67,17 @@
         padding:18px;
         margin-top:10px;
     }
+    .ingenuityspan{
+        margin-left:5px;
+        margin-right:5px;
+        letter-spacing:1px;
+        
+    
+    }
+    .homepage-text{
+        font-size:12px;
+        
+    }
+    
+    
 }

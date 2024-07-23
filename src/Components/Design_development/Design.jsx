@@ -54,7 +54,7 @@ function Design() {
                   <Button text="Discover Design & Development"/>
                  
                 </div>
-                <div className="col-sm-7">
+                <div className="col-sm-7 mt-4 mt-md-0">
                   <div className="row row-cols-3 row-cols-md-3 ms-1 ms-md-0 ">
                     {cardData.map((card, index) => (
                       <div className="col p-md-3 p-1 " key={index}>

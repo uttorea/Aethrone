@@ -18,3 +18,8 @@
     width: 16px; /* Set the width of the arrow */
     height: auto; /* Maintain the aspect ratio */
   }
+  @media only screen and (max-width:425px){
+    .designbutton {
+        font-size: 12px;        
+    }
+  }
