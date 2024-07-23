@@ -19,7 +19,7 @@ const Parachute = () => {
         />
         <div className="container">
           <div className="launch_content text-light">
-            <h1 className="ms-0 ms-md-5">
+            <h1 className="ms-0 ms-md-5 col-10">
               Parachutes & <br /> Lighter Than Air Technology
             </h1>
             <div className="row mt-3 mt-md-5">
@@ -41,7 +41,7 @@ const Parachute = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6">
+              <div className="col-sm-5">
                 <h3 className="lrdimg_para1 mt-4 px-2">Technical Approach</h3>
                 <div className=" bg-transparent border-0 mt-3 rounded">
                   <div

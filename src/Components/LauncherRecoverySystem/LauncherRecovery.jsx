@@ -32,8 +32,6 @@ const LauncherRecovery = () => {
   return (
     <>
       <div className="container mt-5">
-        {/* <h3 className="launcher_heading px-2 fw-bold"></h3>
-        <small></small> */}
         <Heading heading="Recovery Systems" subheading="Plug And Play Solutions"/>
         <div className="row row-cols-2 row-cols-md-2 g-4">
           <div className="col">
@@ -78,7 +76,7 @@ const LauncherRecovery = () => {
           
           />
           <div className="card-footer border-5 border-primary">
-            <h6 className="text-primary lanchtext">
+            <h6 className="maincolor lanchtext">
               {launcher.title.split(" ").slice(0, 2).join(" ")} <br />
               {launcher.title.split(" ").slice(2).join(" ")}
             </h6>

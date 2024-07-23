@@ -78,11 +78,11 @@ const hardwareData = [
 const AccordionItem = ({ index, title, content, isActive, onToggle }) => (
   <div className="card hardware-card-in">
     <div
-      className="card-header fw-bold text-primary flex-column justify-content-between  d-flex h-100 py-md-2 px-md-3 px-0 py-0"
+      className="card-header fw-bold text-primary flex-column justify-content-between  d-flex  py-md-2 px-md-3 px-0 py-0 "
       onClick={() => onToggle(index)}
       aria-expanded={isActive}
     >
-      <div className="d-flex justify-content-between  w-100">
+      <div className="d-flex justify-content-between ">
         <span className='hardwareintitle'>{title}</span>
         <img src={hardwareimg4} className={`hardware_img2 ${isActive ? 'rotate' : ''} `} alt="Hardware Icon" />
       </div>

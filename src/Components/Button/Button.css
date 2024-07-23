@@ -1,0 +1,20 @@
+.designbutton {
+    font-size: 18px;
+    font-weight: 100;
+    color: white;
+    text-decoration: none; /* Removes the underline */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.designbutton:hover {
+    background-color:blue; /* Change this to your desired hover background color */
+    color: white; /* Keep the text color the same, or adjust as needed */
+}
+
+.arrow-icon {
+    margin-left: 8px; /* Adjust the spacing as needed */
+    vertical-align: middle; /* Align the arrow vertically */
+    width: 16px; /* Set the width of the arrow */
+    height: auto; /* Maintain the aspect ratio */
+  }

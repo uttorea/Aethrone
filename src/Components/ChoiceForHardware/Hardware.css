@@ -91,6 +91,7 @@ h5 {
   background-color: #f0f0f0;
   border-bottom: 1px solid #ddd;
   transition: background-color 0.3s ease;
+  
 }
 
 .card-header:hover {
@@ -107,6 +108,10 @@ h5 {
 .hardware-subheading, .hardware-heading{
   font-size:24px;
 
+}
+.hardware-card-in{
+  height:250px;
+  /* width:300px; */
 }
 
 @media only screen and (max-width:425px){
@@ -154,18 +159,27 @@ h5 {
     width:30px;
    
   }
+  .hardware-card-in{
+    height:250px;
+  
+  }
   .hardware-subheading, .hardware-heading{
     font-size:12px;
   
   }
   .hardware-card-in ul{
-    width:290px;
+    width:270px;
     margin-top:0px;
     padding:0px;
     padding-left:5px;
     margin-top:-105px
   }
- 
+  .hardware_img {
+    
+    height:260px;
+   
+  }
+  
  
 }
  

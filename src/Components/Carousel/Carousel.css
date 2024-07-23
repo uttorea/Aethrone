@@ -1,17 +1,23 @@
 .body_carousel{
     margin-top:40px;
+    width:100%;
+    margin-left:-45px;
 }
 
 .previ{
-    margin-left:130px
+    margin-left:50px
 }
 .next{
-    margin-left:600px;
+    margin-left:0px;
 }
 .carousel_para{
     width:75%;
     padding:30px;
     margin-top:20px;
+}
+.carouselimg{
+width:994.25px;
+height:598.5px;
 }
 
 

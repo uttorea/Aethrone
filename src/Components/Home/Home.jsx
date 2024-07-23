@@ -14,9 +14,9 @@ const Home = () => {
   return (
     <div>
       <div className="home_page position-relative">
-        <img src={homeBgImg} alt="" className="home_bgImg1 w-100  " />
+        <img src={homeBgImg} alt="" className="home_bgImg1 w-100" />
         <div
-          className="container "
+          className="home_main_containt"
           
         >
           <div className="carouselitem">
@@ -36,21 +36,21 @@ const Home = () => {
               </p>
 
               <div className="mt-5 d-flex">
-                <div className="col-md-2 col-1"></div>
-                <div className="col-sm-12 col-lg-7 whoWeare  " >
+                <div className="col-md-2 ms-5 col-1 "></div>
+                <div className="col-sm-12 col-lg-7  whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div
-                    className=" fontfamilySecondary We-are-a-deep"
+                    className="  We-are-a-deep"
                     style={{ backgroundColor: "#0E0E0E" }}
                   >
                     <p
-                      className="fontfamilySecondary font-weight-light fontsecondry"
+                      className="homepage-text"
                       style={{  letterSpacing: "1px" }}
                     >
                       We are a deep tech start-up incubated from SIIC-IIT Kanpur
                     </p>
                     <p
-                      className="fontfamilySecondary font-weight-light fontsecondry"
+                      className=" homepage-text"
                       style={{ letterSpacing: "1px" }}
                     >
                       We design, develop, manufacture and support critical
@@ -74,6 +74,7 @@ const Home = () => {
           <div>
       <Design  />
           </div>
+          
           <div>
       <Products />
           </div>

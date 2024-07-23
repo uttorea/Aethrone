@@ -1,7 +1,9 @@
 .pro_heading {
     border-left: 6px solid #3535de;
   }
-  
+  .producttitle{
+    font-size:18px;
+  }
   .product_head {
     position: relative;
     bottom: 200px;
@@ -14,6 +16,7 @@
     height: 380px;
     transition: 0.5s;
     object-fit:cover;
+    
   }
   
   .product_card:hover .intro {
@@ -38,7 +41,7 @@
 
  
 .intro {
-    height: 70px;
+    height: 100px;
     box-sizing: border-box;
     position: absolute;
     background: white;
@@ -47,7 +50,16 @@
     transition: 0.9s;
     overflow: hidden;
   }
-  
+  .smallimg{
+    height:40px;
+    width:40px;
+   margin-left:auto;
+   margin-right:auto;
+  }
+  .product_card:hover .smallimg {
+    width:25px;
+    height:25px;
+  }
 
   
   .card_text {
@@ -56,6 +68,25 @@
   }
   .card_text{
     font-size:16px;
+  }
+  .seperator1{
+    width:0px;
+    height:0px;
+    border-right:100vw solid transparent;
+    border-bottom:14.9vw solid #3535DE;
+    margin-top:-13.9vw ;
+  }
+  .seperator{
+    width:0px;
+    height:0px;
+    border-right:100vw solid transparent;
+    border-bottom:15.9vw solid white;
+    margin-top:-13.9vw ;
+  }
+  .discover-text{
+    font-size:18px;
+    border-top: 2px solid #3535DE;
+
   }
   @media only screen and (max-width: 450px) {
     .product_head {
@@ -76,12 +107,12 @@
     }
     
     .product_card:hover .intro {
-      height:160px;
+      height:170px;
       
     }
 
     .producttitle{
-      font-size:12px;
+      font-size:10px;
     }
     .card_text{
       font-size:8px;

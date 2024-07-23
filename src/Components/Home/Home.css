@@ -1,17 +1,21 @@
 
 .headingtext{
    
-    font-size:75px;
+    font-size:96px;
     color:white;
     margin:0;
     letter-spacing:5px;
 }
 .ingenuity{
     font-size:27px;
+    font-family:arimo;
 }
 .ingenuityspan{
-    margin-left:16px;
-        margin-right:16px
+    margin-left:15px;
+    margin-right:20px;
+    letter-spacing:2px;
+    font-family:arimo;
+
 }
 .whoWeare{
     margin-left:130px;
@@ -20,7 +24,19 @@
     padding:48px;
     margin-top:30px;
 }
-
+.carouselitem{
+    width:100%;
+}
+.home_main_containt{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.homepage-text{
+    font-size:18px;
+    font-weight:100;
+    font-family:arimo;
+}
 
 @media only screen and (max-width: 425px) {
     .home_page{

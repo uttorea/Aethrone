@@ -41,10 +41,10 @@ const carouselData = [
 function Carousel() {
   return (
     <div className="body_carousel" >
-      <div className="d-flex justify-content-center" >
-        <div className="col-lg-12" >
+      <div className="d-flex justify-content-center " >
+        <div className="col-lg-12 " >
           <div id="carouselExampleIndicators1" className="carousel slide " data-bs-ride="carousel">
-            <div className="carousel-indicators indicator" style={{alignItems:'center'}}>
+            <div className="carousel-indicators " style={{alignItems:'center'}}>
               {carouselData.map((item, index) => (
                 <button
                   key={index}
@@ -57,10 +57,10 @@ function Carousel() {
                 ></button>
               ))}
             </div>
-            <div className="carousel-inner carousaliner" >
+            <div className="carousel-inner carousaliner " >
               {carouselData.map((item, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                  <img src={item.img} className="d-block w-100 carouselimg" alt="..." />
+                  <img src={item.img} className="d-block  carouselimg" alt="..." />
                   <div className="csrousel_text  text-light carausaltext-head">
                     <h1 className='carausaltext-heading'>{item.title}</h1>
                     <h1 className='carausaltext-heading'>{item.title1}</h1>

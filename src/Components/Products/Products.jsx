@@ -4,6 +4,7 @@ import HeadingComponent from "../HeadingComponent/HeadingComponent";
 import productimg1 from "../../assets/productimg1.png";
 import productimg2 from "../../assets/productimg2.png";
 import productimg4 from "../../assets/productimg4.png";
+import Productii5 from '../../assets/product5.png'
 
 const productData = [
   {
@@ -43,12 +44,15 @@ function Products() {
               <div className="col product_card" key={product.id}>
                 <div className="card border-2 bordermaincolor  overflow-hidden">
                   <img src={product.img} alt={product.title} className="product_img" />
-                  <div className="intro border-top border-5 border-primary d-flex flex-column"> 
+                  <div className="seperator1"></div>
+                  <div className="seperator"></div>
+                  <div className="intro d-flex flex-column"> 
                     <h6 className="text-center mt-1 mt-lg-4 maincolor producttitle">{product.title}</h6>
+                    <img src={Productii5} alt="" className="smallimg"/>
                     <div className="card_text text-center flex-grow-1" >
                       <p>{product.description}</p>
                     </div>
-                    <p className="border-top text-center  border-primary border-2 discover-text ">
+                    <p className="text-center  discover-text ">
                       Discover<i className="bi bi-arrow-right-short"></i>
                     </p>
                   </div>

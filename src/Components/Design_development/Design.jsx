@@ -1,6 +1,7 @@
 import React from "react";
 import "./Design.css";
-import Heading from '../../Components/HeadingComponent/HeadingComponent'
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
+import Button from "../Button/Button";
 import DD1 from "../../assets/DD1.png";
 import DD2 from "../../assets/DD2.png";
 import DDcardImg1 from "../../assets/DDcardImg1.png";
@@ -9,6 +10,7 @@ import DDcardImg3 from "../../assets/DDcardImg3.png";
 import DDcardImg4 from "../../assets/DDcardImg4.png";
 import DDcardImg5 from "../../assets/DDcardImg5.png";
 import DDcardImg6 from "../../assets/DDcardImg6.png";
+
 
 const cardData = [
   { img: DDcardImg1, title: "Computer Aided Designer" },
@@ -49,9 +51,8 @@ function Design() {
                       We also provide product qualification, integration, testing, certification, IP transfer, and long-term support.
                     </p>
                   </div>
-                  <a className="btn bg-primary text-white border-0 rounded-2 mt-1 mb-4 mt-lg-4 designbutton" style={{ fontFamily: "arimo" }}>
-                    Discover Design & Development
-                  </a>
+                  <Button text="Discover Design & Development"/>
+                 
                 </div>
                 <div className="col-sm-7">
                   <div className="row row-cols-3 row-cols-md-3 ms-1 ms-md-0 ">

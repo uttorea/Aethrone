@@ -21,7 +21,7 @@ const Navbar = () => {
         setTextColor("text-dark");
         setLogoSrc(changeLogo);
         setBorderTop("3px solid white"); // Correct value for border-top
-        setLogoWidth("300px"); // Change the width when scrolling past 400px
+        setLogoWidth("270px"); // Change the width when scrolling past 400px
       } else {
         setNavBackground("");
         setTextColor("text-light");
