@@ -1,7 +1,7 @@
-/* General Styles */
-body {
+
+/* body {
     font-family: Arial, sans-serif;
-}
+} */
 
 .header-container {
     width: 80%;
@@ -28,9 +28,9 @@ body {
 }
 
 .carouselplan{
-    width: 50%;
+    
+    width: 80%;
     margin: auto;
-    margin-top: 100px;
     position: relative;
 }
 .carauelplanmain{
@@ -58,30 +58,34 @@ body {
 .carousel-caption {
     position: absolute;
     bottom: 5px;
-    top: 250px;
+    margin-left:-150px;
     width: 100%;
     text-align: center;
+  
 }
 
 .carousel-caption-text {
     color: #3535DE;
     font-size: 26px;
     font-weight: bold;
+    margin-top:-180px;
 }
 
 .carousel-thumbnails {
     display: flex;
     justify-content: center;
-    gap: 5px;
-    padding-top: 50px;
+    gap: 0px;
+    padding-top:20px;
+   
 }
 
 .carousel-thumbnails img {
-    width: 80px;
-    padding: 10px;
+    width: 60px;
+
+    padding:0px;
     cursor: pointer;
     transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-    border: 2px solid transparent;
+    border: 1px solid transparent;
     border-radius: 5%;
 }
 
@@ -91,18 +95,15 @@ body {
 }
 
 .innercarousal {
-    height: 60vh;
+    height: 75vh;
+    margin-top:-16px;
+
 }
-.wedf{
-    background-color:;
-    font-size:50px;
-    width:200px;
-    height:200px;
-    color:blue;
+.carousel-arrow{
+    width:50px;
+    height:50px;
 }
-.carousel-control-prev-icon{
-    color:blue;
-}
+
 
 @media only screen and (max-width: 450px) {
     .carousel-thumbnails img {
@@ -111,12 +112,15 @@ body {
     }
 
     .carousel-caption {
-        top: -40px;
+        top: 280px;
+        margin-left:-120px;
+        
     }
 
     .carousel-caption-text {
         margin-left: 150px;
         font-size: 14px;
+        
     }
 
     .carousel-thumbnails {
@@ -124,6 +128,7 @@ body {
     }
 
     .innercarousal {
+        margin-top:50px;
         height: 40vh;
     }
 
@@ -134,4 +139,13 @@ body {
       margin-top:-40px;
      
     }
+    .carousel-arrow{
+        width:25px;
+        height:25px;
+        margin-top:-50px;
+    }
+    .carousel-inner{
+        height:170px;
+    }
+    
 }

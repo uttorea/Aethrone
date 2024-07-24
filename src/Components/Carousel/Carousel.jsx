@@ -60,7 +60,7 @@ function Carousel() {
             <div className="carousel-inner carousaliner " >
               {carouselData.map((item, index) => (
                 <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                  <img src={item.img} className="d-block  carouselimg" alt="..." />
+                  <img src={item.img} className="d-block  carouselimg " alt="..." />
                   <div className="csrousel_text  text-light carausaltext-head">
                     <h1 className='carausaltext-heading'>{item.title}</h1>
                     <h1 className='carausaltext-heading'>{item.title1}</h1>

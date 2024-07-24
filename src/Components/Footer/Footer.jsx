@@ -14,19 +14,20 @@ function Footer() {
                             <div className="col-lg-3 col-6 foot_logo mt-4 ">
                                 <img src={Footerlogo} className="card-img-top" alt="Card Image" />
                                 <div className="card-body2 mt-2 mt-md-4 text-white">
-                                    <p className='number1'>+91 721 928 6003</p>
+                                    <p className='number1 m-0'>+91 721 928 6003</p>
                                     <p className='number2'>+91 721 928 6003</p>
                                 </div>
                                 <p className='emailtext text-wrap'>info@aethroneaerospace.com</p>
                             </div>
                             <div className="col-lg-3 col-6 text-white mt-5">
-                                <h3 className='headingfooter'>What We Do? <br />Service</h3>
+                                <h3 className='headingfooter'>What We Do?  </h3>
+                                <h3 className='headingfooter mt-2' >Service</h3>
                                 <div className="card-body2">
                                     <li>Design and Development</li>
                                     <li>Precision Manufacturing</li>
                                 </div>
                             </div>
-                            <div className="col-lg-3 col-7 col-md-6  text-white mt-0 mt-md-5">
+                            <div className="col-lg-3 col-7 col-md-6  text-white mt-0 mt-md-5 card-body41">
                                 <h3 className='mt-5 headingfooter '>Product</h3>
                                     <li className='text-wrap card-body4'>Launch and Recovery/Delivery</li>
                                 <div className="card-body2">

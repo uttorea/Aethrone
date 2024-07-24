@@ -53,7 +53,7 @@ function Furtblog() {
                   <HeadingComponent heading="Featured Blogs" />
                 </div>
                 <div className="col-5">
-                  <a className="btn bordermaincolor mt-2">
+                  <a className="btn bordermaincolor mt-2 px-4" style={{fontSize:'12px'}}>
                     ALL BLOG <i className="bi bi-arrow-right-short"></i>
                   </a>
                 </div>
@@ -69,18 +69,18 @@ function Furtblog() {
               </div>
 
               <div className="frt_heading2 mt-4 px-md-2 px-0 ">
-                <h4 className="maincolor">{blogItems[0].heading}</h4>
+                <h4 className="maincolor what-if-your">{blogItems[0].heading}</h4>
                 {blogItems[0].subheading && (
-                  <h6 className="maincolor">{blogItems[0].subheading}</h6>
+                  <h6 className="maincolor Emergency">{blogItems[0].subheading}</h6>
                 )}
-                <h6>{blogItems[0].date}</h6>
+                <h6 className="Date-fur">{blogItems[0].date}</h6>
               </div>
             </div>
 
             <div className="col-lg-6 col-12 container-fluid px-md-3 px-0">
               <div className="d-flex mt-lg-0 mt-4 justify-content-between">
                 <h3 className="fw-bold px-1">News</h3>
-                <a className="btn frtbtn21 bordermaincolor">
+                <a className="btn frtbtn21 bordermaincolor mt-2 px-4" style={{fontSize:'12px'}}>
                   MORE NEWS <i className="bi bi-arrow-right-short"></i>
                 </a>
               </div>

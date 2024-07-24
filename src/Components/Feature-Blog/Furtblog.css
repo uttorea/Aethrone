@@ -15,6 +15,22 @@
 .frt_heading2 {
     border-left: 3px solid blue;
 }
+.what-if-your{
+    font-size:30px;
+    font-weight:800;
+    font-family:Arimo;
+}
+.Emergency{
+    font-size:24px;
+    font-weight:100;
+    font-family:Arimo;
+}
+.Date-fur{
+    font-size:19.09px;
+    font-weight:100;
+    color:#414042;
+    font-family:Arimo;
+}
 
 
 .frt_txt {
@@ -25,7 +41,7 @@
     
     position: relative;
     top: 100px;
-    border:1px solid  rgb(235, 229, 229);
+    border-top:1px solid  rgb(235, 229, 229);
    
 
 }
@@ -37,12 +53,33 @@
 }
 .join-team-heading{
     font-size:36px;
+    font-weight:500;
 }
 .join-team-sub{
     font-size:18px;
+    font-weight:800;
+    font-family:'Arimo';
 }
 .card-img-top{
     height:170px;
+}
+.card-text{
+    font-size:15px;
+    font-family:Arimo;
+    font-weight:800;
+
+}
+.card-text1{
+    font-size:15px;
+    font-family:Arimo;
+    font-weight:100;
+    color:#414042;
+
+}
+.frtbtn21{
+       
+    font-size:12px;
+    
 }
 @media only screen and (max-width: 450px) {
     .furtblog{
@@ -90,5 +127,23 @@
     }
     .card-text1 {
         font-size:8px;
+    }
+    .Date-fur{
+        margin-left:3px;
+        font-size:8px;
+
+    }
+    .Emergency{
+        margin-left:3px;
+        font-size:12px;
+
+    }
+    .what-if-your{
+        margin-left:3px;
+        font-size:14px;
+
+    }
+    .join_team{
+        top:20px;
     }
 }

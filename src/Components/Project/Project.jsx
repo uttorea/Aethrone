@@ -11,14 +11,14 @@ function Project() {
               <div className="card-body1 ">
                 <div className="d-flex d-md-block">
 
-                <h3 className="maincolor fontfamilySecondary">
+                <h3 className="maincolor fontfamilySecondary A-project">
                   Have 
                 </h3>
-                <h3 className="maincolor fontfamilySecondary ms-1 ms-md-0"> A Project!</h3>
+                <h3 className="maincolor fontfamilySecondary ms-1 ms-md-0 A-project"> A Project!</h3>
                 </div>
-                <div className="">
+                <div className=" ">
                   <div className="d-flex d-md-block">
-                <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold" >
+                <h3 className="card-title text-white fontfamilySecondary mt-lg-5 mt-2 fw-bold " >
                   Let's 
                   </h3>
                   <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold ms-1 ms-md-0">Discuss</h3>
@@ -30,7 +30,7 @@ function Project() {
                    </div>
                 
                 <p
-                  className="text-white fontfamilySecondary mt-lg-5 mt-2 projecttext"
+                  className=" fontfamilySecondary mt-lg-5 mt-2 projecttext"
                  
                 >
                   Whether you're seeking innovative solutions, collaboration
@@ -82,7 +82,7 @@ function Project() {
                 ></textarea>
               </div>
               <div className="d-flex justify-content-end mt-4">
-                <a className="mb-5 backgroundcolormain px-4 py-2 project_btn text-white text-decoration-none rounded">
+                <a className="mb-5 backgroundcolormain px-4 py-2 project_btn text-white text-decoration-none rounded fontfamilyPrimary">
                   Send Message
                 </a>
               </div>

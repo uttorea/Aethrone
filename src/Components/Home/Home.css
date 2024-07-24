@@ -1,4 +1,6 @@
-
+.Home-para-main{
+    margin-left:30px;
+}
 .headingtext{
    
     font-size:96px;
@@ -23,6 +25,7 @@
 .We-are-a-deep{
     padding:48px;
     margin-top:30px;
+    
 }
 .carouselitem{
     width:100%;
@@ -77,6 +80,9 @@
     .homepage-text{
         font-size:12px;
         
+    }
+    .Home-para-main{
+        margin-left:0px;
     }
     
     

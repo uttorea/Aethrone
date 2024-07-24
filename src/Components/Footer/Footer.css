@@ -1,4 +1,3 @@
-
 .footermaincontaint{
     width:80%;
     margin-left: auto;
@@ -6,6 +5,12 @@
 }
 .card-body2 h6{
     font-family:arimo;
+}
+.card-body2 li{
+    font-size:18px;
+    font-family:arimo;
+
+
 }
 
 .footer_head{
@@ -20,8 +25,8 @@
     border-radius:50% ;
 }
 .main_border {
-   
-    padding: 40px;   
+    padding: 40px; 
+    padding-bottom:0px;  
 }
 .emailtext{
     color:white;
@@ -32,8 +37,8 @@
 }
 
 .social_icon1 {
-    width: 30px; 
-    height: 30px;
+    width: 40px; 
+    height: 40px;
     border: 1px solid #414042;
     border-radius: 50%;
     display: flex;
@@ -44,12 +49,11 @@
 .social_icon1 i {
     font-size: 13px; 
     color: white;
-
 }
 
 .social_icon2{
-    width: 30px; 
-    height: 30px;
+    width: 40px; 
+    height: 40px;
     border: 1px solid #414042;
     border-radius: 50%;
     display: flex;
@@ -66,20 +70,29 @@
     width:80%;
     margin:auto;
 }
+.card-body3 p{
+    font-size:18px;
+    font-family:arimo;
+}
+.card-body2 p{
+    font-family:arimo;
+font-size:18px;
+}
 
+li {
+    list-style-type: none;
+}
 
 @media only screen and (max-width:450px){
     .footermaincontaint{
         width:90%;
         margin-left: auto;
         margin-right: auto;
-        
     }
     .card-body2 li{
         font-size:12px;
         line-height:20px;
-        padding:0px
-        
+        padding:0px;
     }
     .card-body3 p{
         font-size:12px;
@@ -89,15 +102,15 @@
         width:100%;
     }
     .main_border {
-        
         padding: 10px;   
     }
     .emailtext{
         font-size:12px;
     }
-    .card-body4{
+    .card-body41 .card-body4{
         font-size:12px;
         line-height:10px;
+        font-family:Arimo;
     }
     .headingfooter{
         font-size:18px;
@@ -107,14 +120,25 @@
     }
     .lastfooter2{
         font-size:12px;
-        margin-left:30px;
+        margin-left:20px;
     }
-    .number1,.number2{
-line-height:10px;
-font-size:12px;
-margin:10px;
-
+    .card-body2 .number1, .card-body2 .number2{
+        line-height:10px;
+        font-size:12px;
+       
     }
    
+    .number2{
+        margin-top:5px;
+        margin-bottom:10px;
+    }
+    .footer_head{
+     
+        top: 0px;
+    }
+    .social_icon2,.social_icon1{
+        width: 25px; 
+        height: 25px;
+        
+    }
 }
-

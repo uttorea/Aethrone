@@ -35,23 +35,23 @@ function Design() {
             <div className="rounded p-md-5 p-1 pt-3  text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
               <div className="row">
                 <div className="col-sm-5 px-3">
-                <div className="text-white">
+                <div className="text-white mt-3">
                   <Heading heading="Design & Development" subheading="From concept to product to certification"/>
                 </div>
                   
-                  <div className="dd_para mt-4">
-                    <p className="text-white disingtext">
+                  <div className="dd_para mt-3 mt-md-5">
+                    <p className=" disingtext px-3">
                       Our comprehensive design and simulation services include conceptual design,
-                      <br />
                       feasibility studies, new product development, product upgrades,
-                      <br />
                       legacy product maintenance, and smart testing rig development.
                     </p>
-                    <p className="text-white disingtext">
+                    <p className=" disingtext px-3">
                       We also provide product qualification, integration, testing, certification, IP transfer, and long-term support.
                     </p>
                   </div>
+                  <div className="mt-3 mt-md-5 ms-5">
                   <Button text="Discover Design & Development"/>
+                  </div>
                  
                 </div>
                 <div className="col-sm-7 mt-4 mt-md-0">

@@ -35,23 +35,23 @@ const Home = () => {
                 <span className="ingenuityspan">Perfection</span>
               </p>
 
-              <div className="mt-5 d-flex">
+              <div className="mt-5 d-flex Home-para-main">
                 <div className="col-md-2 ms-0 ms-md-5 col-0 col-sm-1 "></div>
                 <div className="col-sm-12 col-lg-7  whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div
-                    className="  We-are-a-deep"
+                    className="We-are-a-deep "
                     style={{ backgroundColor: "#0E0E0E" }}
                   >
                     <p
                       className="homepage-text"
-                      style={{  letterSpacing: "1px" }}
+                      style={{  letterSpacing: "1px",}}
                     >
-                      We are a deep tech start-up incubated from SIIC-IIT Kanpur
+                      We are a deep tech start-up  incubated from SIIC-IIT Kanpur
                     </p>
                     <p
                       className=" homepage-text"
-                      style={{ letterSpacing: "1px" }}
+                      style={{ letterSpacing: "1px",}}
                     >
                       We design, develop, manufacture and support critical
                       mission systems, platforms and components for the

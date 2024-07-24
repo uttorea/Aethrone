@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./Plane.css";
-import planeimg1 from "../../assets/planeimg1.png";
-import planeimg2 from "../../assets/planeimg2.png";
-import planeimg3 from "../../assets/planeimg3.png";
-import planeimg4 from "../../assets/planeimg4.png";
-import planeimg5 from "../../assets/planeimg5.png";
-import planeimg6 from "../../assets/planeimg6.png";
-import planeimg7 from "../../assets/planeimg7.png";
-import planeimg8 from "../../assets/planeimg8.png";
+import planeimg1 from "../../assets/Variant1.png";
+import planeimg2 from "../../assets/Variant2.png";
+import planeimg3 from "../../assets/Variant3.png";
+import planeimg4 from "../../assets/Variant4.png";
+import planeimg5 from "../../assets/Variant5.png";
+import planeimg6 from "../../assets/Variant6.png";
+import planeimg7 from "../../assets/Variant7.png";
+import planeimg8 from "../../assets/Variant8.png";
+import arrowplain1 from '../../assets/arrowplain.png';
+import arrowplain2 from '../../assets/arrowplain2.png';
 
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 
@@ -58,8 +60,6 @@ function Plane() {
         </div>
       </div>
       <div className="carauelplanmain">
-
-        
         <div
           className="carousel slide carouselplan"
           id="carouselDemo"
@@ -80,10 +80,7 @@ function Plane() {
                   className="w-md-80 w-100"
                   alt={image.alt}
                 />
-                <div
-                  className="carousel-caption"
-                  style={{ marginTop: "110px", marginLeft: "-120px" }}
-                >
+                <div className="carousel-caption">
                   <div className="carousel-caption-text">{image.caption}</div>
                 </div>
               </div>
@@ -107,22 +104,14 @@ function Plane() {
             type="button"
             onClick={handlePrev}
           >
-            <span
-              className="carousel-control-prev-icon wedf"
-              aria-hidden="true"
-            ></span>
-            {/* <span className="visually-hidden">Previous</span> */}
+            <img src={arrowplain1} alt="Previous" className="carousel-arrow" />
           </button>
           <button
             className="carousel-control-next"
             type="button"
             onClick={handleNext}
           >
-            <span
-              className="carousel-control-next-icon wedf"
-              aria-hidden="true"
-            ></span>
-            {/* <span className="visually-hidden">Next</span> */}
+            <img src={arrowplain2} alt="Next" className="carousel-arrow" />
           </button>
         </div>
       </div>
