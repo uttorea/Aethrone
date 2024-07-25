@@ -1,93 +1,69 @@
-import React from "react";
-import journey2015 from "../../assets/journey2015.png";
-import journey2016 from "../../assets/journey2016.png";
-import journey2017 from "../../assets/journey2017.png";
-import journey2018 from "../../assets/journey2018.png";
-import journey2019 from "../../assets/journey2019.png";
-import journey2020 from "../../assets/journey2020.png";
-import journey2021 from "../../assets/journey2021.png";
-import journey2022 from "../../assets/journey2022.png";
-import Heading from '../../Components/HeadingComponent/HeadingComponent'
-// import journey_quote2 from "../../assets/journey_quote2.png";
-// import journey_quote from "../../assets/journey_quote.png";
+import React, { useState } from "react";
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
 import "./Journey.css";
 import CoFounder from "../../assets/CoFounder.png";
 
-const journeyImages = [
-  journey2015,
-  journey2016,
-  journey2017,
-  journey2018,
-  journey2019,
-  journey2020,
-  journey2021,
-  journey2022,
-];
-
 const Journey = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const timelineData = ['', '', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '', ''];
+  const itemsPerPage = 5;
+
+  const yearTextMap = {
+    '2015': 'Founded In',
+    '2016': 'International Aerial Target Project',
+    '2017': 'Recovery Systems Vertical',
+    '2018': 'LTA Systems Vertical',
+    '2019': 'Launcher Systems Vertical',
+    '2020': 'Advanced Composites Vertical',
+    '2022': 'IDEX Winner',
+    '2023': 'Patents Granted'
+  };
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => Math.min(prevIndex + 1, timelineData.length - itemsPerPage));
+  };
+
+  const handlePrev = () => {
+    setActiveIndex((prevIndex) => Math.max(prevIndex - 1, 0));
+  };
+
+  const activeYear = timelineData[activeIndex + 2]; 
+
   return (
-    <div className="journey_page mt-5 ">
+    <div className="journey_page mt-5">
       <div className="container">
         <Heading heading="Our Journey"/>
-        <div
-          id="carouselExampleControls"
-          className="carousel slide "
-          data-bs-ride="carousel"
-        >
-          <div className="carousel-inner">
-            {journeyImages.map((image, index) => (
-              <div
-                className={`carousel-item ${index === 0 ? "active" : ""}`}
-                key={index}
-              >
-                <img src={image} className="d-block w-100" alt={`Journey ${2015 + index}`} />
-              </div>
-            ))}
-          </div>
-          <button
-            className="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev"
-          >
-            <span
-              className="carousel-control-prev-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button
-            className="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleControls"
-            data-bs-slide="next"
-          >
-            <span
-              className="carousel-control-next-icon"
-              aria-hidden="true"
-            ></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+        
+        <h2>{yearTextMap[activeYear] || 'Founded In'}</h2>
+
+        <div className="timeline">
+          <button className="timeline-button" onClick={handlePrev} disabled={activeIndex === 0}>{'<'}</button>
+          {timelineData.slice(activeIndex, activeIndex + itemsPerPage).map((year, index) => (
+            <div key={index} className={`timeline-item ${index === 2 ? 'active' : ''}`}>
+              <div className={`circle ${year === '' ? 'small-circle' : ''}`}>{year}</div>
+            </div>
+          ))}
+          <button className="timeline-button" onClick={handleNext} disabled={activeIndex >= timelineData.length - itemsPerPage}>{'>'}</button>
         </div>
+
         <div className="card mb-3 border-0 mt-5">
           <div className="row g-0">
             <div className="col-md-4 col-3">
               <img
                 src={CoFounder}
                 className="img-fluid rounded-start rounded"
-                alt="..."
+                alt="Co-Founder"
               />
             </div>
             <div className="col-md-8 col-9 px-2">
               <div
-                className="card-body1 mt-md-5 mt-0 px-md-4 px-2  m-0"
+                className="card-body1 mt-md-5 mt-0 px-md-4 px-2 m-0"
                 style={{ borderLeft: "6px solid #3535DE" }}
               >
                 <h4 className="px-md-4 px-2 fontsecondry">
-                <span className="quote maincolor"> " </span> We At Aethrone Aerospace Aspire To Be Creative Thinkers,
-                  Dynamic In ur Workspace, Durable In Our Products And Vouch For
-                  Prefection To Make Machines Fly <span className="quote maincolor">"</span>
-                  {/* <img src={journey_quote2} className="px-3 quoteimg" alt="" /> */}
+                  <span className="quote maincolor"> " </span> We At Aethrone Aerospace Aspire To Be Creative Thinkers,
+                  Dynamic In Our Workspace, Durable In Our Products And Vouch For
+                  Perfection To Make Machines Fly <span className="quote maincolor">"</span>
                 </h4>
 
                 <div className="text-end">
