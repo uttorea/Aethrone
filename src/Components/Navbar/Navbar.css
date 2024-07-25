@@ -4,7 +4,7 @@
   width: 100vw;
 }
 .navbarmain{
-  height:85px;
+  height:70px;
 
 }
 
@@ -14,11 +14,10 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid #414042;
+  
 }
-/* .dropmenu{
-  position:absolute;
-  top:2200px;
-} */
+
+
 
 .navbar-nav .nav-item {
   margin-right: 50px;
@@ -44,6 +43,7 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
 
 @media only screen and (max-width: 450px) {
   .navbar {

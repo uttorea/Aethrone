@@ -1,12 +1,27 @@
 .positions_page {
-    /* position: relative; */
-    /* top: 518px; */
     background-color: #fff;
+        width: 80%;
+        margin-left:auto;
+        margin-right:auto;
     
 }
-.position_heading{
-    border-left:6px solid #3535DE;
+.Aerosynamic-Design{
+    font-size:36px;
 }
-.linkedin_btn{
-    border: 1px solid #3535DE!important;
+
+.position-img{
+    width:100%;
+    height:330px;
 }
+@media only screen and (max-width:425px){
+    .positions_page {
+            width: 100%;
+    }
+    .position-img{
+        height:150px;
+    }
+    .Aerosynamic-Design{
+        font-size:18px;
+    }
+}
+

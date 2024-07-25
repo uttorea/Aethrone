@@ -36,7 +36,7 @@ font-size:18px;
 .indicator{
   margin-left:350px;
 }
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 425px) {
   .fontsecondry{
     font-size:12px;
     }

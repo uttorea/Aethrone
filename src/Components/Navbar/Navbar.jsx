@@ -9,7 +9,7 @@ const Navbar = () => {
   const [navBackground, setNavBackground] = useState("");
   const [textColor, setTextColor] = useState("text-light");
   const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
-  const [logoWidth, setLogoWidth] = useState("310px"); 
+  const [logoWidth, setLogoWidth] = useState("250px"); 
   const [borderTop, setBorderTop] = useState("3px solid #3535DE");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,12 +21,12 @@ const Navbar = () => {
         setTextColor("text-dark");
         setLogoSrc(changeLogo);
         setBorderTop("3px solid white"); // Correct value for border-top
-        setLogoWidth("270px"); // Change the width when scrolling past 400px
+        setLogoWidth("210px"); // Change the width when scrolling past 400px
       } else {
         setNavBackground("");
         setTextColor("text-light");
         setLogoSrc(logo); // Revert to the original logo
-        setLogoWidth("310px"); // Revert to the original logo width
+        setLogoWidth("250px"); // Revert to the original logo width
         setBorderTop("3px solid #3535DE"); // Revert to the original border-top value
       }
     };
@@ -72,7 +72,7 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <div className="navbar-nav d-flex flex-row align-items-center gap-3 ps-5">
+            <div className="navbar-nav d-flex flex-row align-items-center gap-3 ps-5 ">
               <Link className={`nav-item nav-link ${textColor} active`} to="/">
                 Home
               </Link>
@@ -89,7 +89,7 @@ const Navbar = () => {
               Service
             </a>
             <div
-              className="dropdown-menu"
+              className="dropdown-menu position-fixed"
               aria-labelledby="navbarDropdownMenuLinkService"
             >
               <Link className="dropdown-item" to="/design-development">
@@ -113,7 +113,7 @@ const Navbar = () => {
               Product
             </a>
             <div
-              className="dropdown-menu"
+              className="dropdown-menu position-fixed"
               aria-labelledby="navbarDropdownMenuLinkProduct"
             >
               <Link className="dropdown-item" to="/launch-recovery-delivery">

@@ -1,14 +1,16 @@
 
 .carrerCard_page{
     position:relative;
-    /* top: 518px; */
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
     background-color: #fff;
 }
 
-.career_heading{
-    border-left: 6px solid #3535DE;
-}
 
+.career-card{
+    border:1px solid #3535DE;
+}
 .careerCardimg{
     height: 120px;
     width: 120px;
@@ -16,14 +18,17 @@
     align-items: center;
     justify-content: center;
 }
-.careerpara{
-    font-size:18px;
-}
+
 .careertitle{
     font-size:24px;
 }
 @media only screen and (max-width:425px){
-    .careerpara{
-        font-size:12px;
-    }
+ 
+.carrerCard_page{
+    width:100%;
+   
+}   
+.careertitle{
+    font-size:15px;
+}
 }

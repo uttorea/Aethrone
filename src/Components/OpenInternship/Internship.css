@@ -1,18 +1,31 @@
 
+.inetrnship_page{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+}
 
-.intern_heading{
-    border-left: 6px solid #3535DE;
+.Pre-Placement{
+    font-size:24px;
+}
+
+.Internship-performance-img{
+width:100%;
+border-redius:10px;
+height:330px;
 }
 @media only screen and (max-width:425px){
-    .card img{
-        width:100%;
+    .inetrnship_page{
+        width:100%
     }
+    .Internship-performance-img{
+        width:100%;
+        height:170px;
+        }
     .intern_heading {
         font-size:24px;
     }
-    .intern_subheading{
-        font-size:12px;
-    }
+   
     .interimg{
         /* height:200px; */
     }
