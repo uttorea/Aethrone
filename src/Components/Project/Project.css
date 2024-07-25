@@ -63,6 +63,9 @@ color:white;
     .card-title{
       font-size:26px;
     }
+    .A-project{
+      font-size:36px;
+    }
     .projecttext{
       font-size:12px;
       font-weight:100px;
@@ -79,5 +82,6 @@ color:white;
           top: 0px;
           
         }
+        
   }
   

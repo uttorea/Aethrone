@@ -8,58 +8,10 @@
     background-position: center;
     z-index: -1;
 }
-/* .location1{
-    position: relative;
-    top: 120px;
-    left: 700px;
-    width: 230px;
-    background-color: #00000090;
-    border-radius: 5px;
-}
 
-.location_icon1{
-    position: relative;
-    left:685px ;
-    top:115px ;
-    font-size:30px;
-    color: #3535DE;
-}
-.location2{
-    position: relative;
-    top: 200px;
-    left: 550px;
-    width: 230px;
-    background-color: #00000090;
-    border-radius: 5px;
-}
 
-.location_icon2{
-    position: relative;
-    left:540px ;
-    top:200px ;
-    font-size:30px;
-    color: #3535DE;
-} */
-
-.contact_overlay{
-    position: absolute;
-    top: 140px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    color: white;
-}
-
-.contact_heading{
-    font-size: 80px;
-    letter-spacing: 8px;
-}
 @media only screen and (max-width:425px){
-    .contact_heading{
-        font-size: 40px;
-        /* letter-spacing: 8px; */
-    }   
+    
     .contact_bgimg{
         
         height:50vh;

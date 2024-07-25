@@ -18,14 +18,14 @@ function Project() {
                 </div>
                 <div className=" ">
                   <div className="d-flex d-md-block">
-                <h3 className="card-title text-white fontfamilySecondary mt-lg-5 mt-2 fw-bold " >
+                <h3 className="card-title text-white fontfamilySecondary mt-lg-5 mt-1 fw-bold " >
                   Let's 
                   </h3>
-                  <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold ms-1 ms-md-0">Discuss</h3>
+                  <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-1 fw-bold ms-1 ms-md-0">Discuss</h3>
                   </div>
                   <div className="d-flex d-md-block">
-                  <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold">Your Ideas</h3>
-                   <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-2 fw-bold ms-1 ms-md-0">& Solution</h3>
+                  <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-0 fw-bold">Your Ideas</h3>
+                   <h3 className="card-title text-white fontfamilySecondary mt-lg-4 mt-0 fw-bold ms-1 ms-md-0">& Solution</h3>
                    </div>
                    </div>
                 

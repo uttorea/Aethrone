@@ -49,7 +49,7 @@ function Design() {
                       We also provide product qualification, integration, testing, certification, IP transfer, and long-term support.
                     </p>
                   </div>
-                  <div className="mt-3 mt-md-5 ms-5">
+                  <div className="mt-3 mt-md-5 ms-3">
                   <Button text="Discover Design & Development"/>
                   </div>
                  

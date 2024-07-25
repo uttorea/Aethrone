@@ -7,25 +7,25 @@ const contactDetails = [
     icon: "bi bi-geo-alt-fill",
     title: "Address ~ Design Lab",
     description: "Oz Plaza Viman Nagar Pune Maharashtra 411014",
-    iconMargin: "mt-3",
+    iconMargin: "mt-1 mt-md-3",
   },
   {
     icon: "bi bi-geo-alt-fill",
     title: "Address ~ North Office",
     description: "DJAC, SIIC building, IIT Kanpur 208016",
-    iconMargin: "mt-3",
+    iconMargin: "mt-1 mt-md-3",
   },
   {
     icon: "bi bi-envelope",
     title: "For General & Other Inquiries",
     description: "info@aethroneaerospace.com",
-    iconMargin: "mt-3",
+    iconMargin: "mt-1 mt-md-3",
   },
   {
     icon: "bi bi-telephone-fill",
     title: "General Inquiries",
     description: "+91 721 945 0026 \n +91 985 058 7587",
-    iconMargin: "mt-3",
+    iconMargin: "mt-1 mt-md-3",
   },
   {
     icon: "bi bi-telephone-fill",
@@ -60,7 +60,7 @@ const GetInTouch = () => {
                         <i className={contact.icon}></i>
                       </div>
                       <div className="address px-md-4 px-0">
-                        <div className="titlecontact">{contact.title}</div>
+                        <div className="title-contact fontfamilyPrimary">{contact.title}</div>
                         {contact.description.split("\n").map((line, idx) => (
                           <p key={idx} className="subaddrescontact" style={{ color: "#3535DE" }}>
                             {line.trim()}
@@ -83,45 +83,45 @@ const GetInTouch = () => {
                       <label className="form-label">Name</label>
                       <input
                         type="text"
-                        className="form-control border-0 mt-4"
-                        placeholder="Your Full Name"
+                        className="form-control border-0 mt-md-4 mt-1 "
+                        placeholder="Your Full Name"  
                       />
                     </div>
                   </div>
-                  <div className="col-sm-6 mt-md-0 mt-5">
+                  <div className="col-sm-6 mt-md-0 mt-1">
                     <div className="contact_border">
                       <label className="form-label">Contact</label>
                       <input
                         type="text"
-                        className="form-control border-0 mt-4"
+                        className="form-control border-0 mt-md-4 mt-1"
                         placeholder="Phno. name"
                       />
                     </div>
                   </div>
-                  <div className="col-sm-6 mt-5">
+                  <div className="col-sm-6 mt-md-5 mt-2">
                     <div className="contact_border">
                       <label className="form-label">Email</label>
                       <input
                         type="email"
-                        className="form-control border-0 mt-4"
+                        className="form-control border-0 mt-md-4 mt-1"
                         placeholder="Your email address"
                       />
                     </div>
                   </div>
-                  <div className="col-sm-6 mt-5">
+                  <div className="col-sm-6 mt-md-5 mt-2">
                     <div className="contact_border">
                       <label className="form-label">Subject</label>
                       <input
                         type="text"
-                        className="form-control border-0 mt-4"
+                        className="form-control border-0 mt-md-4 mt-1"
                         placeholder="Reason for the message"
                       />
                     </div>
                   </div>
-                  <div className="mt-5">
+                  <div className="mt-md-5 mt-2">
                     <label className="form-label">Message</label>
                     <textarea
-                      className="form-control border-dark mt-3 "
+                      className="form-control border-dark mt-md-3 mt-1"
                       placeholder="Write Your Message..."
                       style={{ height: "200px", resize:'none'}}
                     ></textarea>

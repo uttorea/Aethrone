@@ -7,6 +7,7 @@ import journey2019 from "../../assets/journey2019.png";
 import journey2020 from "../../assets/journey2020.png";
 import journey2021 from "../../assets/journey2021.png";
 import journey2022 from "../../assets/journey2022.png";
+import Heading from '../../Components/HeadingComponent/HeadingComponent'
 // import journey_quote2 from "../../assets/journey_quote2.png";
 // import journey_quote from "../../assets/journey_quote.png";
 import "./Journey.css";
@@ -27,7 +28,7 @@ const Journey = () => {
   return (
     <div className="journey_page mt-5 ">
       <div className="container">
-        <h3 className="fw-bold journey_head px-2">Our Journey</h3>
+        <Heading heading="Our Journey"/>
         <div
           id="carouselExampleControls"
           className="carousel slide "
@@ -82,8 +83,7 @@ const Journey = () => {
                 className="card-body1 mt-md-5 mt-0 px-md-4 px-2  m-0"
                 style={{ borderLeft: "6px solid #3535DE" }}
               >
-                <h4 className="px-md-4 px-2 quotepara">
-                {/* <img src={journey_quote} className="quoteimg" alt="" /> */}
+                <h4 className="px-md-4 px-2 fontsecondry">
                 <span className="quote maincolor"> " </span> We At Aethrone Aerospace Aspire To Be Creative Thinkers,
                   Dynamic In ur Workspace, Durable In Our Products And Vouch For
                   Prefection To Make Machines Fly <span className="quote maincolor">"</span>
@@ -92,7 +92,7 @@ const Journey = () => {
 
                 <div className="text-end">
                   <h5 className="maincolor mt-md-2 mt-1 coname">~Farzin B Irani</h5>
-                  <h6 className="cosubname">
+                  <h6 className="fontsecondry">
                     Co-Founder,
                     <br />
                     Aethrone Aerospace
