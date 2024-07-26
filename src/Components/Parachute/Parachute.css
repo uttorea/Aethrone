@@ -3,6 +3,9 @@
     
     
 }
+.lighter-than{
+    font-size:72px;
+}
 
 .parachute_container{
     height:100vh;
@@ -11,7 +14,15 @@
     height:100vh;
 
 }
+.we-specialize{
+    letter-spacing:1px;
+}
 
+@media only screen and (max-width:425px){
+    .lighter-than{
+        font-size:36px;
+    }
+}
 
 
 

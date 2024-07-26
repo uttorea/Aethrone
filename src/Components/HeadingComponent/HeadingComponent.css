@@ -18,7 +18,8 @@ font-family:arima;
 
 @media (max-width: 450px) {
   .headingmain{
-    font-size:26px;
+    font-size:24px;
+    line-height:25px;
    
 }
     .line{

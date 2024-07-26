@@ -23,10 +23,10 @@ const Learn = () => {
             <div className="row row-cols-2  row-cols-md-2 g-md-5 g-0 p-md-5 p-2 ms-2 ms-md-0 learn-card">
                 {learnData.map((item, index) => (
                     <div className="col" key={index}>
-                        <div className="card col-10 h-100 border-primary w-90">
-                            <img src={item.imgSrc} className="learn_img mx-auto mt-5" alt="..." />
-                            <div className="card-footer mt-5 border-5 border-primary">
-                                <h6 className="text-center text-primary p-2">{item.title}</h6>
+                        <div className="card col-10 h-100  w-90 larn-more-card">
+                            <img src={item.imgSrc} className="learn_imgs mx-auto mt-5" alt="..." />
+                            <div className="card-footer mt-5 larn-more-card-1">
+                                <h6 className="text-center maincolor p-2">{item.title}</h6>
                             </div>
                         </div>
                     </div>

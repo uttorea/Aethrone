@@ -38,7 +38,10 @@ const Seeportfolio = () => {
           ))}
         </div>
       </div>
+      <div className='mt-5 mt-md-0'>
+
       <Project />
+      </div>
     </>
   );
 }

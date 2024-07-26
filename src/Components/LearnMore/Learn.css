@@ -1,20 +1,25 @@
-.learn_heading{
-    border-left: 6px solid #3535DE;
+.larn-more-card {
+  border: 2px solid #3535de;
+}
+.larn-more-card-1 {
+  border-top: 5px solid #3535de;
 }
 
-.learn_img{
+.learn_imgs {
+  height: 100px;
+  width: 160px;
+}
+.learn-card {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 425px) {
+  .learn-card {
+    width: 100%;
+  }
+  .learn_imgs {
     height: 100px;
-    width: 160px;
-    }
-    .learn-card{
-        width:80%;
-        margin-left:auto;
-        margin-right:auto;
-    }
-    @media only screen and (max-width:425px){
-        .learn-card{
-            width:100%;
-            
-        }
-        
-    }
+    width: 120px;
+  }
+}

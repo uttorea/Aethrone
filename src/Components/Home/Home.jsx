@@ -10,6 +10,7 @@ import Furtblog from "../../Components/Feature-Blog/Furtblog";
 import Project from "../../Components/Project/Project";
 import Footer from "../../Components/Footer/Footer";
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
+import DiagonalCard from "../DiagonalCards/DiagonalCard";
 const Home = () => {
   return (
     <div>
@@ -73,10 +74,12 @@ const Home = () => {
           </div>
           <div>
       <Design  />
+          
           </div>
           
           <div>
       <Products />
+      {/* <DiagonalCard/>*/}
           </div>
           <div>
       <OwlcarouselComponent />

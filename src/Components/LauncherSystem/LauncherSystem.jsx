@@ -28,29 +28,29 @@ const   LauncherSystem = () => {
 
     return (
         <>
-        <div className='container mt-5'>
+        <div className='container p-0 '>
          
             <Heading heading='Launcher Systems' subheading='Systems for UAV & Loitering Munition'/>
             <div className="row row-cols-2 row-cols-md-2 g-1 g-md-4 ">
                 <div className="col">
-                    <div className="card mt-5 border-0">
+                    <div className="card mt-3 mt-md-5 border-0">
                         <img src={launcherimg1} className="card-img-top1" alt="..." />
                         <div className="card-body-launcher">
-                            <p className='px-0 px-md-3'>Elevate your missions with our precision catapult launchers designed  specifically for unmanned aerial vehicles (UAVs). Engineered for  reliability and adaptability, our launchers ensure seamless deployment,  providing the precision and performance needed for mission success</p>
+                            <p className='px-1 px-md-3 fontsecondry'>Elevate your missions with our precision catapult launchers designed  specifically for unmanned aerial vehicles (UAVs). Engineered for  reliability and adaptability, our launchers ensure seamless deployment,  providing the precision and performance needed for mission success</p>
                         </div>
                     </div>
                 </div>
                 <div className="col">
                     <div className="card border-0">
                         <img src={launcherimg2} className="card-img-top1" alt="..." />
-                        <div className="card-body-launcher ">
+                        <div className="card-body-launcher fontsecondry px-1 ">
                             <ul>
                                 <li>Land Based Bungee Catapult Launcher </li>
                                 <li>Land Based Pneumatic Catapult Launcher</li>
                                 <li>Land Based Pneumatic Tube Launcher</li>
                                 <li>Air Based Underwing Pylon Pneumatic Carriage and Release</li>
                             </ul>
-                            <a href="" className='btn btn-primary border-dark btn-explore-launch'>Explore Launcher System <i className="bi bi-arrow-right"></i></a>
+                            <a href="" className='btn backgroundcolormain border-dark btn-explore-launch text-white'>Explore Launcher System <i className="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -58,10 +58,10 @@ const   LauncherSystem = () => {
             <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1  px-md-5 px-1 lunchsystemcards" >
     {cardData.map((card, index) => (
       <div className="col" key={index}>
-        <div className="card h-100 border-primary">
+        <div className="card h-100 border-primary launchesystemcard">
           <img src={card.imgSrc} className="card-img-top-launch mt-2 mt-md-0" alt="..." />
-          <div className="card-footer border-5 border-primary footerlaunch">
-            <h6 className="text-primary footerlaunch-head">
+          <div className="card-footer   footerlaunch px-0">
+            <h6 className="maincolor fontfamilyPrimary fontsecondry footerlaunch-head">
               {card.title} <br />
               {card.subtitle}
             </h6>

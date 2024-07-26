@@ -1,47 +1,23 @@
-
-
 .Engineering-Service {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
 }
 
-.engineer_card {
-    margin-bottom: 20px;
+
+.eng-para1 {
+    font-size: 24px;
 }
 
-.card-body1 {
-    padding: 0;
-}
+@media only screen and (max-width: 425px) {
+    .Engineering-Service {
+        width: 100%;
+    }
 
-.card_img1 {
-    width: 100%;
-    height: 185px;
-    object-fit: cover;
-}
+    .eng-para1 {
+        font-size: 12px;
+    }
 
-.no-padding {
-    padding: 0;
-}
-.eng-para1{
-    font-size:24px;
-}
-@media only screen and (max-width:425px){
- .Engineering-Service {
-    width: 100%;
-    
-}  
-.eng-para1{
-    font-size:12px;
-} 
-.card_img1 {
-    width: 100%;
-    height: 125px;
-  
-}
-.eng-para2{
-    font-size:10px;
 
-}
-
+   
 }

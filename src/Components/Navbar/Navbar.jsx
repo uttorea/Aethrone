@@ -4,6 +4,8 @@ import logo from "../../assets/logo.svg"; // Original logo
 import changeLogo from "../../assets/changeLogo.png"; // New logo
 import logo1 from '../../assets/logo1.png'
 import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState("");
@@ -72,72 +74,71 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <div className="navbar-nav d-flex flex-row align-items-center gap-3 ps-5 ">
+            <div className="navbar-nav d-flex flex-row align-items-center gap-3 ">
               <Link className={`nav-item nav-link ${textColor} active`} to="/">
                 Home
               </Link>
               <div className="nav-item dropdown">
-            <a
-              className={`nav-link dropdown-toggle  ${textColor}`}
-              to="/service"
-              id="navbarDropdownMenuLinkService"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Service
-            </a>
-            <div
-              className="dropdown-menu position-fixed"
-              aria-labelledby="navbarDropdownMenuLinkService"
-            >
-              <Link className="dropdown-item" to="/design-development">
-                Design & Development
-              </Link>
-              <Link className="dropdown-item" to="/precision-manufacturing">
-                Precision Manufacturing
-              </Link>
+                <a
+                  className={`nav-link dropdown-toggle ${textColor}`}
+                  href="#"
+                  id="navbarDropdownMenuLinkService"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Service
+                </a>
+                <div
+                  className="dropdown-menu position-fixed "
+                  aria-labelledby="navbarDropdownMenuLinkService"
+                >
+                  <Link className="dropdown-item" to="/design-development">
+                    Design & Development
+                  </Link>
+                  <Link className="dropdown-item" to="/precision-manufacturing">
+                    Precision Manufacturing
+                  </Link>
+                </div>
+              </div>
+              <div className="nav-item dropdown">
+                <a
+                  className={`nav-link dropdown-toggle ${textColor}`}
+                  href="#"
+                  id="navbarDropdownMenuLinkProduct"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Product
+                </a>
+                <div
+                  className="dropdown-menu position-fixed "
+                  aria-labelledby="navbarDropdownMenuLinkProduct"
+                >
+                  <Link className="dropdown-item" to="/launch-recovery-delivery">
+                    Launch & Recovery/Delivery
+                  </Link>
+                  <Link className="dropdown-item" to="/parachutes">
+                    Parachutes
+                  </Link>
+                  <Link className="dropdown-item" to="/advance-manufacturing">
+                    Advance Manufacturing
+                  </Link>
+                  <Link className="dropdown-item" to="/advance-composites">
+                    Advance Composites
+                  </Link>
+                </div>
+              </div>
             </div>
-          </div>
-          <div className="nav-item dropdown">
-            <a
-              className={`nav-link dropdown-toggle ${textColor}`}
-              href="#"
-              id="navbarDropdownMenuLinkProduct"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Product
-            </a>
-            <div
-              className="dropdown-menu position-fixed"
-              aria-labelledby="navbarDropdownMenuLinkProduct"
-            >
-              <Link className="dropdown-item" to="/launch-recovery-delivery">
-                Launch & Recovery/Delivery
-              </Link>
-              <Link className="dropdown-item" to="/parachutes">
-                Parachutes
-              </Link>
-              <Link className="dropdown-item" to="/advance-manufacturing">
-                Advance Manufacturing
-              </Link>
-              <Link className="dropdown-item" to="/advance-composites">
-                Advance Composites
-              </Link>
-            </div>
-          </div>
-        </div>
             <img
               style={{ width: logoWidth }}
               src={logoSrc}
               alt="Logo"
               className="logo_img centered-logo"
             />
-
             <div className="d-flex flex-row justify-content-end align-items-center gap-5 pe-5">
               <Link className={`nav-item nav-link ${textColor}`} to="/career">
                 Career
@@ -162,59 +163,59 @@ const Navbar = () => {
               Home
             </Link>
             <div className="nav-item dropdown">
-            <a
-              className={`nav-link dropdown-toggle ${textColor}`}
-              to="/service"
-              id="navbarDropdownMenuLinkService"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Service
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLinkService"
-            >
-              <Link className="dropdown-item" to="/design-development">
-                Design & Development
-              </Link>
-              <Link className="dropdown-item" to="/precision-manufacturing">
-                Precision Manufacturing
-              </Link>
+              <a
+                className={`nav-link dropdown-toggle ${textColor}`}
+                href="#"
+                id="navbarDropdownMenuLinkService"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Service
+              </a>
+              <div
+                className="dropdown-menu "
+                aria-labelledby="navbarDropdownMenuLinkService"
+              >
+                <Link className="dropdown-item" to="/design-development">
+                  Design & Development
+                </Link>
+                <Link className="dropdown-item" to="/precision-manufacturing">
+                  Precision Manufacturing
+                </Link>
+              </div>
             </div>
-          </div>
             <div className="nav-item dropdown">
-            <a
-              className={`nav-link dropdown-toggle ${textColor}`}
-              href="#"
-              id="navbarDropdownMenuLinkProduct"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Product
-            </a>
-            <div
-              className="dropdown-menu"
-              aria-labelledby="navbarDropdownMenuLinkProduct"
-            >
-              <Link className="dropdown-item" to="/launch-recovery-delivery">
-                Launch & Recovery/Delivery
-              </Link>
-              <Link className="dropdown-item" to="/parachutes">
-                Parachutes
-              </Link>
-              <Link className="dropdown-item" to="/advance-manufacturing">
-                Advance Manufacturing
-              </Link>
-              <Link className="dropdown-item" to="/advance-composites">
-                Advance Composites
-              </Link>
+              <a
+                className={`nav-link dropdown-toggle ${textColor}`}
+                href="#"
+                id="navbarDropdownMenuLinkProduct"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Product
+              </a>
+              <div
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLinkProduct"
+              >
+                <Link className="dropdown-item" to="/launch-recovery-delivery">
+                  Launch & Recovery/Delivery
+                </Link>
+                <Link className="dropdown-item" to="/parachutes">
+                  Parachutes
+                </Link>
+                <Link className="dropdown-item" to="/advance-manufacturing">
+                  Advance Manufacturing
+                </Link>
+                <Link className="dropdown-item" to="/advance-composites">
+                  Advance Composites
+                </Link>
+              </div>
             </div>
-          </div>
             <Link className={`nav-item nav-link ${textColor}`} to="/career">
               Career
             </Link>

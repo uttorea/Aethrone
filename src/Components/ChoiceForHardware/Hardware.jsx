@@ -78,7 +78,7 @@ const hardwareData = [
 const AccordionItem = ({ index, title, content, isActive, onToggle }) => (
   <div className="card hardware-card-in">
     <div
-      className="card-header fw-bold text-primary flex-column justify-content-between  d-flex  py-md-2 px-md-3 px-0 py-0 "
+      className="card-header fw-bold text-primary flex-column justify-content-between   d-flex  py-md-2 px-md-3 px-0 py-0 "
       onClick={() => onToggle(index)}
       aria-expanded={isActive}
     >
@@ -94,7 +94,7 @@ const AccordionItem = ({ index, title, content, isActive, onToggle }) => (
       className={`collapse ${isActive ? 'show' : ''} width`}
       data-bs-parent="#accordionHorizontalExample"
     >
-      <div className="card-body p-md-3 p-0 w-100">
+      <div className="hardware_card_body p-md-3 p-0">
         {content}
       </div>
     </div>

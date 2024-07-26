@@ -35,10 +35,10 @@ const LauncherRecovery = () => {
         <Heading heading="Recovery Systems" subheading="Plug And Play Solutions"/>
         <div className="row row-cols-2 row-cols-md-2 g-4">
           <div className="col">
-            <div className="card mt-5 border-0">
+            <div className="card mt-4 mt-md-5 border-0">
               <img src={launcherimg9} className="card-img-top11" alt="..." />
               <div className="card-body-recovery">
-                <p className="px-1 px-md-3 card-body-recovery-p ">
+                <p className="px-1 px-md-3 card-body-recovery-p fontsecondry ">
                   Ensure the safe and efficient retrieval of your UAVs with our
                   advanced recovery systems. Featuring automated functionality
                   and robust design, our solutions offer dependable performance
@@ -52,14 +52,14 @@ const LauncherRecovery = () => {
             <div className="card border-0 ">
               <img src={launcherimg10} className="card-img-top11" alt="..." />
               <div className="card-bod2 ">
-                <ul className=" ">
+                <ul className="fontsecondry ">
                   <li>Parachute Based Land Recovery </li>
                   <li>Parachute Based Sea Recovery</li>
                   <li>Airbag Based Land Recovery</li>
                   <li>Airbag Based Sea Recovery</li>
                 </ul>
-                <a href="" className="btn btn-primary border-dark explore-launcher px-2 ">
-                  Explore Recovery System <i className="bi bi-arrow-down"></i>
+                <a href="" className="btn  border-dark explore-launcher  backgroundcolormain px-4 text-white ">
+                  Explore Recovery System <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
             </div>
@@ -67,16 +67,16 @@ const LauncherRecovery = () => {
         </div>
         <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1  px-md-5 px-1 launch-card-recovery">
     {launchers.map((launcher) => (
-      <div className="col" key={launcher.id}>
-        <div className="card h-100 border-primary">
+      <div className="col " key={launcher.id}>
+        <div className="card lunch-card-footer">
           <img
             src={launcher.imgSrc}
             className="card-img-top-launch  mt-md-0"
             alt={launcher.altText}
           
           />
-          <div className="card-footer border-5 border-primary">
-            <h6 className="maincolor lanchtext">
+          <div className="card-footer fontfamilyPrimary footer-lunch p-0">
+            <h6 className="maincolor fontfamilyPrimary lanchtext ">
               {launcher.title.split(" ").slice(0, 2).join(" ")} <br />
               {launcher.title.split(" ").slice(2).join(" ")}
             </h6>

@@ -5,35 +5,49 @@
 .card-bod2{
     margin-right:190px;
 }
+.footer-lunch{
+    border-top:2px solid #3535DE;
+}
 .card-img-top-launch{
     height:200px;
     width:100%;
 }
 .launch-card-recovery{
 margin-top:70px;
+
 }
+.lunch-card-footer{
+    border:2px solid #3535DE;
+
+}
+/* .explore-launcher{
+    background-color:#3535DE;
+} */
 @media only screen and (max-width:425px){
     .card-img-top11{
         height:200px;
     }
     .card-bod2{
         margin-right:0px;
-        font-size:12px;
+      
 
     }
-    .card-body-recovery-p{
-        font-size:12px;
-    }
+   
     .explore-launcher{
         font-size:11px;
         width:100%;
        
     }
     .card-img-top-launch{
-        height:140px;
+        height:160px;
     }
     .lanchtext{
-        font-size:10px;
-        margin-top:20px;
+       
+        font-size:12px;
+        margin-top:15px;
     }
+    .footer-lunch{
+        height:70px;
+    }
+    
 }
