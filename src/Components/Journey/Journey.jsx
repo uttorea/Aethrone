@@ -33,10 +33,11 @@ const Journey = () => {
     <div className="journey_page mt-5">
       <div className="container">
         <Heading heading="Our Journey"/>
-        
-        <h2>{yearTextMap[activeYear] || 'Founded In'}</h2>
+        <div className="">
+        <p className="ourjourney fontfamilyPrimary fontweight maincolor text-center ">{yearTextMap[activeYear] || 'Founded In'}</p>
+        </div>
 
-        <div className="timeline">
+        <div className="timeline ">
           <button className="timeline-button" onClick={handlePrev} disabled={activeIndex === 0}>{'<'}</button>
           {timelineData.slice(activeIndex, activeIndex + itemsPerPage).map((year, index) => (
             <div key={index} className={`timeline-item ${index === 2 ? 'active' : ''}`}>

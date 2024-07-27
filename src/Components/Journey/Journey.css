@@ -1,121 +1,23 @@
-/* .timeline-container {
-    text-align: center;
-    font-family: 'Arial, sans-serif';
-    color: #4a4a4a;
-  }
-  
-  .timeline-header h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .timeline-header p {
-    font-size: 14px;
-    margin: 0;
-    color: #7a7a7a;
-  }
-  
-  .timeline {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-    position: relative;
-  }
-  
-  .timeline-button {
-    background: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 10px;
-    cursor: pointer;
-  }
-  
-  .timeline-button:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  
-  .timeline-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    margin: 0 10px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  }
-  
-  .timeline-item::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -24%;
-    width: 148%;
-    height: 2px;
-    border-top: 2px dashed #4a4a4a;
-    z-index: -1;
-  }
-  
-  .timeline-item:first-child::before {
-    display: none;
-  }
-  
-  .circle {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #4a4a4a;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 14px;
-    color: #4a4a4a;
-    background-color: #fff;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  .small-circle {
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
-  }
-  
-  .timeline-item.active .circle {
-    background-color: #4a4a4a;
-    color: #fff;
-    transform: scale(1.5); /* Increase the scale to make the active circle larger */
-    width: 45px; /* Increase the width */
-    height: 45px; /* Increase the height */
-  } */
-  
-  /* h2 {
-    font-size: 18px;
-    margin-top: 20px;
-  } */
 
-  .timeline-container {
+
+  /* .timeline-container {
     text-align: center;
     font-family: 'Arial, sans-serif';
     color: #4a4a4a;
-  }
+  } */
   
-  .timeline-header h1 {
-    font-size: 24px;
-    margin: 0;
-  }
-  
-  .timeline-header p {
-    font-size: 14px;
-    margin: 0;
-    color: #7a7a7a;
-  }
+ .ourjourney{
+  font-size:36px;
+ }
   
   .timeline {
     display: flex;
     align-items: center;
     justify-content: center;
+    height:60vh;
     margin: 20px 0;
     position: relative;
+    
   }
   
   .timeline-button {
@@ -136,9 +38,11 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin: 0 10px;
-    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin: 0 30px;
+    transition:0.5s;
+    /* transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out; */
   }
+ 
   
   .timeline-item::before {
     content: '';
@@ -147,7 +51,7 @@
     left: -24%;
     width: 148%;
     height: 2px;
-    border-top: 2px dashed #4a4a4a;
+    border-top: 2px dashed #3535DE;
     z-index: -1;
   }
   
@@ -156,34 +60,40 @@
   }
   
   .circle {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #4a4a4a;
+    
+    width: 113px;
+    height: 113px;
+    border: 2px solid #3535DE;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
-    color: #4a4a4a;
+    font-size: 27px;
+    color: #3535DE;
     background-color: #fff;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    /* transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; */
   }
   
   .small-circle {
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
+    width: 38px;
+    height: 38px;
+   
   }
   
   .timeline-item.active .circle {
-    background-color: #4a4a4a;
+    background-color: #3535DE;
     color: #fff;
-    transform: scale(1.5); /* Increase the scale to make the active circle larger */
-    width: 45px; /* Increase the width */
-    height: 45px; /* Increase the height */
+    transform: scale(1.5); 
+    
+    width: 188px; 
+    height: 188px;  
+    font-size:48px;
+   }
+  .timeline-button{
+    width:46px;
+    height:119px;
+    color:#3535DE;
+    font-size:48px;
+    border:2px solid #3535DE;
   }
   
-  h2 {
-    font-size: 18px;
-    margin-top: 20px;
-  }
