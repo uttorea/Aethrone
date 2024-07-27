@@ -1,3 +1,6 @@
+.manu-containe{
+    margin-top:100px;
+}
 .ManuCertifications_heading{
     border-left: 6px solid #3535DE;
     margin-top: 80px;
@@ -23,7 +26,7 @@
     .manuCertifititlehead{
         height:80px;
     }
-    /* .mainheadmanu{
-        height:180px;
-    } */
+    .mainheadmanu{
+        height:240px;
+    }
 }

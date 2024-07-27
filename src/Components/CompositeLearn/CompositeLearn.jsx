@@ -1,47 +1,29 @@
-import React from 'react';
-import './CompositeLearn.css';
-import compositeLearnimg1 from '../../assets/compositeLearnimg1.png';
-import compositeLearnimg2 from '../../assets/compositeLearnimg2.png';
-import compositeLearnimg3 from '../../assets/compositeLearnimg3.png';
-
-const cardData = [
-  {
-    img: compositeLearnimg1,
-    title: 'Rotary Composites'
-  },
-  {
-    img: compositeLearnimg2,
-    title: 'Aero-Structure Members'
-  },
-  {
-    img: compositeLearnimg3,
-    title: 'Avionics Composites'
-  }
-];
+import React from "react";
+import "./CompositeLearn.css";
+import HeadingComponent from "../HeadingComponent/HeadingComponent";
+import CompositeLearnImg from "../../Components/CompositeLearn/CompositeLearnImg";
+import SimpleCard from "../../Components/SimpleCards/SimpleCard";
 
 const CompositeLearn = () => {
   return (
     <div>
       <div className="container mt-5">
-        <h3 className="learn_heading px-2 fw-bold">Learn More</h3>
-        <h6>Download Brochure</h6>
-        <div className="row row-cols-3 g-4 mt-4 px-0 px-md-5 ms-1 ms-md-0">
-          {cardData.map((card, index) => (
-            <div className="col p-1 p-md-3" key={index}>
-              <div className="card h-100  border-primary ">
-                <div className="d-flex justify-content-center align-items-center  p-2 p-md-5">
-                  <img src={card.img} className="learn_img " alt={card.title} />
-                </div>
-                <div className="card-footer border-5 border-primary py-0 px-0 py-md-2 px-md-3">
-                  <h6 className="text-primary text-center compositcardtitle">{card.title}</h6>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
+        <HeadingComponent heading="Learn More" subheading="Download Brochure" />
+        <SimpleCard
+          images={CompositeLearnImg}
+          cardHeight="390px"
+          cardWidth="349.5px"
+          imgHeights={{ 0: '180px', 1: '180px', 2: '180px' }}
+          imgWidths={{ 0: '180px', 1: '180px', 2: '180px' }}
+          responsiveCardHeights={{ 0: "220px", 1: "220px", 2: "220px" }}
+          responsiveCardWidths={{ 0: "120px", 1: "120px", 2: "120px" }}
+          responsiveImgHeights={{ 0: '100px', 1: '100px', 2: '100px' }}
+          responsiveImgWidths={{ 0: '100px', 1: '100px', 2: '100px' }}
+        />
       </div>
     </div>
   );
 };
 
 export default CompositeLearn;
+``

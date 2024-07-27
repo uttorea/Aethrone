@@ -10,7 +10,7 @@ const FourPillars = () => {
             <HeadingComponent heading='Built Our Four Pillars'/>
             <p className='This-engineering mt-5'>This engineering vertical is based on</p>
            
-            <DiagonalCard cards={FourPillarsIMG}/>
+            <DiagonalCard cards={FourPillarsIMG} separatorTop1='215px' separatorTop2='225px' d_cardTop='280px'/>
 
         </div>
     )

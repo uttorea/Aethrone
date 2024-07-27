@@ -10,24 +10,35 @@ const DiagonalCard = ({
   smallSeparatorTop1 = "120px",
   smallSeparatorTop2 = "130px",
   smallCardTop = "150px",
-  cardWidth = "251.25px", // Default width
-  cardHeight = "387px",   // Default height
+  defaultCardWidth = "251.25px", // Default width
+  defaultCardHeight = "387px",   // Default height
+  smallCardWidth = "251.5px", // Width for small screens
+  smallCardHeight = "220px", // Height for small screens
   isLargeSize = false     // Optional condition to override default dimensions
 }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [cardWidth, setCardWidth] = useState(defaultCardWidth);
+  const [cardHeight, setCardHeight] = useState(defaultCardHeight);
 
   useEffect(() => {
-    const handleResize = () => setWindowWidth(window.innerWidth);
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+      if (window.innerWidth < 425) {
+        setCardWidth(smallCardWidth);
+        setCardHeight(smallCardHeight);
+      } else {
+        setCardWidth(isLargeSize ? "300px" : defaultCardWidth);
+        setCardHeight(isLargeSize ? "400px" : defaultCardHeight);
+      }
+    };
+
+    handleResize(); // Call it once to set initial values
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [defaultCardWidth, defaultCardHeight, isLargeSize, smallCardWidth, smallCardHeight]);
 
   // Determine the gap class based on the number of cards and window width
   const gapClass = windowWidth < 425 ? "gap-1" : (cards.length === 5 ? "gap-3" : "gap-5");
-
-  // Calculate dimensions based on conditions
-  const computedWidth = isLargeSize ? "300px" : cardWidth;
-  const computedHeight = isLargeSize ? "400px" : cardHeight;
 
   return (
     <div className={`mt-3 mt-md-5 d-flex ${gapClass} daigonal_container`}>
@@ -35,7 +46,7 @@ const DiagonalCard = ({
         <div
           key={index}
           className="d_card rounded"
-          style={{ width: computedWidth, height: computedHeight }}
+          style={{ width: cardWidth, height: cardHeight }}
         >
           <div
             className="d_card_img_container"
@@ -74,9 +85,9 @@ const DiagonalCard = ({
               {card.title}
             </h5>
             {Array.isArray(card.text) ? (
-              <ul className="d_card-list mt-3 py-1">
+              <ul className="d_card-list mt-3 py-1 ">
                 {card.text.map((item, idx) => (
-                  <li key={idx} className="mb-2">
+                  <li key={idx} className="mb-0 mb-md-2">
                     {item}
                   </li>
                 ))}
@@ -87,7 +98,7 @@ const DiagonalCard = ({
               </p>
             ) : null}
             {card.extraText && (
-              <p className="d_card-extra-text py-2 maincolor fw-bold  text-center fontsecondry fontfamilySecondary">
+              <p className="d_card-extra-text py-md-2 py-0 maincolor fw-bold  text-center fontsecondry fontfamilySecondary px-2">
                 {card.extraText} <i className="bi bi-arrow-right-short"></i>
               </p>
             )}

@@ -16,7 +16,8 @@ import AllBlogs from './Components/AllBlogs/AllBlogs'
 import Composite from './Components/AdvanceComposites/Composite';
 import AdvanceManufacture from './Components/AdvanceManufacturing/AdvanceManufacture';
 import ParachuteRecovery from './Components/ParachuteRecovery/ParachuteRecovery'
-import DeliveryLauncherSystem from './Components/DeliveryLauncherSystem/DeliveryLauncherSystem'
+import DeliveryLauncherSystem from './Components/DeliveryLauncherSystem/DeliveryLauncherSystem';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 

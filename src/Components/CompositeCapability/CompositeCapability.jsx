@@ -75,7 +75,9 @@ const CompositeCapability = () => {
 
   return (
     <div className="container">
+      <div className="mt-5 mt-md-0">
       <Heading heading="Capability" subheading="manufacture of simple composit structure" />
+      </div>
       <div className="row p-3 mt-5 myrow shadow-lg custom-row">
         <div className="col-md-7">
           <div id="list-example" className="list-group">

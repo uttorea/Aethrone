@@ -28,10 +28,10 @@
 }
 .accordion_card{
     position:absolute;
-    top:80%;
-    left:65%;
+    top:75%;
+    left:64%;
     transform:translate(-50%,-50%);
-    width:50%;
+    width:55%;
 }
 .focus_heading{
     border-left: 6px solid #3535DE;
@@ -58,13 +58,20 @@ height:155px;
     font-size:27px;
     
 }
+.focustcardtitle{
+    font-Size:36px;
+}
 @media only screen and (max-width:425px){
     .whyfocusmain{
         
         height:70vh;
         
     }
-    
+    .focusArea{
+        width:95%;
+        margin-left:auto;
+        margin-right:auto;
+    }
     .card-img-top{
         height:70px;
         }
@@ -88,6 +95,7 @@ height:155px;
         .accordion_card{
             top:70%;
             width:60%;
+            left:68%;
         }
         .aethron_card1{
             top:35%;

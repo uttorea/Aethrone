@@ -2,40 +2,10 @@
     background-color: #fff;
 }
 
-.keytechno_heading{
-    border-left: 6px solid #3535DE;
-}
-
-.key_heading {
-    margin-bottom: 0.5rem;
-}
-
-.card-img {
-    
-    width: 100%;
-    height: auto;
-}
 
 
-.card-footer {
-    display: flex;
-    width:100%;
-    align-items: center;
-    justify-content: center;
-    text-align: center; 
-    height: 60px;
-}
 @media only screen and (max-width:425px){
-    .card-footer {        
-        height: 60px;
-        
-    }
-    .card-body{
-        height:100px;
-        margin:0;
-        padding:0;
-    }
-    
+  
     
    
 }

@@ -2,16 +2,16 @@ import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg"; // Original logo
 import changeLogo from "../../assets/changeLogo.png"; // New logo
-import logo1 from '../../assets/logo1.png'
+import logo1 from "../../assets/logo1.png";
 import { Link } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState("");
   const [textColor, setTextColor] = useState("text-light");
   const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
-  const [logoWidth, setLogoWidth] = useState("250px"); 
+  const [logoWidth, setLogoWidth] = useState("250px");
   const [borderTop, setBorderTop] = useState("3px solid #3535DE");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
         {isMobile ? (
           <>
             <img
-              style={{ width:'135px', marginLeft:'-30px', marginTop:'-3px' }}
+              style={{ width: "135px", marginLeft: "-30px", marginTop: "-3px" }}
               src={logo1}
               alt="Logo"
               className="logo_img ps-3"
@@ -118,7 +118,10 @@ const Navbar = () => {
                   className="dropdown-menu position-fixed "
                   aria-labelledby="navbarDropdownMenuLinkProduct"
                 >
-                  <Link className="dropdown-item" to="/launch-recovery-delivery">
+                  <Link
+                    className="dropdown-item"
+                    to="/launch-recovery-delivery"
+                  >
                     Launch & Recovery/Delivery
                   </Link>
                   <Link className="dropdown-item" to="/parachutes">

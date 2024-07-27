@@ -49,6 +49,7 @@
   .about_overlay{
    
     height: 60%;
+    top:100px;
    
   }
   .about-container{
@@ -56,5 +57,9 @@
     height: 80vh;
     
 }
+.about_heading{
+  font-size:48px;
+}
+
  
 }

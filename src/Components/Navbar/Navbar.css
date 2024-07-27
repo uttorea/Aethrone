@@ -66,9 +66,9 @@
 
   .mobile-menu {
     position: absolute;
-    top: 80px;
-    left: 0;
-    width: 100%;
+    top: 52px;
+    right: 0;
+    width: 70%;
     background-color: white;
     border-top: 1px solid #414042;
     z-index: 2;
@@ -84,6 +84,6 @@
     width: 60px; /* Adjust width as needed */
   }
   .mobail{
-    background-color:red;
+    background-color: rgba(0,0,0, 0.9); 
   }
 }

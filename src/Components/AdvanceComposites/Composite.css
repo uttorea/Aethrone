@@ -6,7 +6,7 @@
     top: 120px;
 }
 
-.composite_content h1 {
+.Advance-Composite {
     font-size: 96px;
     margin: 0;
 }
@@ -18,6 +18,8 @@
 .compo_para2 {
     background-color: rgba(0, 0, 0, 0.85);
     border-radius: 5px;
+    width:90%;
+    letter-spacing:1px;
 }
 
 @media only screen and (max-width:425px){
@@ -28,11 +30,15 @@
     .compositeimg1{
         height:100vh;
     }
-    .composite_content h1 {
+    .Advance-Composite{
         font-size: 48px;
        
     }
     .compo_para2{
         font-size:12px;
+    }
+    .composite_content {
+       
+        top: 80px;
     }
 }
