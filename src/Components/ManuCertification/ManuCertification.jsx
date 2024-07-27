@@ -1,5 +1,6 @@
 import React from 'react'
-import './ManuCertification.css'
+import './ManuCertification.css';
+import HeadingComponent from '../HeadingComponent/HeadingComponent';
 import manuCertificateImg1 from '../../assets/manuCertificateImg1.png'
 import manuCertificateImg2 from '../../assets/manuCertificateImg2.png'
 import manuCertificateImg3 from '../../assets/manuCertificateImg3.png'
@@ -37,8 +38,8 @@ const certificateData = [
 
 const ManuCertification = () => {
   return (
-    <div className='container-md container-fluid '>
-      <h3 className='ManuCertifications_heading px-2 fw-bold'>Quality & Manufacturing Certifications</h3>
+    <div className='container mt-5'>
+      <HeadingComponent heading='Quality & Manufacturing Certifications'/>
       <div className="row row-cols-4 row-cols-md-4 g-md-4 g-2 mt-5">
         {certificateData.map(cert => (
           <div className="col" key={cert.id}>

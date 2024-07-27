@@ -1,7 +1,9 @@
-
+.adm-heading{
+    margin-top:100px;
+}
 
 .advanceManu_para2{
-    font-size:18px;
+    letter-spacing:1px;
 }
 .advanceManu_page img {
     width: 100%;
@@ -22,9 +24,7 @@
     top: 120px;
 }
 
-.advanceManu_para1{
-    border-left: 6px solid #3535DE;
-}
+
 
 @media only screen and (max-width:425px){
     .advanceManu_page img {
@@ -36,9 +36,7 @@
         font-size: 48px;
         line-height:40px;
     }
-    .advanceManu_para2{
-        font-size:12px;
-    }
+   
 }
 
 

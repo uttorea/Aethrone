@@ -8,6 +8,9 @@
     height:90vh;
     
 }
+.focusAreacard{
+    border:2px solid #3535DE;
+}
 .focusimg{
     height:90vh;
     object-fit:cover;
@@ -19,8 +22,8 @@
     transform:translate(-50%,-50%)
 }
 .cardfocus{
-    width:288px;
-    height:200px;
+    /* width:288px;
+    height:200px; */
     background-color:rgba(0,0,0,0.85);
 }
 .accordion_card{
@@ -48,10 +51,12 @@
 height:155px;
 }
 .focuswhy{
-    font-size:26px;
+    font-size:36px;
+    font-family:Arimo;
 }
 .foryour{
-    font-size:18px;
+    font-size:27px;
+    
 }
 @media only screen and (max-width:425px){
     .whyfocusmain{

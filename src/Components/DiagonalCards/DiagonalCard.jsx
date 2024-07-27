@@ -9,7 +9,10 @@ const DiagonalCard = ({
   d_cardTop = "280px",
   smallSeparatorTop1 = "120px",
   smallSeparatorTop2 = "130px",
-  smallCardTop = "150px"
+  smallCardTop = "150px",
+  cardWidth = "251.25px", // Default width
+  cardHeight = "387px",   // Default height
+  isLargeSize = false     // Optional condition to override default dimensions
 }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
@@ -20,21 +23,35 @@ const DiagonalCard = ({
   }, []);
 
   // Determine the gap class based on the number of cards and window width
-  const gapClass = windowWidth < 425 ? "gap-1" : (cards.length === 4 ? "gap-5" : "gap-3");
+  const gapClass = windowWidth < 425 ? "gap-1" : (cards.length === 5 ? "gap-3" : "gap-5");
+
+  // Calculate dimensions based on conditions
+  const computedWidth = isLargeSize ? "300px" : cardWidth;
+  const computedHeight = isLargeSize ? "400px" : cardHeight;
 
   return (
     <div className={`mt-3 mt-md-5 d-flex ${gapClass} daigonal_container`}>
       {cards.map((card, index) => (
-        <div key={index} className="d_card rounded">
+        <div
+          key={index}
+          className="d_card rounded"
+          style={{ width: computedWidth, height: computedHeight }}
+        >
           <div
             className="d_card_img_container"
-            style={{ marginTop: card.marginTop, marginLeft: card.marginLeft }}
+            style={{
+              marginTop: windowWidth < 425 ? card.smallMarginTop : card.marginTop,
+              marginLeft: windowWidth < 425 ? card.smallMarginLeft : card.marginLeft
+            }}
           >
             <img
               src={card.image}
               className="d_card_img"
               alt={`Card image ${index + 1}`}
-              style={{ width: card.width, height: card.height }}
+              style={{
+                width: windowWidth < 425 ? card.smallWidth : card.width,
+                height: windowWidth < 425 ? card.smallHeight : card.height
+              }}
             />
           </div>
           <div
@@ -57,16 +74,21 @@ const DiagonalCard = ({
               {card.title}
             </h5>
             {Array.isArray(card.text) ? (
-              <ul className="d_card-list mt-3">
+              <ul className="d_card-list mt-3 py-1">
                 {card.text.map((item, idx) => (
                   <li key={idx} className="mb-2">
                     {item}
                   </li>
                 ))}
               </ul>
-            ) : (
-              <p className="d_card-text fontweight fontfamilySecondary">
+            ) : card.text ? (
+              <p className="d_card-text fontweight fontfamilySecondary ">
                 {card.text}
+              </p>
+            ) : null}
+            {card.extraText && (
+              <p className="d_card-extra-text py-2 maincolor fw-bold  text-center fontsecondry fontfamilySecondary">
+                {card.extraText} <i className="bi bi-arrow-right-short"></i>
               </p>
             )}
           </div>

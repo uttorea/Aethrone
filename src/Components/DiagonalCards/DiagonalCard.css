@@ -8,8 +8,8 @@
   }
   
   .d_card {
-    width: 251.25px;
-    height: 387px;
+    /* width: 251.25px;
+    height: 387px; */
     border: 2px solid #3535de;
     position: relative; /* Ensure absolute positioning is relative to the card */
     overflow: hidden; /* Prevent content from overflowing */
@@ -67,6 +67,9 @@
     margin-bottom: 5px;
     font-size: 18px;
   }
+  .d_card-extra-text{
+    border-top:2px solid #3535DE;
+  }
   
   @media only screen and (max-width: 425px) {
     .d_card_img {
@@ -78,7 +81,7 @@
       height: 230px;
     }
     .d_card-title{
-        font-size:16px;
+        font-size:12px;
     }
     .daigonal_container{
         width:98%;

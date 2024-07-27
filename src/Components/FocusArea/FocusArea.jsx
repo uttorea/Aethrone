@@ -4,6 +4,7 @@ import focusImg1 from '../../assets/focusImg1.png'
 import focusImg2 from '../../assets/focusImg2.png'
 import focusImg3 from '../../assets/focusImg3.png'
 import focusImg4 from '../../assets/focusImg4.png'
+import HeadingComponent from '../HeadingComponent/HeadingComponent'
 import manucompositebgimg from '../../assets/manucompositebgimg.png'
 
 const focusAreas = [
@@ -36,11 +37,12 @@ const FocusArea = () => {
     return (
         <>
             <div className='container-md container-fluid mt-5 p-md-5 p-1'>
-                <h3 className='focus_heading px-2 fw-bold'>Our Focus Area</h3>
+                <HeadingComponent heading='Our Focus Area'/>
+
                 <div className="row row-cols-4 row-cols-md-4 g-md-4 g-1 mt-5 ">
                     {focusAreas.map((area, index) => (
                         <div className="col" key={index}>
-                            <div className="card align-items-center border-2 border-primary">
+                            <div className="card align-items-center focusAreacard">
                                 <img src={area.img} className="card-img-top mt-5" alt={area.title} style={area.style} />
                                 <div className="card-body">
                                     <h5 className="card-titlefocus mt-md-5 mt-0 fw-bold maincolor">{area.title}</h5>
@@ -53,11 +55,11 @@ const FocusArea = () => {
 
             <div className="mt-5 whyfocusmain" >
                 <img src={manucompositebgimg} alt="" className='w-100 focusimg'  />
-                <div className="aethron_card1 border rounded" >
-                    <div className="cardfocus" >
-                        <div className="card-body text-light py-md-2 py-1">
-                            <h2 className='focuswhy'>Why <br />Aethrone</h2>
-                            <h4 className='foryour'>for your<br />hardware<br />requirements?</h4>
+                <div className="aethron_card1  rounded" >
+                    <div className="cardfocus px-5 py-2" >
+                        <div className="card-body text-white py-md-2 py-1">
+                            <h2 className='focuswhy fw-bold'>Why <br />Aethrone</h2>
+                            <h4 className='foryour fontfamilySecondary fontweight'>for your<br />hardware<br />requirements?</h4>
                         </div>
                     </div>
                 </div>
