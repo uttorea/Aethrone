@@ -48,7 +48,7 @@ const DesignDevelopment = () => {
       <EngineerService />
       <Platform />
       <Accordion />
-      {/* <Casestudies /> */}
+      <Casestudies />
       <Seeportfolio />
       <Footer />
     </>

@@ -1,30 +1,94 @@
-.casestudies{
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
-}
+/* App.css */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: auto;
+  position: relative;
+} */
 
-
-.case_heading {
-    border-left: 6px solid #3535DE;
-}
-
-
-.carousel-indicators .active {
-    background-color: gray;
-}
-
-.image-container {
-    overflow: hidden;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 115%);
-    height: 70vh;
-    width: 85vw;
+.header {
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #333;
+    border-left: 4px solid blue;
+    padding-left: 10px;
+  }
+  
+  .carousel-container {
+    width: 100%;
+    height: 600px; /* Set a fixed height */
     position: relative;
-    left: 175px;
-}
-.caseimg_carousel{
+  }
+  
+  .carousel-slide {
+    width: 85%;
+    height: 85%;
+    position: relative;
+  }
+  
+  .drone-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+  }
+  
+  .arrow {
     position: absolute;
-    top:140px;
-    left: 100px;
-    }
+    top: 78%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .arrow.prev {
+    left: 10px;
+  }
+  
+  .arrow.next {
+    right: 450px;
+  }
+  
+  /* Custom CSS to override .carousel .slide .legend */
+  .carousel .slide .legend {
+      position: absolute !important;
+      bottom: -62px !important;
+      left:84% !important;
+      transform: translateX(-50%) !important;
+      width: 77% !important;
+      border-radius: 10px !important;
+      background: rgba(0, 0, 0, 0.7) !important; /* Updated background */
+      color: #fff !important;
+      padding: 26px !important;
+      font-size: 16px !important; /* Updated font size */
+      text-align: center !important;
+      opacity: 1 !important;
+      transition: opacity .35s ease-in-out !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      white-space: normal;
+      overflow: hidden;
+  }
+  .carousel .control-dots {
+    position: absolute;
+    bottom: 0;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    margin-left: -189px;
+  }

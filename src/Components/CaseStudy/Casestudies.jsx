@@ -1,93 +1,82 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import './Casestudies.css';
-import Heading from '../../Components/HeadingComponent/HeadingComponent'
-import casestudyimg1 from '../../assets/casestudyimg1.png';
-import casestudyimg2 from '../../assets/casestudyimg2.png';
-import casestudyimg3 from '../../assets/casestudyimg3.png';
-import casestudyimg4 from '../../assets/casestudyimg4.png';
-import casestudyimg5 from '../../assets/casestudyimg5.png';
+import droneImage1 from '../../assets/1.png';
+import droneImage2 from '../../assets/2.png';
+import droneImage3 from '../../assets/3.png';
+import droneImage4 from '../../assets/4.png';
+import droneImage5 from '../../assets/5.png';
 
-const Casestudies = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
 
-    const caseStudies = [
-        {
-            cardHeading: "Qualification To Radome",
-            caraPara: "Manned Aircraft modification for Radome Installment on the upper fuselage as per MIL 810 H"
-        },
-        {
-            cardHeading: "Design & Optimization ~ T Tail UAV",
-            caraPara: "Concept to Test Flight of a T tail UAV using IC Engine for a low cost - high density loitering system"
-        },
-        {
-            cardHeading: "Simulation For Nano Helicopter",
-            caraPara: "Optimization of performance as per baseline design for Built to Specification of Infantry and Special Forces use cases"
-        },
-        {
-            cardHeading: "Design & Analysis Of Blending Wing",
-            caraPara: "Hand launched aerial platform developed to manufacture for use cases of survey and mapping of large flatlands"
-        }
-    ];
-
-    const handleSlideChange = (index) => {
-        setCurrentIndex(index);
-    };
-
-    return (
-        <div className=' casestudies'>
-            
-            <Heading heading='Case Studies'/>
-          
-            <div id="carouselExampleIndicators" className="carousel slide mt-5" data-bs-ride="carousel">
-                <div className="carousel-indicators" style={{ position: 'absolute', right: '540px' }}>
-                    {caseStudies.map((_, index) => (
-                        <button
-                            key={index}
-                            type="button"
-                            data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide-to={index}
-                            className={index === currentIndex ? 'active' : ''}
-                            aria-current={index === currentIndex ? 'true' : 'false'}
-                            aria-label={`Slide ${index + 1}`}
-                            onClick={() => handleSlideChange(index)}
-                        ></button>
-                    ))}
-                </div>
-                <div className="carousel-inner">
-                    {caseStudies.map((study, index) => (
-                        <div key={index} className={`carousel-item ${index === currentIndex ? 'active' : ''}`}>
-                            <div className="image-container">
-                                <img src={
-                                    index === 0 ? casestudyimg1 :
-                                    index === 1 ? casestudyimg2 :
-                                    index === 2 ? casestudyimg3 :
-                                    index === 3 ? casestudyimg5 :
-                                    casestudyimg5
-                                } className="" alt="..." />
-                            </div>
-                           
-                        </div>
-                    ))}
-                </div>
-                <div className="caseimg_carousel">
-                    <div className="card w-75 bg-black bg-opacity-50" style={{height:'300px'}}>
-                        <div className="card-body d-flex "> 
-                            <h2 className="card-title text-light px-2 text-center mt-5" style={{borderLeft:'6px solid #3535DE'}}>{caseStudies[currentIndex].cardHeading}</h2>
-                            <p className="card-text text-light text-center mt-4">{caseStudies[currentIndex].caraPara}</p>
-                        </div>
-                    </div>
-                </div>
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" onClick={() => handleSlideChange((currentIndex - 1 + caseStudies.length) % caseStudies.length)} style={{ position: 'absolute', left: '170px', top: '85%' }}>
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" onClick={() => handleSlideChange((currentIndex + 1) % caseStudies.length)} style={{ position: 'absolute', right: '700px', top: '85%' }}>
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
+function Casestudies() {
+  return (
+    <div className="container">
+      <div className="header">
+        <h1>Case Studies</h1>
+      </div>
+      <div className="carousel-container">
+        <Carousel
+          autoPlay
+          interval={1500}
+          infiniteLoop
+          showThumbs={false}
+          showStatus={false}
+          showIndicators={true}
+          renderArrowPrev={(onClickHandler, hasPrev, label) =>
+            hasPrev && (
+              <button type="button" onClick={onClickHandler} title={label} className="arrow prev">
+                ❮
+              </button>
+            )
+          }
+          renderArrowNext={(onClickHandler, hasNext, label) =>
+            hasNext && (
+              <button type="button" onClick={onClickHandler} title={label} className="arrow next">
+                ❯
+              </button>
+            )
+          }
+        >
+          <div className="carousel-slide relative">
+            <img src={droneImage1} alt="Drone 1" className="drone-image" />
+            <div className="legend">
+              <h2 className="text-4xl font-bold">Qualification of Radome</h2>
+              <p className="mt-4 text-lg text-center">Manned Aircraft modification for Radome Installment on the upper fuselage as per MIL 810 H</p>
             </div>
-        </div>
-    );
+          </div>
+          <div className="carousel-slide relative">
+            <img src={droneImage2} alt="Drone 2" className="drone-image" />
+            <div className="legend">
+              <h2 className="text-4xl font-bold">Design & Optimization - T tail UAV</h2>
+              <p className="mt-4 text-lg text-center">Concept to Test Flight of a T tail UAV using IC Engine for a low cost - high density loitering system</p>
+            </div>
+          </div>
+          <div className="carousel-slide relative">
+            <img src={droneImage3} alt="Drone 3" className="drone-image" />
+            <div className="legend">
+              <h2 className="text-4xl font-bold">simulation for nano helicopter</h2>
+              <p className="mt-4 text-lg text-center">Optimization of performance as per baseline design for Built to Specification of Infantry and Special Forces use cases</p>
+            </div>
+          </div>
+          <div className="carousel-slide relative">
+            <img src={droneImage4} alt="Drone 4" className="drone-image" />
+            <div className="legend">
+              <h2 className="text-4xl font-bold">Composite Ducted Fan</h2>
+              <p className="mt-4 text-lg text-center">Composite Matrix Design with local Pre Preg material for a Make In India Project by North American OEM</p>
+            </div>
+          </div>
+          <div className="carousel-slide relative">
+            <img src={droneImage5} alt="Drone 3" className="drone-image" />
+            <div className="legend">
+              <h2 className="text-4xl font-bold">Design & analysis of Blending wing</h2>
+              <p className="mt-4 text-lg text-center">Hand launched aerial platform developed to manufacture for use cases of survey and mapping of large flatlands</p>
+            </div>
+          </div>
+        </Carousel>
+      </div>
+    </div>
+  );
 }
 
 export default Casestudies;
