@@ -6,9 +6,10 @@
 .lunchsystemcards{
     margin-top:80px;
 }
-.footerlaunch{
-border-top:2px solid #3535DE;
+.fotter_lunch{
+border-top:5px solid #3535DE;
 }
+
 @media only screen and (max-width:425px){
     .card-img-top1{
         width:100%;

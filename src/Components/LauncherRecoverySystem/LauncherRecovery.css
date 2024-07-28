@@ -20,6 +20,12 @@ margin-top:70px;
     border:2px solid #3535DE;
 
 }
+.lunch-footer{
+    border-top:5px solid #3535DE;
+}
+.lanchtext{
+    width:100%;
+}
 /* .explore-launcher{
     background-color:#3535DE;
 } */

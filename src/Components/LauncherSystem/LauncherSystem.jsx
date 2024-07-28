@@ -60,8 +60,8 @@ const   LauncherSystem = () => {
       <div className="col" key={index}>
         <div className="card h-100 border-primary launchesystemcard">
           <img src={card.imgSrc} className="card-img-top-launch mt-2 mt-md-0" alt="..." />
-          <div className="card-footer   footerlaunch px-0">
-            <h6 className="maincolor fontfamilyPrimary fontsecondry footerlaunch-head">
+          <div className="fotter_lunch px-0 w-100 ps-5">
+            <h6 className="maincolor fontfamilyPrimary fontsecondry ">
               {card.title} <br />
               {card.subtitle}
             </h6>

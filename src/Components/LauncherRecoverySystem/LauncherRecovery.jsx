@@ -75,8 +75,8 @@ const LauncherRecovery = () => {
             alt={launcher.altText}
           
           />
-          <div className="card-footer fontfamilyPrimary footer-lunch p-0">
-            <h6 className="maincolor fontfamilyPrimary lanchtext ">
+          <div className=" fontfamilyPrimary lunch-footer p-0 w-100">
+            <h6 className="maincolor fontsecondry fontfamilyPrimary lanchtext ps-5 ">
               {launcher.title.split(" ").slice(0, 2).join(" ")} <br />
               {launcher.title.split(" ").slice(2).join(" ")}
             </h6>
@@ -85,7 +85,7 @@ const LauncherRecovery = () => {
       </div>
     ))}
   </div>
-      </div>
+      </div> 
     </>
   );
 };
