@@ -14,7 +14,8 @@ const DiagonalCard = ({
   defaultCardHeight = "387px",   // Default height
   smallCardWidth = "251.5px", // Width for small screens
   smallCardHeight = "220px", // Height for small screens
-  isLargeSize = false     // Optional condition to override default dimensions
+  isLargeSize = false,     // Optional condition to override default dimensions
+  centerText = false       // Prop to determine text alignment
 }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [cardWidth, setCardWidth] = useState(defaultCardWidth);
@@ -93,7 +94,7 @@ const DiagonalCard = ({
                 ))}
               </ul>
             ) : card.text ? (
-              <p className="d_card-text fontweight fontfamilySecondary ">
+              <p className={`d_card-text fontsecondry fontweight fontfamilySecondary ${centerText ? 'text-center' : ''}`}>
                 {card.text}
               </p>
             ) : null}

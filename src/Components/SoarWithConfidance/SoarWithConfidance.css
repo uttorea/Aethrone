@@ -1,0 +1,18 @@
+.soarwith{
+    width:469.5px;
+    height:379.75px;
+    background-color:#414042;
+}
+.AA{
+    font-size:48px;
+}
+@media only screen and (max-width:425px){
+    .soarwith{
+        width:150px;
+        height:150px;
+       
+    }
+    .AA{
+        font-size:18px;
+    }
+}

@@ -1,0 +1,24 @@
+.our-expertise{
+    font-size:24px;
+    color:#414042;
+}
+.beyondAthoron{
+    font-size:48px;
+}
+.beyondheading{
+font-size:27px;
+color:#414042;
+}
+@media only screen and (max-width:425px){
+    .our-expertise{
+        font-size:12px;
+       
+    }
+    .beyondAthoron{
+        font-size:22px;
+    }
+    .beyondheading{
+    font-size:14px;
+  
+    }   
+}

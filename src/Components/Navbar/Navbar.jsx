@@ -100,6 +100,9 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/precision-manufacturing">
                     Precision Manufacturing
                   </Link>
+                  <Link className="dropdown-item" to="/aerial-robotics ">
+                  Aerial Robotics 
+                  </Link>
                 </div>
               </div>
               <div className="nav-item dropdown">
@@ -187,6 +190,9 @@ const Navbar = () => {
                 <Link className="dropdown-item" to="/precision-manufacturing">
                   Precision Manufacturing
                 </Link>
+                <Link className="dropdown-item" to="/aerial-robotics">
+                  Aerial Robotics 
+                 </Link>
               </div>
             </div>
             <div className="nav-item dropdown">

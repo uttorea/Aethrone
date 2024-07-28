@@ -17,6 +17,7 @@ import Composite from './Components/AdvanceComposites/Composite';
 import AdvanceManufacture from './Components/AdvanceManufacturing/AdvanceManufacture';
 import ParachuteRecovery from './Components/ParachuteRecovery/ParachuteRecovery'
 import DeliveryLauncherSystem from './Components/DeliveryLauncherSystem/DeliveryLauncherSystem';
+import AerialRobotics from './Components/AerialRobotics/AerialRobotics';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
@@ -43,6 +44,7 @@ function App() {
           <Route path="/advance-composites" element={<Composite/>}/>
           <Route path="/advance-manufacturing" element={<AdvanceManufacture/>}/>
           <Route path='/delivery-launcher-system' element={<DeliveryLauncherSystem/>}/>
+          <Route path='/aerial-robotics' element={<AerialRobotics/>}/>
           
         </Routes>
       </div>

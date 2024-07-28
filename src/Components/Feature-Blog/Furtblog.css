@@ -83,11 +83,10 @@
 }
 @media only screen and (max-width: 450px) {
     .furtblog{
-        width:90%;
+        width:100%;
         margin-left:auto;
         margin-right:auto;
-        padding-left:20px;
-        /* margin:auto; */
+      
      }
     .furtcards{
         width:100%;
