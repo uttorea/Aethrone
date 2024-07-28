@@ -2,6 +2,8 @@
     position: relative;
     top: 200px;
 }
-.dp_heading{
-    border-left: 6px solid #3535DE;
+@media only screen and (max-width:425px){
+    .designImge{
+        width:100%;
+    }
 }
