@@ -11,6 +11,8 @@ const KeyTechno = () => {
         <div className="px-3">
           <Heading heading="Key Technologies" subheading="What we work with" />
         </div>
+<div className="ps-0 ps-md-5 mt-4">
+
 
         <SimpleCard
           images={KeyTechnoIMG}
@@ -59,7 +61,7 @@ const KeyTechno = () => {
             4: "60px",
           }}
         />
-
+</div>
         <p className="mt-5 fontsecondry px-3 fontfamilySecondary fontweight">
           Technology lies at the core of sustainable progress. Aethrone
           Aerospace's sustainable transformation initiatives are anchored in the

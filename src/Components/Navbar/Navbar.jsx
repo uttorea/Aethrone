@@ -142,7 +142,7 @@ const Navbar = () => {
               alt="Logo"
               className="logo_img centered-logo"
             />
-            <div className="d-flex flex-row justify-content-end align-items-center gap-5 pe-5">
+            <div className="d-flex flex-row justify-content-end align-items-center gap-5 ">
               <Link className={`nav-item nav-link ${textColor}`} to="/career">
                 Career
               </Link>

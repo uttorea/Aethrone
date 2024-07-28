@@ -83,8 +83,7 @@
   .timeline-item.active .circle {
     background-color: #3535DE;
     color: #fff;
-    transform: scale(1.5); 
-    
+    transform: scale(1.5);  
     width: 188px; 
     height: 188px;  
     font-size:48px;
@@ -95,5 +94,47 @@
     color:#3535DE;
     font-size:48px;
     border:2px solid #3535DE;
+  }
+
+  @media only screen and (max-width:425px){
+    .ourjourney{
+      font-size:18px;
+     }
+   
+      .timeline-item {   
+        margin: 0 8px;  
+      }      
+      .circle {
+        
+        width: 35px;
+        height: 35px;
+        font-size: 12px;
+      }
+      
+      .small-circle {
+        width: 15px;
+        height: 15px;
+       
+      }
+      
+      .timeline-item.active .circle {
+        
+        width: 60px; 
+        height:60px;  
+        font-size:24px;
+       }
+      .timeline-button{
+        width:20px;
+        height:40px;
+        font-size:12px;
+        
+      }
+      .timeline {
+       
+        height:30vh;
+        margin: 0 0 20px 0;
+        
+        
+      }
   }
   
