@@ -30,7 +30,7 @@ border:2px solid #3535DE;
   font-weight:100;
 }
 .fontfamilySecondary{
-  font-family:'Arimo'
+  font-family: 'Arimo', sans-serif;
 }
 .fontsecondry{
 font-size:18px;
