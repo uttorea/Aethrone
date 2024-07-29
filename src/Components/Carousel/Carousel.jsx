@@ -42,7 +42,7 @@ function Carousel() {
   return (
     <div className="body_carousel" >
       <div className="d-flex justify-content-center " >
-        <div className="col-lg-12 " >
+        <div className="col-lg-12" >
           <div id="carouselExampleIndicators1" className="carousel slide  " data-bs-ride="carousel">
             <div className="carousel-indicators caraousal-indicator-home col-10 col-md-8" style={{alignItems:'center', marginLeft:'0px', marginRight:'0px'}}>
               {carouselData.map((item, index) => (

@@ -1,8 +1,4 @@
-/* *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +12,12 @@
   position: absolute;
   
 
+}
+.color2{
+  color:#414042;
+}
+.color{
+  color:#FBFBFE;
 }
 .maincolor{
   color:#3535DE;

@@ -38,13 +38,15 @@
 }
 
 .join_team {
-    
     position: relative;
-    top: 100px;
-    border-top:1px solid  rgb(235, 229, 229);
-   
-
+    height: 241.5px;
+    border-top: 3px solid rgb(235, 229, 229);
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */
+    text-align: center;     /* Center text */
 }
+
 .blog_btn{
     position: absolute;
     left:0;
@@ -103,7 +105,7 @@
         width:335px !important;
     }
     .blog_btn{
-        top:70px;
+        top:73px;
     }
     .frtbtn21{
        

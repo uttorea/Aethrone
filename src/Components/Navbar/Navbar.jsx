@@ -9,7 +9,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState("");
-  const [textColor, setTextColor] = useState("text-light");
+  const [textColor, setTextColor] = useState("text-light"); // Bootstrap class for light text
   const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
   const [logoWidth, setLogoWidth] = useState("250px");
   const [borderTop, setBorderTop] = useState("3px solid #3535DE");
@@ -20,13 +20,13 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 300) {
         setNavBackground("bg-white");
-        setTextColor("text-dark");
+        setTextColor("text-dark"); // Bootstrap class for dark text
         setLogoSrc(changeLogo);
         setBorderTop("3px solid white"); // Correct value for border-top
         setLogoWidth("210px"); // Change the width when scrolling past 400px
       } else {
         setNavBackground("");
-        setTextColor("text-light");
+        setTextColor("text-light"); // Bootstrap class for light text
         setLogoSrc(logo); // Revert to the original logo
         setLogoWidth("250px"); // Revert to the original logo width
         setBorderTop("3px solid #3535DE"); // Revert to the original border-top value
@@ -100,9 +100,7 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/precision-manufacturing">
                     Precision Manufacturing
                   </Link>
-                  <Link className="dropdown-item" to="/aerial-robotics ">
-                  Aerial Robotics 
-                  </Link>
+                  
                 </div>
               </div>
               <div className="nav-item dropdown">
@@ -130,11 +128,11 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/parachutes">
                     Parachutes
                   </Link>
-                  <Link className="dropdown-item" to="/advance-manufacturing">
-                    Advance Manufacturing
-                  </Link>
                   <Link className="dropdown-item" to="/advance-composites">
                     Advance Composites
+                  </Link>
+                  <Link className="dropdown-item" to="/aerial-robotics ">
+                    Aerial Robotics 
                   </Link>
                 </div>
               </div>
@@ -190,9 +188,7 @@ const Navbar = () => {
                 <Link className="dropdown-item" to="/precision-manufacturing">
                   Precision Manufacturing
                 </Link>
-                <Link className="dropdown-item" to="/aerial-robotics">
-                  Aerial Robotics 
-                 </Link>
+               
               </div>
             </div>
             <div className="nav-item dropdown">
@@ -217,12 +213,12 @@ const Navbar = () => {
                 <Link className="dropdown-item" to="/parachutes">
                   Parachutes
                 </Link>
-                <Link className="dropdown-item" to="/advance-manufacturing">
-                  Advance Manufacturing
-                </Link>
                 <Link className="dropdown-item" to="/advance-composites">
                   Advance Composites
                 </Link>
+                <Link className="dropdown-item" to="/aerial-robotics">
+                  Aerial Robotics 
+                 </Link>
               </div>
             </div>
             <Link className={`nav-item nav-link ${textColor}`} to="/career">

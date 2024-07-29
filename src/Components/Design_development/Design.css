@@ -1,11 +1,16 @@
-.disingtext{
-    font-size:18px;
-    font-weight:100;
-    color:white;
-}
+
 .design_head{
     padding-top:50px;
 }
+.designdevelopment{
+    background-color:#0D0E1E;
+    width:93%;
+    margin:auto;
+    opacity:80%;
+}
+
+
+
 
 
 @media only screen and (max-width: 450px) {
@@ -25,16 +30,11 @@
     .dd_heading{
         font-size:26px;
     }
-    .disingtext{
-        font-size:12px;
-    }
+    
     .designbutton{
         font-size:14px;
         margin-top:-20px;
     }
-    .ddimg_heading{
-        font-size:12px;
-     
-    }
+    
    
 }

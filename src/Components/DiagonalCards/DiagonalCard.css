@@ -1,18 +1,17 @@
-/* DiagonalCard.css */
+
 .gap-1 {
-    gap: 0.25rem; /* Adjust the gap value as needed */
+    gap: 0.25rem; 
   }
   
   .gap-5 {
-    gap: 1.25rem; /* Adjust the gap value as needed */
+    gap: 1.25rem; 
   }
   
   .d_card {
-    /* width: 251.25px;
-    height: 387px; */
+   
     border: 2px solid #3535de;
-    position: relative; /* Ensure absolute positioning is relative to the card */
-    overflow: hidden; /* Prevent content from overflowing */
+    position: relative; 
+    overflow: hidden; 
   }
   
   .d_card_img {

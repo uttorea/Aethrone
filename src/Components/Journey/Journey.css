@@ -95,6 +95,12 @@
     font-size:48px;
     border:2px solid #3535DE;
   }
+  .co-founder{
+    font-size:27px;
+    line-height:49.5px;
+    letter-spacing:1px;
+  }
+  
 
   @media only screen and (max-width:425px){
     .ourjourney{
@@ -135,6 +141,11 @@
         margin: 0 0 20px 0;
         
         
+      }
+      .co-founder{
+        font-size:18px;
+        line-height:25.5px;
+        letter-spacing:1px;
       }
   }
   

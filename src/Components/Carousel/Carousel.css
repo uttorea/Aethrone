@@ -26,7 +26,9 @@ height:598.5px;
   font-weight:100;
 }
 
-
+.carausaltext-heading{
+  line-height:40px;
+}
 @media only screen and (max-width: 450px) {
     .body_carousel{
         width:60%;

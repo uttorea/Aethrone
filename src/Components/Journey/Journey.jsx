@@ -49,29 +49,30 @@ const Journey = () => {
 
         <div className="card mb-3 border-0 mt-5">
           <div className="row g-0">
-            <div className="col-md-4 col-3">
+            <div className="col-md-3 col-3">
               <img
                 src={CoFounder}
                 className="img-fluid rounded-start rounded"
                 alt="Co-Founder"
               />
             </div>
-            <div className="col-md-8 col-9 px-2">
+            <div className="col-md-9 col-9 px-2">
               <div
                 className="card-body1 mt-md-5 mt-0 px-md-4 px-2 m-0"
                 style={{ borderLeft: "6px solid #3535DE" }}
               >
-                <h4 className="px-md-4 px-2 fontsecondry">
+                <h4 className="px-md-4 px-2 fontfamilyPrimary co-founder">
                   <span className="quote maincolor"> " </span> We At Aethrone Aerospace Aspire To Be Creative Thinkers,
                   Dynamic In Our Workspace, Durable In Our Products And Vouch For
                   Perfection To Make Machines Fly <span className="quote maincolor">"</span>
                 </h4>
 
-                <div className="text-end">
-                  <h5 className="maincolor mt-md-2 mt-1 coname">~Farzin B Irani</h5>
-                  <h6 className="fontsecondry">
+                <div className="text-center ">
+                  <h5 className="maincolor mt-md-2 mt-1 coname fontfamilyPrimary co-founder">~Farzin B Irani</h5>
+                  <h6 className="fontfamilySecondary fontsecondry ">
                     Co-Founder,
-                    <br />
+                    </h6>
+                    <h6 className="fontfamilySecondary fontsecondry ">
                     Aethrone Aerospace
                   </h6>
                 </div>

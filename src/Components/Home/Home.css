@@ -7,7 +7,9 @@
     color:white;
     margin:0;
     letter-spacing:5px;
+    line-height:110px;
 }
+
 .ingenuity{
     font-size:27px;
     font-family:arimo;
@@ -35,12 +37,10 @@
     margin-left:auto;
     margin-right:auto;
 }
-.homepage-text{
-    font-size:18px;
-    font-weight:100;
-    font-family:arimo;
-}
 
+.ppproject-home{
+    margin-top:-100px;
+}
 @media only screen and (max-width: 425px) {
     .home_page{
         width:100%;
@@ -77,12 +77,12 @@
         
     
     }
-    .homepage-text{
-        font-size:12px;
-        
-    }
+    
     .Home-para-main{
         margin-left:0px;
+    }
+    .ppproject-home{
+        margin-top:0px;
     }
     
     

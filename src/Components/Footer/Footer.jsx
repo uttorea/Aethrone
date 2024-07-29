@@ -23,22 +23,22 @@ function Footer() {
                                 <h3 className='headingfooter'>What We Do?  </h3>
                                 <h3 className='headingfooter mt-2' >Service</h3>
                                 <div className="card-body2">
-                                    <li>Design and Development</li>
-                                    <li>Precision Manufacturing</li>
+                                    <li className='color'>Design and Development</li>
+                                    <li className='color'>Precision Manufacturing</li>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-7 col-md-6  text-white mt-0 mt-md-5 card-body41">
                                 <h3 className='mt-5 headingfooter '>Product</h3>
-                                    <li className='text-wrap card-body4'>Launch and Recovery/Delivery</li>
+                                    <li className='text-wrap card-body4 color'>Launch and Recovery/Delivery</li>
                                 <div className="card-body2">
-                                    <li>Parachutes</li>
-                                    <li>Advanced Composites</li>
+                                    <li className='color'>Parachutes</li>
+                                    <li className='color'>Advanced Composites</li>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-5 text-white mt-5">
                                 <h3 className='headingfooter' >HeadOffice</h3>
                                 <div className="card-body3">
-                                    <p>Oz Plaza Viman Nagar Pune Maharashtra 411014</p>
+                                    <p className='color'>Oz Plaza Viman Nagar Pune Maharashtra 411014</p>
                                 </div>
                             </div>
                         </div>

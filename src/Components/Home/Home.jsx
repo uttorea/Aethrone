@@ -24,7 +24,8 @@ const Home = () => {
             <div className="home_heading text-white ">
               <p className="headingtext  fontfamilyPrimary  mt-4 ms-md-0 ">
                 AETHRONE
-                <br />
+              </p>
+              <p className="headingtext headingtext10 fontfamilyPrimary  ">
                 AEROSPACE
               </p>
 
@@ -41,17 +42,17 @@ const Home = () => {
                 <div className="col-sm-12 col-lg-7  whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div
-                    className="We-are-a-deep "
+                    className="We-are-a-deep fontsecondry fontfamilySecondary fontweight "
                     style={{ backgroundColor: "#0E0E0E" }}
                   >
                     <p
-                      className="homepage-text"
+                      className="homepage-text fontsecondry fontfamilySecondary fontweight"
                       style={{  letterSpacing: "1px",}}
                     >
                       We are a deep tech start-up  incubated from SIIC-IIT Kanpur
                     </p>
                     <p
-                      className=" homepage-text"
+                      className=" homepage-text fontsecondry fontfamilySecondary fontweight"
                       style={{ letterSpacing: "1px",}}
                     >
                       We design, develop, manufacture and support critical
@@ -88,7 +89,7 @@ const Home = () => {
 
       <Furtblog />
           </div>
-          <div>
+          <div className="ppproject-home">
 
       <Project />
           </div>
