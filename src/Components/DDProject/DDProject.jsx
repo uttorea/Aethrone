@@ -74,7 +74,7 @@ const DDProject = () => {
 
           <Heading heading="Projects"  />
           </div>
-          <p className="paraddproject ms-2 ms-md-0">
+          <p className="fontsecondry ms-2 ms-md-0">
             We have actualized projects in Aerospace, defence and UAV verticals
             which extends from engineering analysis to certifying of the sub
             system.
@@ -90,19 +90,19 @@ const DDProject = () => {
                       className="ddproject_img mx-auto d-block mx-md-1"
                       alt="..."
                     />
-                    <div className="d-flex">
+                    <div className="d-flex mt-2">
                       <h1 className="card-title fw-bold text-primary mt-4 mt-md-2  p-0 col-4">
                         {project.title}
                       </h1>
-                      <h6 className="mt-4  projecthead px-0 px-md-3">{project.subtitle}</h6>
+                      <h6 className="  projecthead ">{project.subtitle}</h6>
                     </div>
-                    <p className="card-text mt-1">{project.text}</p>
+                    <p className="fontsecondry mt-1">{project.text}</p>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-          <h6 className="mt-5 paraddproject ms-1 ms-md-0">
+          <h6 className="mt-5 fontsecondry ms-1 ms-md-0">
             This engineering vertical is based on below principals
           </h6>
           <div className="row row-cols-3 row-cols-md-3 g-4 mt-1 ms-1 ms-md-0 ">
@@ -115,9 +115,9 @@ const DDProject = () => {
                     alt="..."
                   />
                   <div className="titelcardpp text-center">
-                    <h6 className="maincolor fw-bold projrctheading">{principal.title}</h6>
+                    <h6 className="maincolor fw-bold fontsecondry">{principal.title}</h6>
                   </div>
-                  <p className="p-0 p-md-2 paraddproject">{principal.text}</p>
+                  <p className="p-0 p-md-2 fontsecondry">{principal.text}</p>
                 </div>
               </div>
             ))}

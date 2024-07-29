@@ -11,7 +11,7 @@ const HeadingComponent = ({ heading, subheading }) => {
         </div>
         <div className="col p-0">
           <h1 className="h3 font-weight-medium headingmain fontfamilyPrimary mt-0 mt-md-3" >{heading}</h1>
-          <p className="small font-weight-light subheadingmain fontfamilySecondary" >{subheading}</p>
+          <p className="small font-weight-light subheadingmain fontfamilySecondary mt-3" >{subheading}</p>
         </div>
       </div>
     </div>

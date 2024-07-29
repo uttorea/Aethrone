@@ -1,8 +1,17 @@
 .fixedUAV_page{
     background-color: rgba(0,0,0,0.75);
+    width:85%;
 }
 
 
-.FixedUAV_heading{
-    border-left: 6px solid #3535DE;
+.heading-bottom {
+    line-height: 1.8; 
 }
+.our-client,.uav{
+    letter-spacing:1px;
+}
+.fixedUAV_page{
+    margin-top:200px;
+}
+
+

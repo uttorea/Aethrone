@@ -44,7 +44,7 @@ const SimpleCard = ({
                             <div className="card-body1 no-padding d-flex justify-content-center align-items-center" style={{ height: `calc(${cardHeight} - 63.25px)`, width: '100%' }}>
                                 <img src={card.img} className="card_img1 rounded-top" alt={card.alt} style={{ height: imgHeight, width: imgWidth }} />
                             </div>
-                            <div className="card-footer eng-para2 fontsecondry text-center fontfamilySecondary fw-bold maincolor">{card.footer}</div>
+                            <div className="card-footer eng-para2 fontsecondry text-center fontfamilySecondary fw-bold maincolor" dangerouslySetInnerHTML={{ __html: card.footer }}></div>
                         </div>
                     </div>
                 );

@@ -100,7 +100,9 @@
     }
    
     .furtimg img{
-        width:335px !important;
+        /* width:335px !important;
+         */
+         width:100%;
     }
     .blog_btn{
         top:70px;

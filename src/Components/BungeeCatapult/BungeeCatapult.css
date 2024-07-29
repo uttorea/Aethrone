@@ -1,0 +1,32 @@
+.See-Bungee{
+    font-size:24px;
+}
+.Contact-Us, .Download-Brochure{
+    border:2px solid #3535DE;
+    font-size:24px;
+    
+}
+.Contact-Us{
+    background-color:#3535DE;
+    color:white;
+}
+.Mode-Of{
+font-size:36px;
+}
+@media only screen and (max-width:425px){
+    .bugimg{
+        width:100%;
+        height:100%;
+    }
+    .Mode-Of{
+        font-size:14px;
+        }
+        .See-Bungee{
+            font-size:12px;
+        }
+        .Contact-Us, .Download-Brochure{
+           
+            font-size:12px;
+            
+        }
+}

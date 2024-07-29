@@ -1,57 +1,35 @@
-import React from 'react'
-import './SystemInclude.css'
+import React from 'react';
+import './SystemInclude.css';
+import HeadingComponent from '../HeadingComponent/HeadingComponent';
+
 const SystemInclude = () => {
+   
+    const cards = [
+        "Airframe Specific Composite Housing Structure",
+        "Quicklinks and Carabiners for airframe attachment and detachment",
+        "Electro-mechanical / Pyrotechnic Ejection Mechanism triggered through PWM/Electric Pulse",
+        "Operations and Maintenance Manual",
+        "Customized Parachute Canopy/Airbag"
+    ];
+
     return (
-        <div>
-            
-            <div className='mt-5 systemInclude_page d-flex justify-content-center'>
-                <div className='m-5'>
-                    <h3 className='systemInclude_heading px-2'>Our Recovery Systems Include</h3>
-                    <p className='px-3 fw-bold'>Our clients use our qualified systems for following applications :</p>
-                    <div class="row row-cols-1 row-cols-md-5 g-4 ">
-                        <div class="col">
-                            <div class="card h-100 border-primary border-2">
-                                <div class="card-body align-items-center justify-content-center d-flex">
-                                    <small className="text-center">Airframe Specific Composite Housing Structure
-                                    </small>
+        <div className=" systemInclude_page d-flex justify-content-center">
+            <div className="">
+                <HeadingComponent heading='Our Recovery  systems include'/>
+                <div className="row row-cols-5 row-cols-md-5 g-4 mt-3">
+                    {cards.map((card, index) => (
+                        <div className="col" key={index}>
+                            <div className="systemcard p-4 ">
+                                <div className=" d-flex align-items-center justify-content-center">
+                                    <small className="text-center">{card}</small>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="card h-100 border-primary border-2">
-                                <div class="card-body align-items-center justify-content-center d-flex">
-                                    <small className="text-center">Quicklinks and Carabiners for airframe attachment and detachment</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-primary border-2">
-                                <div class="card-body align-items-center justify-content-center d-flex">
-                                    <small className="text-center">Electro-mechanical /Pyrotechnic Ejection Mechanism triggered through PWM/Electric Pulse</small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-primary border-2 ">
-                                <div class="card-body align-items-center justify-content-center d-flex">
-                                    <small className="text-center">
-                                    Operations and Maintenance Manual
-                                    </small>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card h-100 border-primary border-2">
-                                <div class="card-body align-items-center justify-content-center d-flex">
-                                    <small className="text-center">Customized Parachute Canopy/Airbag</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default SystemInclude
+export default SystemInclude;

@@ -15,7 +15,8 @@ const DiagonalCard = ({
   smallCardWidth = "251.5px", // Width for small screens
   smallCardHeight = "220px", // Height for small screens
   isLargeSize = false,     // Optional condition to override default dimensions
-  centerText = false       // Prop to determine text alignment
+  centerText = false,      // Prop to determine text alignment
+  bgColor = "transparent"  // Prop to set background color for the entire card
 }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [cardWidth, setCardWidth] = useState(defaultCardWidth);
@@ -47,7 +48,11 @@ const DiagonalCard = ({
         <div
           key={index}
           className="d_card rounded"
-          style={{ width: cardWidth, height: cardHeight }}
+          style={{ 
+            width: cardWidth, 
+            height: cardHeight,
+            backgroundColor: bgColor // Apply the background color here
+          }}
         >
           <div
             className="d_card_img_container"

@@ -1,4 +1,4 @@
-.popup1 {
+/* .popup1 {
     position: absolute;
     top: 45%; 
     left: 555px; 
@@ -48,9 +48,9 @@
 }
 
 .card {
-    position: relative; /* Ensure cards have relative positioning */
+    position: relative; 
 }
 .brochure_btn{
     position: absolute;
     right: 40px;
-}
+} */

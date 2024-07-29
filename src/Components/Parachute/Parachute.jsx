@@ -23,12 +23,12 @@ const Parachute = () => {
             <h1 className=" col-10 lighter-than">
               Parachutes & <br /> Lighter Than Air Technology
             </h1>
-            <div className="row mt-3 mt-md-5">
-              <div className="col-sm-6">
+            <div className="row mt-3 mt-md-5 col-11 parachutmainhead">
+              <div className="col-sm-6 p-0">
                 <HeadingComponent heading="Product Development"/>
-                <div className=" bg-transparent border-0 mt-md-3  mt-0">
+                <div className=" bg-transparent border-0 mt-md-3  mt-0 col-12">
                   <div
-                    className="prachut-card rounded col-12 col-md-8"
+                    className="prachut-card rounded col-11 col-md-8 px-5"
                     style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
                   >
                     <p className=" p-md-4 p-2 fontweight fontsecondry we-specialize ">
@@ -40,12 +40,12 @@ const Parachute = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6">
-                {/* <h3 className="lrdimg_para1 mt-4 px-2"></h3> */}
+              <div className="col-sm-5 p-0 ">
+               
                 <HeadingComponent heading="Technical Approach"/>
-                <div className=" bg-transparent border-0 mt-1 mt-md-3 rounded">
+                <div className=" bg-transparent border-0 mt-1 mt-md-3 rounded col-12">
                   <div
-                    className="prachut-card col-md-9 col-12 rounded"
+                    className="prachut-card col-md-12 px-5 col-11 rounded"
                     style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
                   >
                     <p className="fontsecondry fontweight p-md-3 p-2">

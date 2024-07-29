@@ -53,10 +53,10 @@ const WhatWeDo = () => {
                 <div className="col-5">
                     <h3 className='wwd_heading1 mt-4'>Share your concept,</h3>
                     <h3 className='wwd_para'>we design, <br /> prototype & <br /> optimize it to <br /> production ready solution</h3>
-                    <p className='mt-5 wwd_para1'>
+                    <p className='mt-5 wwd_para1 fontsecondry'>
                         We tie up with OEMs and emerging StartUps worldwide as strategic partners to introduce products or optimize industrial products to Aerospace and Defence standards by conceptualizing, designing, qualifying our design by International Codes/ MIL standards and certifying the product after rigorous inspection and performance testing.
                     </p>
-                    <a href="#" className="btn backgroundcolormain px-3 px-md-5 py-2 mt-4 text-white contactwhat">Contact Us</a>
+                    <a href="#" className="btn backgroundcolormain px-3 px-md-5 py-2 mt-4 text-white fontsecondry">Contact Us</a>
                 </div>
                 <div className="col-7 px-0 px-md-3 mt-5 mt-md-0">
                     <div className="row">

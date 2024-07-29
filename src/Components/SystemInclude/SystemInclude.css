@@ -1,3 +1,15 @@
-.systemInclude_heading{
-    border-left: 6px solid #3535DE;
+.systemcard{
+    border:2px solid #3535DE;
+    background-color:white;
+    height:225px;
+    display: flex;
+    border-radius:5px;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Optional: to center the text inside */
+}
+.systemInclude_page{
+    width:85%;
+    margin-top:150px;
+    
 }

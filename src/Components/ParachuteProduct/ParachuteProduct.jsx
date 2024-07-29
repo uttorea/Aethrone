@@ -9,7 +9,7 @@ const ParachuteProduct = () => {
   return (
     <>
       <div className='container mt-5 px-md-3 px-0 '>
-     <div className='ms-1 ms-md-0'>
+     <div className='ms-1 ms-md-0 '>
 
         <Heading heading='Product' subheading='We Design Products In Para Vertical'/>
      </div>

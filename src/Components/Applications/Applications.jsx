@@ -13,7 +13,7 @@ const Applications = () => {
           Our platforms can be used as UAVs in following applications:
         </p>
         <div className="d-flex gap-1 gap-md-5 ">
-          <div className=" applicationimg_main rounded">
+          <div className=" applicationimg_main rounded ">
             <img src={applicationimg1} alt="" className="applicationIMG" />
             <div className="civilian text-center">
 

@@ -1,4 +1,34 @@
-.delivery_heading{
-    border-left: 6px solid #3535DE;
 
+.launcher-para{
+    color:#404142;
+    font-size:24px;
+}
+.deliveryapplicationIMG{
+    width:317px;
+    height:230px;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+.deliveryapplicationimg_main {
+width:538px;
+height:492px;
+border:2px solid #3535DE;
+}
+
+@media only screen and (max-width:425px){
+    .launcher-para{
+       
+        font-size:14px;
+    }
+    .deliveryapplicationIMG{
+        width:157px;
+        height:150px;
+       
+    }
+    .deliveryapplicationimg_main {
+    width:208px;
+    height:352px;
+   
+    }
 }

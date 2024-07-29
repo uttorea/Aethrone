@@ -1,5 +1,17 @@
 .gearCard{
+    width:70%;
     position: absolute;
-    top: 150px;
-    left: 600px;
+    top: 90px;
+    left: 310px;
+}
+
+@media only screen and (max-width:425px){
+    .gearImg{
+        height:100vh;
+    }
+    .gearCard{
+       width:85%;
+        top: 50px;
+        left: 40px;
+    }
 }

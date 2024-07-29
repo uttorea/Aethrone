@@ -25,8 +25,8 @@ const Learn = () => {
                     <div className="col" key={index}>
                         <div className="card col-10 h-100  w-90 larn-more-card">
                             <img src={item.imgSrc} className="learn_imgs mx-auto mt-5" alt="..." />
-                            <div className="card-footer mt-5 larn-more-card-1">
-                                <h6 className="text-center maincolor fontsecondry fontfamilySecondary p-2">{item.title}</h6>
+                            <div className=" mt-5 larn-more-card-1 ">
+                                <h6 className="text-center maincolor fontsecondry fontfamilySecondary p-2 ">{item.title}</h6>
                             </div>
                         </div>
                     </div>

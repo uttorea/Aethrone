@@ -3,16 +3,13 @@
     margin-left:auto;
     margin-right:auto;
 }
-.paraddproject{
-    font-size:22px;
-}
+
 .projecthead{
-font-size:24px;
+font-size:27px;
 font-family:poor richard;
+font-weight:100;
 }
-.projrctheading{
-    font-size:24px;
-}
+
 .ddprojectcard{
     height:200px;
 
@@ -24,9 +21,7 @@ font-family:poor richard;
     .container-ddproject{
         width:100%;
     }
-    .paraddproject{
-        font-size:12px;
-    }
+   
     .projecthead{
     font-size:15px;
     }

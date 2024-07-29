@@ -3,11 +3,33 @@
     top: 120px;
 }
 
-.recovery_content h1 {
-    font-size: 4rem;
-    margin: 0;
+.Launcher-Systems{
+    font-size: 96px;
+
 }
-.recovery_para1{
-    border-left: 6px solid #3535DE;
+.We-adapt{
+    letter-spacing:1px;
+}
+.We-Do{
+    margin-top:90px;
+}
+@media only screen and (max-width:425px){
+    .recovery_content1{
+        height:100vh;
+    }
+    .Launcher-Systems{
+        font-size: 48px;
+    
+    }
+    .recovery_content {
+       
+        top: 100px;
+    }
+    .We-Do{
+        margin-top:50px;
+    }
+    .We-adapt{
+      width:95%;
+    }
 }
 

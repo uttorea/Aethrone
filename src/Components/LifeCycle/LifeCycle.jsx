@@ -12,7 +12,7 @@ const LifeCycle = () => {
 
         <Heading heading='Lifecycle Program Support Services'/>
                 </div>
-                <p className='lifetext ms-1 ms-md-0'>
+                <p className=' fontsecondry ms-1 ms-md-0'>
                     We provide a comprehensive suite of services to ensure your equipment operates at peak efficiency throughout its lifecycle. Our expert 
                     engineers offer:
                 </p>
@@ -20,18 +20,18 @@ const LifeCycle = () => {
                     <div className="col-4 col-md p-0 ">
                         <div className="card-lificycle h-100  border-0 ">
                             <h6 className='maincolor headlife ms-3 ms-md-0'>Seamless Post-Design Services (PDS):</h6>
-                            <p className='lifetext  ms-3 ms-md-0'>From configuration control and safety cases to asset and fleet management, we handle everything after the design phase.</p>
+                            <p className='fontsecondry ms-3 ms-md-0'>From configuration control and safety cases to asset and fleet management, we handle everything after the design phase.</p>
                         </div>
                     </div>
                     <div className="col-4 col-md p-0">
                         <img src={triangleImg} alt="Triangle" className='Triangle '/>
                         <h6 className=' maincolor mt-3 fw-bold headlife'>Proactive Through-Life Capability Management (TLCM):</h6>
-                        <p className='lifetext '>We anticipate and address challenges before they arise, minimizing downtime and maximizing operational readiness.</p>
+                        <p className='fontsecondry '>We anticipate and address challenges before they arise, minimizing downtime and maximizing operational readiness.</p>
                     </div>
                     <div className="col-4 col-md p-0 me-0">
                         <div className="card-lificycle h-100  border-0 ">
                             <h6 className='maincolor headlife'>Streamlined Documentation:</h6>
-                            <p className='lifetext'>We create clear and concise manuals, Interactive Electronic Technical Manuals (IETMs), quick-reference guides, and procedures to empower your workforce.</p>
+                            <p className='fontsecondry'>We create clear and concise manuals, Interactive Electronic Technical Manuals (IETMs), quick-reference guides, and procedures to empower your workforce.</p>
                         </div>
                     </div>
                 </div>
