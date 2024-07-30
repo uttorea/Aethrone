@@ -8,6 +8,7 @@ import Products from "../Products/Products";
 import OwlcarouselComponent from "../../Components/OwlCarousel/OwlcarouselComponent";
 import Furtblog from "../../Components/Feature-Blog/Furtblog";
 import Project from "../../Components/Project/Project";
+import Discover from '../../Components/Discover/Discover'
 import Footer from "../../Components/Footer/Footer";
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 
@@ -76,8 +77,11 @@ const Home = () => {
       <Design  />
           
           </div>
-          
           <div>
+            <Discover/>
+          </div>
+          
+          <div className="product_home">
       <Products />
      
           </div>

@@ -41,6 +41,9 @@
     font-weight:100;
     
 }
+.product_home{
+    margin-top:100px;
+}
 
 @media only screen and (max-width: 425px) {
     .home_page{
@@ -87,5 +90,7 @@
         margin-left:0px;
     }
     
-    
+    .product_home{
+        margin-top:200px;
+    }
 }

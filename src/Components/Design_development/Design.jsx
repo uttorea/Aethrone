@@ -30,7 +30,7 @@ function Design() {
           <img src={DD2} alt="" className="ddimg2" />
         </div>
 
-        <div className="container-lg container-fluid">
+        <div className="container">
           <div className="dd_body">
             <div className="rounded p-md-5 p-1 pt-3  text-dark bg-opacity-75 design_main_head" >
               <div className="row">
@@ -50,7 +50,7 @@ function Design() {
                     </p>
                   </div>
                   <div className="mt-3 mt-md-5 ms-3">
-                  <Button text="Discover Design & Development"/>
+                  <Button text="Discover Design & Development" to="/design-development"/>
                   </div>
                  
                 </div>
