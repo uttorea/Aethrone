@@ -47,7 +47,7 @@ function Products() {
                   <div className="seperator1"></div>
                   <div className="seperator"></div>
                   <div className="intro d-flex flex-column"> 
-                    <h6 className="text-center mt-1 mt-lg-4 maincolor producttitle">{product.title}</h6>
+                    <h6 className="text-center mt-1 mt-lg-4 maincolor fontsecondry">{product.title}</h6>
                     <img src={Productii5} alt="" className="smallimg"/>
                     <div className="card_text text-center flex-grow-1" >
                       <p>{product.description}</p>

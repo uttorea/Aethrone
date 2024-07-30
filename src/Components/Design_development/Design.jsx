@@ -32,14 +32,14 @@ function Design() {
 
         <div className="container-lg container-fluid">
           <div className="dd_body">
-            <div className="rounded p-md-5 p-1 pt-3  text-dark bg-opacity-75" style={{ backgroundColor: "#0D0E1E", width: "90%", margin: "auto" }}>
+            <div className="rounded p-md-5 p-1 pt-3  text-dark bg-opacity-75 design_main_head" >
               <div className="row">
                 <div className="col-sm-5 px-3">
                 <div className="text-white mt-3">
                   <Heading heading="Design & Development" subheading="From concept to product to certification"/>
                 </div>
                   
-                  <div className="dd_para mt-3 mt-md-5">
+                  <div className="dd_para mt-3 mt-md-5 fontsecondry fontweight">
                     <p className=" disingtext px-3">
                       Our comprehensive design and simulation services include conceptual design,
                       feasibility studies, new product development, product upgrades,
@@ -60,7 +60,7 @@ function Design() {
                       <div className="col p-md-3 p-1 " key={index}>
                         <div className=" bg-transparent border-0 w-100  cardheight">
                           <img src={card.img} className="card-img-top  " alt={card.title} />
-                          <h6 className="text-light text-center mt-2 ddimg_heading fw-bold">
+                          <h6 className="text-light text-center mt-2 fontsecondry ddimg_heading fw-bold">
                             {card.title}
                           </h6>
                         </div>

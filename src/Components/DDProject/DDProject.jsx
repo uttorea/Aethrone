@@ -111,7 +111,7 @@ const DDProject = () => {
                 <div className="border rounded-2 p-1 border-primary cardddproject">
                   <img
                     src={principal.img}
-                    className="pro_cardimg mt-3 mx-auto d-block "
+                    className="pro_cardimg mt-0 mx-auto d-block  mt-md-3"
                     alt="..."
                   />
                   <div className="titelcardpp text-center">

@@ -19,7 +19,7 @@ const FixedUAV = () => {
     return (
         <div className="">
             <div className=" fixedUAV_page text-light d-flex ">
-                <div className="p-5">
+                <div className="p-md-5 p-1">
                     <HeadingComponent 
                         heading={
                             <div>
@@ -37,13 +37,13 @@ const FixedUAV = () => {
                     <p className='fontsecondry fontfamilySecondary fontweight our-client'>
                         Our clients use our qualified systems for the following applications:
                     </p>
-                    <div className="row row-cols-5 g-5">
+                    <div className="row row-cols-5 g-md-5 g-2">
                         {uavData.map((uav, index) => (
                             <div className="col" key={index}>
                                 <div className="card bg-transparent border-0 ">
-                                    <img src={uav.img} className="card-img-top" alt={uav.title} />
+                                    <img src={uav.img} className="fixed_card_img" alt={uav.title} />
                                     <div className="card-body text-light ">
-                                        <h6 className="text-center uav">
+                                        <h6 className="text-center uav fontsecondry fontfamilySecondary mt-md-0 mt-1">
                                             {uav.title}
                                         </h6>
                                     </div>

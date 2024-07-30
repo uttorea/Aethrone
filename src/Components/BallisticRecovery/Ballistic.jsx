@@ -11,10 +11,13 @@ const Ballistic = () => {
   return (
     <>
       <div className="ballistic_page">
-        <img src={parachuteRecovery2} alt="" className="h-100 imgbalstic" />
+        <img src={parachuteRecovery2} alt="" className=" imgbalstic" />
         <div className="container">
           <div className="ballistic_content">
+            <div className="col-11">
+
             <HeadingComponent heading="Ballistic Recovery Systems For Fixed Wing & Rotary Wing UVAs" />
+            </div>
             <div>
               <DiagonalCard
                 cards={BallisticImg}
@@ -24,8 +27,11 @@ const Ballistic = () => {
                 separatorTop1="230px"
                 separatorTop2="240px"
                 bgColor="white"
-                smallCardWidth = "150.5px" // Width for small screens
-                smallCardHeight = "150px"
+                smallCardWidth = "100.5px" // Width for small screens
+                smallCardHeight = "200px"
+                smallCardTop="110px"
+                smallSeparatorTop1="80px"
+                smallSeparatorTop2="90px"
 
               />
             </div>

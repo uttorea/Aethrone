@@ -1,7 +1,5 @@
 
-.producttitle {
-  font-size: 18px;
-}
+
 .product_head {
   position: relative;
   bottom: 200px;
@@ -15,7 +13,7 @@
   object-fit: cover;
 }
 .product_card:hover .intro {
-  height: 210px;
+  height: 230px;
   background: white;
   color: #000;
 }
@@ -56,7 +54,7 @@
   position: absolute;
   width: 0px;
   height: 0px;
-  top: 130px;
+  top: 140px;
   transition: 0.9s;
   border-right: 100vw solid transparent;
   border-bottom: 13.9vw solid #3535DE;
@@ -66,7 +64,7 @@
   position: absolute;
   width: 0px;
   height: 0px;
-  top: 20px;
+  top: 10px;
   border-right: 100vw solid transparent;
   border-bottom: 13.9vw solid #3535DE;
 }
@@ -84,7 +82,7 @@
   position: absolute;
   width: 0px;
   height: 0px;
-  top: 40px;
+  top: 20px;
   border-right: 100vw solid transparent;
   border-bottom: 13.9vw solid white;
 }
@@ -121,9 +119,7 @@
       width: 12px;
       height: 12px;
   }
-  .producttitle {
-      font-size: 10px;
-  }
+ 
   .card_text {
       font-size: 8px;
       line-height: 10px;

@@ -3,15 +3,8 @@
     margin-left: auto;
     margin-right: auto;
 }
-.card-body2 h6{
-    font-family:arimo;
-}
-.card-body2 li{
-    font-size:18px;
-    font-family:arimo;
 
 
-}
 
 .footer_head{
     background: #0D0E1E;
@@ -79,9 +72,7 @@
 font-size:18px;
 }
 
-li {
-    list-style-type: none;
-}
+
 
 @media only screen and (max-width:450px){
     .footermaincontaint{
@@ -90,11 +81,7 @@ li {
         margin-left: auto;
         margin-right: auto;
     }
-    .card-body2 li{
-        font-size:12px;
-        line-height:20px;
-        padding:0px;
-    }
+    
     .card-body3 p{
         font-size:12px;
         line-height:15px;
@@ -106,7 +93,7 @@ li {
         padding: 10px;   
     }
     .emailtext{
-        font-size:12px;
+        font-size:10px;
     }
     .card-body41 .card-body4{
         font-size:12px;

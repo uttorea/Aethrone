@@ -28,7 +28,7 @@ const Home = () => {
                 AEROSPACE
               </p>
 
-              <p className="text-light ingenuity  ms-md-0">
+              <p className="text-light ingenuity fontfamilySecondary ms-md-0">
                 <span className=" ingenuityspan">Ingenuity</span>
                 <span className="ingenuityspan">|</span>
                 <span className="ingenuityspan">Dynamism</span>
@@ -41,7 +41,7 @@ const Home = () => {
                 <div className="col-sm-12 col-lg-7  whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div
-                    className="We-are-a-deep "
+                    className="We-are-a-deep fontfamilySecondary"
                     style={{ backgroundColor: "#0E0E0E" }}
                   >
                     <p

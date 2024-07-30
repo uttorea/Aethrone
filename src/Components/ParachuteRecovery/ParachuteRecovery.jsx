@@ -40,7 +40,10 @@ const ParachuteRecovery = () => {
       <Ballistic />
       <AirbagInflatable />
       <RecoveryInformation />
+      <div className="recoveryfooter">
+
       <Project />
+      </div>
       <Footer />
     </>
   );

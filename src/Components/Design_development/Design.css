@@ -1,10 +1,20 @@
 .disingtext{
-    font-size:18px;
-    font-weight:100;
+    
     color:white;
 }
 .design_head{
     padding-top:50px;
+}
+
+.design_main_head {
+    background: rgba(13, 14, 30, 0.8); /* Background color with 80% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: border to enhance the glass effect */
+    border-radius: 10px; /* Optional: rounded corners */
+    width: 93%;
+    margin: auto;
+    padding: 20px; /* Optional: padding for inner content */
 }
 
 
@@ -32,9 +42,6 @@
         font-size:14px;
         margin-top:-20px;
     }
-    .ddimg_heading{
-        font-size:12px;
-     
-    }
+    
    
 }

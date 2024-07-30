@@ -8,8 +8,28 @@
     justify-content: center;
     text-align: center; /* Optional: to center the text inside */
 }
+.systemtext{
+    font-size:18px;
+    
+}
 .systemInclude_page{
     width:85%;
     margin-top:150px;
     
+}
+@media only screen and (max-width:425px){
+    .systemInclude_page{
+        width:98%;
+        margin-top:50px;
+        
+    }
+    .systemtext{
+        font-size:8px;
+        
+    }
+    .systemcard{
+       
+        height:170px;
+      
+    }
 }

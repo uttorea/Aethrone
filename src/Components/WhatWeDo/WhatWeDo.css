@@ -17,17 +17,19 @@
     margin-left:auto;
     margin-right:auto;
 }
+.Design_devolopment_card{
+    border: 1px solid #414042;
+    
+}
 
 
 @media only screen and (max-width:425px){
     
     .whatwedomain{
-        width:95%;  
+        width:96%;  
     }
     .wwd_heading1, .wwd_para{
-      
         font-size:18px;
-       
     }
     
     
@@ -36,7 +38,7 @@
         height:50px;
     }
     .wwdCard_heading{
-        font-size:12px;
+        font-size:16px;
     }
     .wwdCard_subheading{
         font-size:11px;

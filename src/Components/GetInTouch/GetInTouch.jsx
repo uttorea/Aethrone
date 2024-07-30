@@ -55,7 +55,7 @@ const GetInTouch = () => {
               {contactDetails.map((contact, index) => (
                 <div className="col-md-12 col-6" key={index}>
                   <div className="border rounded border-black mt-3">
-                    <div className="card-body1 p-md-2 p-1 text-center d-md-flex">
+                    <div className="card-body1 p-md-2 p-1 text-start d-md-flex">
                       <div className={`contact_icon ms-md-0 ms-5 ${contact.iconMargin}`}>
                         <i className={contact.icon}></i>
                       </div>

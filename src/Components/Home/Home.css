@@ -7,16 +7,17 @@
     color:white;
     margin:0;
     letter-spacing:5px;
+    line-height:110px;
 }
 .ingenuity{
     font-size:27px;
-    font-family:arimo;
+  
 }
 .ingenuityspan{
     margin-left:15px;
     margin-right:20px;
     letter-spacing:2px;
-    font-family:arimo;
+   
 
 }
 .whoWeare{
@@ -38,7 +39,7 @@
 .homepage-text{
     font-size:18px;
     font-weight:100;
-    font-family:arimo;
+    
 }
 
 @media only screen and (max-width: 425px) {
@@ -52,6 +53,7 @@
    
     .headingtext{
         font-size:47.67px;
+        line-height:50px;
     }
     .ingenuity{
         font-size:18px;

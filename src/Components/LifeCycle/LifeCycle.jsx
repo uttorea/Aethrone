@@ -25,7 +25,7 @@ const LifeCycle = () => {
                     </div>
                     <div className="col-4 col-md p-0">
                         <img src={triangleImg} alt="Triangle" className='Triangle '/>
-                        <h6 className=' maincolor mt-3 fw-bold headlife'>Proactive Through-Life Capability Management (TLCM):</h6>
+                        <h6 className=' maincolor mt-3  headlife'>Proactive Through-Life Capability Management (TLCM):</h6>
                         <p className='fontsecondry '>We anticipate and address challenges before they arise, minimizing downtime and maximizing operational readiness.</p>
                     </div>
                     <div className="col-4 col-md p-0 me-0">

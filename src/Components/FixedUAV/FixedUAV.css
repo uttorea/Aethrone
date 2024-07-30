@@ -14,4 +14,21 @@
     margin-top:200px;
 }
 
+@media only screen and (max-width:425px){
+    .fixedUAV_page{
+        margin-top:60px;
+    }
+    .fixedUAV_page{
+       
+        width:95%;
+    }
+    .heading-bottom {
+        line-height: 1; 
+    }
+    .fixed_card_img{
+        width:60px;
+        height:80px;
+    }
+}
+
 

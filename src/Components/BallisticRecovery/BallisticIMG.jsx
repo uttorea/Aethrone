@@ -13,8 +13,8 @@ const cards = [
         marginLeft: "70px",
         smallWidth: "65px",
         smallHeight: "45px",
-        smallMarginTop: "45px",
-        smallMarginLeft: "2px",
+        smallMarginTop: "25px",
+        smallMarginLeft: "10px",
     },
     {
         image: ballisticImg2,
@@ -26,8 +26,8 @@ const cards = [
         marginLeft: "60px",
         smallWidth: "65px",
         smallHeight: "45px",
-        smallMarginTop: "45px",
-        smallMarginLeft: "2px",
+        smallMarginTop: "25px",
+        smallMarginLeft: "15px",
     },
     {
         image: ballisticImg3, 
@@ -36,11 +36,11 @@ const cards = [
         width: "164.09px",
         height: "180.75px",
         marginTop: "50px",
-        marginLeft: "70px",
+        marginLeft: "10px",
         smallWidth: "65px",
         smallHeight: "45px",
-        smallMarginTop: "45px",
-        smallMarginLeft: "2px",
+        smallMarginTop: "25px",
+        smallMarginLeft: "15px",
     },
 ]
 export default cards;

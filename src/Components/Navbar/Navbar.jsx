@@ -100,9 +100,7 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/precision-manufacturing">
                     Precision Manufacturing
                   </Link>
-                  <Link className="dropdown-item" to="/aerial-robotics ">
-                  Aerial Robotics 
-                  </Link>
+                 
                 </div>
               </div>
               <div className="nav-item dropdown">
@@ -130,11 +128,11 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/parachutes">
                     Parachutes
                   </Link>
-                  <Link className="dropdown-item" to="/advance-manufacturing">
-                    Advance Manufacturing
-                  </Link>
                   <Link className="dropdown-item" to="/advance-composites">
                     Advance Composites
+                  </Link>
+                  <Link className="dropdown-item" to="/aerial-robotics ">
+                  Aerial Robotics 
                   </Link>
                 </div>
               </div>
@@ -190,9 +188,7 @@ const Navbar = () => {
                 <Link className="dropdown-item" to="/precision-manufacturing">
                   Precision Manufacturing
                 </Link>
-                <Link className="dropdown-item" to="/aerial-robotics">
-                  Aerial Robotics 
-                 </Link>
+              
               </div>
             </div>
             <div className="nav-item dropdown">
@@ -217,12 +213,12 @@ const Navbar = () => {
                 <Link className="dropdown-item" to="/parachutes">
                   Parachutes
                 </Link>
-                <Link className="dropdown-item" to="/advance-manufacturing">
-                  Advance Manufacturing
-                </Link>
                 <Link className="dropdown-item" to="/advance-composites">
                   Advance Composites
                 </Link>
+                <Link className="dropdown-item" to="/aerial-robotics">
+                  Aerial Robotics 
+                 </Link>
               </div>
             </div>
             <Link className={`nav-item nav-link ${textColor}`} to="/career">
