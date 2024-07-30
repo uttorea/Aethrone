@@ -19,7 +19,7 @@
     left: 5px;
 }
 
-.card-body>* {
+.card-body{
     margin: 10px;
 }
 
