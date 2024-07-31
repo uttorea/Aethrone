@@ -19,6 +19,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-router-dom": "^6.23.1",
     "rollup": "^4.18.1",
+    "sheryjs": "^1.0.0-beta.0.1.8",
     "swiper": "^11.1.4"
   },
   "devDependencies": {

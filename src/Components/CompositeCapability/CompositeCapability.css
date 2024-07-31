@@ -1,75 +1,65 @@
-/* .scroll_img, .scroll_heading {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: transform 0.9s, opacity 0.5s;
+.hidden {
+  display: none;
 }
 
-.scroll_img.visible, .scroll_heading.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-.card{
-  display: flex;
-  align-items: center;
-  min-height: 200px; 
-}
-.list-group-item,  {
-
-  align-items: center;
-  min-height: 200px; 
+.visible {
+  display: block;
 }
 
-.list-group-item h3, .card h3 {
-  margin-bottom: 0;
-} */
-
-
-.composititem {
-  text-decoration: none;
-}
-
-.composititem:hover {
-  text-decoration: none;
-}
-.custom-row {
+.composite_main {
+  width: 100%;
   position: relative;
 }
-.compositecard{
-  height:375px;
+.composite_items {
+  text-decoration: none;
+  color: #414042;
+  focus: none;
 }
 
-.scroll_img,
-.composititem p {
-  transition: transform 0.3s ease;
+.card-container {
+  position: relative;
+  transform-origin: top center;
+  transition: transform 0.3s ease-in-out;
 }
 
-.visible .scroll_img,
-.visible .composititem p {
-  transform: scale(1.1);
+.scroll-button {
+  position: absolute;
+  top:0px;
+  right: 60px;
+  width: 40px;
+  height: 130px;
+  background-color: gray;
+  cursor: pointer;
+  user-select: none;
 }
 
-.card {
-  height: 100%;
+.composite_card {
+  width: 469.5px;
+  height: 330px;
+  border: 1px solid #3535DE;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.scrollspy-example {
-  position: relative;
-  height: 100%;
-  overflow-y: auto;
+.img-fluid_composite {
+  width: 204px;
+  height: 243px;
 }
 
-.scroll_img {
-  max-width: 100%;
-  max-height: 100%;
+.build-spacification {
+  font-size: 72px;
+  color: #3535DE;
+  margin-top:100px;
 }
 
-.composititem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.myrow {
+  /* Add any necessary styles */
+}
+
+.fixed-main-text {
+  position: fixed;
+  width: 50%;
+  background-color: white;
+  z-index: 1;
 }
