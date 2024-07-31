@@ -19,8 +19,9 @@
   }
   
   .popup-overlay27 {
+
     position: fixed;
-    top: 40%;
+    top: 36%;
     left: 15%;
     height: 34%;
     display: flex;
@@ -29,15 +30,16 @@
     z-index: 1000;
   }
   
+  
   .popup-content27 {
-    background:  rgba(0, 0, 0, 0.1); 
+    background:  rgba(0, 0, 0, 0.9); 
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     padding: 20px;
     border-radius: 10px;
-    width: 1196px;
-    height: 700px;
-    width: 80%;
+    /* width: 1196px; */
+    height: 600px;
+    width: 100%;
     text-align: center;
     color: #a0f9ff;
     display: flex;
@@ -55,7 +57,7 @@
   }
   .One-last-step {
     padding: 0px;
-    margin-top: 85px;
+    margin-top: 20px;
     margin-bottom: 15px;
   }
   .provide-your-email {
@@ -80,9 +82,9 @@
     display: flex;
     margin-top: 30px;
     gap: 100px;
-    width: 80%;
-    padding-left: 100px;
-    padding-right: 250px;
+    width: 100%;
+    /* padding-left: 100px;
+    padding-right: 250px; */
   }
   .nameemail{
     display: flex;

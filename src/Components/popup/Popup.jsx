@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Popup.css'
+import './Popup.css';
 import axios from 'axios';
 
 const Popup = ({ togglePopup, isPopupVisible, selectedSystem }) => {
@@ -35,7 +35,7 @@ const Popup = ({ togglePopup, isPopupVisible, selectedSystem }) => {
       togglePopup();
     } catch (error) {
       console.error("Error sending email:", error);
-      alert(Error sending email: ${error.response ? error.response.data : error.message});
+      alert(`Error sending email: ${error.response ? error.response.data : error.message}`);
     }
   };
 
@@ -51,38 +51,38 @@ const Popup = ({ togglePopup, isPopupVisible, selectedSystem }) => {
             
             <form className="popup-form27" onSubmit={handleSubmit}>
               <div className='allform'>
-              <div className='nameemail'>
-              <div className="form-group27">
-                <label>Name</label>
-                <input 
-                  type="text" 
-                  name="fullName" 
-                  placeholder="Your full name" 
-                  className='input-box' 
-                  value={formData.fullName} 
-                  onChange={handleInputChange} 
-                  required 
-                />
-              </div>
-              <div className="form-group27">
-                <label>Email</label>
-                <input 
-                  type="email" 
-                  name="email" 
-                  placeholder="Your email address" 
-                  className='input-box' 
-                  value={formData.email} 
-                  onChange={handleInputChange} 
-                  required 
-                />
-              </div>
-              </div>
-              <div>
-                <p className="privacy-text27">We Respect Your Privacy. Your Email Will Not Be Shared Or Used For Spam</p>
-                <div className='popup-btn-submit'>
-                  <button type="submit" className="submit-btn27">Get My Brochure</button>
+                <div className='nameemail'>
+                  <div className="form-group27">
+                    <label>Name</label>
+                    <input 
+                      type="text" 
+                      name="fullName" 
+                      placeholder="Your full name" 
+                      className='input-box' 
+                      value={formData.fullName} 
+                      onChange={handleInputChange} 
+                      required 
+                    />
+                  </div>
+                  <div className="form-group27">
+                    <label>Email</label>
+                    <input 
+                      type="email" 
+                      name="email" 
+                      placeholder="Your email address" 
+                      className='input-box' 
+                      value={formData.email} 
+                      onChange={handleInputChange} 
+                      required 
+                    />
+                  </div>
                 </div>
-              </div>
+                <div>
+                  <p className="privacy-text27">We Respect Your Privacy. Your Email Will Not Be Shared Or Used For Spam</p>
+                  <div className='popup-btn-submit'>
+                    <button type="submit" className="submit-btn27">Get My Brochure</button>
+                  </div>
+                </div>
               </div>
             </form>
           </div>

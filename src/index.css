@@ -69,4 +69,7 @@ font-size:18px;
     .container{
       width:100%;      
     }
+    .fontfamilyPrimary{
+      font-family:"poor Richard"
+    }
 }

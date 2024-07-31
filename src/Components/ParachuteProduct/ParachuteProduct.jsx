@@ -15,7 +15,7 @@ const ParachuteProduct = () => {
      </div>
 
       <div>
-      <DiagonalCard cards={ParachuteProductIMG} separatorTop1='170px' separatorTop2="190px" d_cardTop='230px' smallCardTop='130px' smallSeparatorTop1='110px' smallSeparatorTop2='120px'/>
+      <DiagonalCard cards={ParachuteProductIMG} separatorTop1='170px' separatorTop2="180px" d_cardTop='210px' smallCardTop='130px' smallSeparatorTop1='110px' smallSeparatorTop2='120px'/>
       </div>
       </div>
     </>
