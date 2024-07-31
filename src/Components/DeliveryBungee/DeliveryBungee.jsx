@@ -56,6 +56,7 @@ function App() {
   const [currentProductIndex, setCurrentProductIndex] = useState(-1);
   const contentRef = useRef(null);
   const scrollTimeoutRef = useRef(null);
+  const touchStartYRef = useRef(0);
 
   const handleNextProduct = () => {
     setCurrentProductIndex((prevIndex) => {
@@ -92,6 +93,7 @@ function App() {
   };
 
   const handleScroll = (event) => {
+    console.log('Wheel event detected:', event.deltaY);
     if (scrollTimeoutRef.current) {
       clearTimeout(scrollTimeoutRef.current);
     }
@@ -100,9 +102,47 @@ function App() {
       const contentElement = contentRef.current;
       const scrollThreshold = 50; // Adjust the threshold as needed
 
+      console.log('Scroll position:', contentElement.scrollTop);
+      console.log('Scroll height:', contentElement.scrollHeight);
+      console.log('Client height:', contentElement.clientHeight);
+
       if (contentElement.scrollTop === 0 && event.deltaY < -scrollThreshold) {
+        console.log('Scrolling up');
         handlePreviousProduct();
       } else if (contentElement.scrollHeight - contentElement.scrollTop <= contentElement.clientHeight && event.deltaY > scrollThreshold) {
+        console.log('Scrolling down');
+        handleNextProduct();
+      }
+    },); // Increase the delay to slow down the scroll speed
+  };
+
+  const handleTouchStart = (event) => {
+    touchStartYRef.current = event.touches[0].clientY;
+    console.log('Touch start detected:', touchStartYRef.current);
+  };
+
+  const handleTouchMove = (event) => {
+    const touchEndY = event.touches[0].clientY;
+    const touchDeltaY = touchStartYRef.current - touchEndY;
+    console.log('Touch move detected:', touchDeltaY);
+
+    if (scrollTimeoutRef.current) {
+      clearTimeout(scrollTimeoutRef.current);
+    }
+
+    scrollTimeoutRef.current = setTimeout(() => {
+      const contentElement = contentRef.current;
+      const scrollThreshold = 50; // Adjust the threshold as needed
+
+      console.log('Scroll position:', contentElement.scrollTop);
+      console.log('Scroll height:', contentElement.scrollHeight);
+      console.log('Client height:', contentElement.clientHeight);
+
+      if (contentElement.scrollTop === 0 && touchDeltaY < -scrollThreshold) {
+        console.log('Touch scrolling up');
+        handlePreviousProduct();
+      } else if (contentElement.scrollHeight - contentElement.scrollTop <= contentElement.clientHeight && touchDeltaY > scrollThreshold) {
+        console.log('Touch scrolling down');
         handleNextProduct();
       }
     }, ); // Increase the delay to slow down the scroll speed
@@ -111,9 +151,13 @@ function App() {
   useEffect(() => {
     const contentElement = contentRef.current;
     contentElement.addEventListener('wheel', handleScroll);
+    contentElement.addEventListener('touchstart', handleTouchStart);
+    contentElement.addEventListener('touchmove', handleTouchMove);
 
     return () => {
       contentElement.removeEventListener('wheel', handleScroll);
+      contentElement.removeEventListener('touchstart', handleTouchStart);
+      contentElement.removeEventListener('touchmove', handleTouchMove);
     };
   }, []);
 

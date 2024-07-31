@@ -1,6 +1,5 @@
 .content {
   width: 80%;
-  /* height: 100vh; */
   overflow-y: auto; /* Enable scrolling */
   position: relative;
   scroll-behavior: smooth; /* Smooth scrolling */
