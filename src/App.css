@@ -2,7 +2,6 @@
 
 /* Default styles for small desktop screens */
 
-
 /* Medium desktop screens */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .container {}
@@ -21,21 +20,11 @@
   }
 }
 
-h3,
-h4,
-h5,
-h1,
-h2 {
-  font-family: poor richard;
+h1, h2, h3, h4, h5 {
+  font-family: 'Poor Richard', serif;
 }
 
-p,
-h6,
-small,
-a,
-.form-label,
-ul,
-.card-footer {
+p, h6, small, a, .form-label, ul, .card-footer {
   font-family: 'Arimo', sans-serif;
 }
 
@@ -52,28 +41,29 @@ ul,
 }
 
 /* carouse css */
-
-.body_carousel{
-    position: absolute;
-    top: 664px;
-    /* left: 150px; */
+.body_carousel {
+  position: absolute;
+  top: 664px;
+  /* left: 150px; */
 }
 
-.csrousel_text{
-    position: absolute;
-    top:70px;
-    left: 80px;
+.csrousel_text {
+  position: absolute;
+  top: 70px;
+  left: 80px;
 }
-.carousel_para{
-    background-color: rgba(0, 0, 0,0.70);
-    position: relative;
-    top: 140px;
-    left: 100px;
+
+.carousel_para {
+  background-color: rgba(0, 0, 0, 0.70);
+  position: relative;
+  top: 140px;
+  left: 100px;
 }
+
 /* carouse css END*/
 
 /* plane css */
-.carouselbtnimg{
+.carouselbtnimg {
   height: 50px;
   width: 50px;
   display: flex;
@@ -81,44 +71,44 @@ ul,
   border: 1px solid black;
   padding: 10px;
   overflow-x: hidden;
-  
 }
-.corimg{
-height: 200px;
+
+.corimg {
+  height: 200px;
 }
+
 /* plane css end*/
 /* Design & Development css */
-
 .plane_head {
   margin-top: 200px;
 }
 
 .dd_heading {
   border-left: 6px solid blue;
-  font-family: poor richard;
+  font-family: 'Poor Richard', serif;
 }
 
 .ddimg1 {
-
   height: 450px;
 }
 
 .ddimg2 {
   height: 450px;
-   position: relative;
-  right:250px;
+  position: relative;
+  right: 250px;
 }
 
 .dd_body {
   position: relative;
   bottom: 300px;
-  border-radius:5px ;
+  border-radius: 5px;
 }
-small{
+
+small {
   font-family: 'Arimo', sans-serif;
 }
 
-.dd_para, .ddimg_heading{
+.dd_para, .ddimg_heading {
   font-family: 'Arimo', sans-serif;
 }
 
