@@ -5,8 +5,8 @@ import "bootstrap/dist/css/bootstrap.min.css"; // Ensure Bootstrap CSS is import
 const DiagonalCard = ({
   cards,
   separatorTop1 = "230px",
-  separatorTop2 = "250px",
-  d_cardTop = "280px",
+  separatorTop2 = "240px",
+  d_cardTop = "270px",
   smallSeparatorTop1 = "120px",
   smallSeparatorTop2 = "130px",
   smallCardTop = "150px",

@@ -15,7 +15,7 @@ const PricisionManu = () => {
         <h1 className='pre_heading mt-3 mt-md-0 ms-2 ms-md-0'>Precision <br/> Manufacturing</h1>
         <div className='MMimg_para bg-black p-3 p-md-5 bg-opacity-75 rounded mt-5 mt-md-3 col-12 col-md-9 ms-4 ms-md-0'>
             <h5 className='pmcontaint px-md-5 px-1'>Send us your Design files</h5>
-            <h5 className='pmcontaint px-md-5 px-1'>Recive Quotes within <span className=' border-bottom border-5 border-primary pmcontaintpara'> 24 hours </span></h5>
+            <h5 className='pmcontaint px-md-5 px-1'>Recive Quotes within <span className='  pmcontaintpara'> 24 hours </span></h5>
             <h5 className='pmcontaint px-md-5 px-1' >Get Your Precision parts shipped.</h5>
         </div>
         </div>

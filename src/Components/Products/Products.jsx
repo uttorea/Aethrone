@@ -3,8 +3,9 @@ import "./Product.css";
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 import productimg1 from "../../assets/productimg1.png";
 import productimg2 from "../../assets/productimg2.png";
+import productimg3 from "../../assets/productimg3.png";
 import productimg4 from "../../assets/productimg4.png";
-import Productii5 from '../../assets/product5.png'
+import Productii5 from '../../assets/product5.png' 
 
 const productData = [
   {
@@ -21,16 +22,17 @@ const productData = [
   },
   {
     id: 3,
-    img: productimg4,
-    title: "Advance Manufacturing",
-    description: "We design and manufacture end-to-end Sustainable solutions for technology.",
-  },
-  {
-    id: 4,
-    img: productimg1,
+    img: productimg3,
     title: "Advanced Composites",
     description: "We design, develop and manufacture rotary-propulsion composites components, critical aero-structure members and sub-systems.",
   },
+  {
+    id: 4,
+    img: productimg4,
+    title: "Aerial Robotics ",
+    description: "We design and manufacture end-to-end Sustainable solutions for technology.",
+  },
+  
 ];
 
 function Products() {

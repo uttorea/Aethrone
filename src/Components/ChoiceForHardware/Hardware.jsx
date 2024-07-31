@@ -158,7 +158,7 @@ const Hardware = () => {
                   <div className="hardware_card">
                     <div className="card border-primary border-2 col hardwarecardimg">
                       <img src={item.imgSrc} className="hardware_img rounded" alt="..." onClick={() => handleImageClick(item.index)} />
-                      <div className="card_items">
+                      <div className="card_items ">
                         <img
                           src={hardwareimg4}
                           className="hardware_img21"
