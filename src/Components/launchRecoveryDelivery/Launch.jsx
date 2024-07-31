@@ -31,7 +31,7 @@ const Launch = () => {
                   extensive testing and qualification for environmental
                   <br /> conditions, operational vibrations, shock, max
                   operational loads and require minimum maintenance with long
-                  shelf life. 
+                  shelf life.
                 </p>
               </div>
             </div>
