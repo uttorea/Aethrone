@@ -1,199 +1,184 @@
 .open-popup-btn27 {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  .close-btn27 {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 30px;
-    color:gray;
-    cursor: pointer;
-  }
-  
-  .close-btn27:hover {
-    color: #2e2e2e;
-  }
-  
-  .popup-overlay27 {
-
-    position: fixed;
-    top: 36%;
-    left: 15%;
-    height: 34%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-  
-  
-  .popup-content27 {
-    background:  rgba(0, 0, 0, 0.9); 
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 20px;
-    border-radius: 10px;
-    /* width: 1196px; */
-    height: 600px;
-    width: 100%;
-    text-align: center;
-    color: #a0f9ff;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border: 1px solid  rgba(0, 0, 0, 0.1);
-  
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .popup-content27 .One-last-step {
-    color: #00f7ff;
-    font-size: 48px;
-  }
-  .One-last-step {
-    padding: 0px;
-    margin-top: 20px;
-    margin-bottom: 15px;
-  }
-  .provide-your-email {
-    font-size: 32px;
-    margin-top: 1px;
-    color: #00f7ff;
-    font-family: urbanist;
-    font-weight: 400;
-  }
-  
-  .download-small {
-    padding: 0;
-    margin: 12px;
-    color: #3B69B2;
-    font-size: 19.2px;
-    font-family: urbanist;
-    font-weight: 400;
-    letter-spacing: 4%;
-  }
-  
-  .popup-form27 {
-    display: flex;
-    margin-top: 30px;
-    gap: 100px;
-    width: 100%;
-    /* padding-left: 100px;
-    padding-right: 250px; */
-  }
-  .nameemail{
-    display: flex;
-    gap: 10%;
-    width: 100%;
-  }
-  .allform{
-    width: 100%;
-  }
-  .form-group27 {
-    flex: 1;
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-  }
-  
-  .form-group27 label {
-    display: block;
-    color: #3B69B2;
-    font-size: 28.69px;
-    font-family: urbanist;
-  }
-  
-  .form-group27 input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #7b77ff;
-    border-radius: 5px;
-    margin-top: 5px;
-    color: grey;
-    margin-left: 10px;
-  }
-  
-  .submit-btn27 {
-    font-size:19.2px;
-    padding: 10px 35px;
-    background: transparent;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    align-self: flex-end;
-    border: 2px solid cyan;
-  }
-  
-  .submit-btn27:hover {
-    background-color: var(--color-darkturquoise-200);
-    box-sizing: border-box;
-  }
-  
-  .popup-btn-submit {
-    margin-top: 40px;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    justify-content: end;
-    border-radius: 5px;
-  }
-  
-  .privacy-text27 {
-    margin-top: 60px;
-    color: #3B69B2;
-    font-size: 19.2px;
-    font-family: urbanist;
-    width: 100%;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    
-  }
-  
-  .form-group27 input {
-    margin-top: 15px;
-    font-size: 21.52px;
-    padding-top: 20px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 1px solid #3B69B2;
-    border-radius: 0;
-  }
-  
-  @media screen and (max-width: 1350px) {
-    .frame-parent48 {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.close-btn27 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: none;
+  border: 2px solid #3535DE;
+  font-size: 30px;
+  color: #3535DE;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-btn27:hover {
+  color: #2e2e2e;
+}
+.popup-overlay27 {
+  position: fixed;
+  top: 36%;
+  left: 15%;
+  height: 34%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.popup-content27 {
+  background: white;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+  width: 1006px;
+  height: 600px;
+  text-align: center;
+  color: #3535DE;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+.popup-content27 .One-last-step {
+  color: #3535DE;
+  font-size: 48px;
+}
+.One-last-step {
+  padding: 0px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.provide-your-email {
+  font-size: 32px;
+  margin-top: 1px;
+  color: #3535DE;
+  font-family: urbanist;
+  font-weight: 100;
+}
+.download-small {
+  padding: 0;
+  margin: 12px;
+  color: #414042;
+  font-size: 19.2px;
+  font-family: urbanist;
+  font-weight: 100;
+  letter-spacing: 4%;
+}
+.popup-form27 {
+  display: flex;
+  margin-top: 30px;
+  gap: 100px;
+  width: 100%;
+}
+.nameemail {
+  display: flex;
+  gap: 10%;
+  width: 100%;
+}
+.allform {
+  width: 100%;
+}
+.form-group27 {
+  flex: 1;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.form-group27 label {
+  display: block;
+  color: #3535DE;
+  font-size: 28.69px;
+  font-family: urbanist;
+}
+.form-group27 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #7b77ff;
+  border-radius: 5px;
+  margin-top: 5px;
+  color: black;
+  margin-left: 10px;
+}
+.submit-btn27 {
+  font-size: 19.2px;
+  padding: 10px 35px;
+  background: transparent;
+  color: #3535DE;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  border: 2px solid #3535DE;
+}
+.submit-btn27:hover {
+  background-color: var(--color-darkturquoise-200);
+  box-sizing: border-box;
+}
+.popup-btn-submit {
+  margin-top: 40px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: end;
+  border-radius: 5px;
+}
+.privacy-text27 {
+  margin-top: 60px;
+  color: #3535DE;
+  font-size: 19.2px;
+  font-family: urbanist;
+  width: 100%;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.form-group27 input {
+  margin-top: 15px;
+  font-size: 21.52px;
+  padding-top: 20px;
+  border: none;
+  outline: none;
+  background: none;
+  color: black;
+  border-bottom: 1px solid #3535DE;
+  border-radius: 0;
+}
+@media screen and (max-width: 1350px) {
+  .frame-parent48 {
       justify-content: center;
       align-items: center;
-    }
-    .popup-content27 {
+  }
+  .popup-content27 {
       padding: 20px;
       border-radius: 10px;
       max-width: 100%;
       height: 400px;
       text-align: center;
-      color: #a0f9ff;
+      color: #3535DE;
       display: flex;
       flex-direction: column;
-    }
-  
-    .popup-content27 .One-last-step {
+  }
+  .popup-content27 .One-last-step {
       font-size: 40px;
-    }
-    .provide-your-email {
+  }
+  .provide-your-email {
       font-size: 28px;
       margin-bottom: 15px;
-    }
-    .download-small {
+  }
+  .download-small {
       font-size: 22px;
-    }
-    .popup-form27 {
+  }
+  .popup-form27 {
       display: flex;
       flex-direction: row;
       justify-content: start;
@@ -201,194 +186,83 @@
       width: 90%;
       gap: 30px;
       padding-left: 30px;
-    }
-    .form-group27 label {
+  }
+  .form-group27 label {
       font-size: 18px;
-    }
-    .privacy-text27 {
+  }
+  .privacy-text27 {
       font-size: 18px;
       margin: 0;
       margin-top: 40px;
-    }
-    .submit-btn27 {
+  }
+  .submit-btn27 {
       width: 45%;
       padding: 10px;
       margin-top: 30px;
       font-size: 15px;
-    }
-    .close-btn27 {
+  }
+  .close-btn27 {
       right: 2px;
       top: -130px;
       font-size: 30px;
-    }
-    .popup-overlay27 {
-      top: 40%;
-    }
   }
-  
-  @media screen and (max-width: 925px) {
-    .frame-parent48 {
+  .popup-overlay27 {
+      top: 40%;
+  }
+}
+@media screen and (max-width: 925px) {
+  .frame-parent48 {
       justify-content: center;
       align-items: center;
-    }
-    .popup-content27 {
-      
+  }
+  .popup-content27 {
       padding: 20px;
       border-radius: 10px;
-      max-width: 80%;
-      height: 450px;
+      max-width: 100%;
+      height: 400px;
       text-align: center;
-      color: #a0f9ff;
+      color: #3535DE;
       display: flex;
       flex-direction: column;
-    }
-  
-    .popup-content27 .One-last-step {
-      font-size: 30px;
-    }
-    .One-last-step {
-      margin-top: 20px;
-      padding-top: 0;
-    }
-    .provide-your-email {
-      font-size: 20px;
-    }
-    .download-small {
-      font-size: 18px;
-      gap: 5px;
-      margin: 0px;
-    }
-    .popup-form27 {
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      align-items: start;
-      /* width: 100%; */
-      margin: 30px;
-      padding: 0;
-      gap: 0;
-      padding: 0px;
-    }
-    .popup-btn-submit {
-      margin: 0;
-      /* margin-left: 50px; */
-    }
-    .form-group27 label {
-      font-size: 18px;
-      padding-left: 20px;
-    }
-    .form-group27 input {
-      width: 100%;
-      padding: 5 100px;
-      margin-left: 20px;
-      font-size: 18px;
-    }
-    .privacy-text27 {
-      font-size: 18px;
-      margin: 0;
-      margin-top: 15px;
-    }
-    .submit-btn27 {
-      width: 30%;
-      padding: 15px 0px;
-      margin-top: 30px;
-      font-size: 15px;
-    }
-    .popup-content27 {
-      left: 0;
-      margin: 0;
-      padding: 0;
-      width: 100%;
-    }
-    .popup-overlay27 {
-      top: 40%;
-      left: 0;
-      right: 0;
-    }
-    .close-btn27{
-      top: 1px;
-    }
   }
-  
-  @media screen and (max-width: 450px) {
-    .frame-parent48 {
+  .popup-content27 .One-last-step {
+      font-size: 30px;
+  }
+  .provide-your-email {
+      font-size: 18px;
+      margin-bottom: 15px;
+  }
+  .download-small {
+      font-size: 12px;
+  }
+  .popup-form27 {
+      display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-    }
-    .close-btn27{
-      top: 1px;
-    }
-    .popup-content27 {
-      margin-top: 50px;
-      background:  rgba(0, 0, 0, 0.1); 
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 80%;
-      height: 450px;
-     
-    }
-  
-    .popup-content27 .One-last-step {
-      font-size: 30px;
-    }
-    .One-last-step {
-      margin: 0;
-      padding: 0;
-    }
-    .provide-your-email {
-      font-size: 16px;
-      margin-top: 8px;
-    }
-    .download-small {
-      font-size: 15px;
-      gap: 5px;
-      margin-top: 15px;
-      padding: 0;
-    }
-    .popup-form27 {
-      display: flex;
-      flex-direction: column;
-      justify-content: start;
-      align-items: start;
-      width: 100%;
-      gap: 0;
-      padding: 0px;
-      margin: 0;
-    }
-    .form-group27 label {
-      font-size: 18px;
-      margin-top: 20px;
-      padding: 0;
-      left: 0;
-      right: 0;
-    }
-    .form-group27 input {
-      width: 100%;
-      margin: 0;
-      font-size: 15px;
-    }
-    .privacy-text27 {
-      font-size: 15px;
-      margin-top: 20px;
-    }
-  
-    .submit-btn27 {
-      width:80%;
-      padding: 8px;
-      margin-top: 25px;
-      /* margin-left: 40px; */
-      font-size: 15px;
-      margin-right: 22%;
-    }
-    .popup-overlay27 {
-      top: 32%;
-    }
-    .allform{
-  width: 100%;
-    }
-    .nameemail{
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
+      width: 90%;
+      gap: 10px;
   }
+  .form-group27 label {
+      font-size: 15px;
+  }
+  .privacy-text27 {
+      font-size: 12px;
+      margin: 0;
+      margin-top: 10px;
+  }
+  .submit-btn27 {
+      width: 60%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 10px;
+  }
+  .close-btn27 {
+      right: 2px;
+      top: -130px;
+      font-size: 30px;
+  }
+  .popup-overlay27 {
+      top: 40%;
+  }
+}
