@@ -10,7 +10,7 @@
   top: 10px;
   right: 10px;
   width: 40px; /* Set button width */
-  height: 120px; /* Set button height */
+  height: 70px; /* Set button height */
   background-color: gray;
   color: white;
   border: none;
@@ -24,52 +24,42 @@
 }
 
 .bungee_main,
-.bungeehide {
+.bungeehide,
+.feature_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   transition: opacity 0.5s ease, transform 0.5s ease; /* Added transform transition */
-  height: 100vh;
+  opacity: 0;
+  visibility: hidden;
+}
+.See-bungee{
+  font-size:24px;
+}
+.ulclassbungee{
+color:#414042;
+line-height:45px;
 }
 
-.bungee_main.hidden,
-.bungeehide.hidden {
-  opacity: 0;
-  transform: translateY(20px); /* Slightly move the element down */
-  visibility: hidden;
+.feature_main_container,.bungeehide,.buggigmain {
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:120px;
 }
 
 .bungee_main.visible,
-.bungeehide.visible {
+.bungeehide.visible,
+.feature_container.visible {
   opacity: 1;
-  transform: translateY(0); /* Reset the position */
   visibility: visible;
-}
-
-.bungee_main.visible {
-  transition-delay: 0s;
-}
-
-.bungee_main.hidden {
-  transition-delay: 0.2s; /* Delay the hiding transition */
-}
-
-.bungeehide.visible {
-  transition-delay: 0s;
-}
-
-.bungeehide.hidden {
-  transition-delay: 0.2s; /* Delay the hiding transition */
-}
-
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
 }
 
 .description-cell, .value-cell {
   position: relative;
-  letter-spacing:1px;
+  letter-spacing: 1px;
   padding: 10px; /* Adjust the padding as needed */
 }
 
@@ -80,8 +70,7 @@
   right: 0;
   bottom: 0;
   width: 1px;
- 
-  background-color: gray; 
+  background-color: gray;
 }
 
 .bungeenumbermain {
