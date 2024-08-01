@@ -1,26 +1,6 @@
-.scroll_img, .scroll_heading {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: transform 0.9s, opacity 0.5s;
+.tube-launcher{
+    margin-top:80px;
 }
-
-.scroll_img.visible, .scroll_heading.visible {
-  opacity: 1;
-  transform: scale(1);
-}
-
-.list-group-item, .card {
-  display: flex;
-  align-items: center;
-  min-height: 200px; /* Adjust this value based on your image height */
-}
-
-.list-group-item h3, .card h3 {
-  margin-bottom: 0;
-}
-
-#seID{
-  color: blue;
-  font-style: italic;
-  font-weight: bold;
+.Sensor-to-shooter{
+color:#414042;
 }

@@ -1,112 +1,184 @@
-import React,{useEffect} from 'react'
-import tubeLauncher from '../../assets/tubeLauncher.png'
-import tubeLauncher1 from '../../assets/Tubelauncher1.png'
-import tubeLauncher2 from '../../assets/Tubelauncher2.png'
-import './TubeLauncher.css'
+import React, { useState, useEffect } from "react";
+import "./TubeLauncher.css";
+import HeadingComponent from "../../Components/HeadingComponent/HeadingComponent";
+import tubeLauncher from "../../assets/tubeLauncher.png";
+import tubeLauncher1 from "../../assets/Tubelauncher1.png";
+import tubeLauncher2 from "../../assets/Tubelauncher2.png";
+import Button from "../../Components/Button/Button";
+
 const TubeLauncher = () => {
+  const [visibleSection, setVisibleSection] = useState('main');
+  const [dragPosition, setDragPosition] = useState(10);
+  const [isDragging, setIsDragging] = useState(false);
+
   useEffect(() => {
-    // Intersection Observer API to handle image animations
-    const observerOptions = {
-        threshold: 0.5 // Adjust based on when you want the animation to trigger
+    const handleMouseMove = (e) => {
+      if (isDragging) {
+        const newPosition = e.clientY - 10; // Adjust for initial button position
+        const clampedPosition = Math.max(10, Math.min(newPosition, 210)); // Adjusted for 200px scroll range
+
+        setDragPosition(clampedPosition);
+
+        // Toggle visibility based on position
+        if (clampedPosition >= 190) {
+          // Near bottom of the scroll range
+          setVisibleSection('features');
+        } else if (clampedPosition >= 110) {
+          // Middle of the scroll range
+          setVisibleSection('hide');
+        } else {
+          // Near top of the scroll range
+          setVisibleSection('main');
+        }
+      }
     };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-            } else {
-                entry.target.classList.remove('visible');
-            }
-        });
-    }, observerOptions);
+    const handleMouseUp = () => {
+      setIsDragging(false);
+    };
 
-    const images = document.querySelectorAll('.scroll_img');
-    const headings = document.querySelectorAll('.scroll_heading');
-
-    images.forEach(image => {
-        observer.observe(image);
-    });
-
-    headings.forEach(heading => {
-        observer.observe(heading);
-    });
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("mouseup", handleMouseUp);
 
     return () => {
-        // Clean up the observer
-        images.forEach(image => {
-            observer.unobserve(image);
-        });
-        headings.forEach(heading => {
-            observer.unobserve(heading);
-        });
+      document.removeEventListener("mousemove", handleMouseMove);
+      document.removeEventListener("mouseup", handleMouseUp);
     };
-}, []);
+  }, [isDragging]);
 
-return (
-    <div className='container' style={{marginTop:'100px'}}>
-        <h4 className='border-start border-primary border-5 px-2 fw-bold m-0 scroll_heading'>Tube Launcher ~ FBM10</h4>
-        <small className='px-3 scroll_heading'>Specification</small>
-        <div className="row">
-            <div className="col-sm-6">
-                <div className="card border-0">
-                    <div className="card-body">
-                        <p className="card-text scroll_heading">This Custom Off The Shelf Launcher can be used to launch upto 10 kgs of Foldable Wing UAVs.</p>
-                        <table className=' w-100 scroll_heading'>
-                            <tr className=''>
-                                <td className='border-1 text-start px-5 p-3'>Maximum Aircraft Weight <br />Corresponding Max Velocity</td>
-                                <td className='border-1 text-start px-5'>10 kgs</td>
-                            </tr>
-                            <tr>
-                                <td className='border-1 text-start px-5 p-3'>G load on aircraft</td>
-                                <td className='border-1 text-start px-5'>35 m/s</td>
-                            </tr>
-                            <tr>
-                                <td className='border-1 text-start px-5 p-3'>Launcher Weight</td>
-                                <td className='border-1 text-start px-5'>20 G</td>
-                            </tr>
-                            <tr>
-                                <td className='border-1 text-start px-5 p-3'>Launch Angle</td>
-                                <td className='border-1 text-start px-5'>15 - 35 Deg</td>
-                            </tr>
-                            <tr>
-                                <td className='border-1 text-start px-5 p-3'>Indigenous Content</td>
-                                <td className='border-1 text-start px-5'>-10 to +50 Deg</td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div className="card-body">
-                    </div>
-                    <div className="card-body">
-                      <h1 id='seID' className="card-text scroll_heading">1000</h1>
-                        <p className="card-text scroll_heading">Number of Launches </p>
-                    </div>
-                    <div className="card-body" style={{marginTop:'250px'}}>
-                      <h1 id='seID' className="card-text scroll_heading">Features</h1>
-                      <ul className="card-text scroll_heading">
-                        <li>Configurable Tube for Various Diameter of UVAs upto 210 mm ID</li>
-                        <li>Man Portable with cammmo bag</li>
-                        <li>Recoil reduction elastomers</li>
-                        <li>Sensor to shooter Integration Capable</li>
-                        <li>ATWAD TM system for foldable propellers of UAV</li>
+  const handleMouseDown = () => {
+    setIsDragging(true);
+  };  const specifications = [
+    {
+      description: "Maximum Aircraft Weight",
+      value: "10 kgs",
+    },
+    { description: "Corresponding Max Velocity", value: "35 m/s" },
+    { description: "G load on aircraft", value: "20G" },
+    { description: "Launch Angle", value: "15 - 35 Deg" },
+    { description: "Operating Temperature", value: "-10 to +50 Deg" },
+  ];
 
-                        </ul>                        </div>
-                </div>
+  const sections = [
+    {
+      key: "main",
+      className: "bungee_main",
+      content: (
+        <div className="buggigmain col-12 d-flex gap-5">
+          <div className="col-7">
+            <p className="mt-4">
+              This Custom Off The Shelf Launcher can be used to launch upto 10
+              kgs of Foldable Wing UAVs
+            </p>
+            <div className="d-flex gap-5">
+              <div className="mt-2">
+                <table className="table border">
+                  <tbody>
+                    {specifications.map((spec, index) => (
+                      <tr key={index}>
+                        <td className="description-cell px-5 py-3">
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: spec.description,
+                            }}
+                          />
+                        </td>
+                        <td className="value-cell px-5 py-3">{spec.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div className="col-sm-6">
-                <div className="card border-0 px-5 mt-4">
-                    <img src={tubeLauncher} alt="" className='shadow p-3 mb-5 bg-body rounded border-start border-top border-primary scroll_img' />
-                </div>
-                <div className="card border-0 px-5 mt-4">
-                    <img style={{width:'500px'}} src={tubeLauncher1} alt="" className='shadow p-3 mb-5 bg-body rounded border-start border-top border-primary scroll_img' />
-                </div>
-                <div className="card border-0 px-5 mt-4">
-                    <img style={{width:'500px'}} src={tubeLauncher2} alt="" className='shadow p-3 mb-5 bg-body rounded border-start border-top border-primary scroll_img' />
-                </div>
-            </div>
+          </div>
+          <div className="bungeeimg col-4">
+            <img src={tubeLauncher} alt="Bungee Image" className="buneeimg" />
+          </div>
         </div>
+      ),
+    },
+    {
+      key: "hide",
+      className: "bungeehide d-flex gap-5",
+      content: (
+        <>
+          <div className="bungeenumber text-center col-7">
+            <div className="bungeenumbermain">
+              <h1 className="maincolor numberbungee fontfamilyPrimary">1000</h1>
+              <div className="fontfamilySecondary">
+                Number of Launches [Pneumatic]
+              </div>
+            </div>
+          </div>
+          <div className="col-4 bungeeimg">
+            <img
+              src={tubeLauncher1}
+              alt="Bungee Animation"
+              className="buneeimg"
+            />
+          </div>
+        </>
+      ),
+    },
+    {
+      key: "features",
+      className: "feature_container",
+      content: (
+        <div className="feature_main_container d-flex">
+          <div className="col-7">
+            <h1 className="mt-5">Features</h1>
+            <ul className="mt-3 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
+              <li>
+                Configurable Tube for Various Diameter of UAVs upto 210 mm ID
+              </li>
+              <li>Man Portable with cammo bag</li>
+              <li>Reusable System with Pyro/Pneumatic Launch Mechanism</li>
+              <li>Recoil reduction elastomers</li>
+              <li>Sensor to Shooter Integration Capable</li>
+              <li>ATWAD TM system for foldable propellers of UAV</li>
+            </ul>
+            <div className="maincolor  fontfamilySecondary fw-bold fontsecondry tube-launcher">
+            Tube Launcher can be used to launch upto 10 kgs of Foldable Wing UAVs
+            </div>
+            <div className="mt-3 fontfamilySecondary fontsecondry  Sensor-to-shooter">
+            Sensor-to-shooter network can operate and intertwine with allied capabilities
+            </div>
+          </div>
+          <div className="col-4 bungeeimg">
+            <img src={tubeLauncher2} alt="" className="buneeimg" />
+          </div>
+        </div>
+      ),
+    },
+  ];
+
+  return (
+    <div className="deliverybungee">
+      <div className="container">
+        <HeadingComponent
+          heading="Tube Launcher - FBM 10 "
+          subheading="Specification"
+        />
+        <div
+          className="scroll-button rounded"
+          style={{ top: `${dragPosition}px` }}
+          onMouseDown={handleMouseDown}
+        ></div>
+        <div className="bungee_head"></div>
+
+        {sections.map((section) => (
+          <div
+            key={section.key}
+            className={`${section.className} ${
+              visibleSection === section.key ? "visible" : ""
+            }`}
+          >
+            {section.content}
+          </div>
+        ))}
+      </div>
     </div>
-);
-}
+  );
+};
 
-
-export default TubeLauncher
+export default TubeLauncher;

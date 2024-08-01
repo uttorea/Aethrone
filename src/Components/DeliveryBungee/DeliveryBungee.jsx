@@ -15,15 +15,15 @@ const DeliveryBungee = () => {
     const handleMouseMove = (e) => {
       if (isDragging) {
         const newPosition = e.clientY - 10; // Adjust for initial button position
-        const clampedPosition = Math.max(10, Math.min(newPosition, window.innerHeight - 70)); // Adjusted for window height
+        const clampedPosition = Math.max(10, Math.min(newPosition, 210)); // Adjusted for 200px scroll range
 
         setDragPosition(clampedPosition);
 
         // Toggle visibility based on position
-        if (clampedPosition >= window.innerHeight - 80) {
+        if (clampedPosition >= 190) {
           // Near bottom of the scroll range
           setVisibleSection('features');
-        } else if (clampedPosition >= (window.innerHeight / 2) - 40) {
+        } else if (clampedPosition >= 110) {
           // Middle of the scroll range
           setVisibleSection('hide');
         } else {

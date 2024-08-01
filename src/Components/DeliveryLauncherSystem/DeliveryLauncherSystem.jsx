@@ -33,7 +33,7 @@ const DeliveryLauncherSystem = () => {
         <GearSystem/>
         <DeliveryBungee/>
         <BungeeCatapult/>
-        {/* <TubeLauncher/> */}
+        <TubeLauncher/>
         <Project />
 <Footer/>
     </div>
