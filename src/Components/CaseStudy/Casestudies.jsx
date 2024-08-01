@@ -51,6 +51,23 @@ const Casestudies = () => {
     }
   };
 
+  useEffect(() => {
+    const carousel = document.querySelector("#carouselExampleIndicators");
+    const handleSlideEvent = (event) => {
+      setCurrentIndex(event.to);
+    };
+
+    if (carousel) {
+      carousel.addEventListener("slide.bs.carousel", handleSlideEvent);
+    }
+
+    return () => {
+      if (carousel) {
+        carousel.removeEventListener("slide.bs.carousel", handleSlideEvent);
+      }
+    };
+  }, []);
+
   return (
     <div className="casestudies">
       <div className="container">
