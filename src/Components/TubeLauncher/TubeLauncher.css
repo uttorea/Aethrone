@@ -1,26 +1,83 @@
-.scroll_img, .scroll_heading {
-  opacity: 0;
-  transform: scale(0.8);
-  transition: transform 0.9s, opacity 0.5s;
+.content {
+  width: 80%;
+  /* height: 100vh; */
+  overflow-y: auto; /* Enable scrolling */
+  position: relative;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  background-color: #fff; /* Ensure background is white */
 }
 
-.scroll_img.visible, .scroll_heading.visible {
-  opacity: 1;
-  transform: scale(1);
+.product-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between content and image */
+  align-items: flex-start; /* Align items at the start */
+  padding: 20px;
 }
 
-.list-group-item, .card {
+.initial-table,
+.product-details,
+.product-features {
+  flex: 1; /* Allow the content to take available space */
+  margin-right: 20px; /* Space between content and image */
+  color: #000; /* Ensure text color is black */
+}
+
+.initial-table h1,
+.product-details h1,
+.product-features h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.initial-table p,
+.product-details p {
+  margin-bottom: 20px;
+}
+
+.initial-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.initial-table table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.product-details h1 {
+  font-size: 72px;
+  color: #3b3bff;
+  margin-bottom: 10px;
+}
+
+.product-details p {
+  font-size: 24px;
+  color: #333;
+  position: relative;
+}
+
+.product-details p::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 2px;
+  background-color: #3b3bff;
+  position: absolute;
+  bottom: -5px;
+  left: 27%;
+  transform: translateX(-50%);
+}
+
+.product-image {
+  flex: 0 0 300px; /* Fixed width for the image container */
   display: flex;
+  justify-content: center;
   align-items: center;
-  min-height: 200px; /* Adjust this value based on your image height */
+  padding: 20px;
 }
 
-.list-group-item h3, .card h3 {
-  margin-bottom: 0;
-}
-
-#seID{
-  color: blue;
-  font-style: italic;
-  font-weight: bold;
+.product-image img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: auto;
 }
