@@ -1,20 +1,31 @@
-.casestudies{
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-    margin-top:100px;
+.casestudies {
+    width: 100%;
+    margin-top: 100px;
+    height: 100vh;
+}
+.casestudies_inner {
+    width: 100%;
+    height: 100vh;
+}
+.caseStudiesimg {
+    width: 100%;
+}
+.case_text {
+    letter-spacing: 1px;
 }
 
-
-.case_heading {
-    border-left: 6px solid #3535DE;
+.carousel-indicators.carousel-indicators button {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
 }
-
-
+/* Updated Code: Set active indicator color to white */
 .carousel-indicators .active {
-    background-color: gray;
+    background-color: white;
+    color: white;
 }
-
 .image-container {
     overflow: hidden;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 115%);
@@ -23,8 +34,85 @@
     position: relative;
     left: 175px;
 }
-.caseimg_carousel{
+.caseimg_carousel {
     position: absolute;
-    top:140px;
-    left: 100px;
+    top: 190px;
+    left: 180px;
+}
+.case_card {
+    width: 715px;
+    height: 390px;
+}
+.carausel-rightbtn {
+    position: absolute;
+    right: 700px;
+    top: 40%;
+}
+.carausel-leftbtn {
+    position: absolute;
+    left: 250px;
+    top: 40%;
+}
+.carousel-case-indication  {
+    position: absolute;
+    top: 70%;
+    left: -31%;
+}
+.case_card{
+    background: rgba(13, 14, 30, 0.8); /* ODOE1E color with 80% opacity */
+    backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Optional: a light border to enhance the effect */
+    border-radius: 10px; /* Optional: rounded corners */
+    padding: 20px; /* Adjust padding as needed */
+}
+
+@media only screen and (max-width:425px){
+    .case_card {
+        width: 300px;
+        height: 280px;
     }
+    .casestudies {
+        width: 100%;
+        margin-top: 100px;
+        height: 80vh;
+    }
+    .casestudies_inner {
+        width: 100%;
+        height: 100vh;
+    }
+    .caseStudiesimg {
+        width: 100%;
+        height: 300px;
+    }
+    .image-container {
+        width: 100vw;
+        left: 35px;
+    }
+    .caseimg_carousel {
+        top: 80px;
+        left: 20px;
+    }
+    .carausel-rightbtn {
+        position: absolute;
+        right: 100px;
+        top: 2%;
+    }
+    .carausel-leftbtn {
+        position: absolute;
+        left: 60px;
+        top: 2%;
+    }
+    .carousel-case-indication {
+        position: absolute;
+        top: 50%;
+        left: -10%;
+    }
+    .carousel-indicators.carousel-indicators button {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+    }
+}

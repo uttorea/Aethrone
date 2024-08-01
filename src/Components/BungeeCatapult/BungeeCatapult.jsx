@@ -6,7 +6,7 @@ import './BungeeCatapult.css'
 const BungeeCatapult = () => {
   return (
     <div className="container mt-5 ">
-      <HeadingComponent heading='Bungee Catapult Launcher ~ YPJ~ T' subheading='Specification'/>
+      <HeadingComponent heading='Bungee Catapult Launcher YPJ 30~ T' subheading='Specification'/>
       
       <div className="row mt-1 mt-md-5 row-cols-2 ">
         <div className="col-sm-5 col-5 p-0">
