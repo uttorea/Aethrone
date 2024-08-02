@@ -29,10 +29,11 @@ function Footer() {
                             </div>
                             <div className="col-lg-3 col-7 col-md-6  text-white mt-0 mt-md-5 card-body41">
                                 <h3 className='mt-5 headingfooter '>Product</h3>
-                                    <p className='text-wrap card-body4 graycolor'>Launch and Recovery/Delivery</p>
                                 <div className=" graycolor fontweight fontsecondry">
+                                    <p >Launch and Recovery/Delivery</p>
                                     <p>Parachutes</p>
                                     <p>Advanced Composites</p>
+                                    <p>Aerial Robotics</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-5 text-white mt-5">

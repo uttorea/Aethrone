@@ -19,8 +19,9 @@ const Discover = () => {
       <div className="discover">
         <img src={img1} alt="" className="ddimage_main" />
         <div className="discover_main">
-          <div className="container dis p-md-5 p-2 ms-2 ms-md-0">
+          <div className=" dis p-md-4 p-2 ms-2 ms-md-0">
             <div className="d-block d-md-flex col-12">
+              
               <div className="col-12 col-md-4">
                 <HeadingComponent
                   heading="Precision Manufacturing"
@@ -36,7 +37,8 @@ const Discover = () => {
                 <Button text='Discover precision manufacturing' to='/precision-manufacturing'/>
                 </div>
               </div>
-              <div className="col-12 col-md-8 g-5 d-flex p-md-5 p-0 mt-5 mt-md-0">
+
+              <div className="col-12 col-md-8 g-5 d-flex py-md-5 px-md-3  p-0 mt-5 mt-md-0">
                 {items.map((item, index) => (
                   <div className="col-4 px-2" key={index}>
                     <img src={item.img} alt={item.text} className="img_dis"/>
@@ -44,6 +46,8 @@ const Discover = () => {
                   </div>
                 ))}
               </div>
+
+              
             </div>
           </div>
         </div>

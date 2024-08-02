@@ -80,7 +80,7 @@ h5 {
 }
 
 .collapsing.width {
-  transition: width 0.35s ease;
+  transition: width 0.5s ease;
   height: auto;
   width: 0;
 }
@@ -91,7 +91,7 @@ h5 {
   background-color: #f0f0f0;
   border-bottom: 1px solid #ddd;
   transition: background-color 0.3s ease;
-  height:400px;
+  height:100%;
   
 }
 
@@ -111,10 +111,15 @@ h5 {
 
 }
 .hardware-card-in{
-  height:250px;
+  height:600px;
   /* width:300px; */
 }
 .hardware_card_body{
+  display:flex;
+  flex-direction:column;
+  align-item:center;
+  justify-content:center;
+  margin-top:100px;
 
 }
 @media only screen and (max-width:425px){

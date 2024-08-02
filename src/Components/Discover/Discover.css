@@ -11,9 +11,7 @@
     
     position: absolute;
     top: 26.5%;
-    left: 0;
-    width: 100%;
-   
+    left: 200px;   
     color: white; /* To make the text visible over the image */
    
   }
@@ -24,6 +22,7 @@
     border: 1px solid rgba(255, 255, 255, 0.2); /* Optional border for depth */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional box-shadow for added depth */
     border-radius: 10px; /* Optional rounded corners */
+    width:85%;
     
   }
   @media only screen and (max-width:425px){

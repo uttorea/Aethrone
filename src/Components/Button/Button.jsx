@@ -7,7 +7,7 @@ function Button({ text, arrowIcon, backgroundColor = '#3535DE', color = 'white',
     <div className='g-md-5 g-1 me-2 me-md-4'>
       <Link
         to={to}
-        className=" px-4 px-md-5 py-2 rounded-2 mt-1 mb-4 mt-lg-4 designbutton"
+        className=" px-4 px-md-4 py-2 rounded-2 mt-1 mb-4 mt-lg-4 designbutton"
         style={{ fontFamily: "Arimo", backgroundColor, color, border }}
       >
         {text}

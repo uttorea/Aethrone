@@ -20,10 +20,11 @@ const Learn = () => {
         <div className='container mt-5'>
          
             <Heading heading='Learn More' subheading='Download Case Study'/>
-            <div className="row row-cols-2  row-cols-md-2 g-md-5 g-0 p-md-5 p-2 ms-2 ms-md-0 learn-card">
+            <div className="row row-cols-2  row-cols-md-2 g-md-5 g-0 p-md-5 p-2 ms-2 ms-md-5 learn-card">
+              
                 {learnData.map((item, index) => (
                     <div className="col" key={index}>
-                        <div className="card col-10 h-100  w-90 larn-more-card">
+                        <div className="card col-10  larn-more-card ms-5" >
                             <img src={item.imgSrc} className="learn_imgs mx-auto mt-5" alt="..." />
                             <div className=" mt-5 larn-more-card-1 ">
                                 <h6 className="text-center maincolor fontsecondry fontfamilySecondary p-2 ">{item.title}</h6>

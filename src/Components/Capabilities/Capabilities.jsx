@@ -15,7 +15,7 @@ const capabilitiesData = [
     },
     {
         img: capabilityimg2,
-        title: 'Manufacturing Capabilities',
+        title: 'Our Machines',
         productImg: product5,
         features: [
             'Tig Welding, Spot Welding, Al Welding',
@@ -26,7 +26,7 @@ const capabilitiesData = [
     },
     {
         img: capabilityimg3,
-        title: 'Manufacturing Capabilities',
+        title: 'Product Specialization',
         productImg: product5,
         features: [
             'High Speed Rotary Systems',
@@ -43,16 +43,20 @@ const Capabilities = () => {
             <div className="row row-cols-3 row-cols-md-3 g-2 g-md-4 mt-5">
                 {capabilitiesData.map((capability, index) => (
                     <div className="col" key={index}>
-                        <div className="card cardimg  border-primary p-md-5 p-1">
+                        <div className="card cardimg p-md-5 p-1">
                             <div className="cap_card">
                                 <div className="cap_body">
                                     <div className="card-body-capability">
-                                        <img src={capability.img} className="capability_img" alt="Manufacturing Capabilities" />
-                                        <h5 className="card_title fw-bold mt-3">{capability.title}</h5>
-                                        <img src={capability.productImg} alt="Product" className="mt-3 productimg" />
-                                        <ul className="list-styled ps-2 ps-md-4">
+                                        <div className='aps'>
+                                            <img src={capability.img} className="capability_img" alt="Manufacturing Capabilities" />
+                                            <h5 className="card_title card_title_main fw-bold mt-3"
+                                                dangerouslySetInnerHTML={{ __html: capability.title.replace(' ', '<br/>') }}>
+                                            </h5>
+                                            <img src={capability.productImg} alt="Product" className="mt-3 productimg" />
+                                        </div>
+                                        <ul className="list-styled p-0 mt-md-5">
                                             {capability.features.map((feature, i) => (
-                                                <li key={i} className=''>{feature}</li>
+                                                <li key={i}>{feature}</li>
                                             ))}
                                         </ul>
                                     </div>

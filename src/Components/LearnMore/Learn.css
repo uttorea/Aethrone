@@ -1,5 +1,7 @@
 .larn-more-card {
   border: 2px solid #3535de;
+  height:400px;
+  width:400px;
 }
 .larn-more-card-1 {
   border-top: 5px solid #3535de;
@@ -7,13 +9,11 @@
 }
 
 .learn_imgs {
-  height: 100px;
-  width: 160px;
+  height:250px;
+  width: 215px;
 }
 .learn-card {
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media only screen and (max-width: 425px) {
   .learn-card {

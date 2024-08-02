@@ -26,12 +26,12 @@ const Parachute = () => {
             <div className="row mt-3 mt-md-5 col-11 parachutmainhead">
               <div className="col-sm-6 p-0">
                 <HeadingComponent heading="Product Development"/>
-                <div className=" bg-transparent border-0 mt-md-3  mt-0 col-12">
+                <div className=" bg-transparent border-0 mt-md-3  mt-0 col-12 gap-5">
                   <div
-                    className="prachut-card rounded col-11 col-md-8 px-5"
+                    className="prachut-card rounded col-11 col-md-11 px-5 py-3 "
                     style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
                   >
-                    <p className=" p-md-4 p-2 fontweight fontsecondry we-specialize ">
+                    <p className=" p-md-4 p-2 fontweight fontsecondry we-specialize letterSpacing">
                       We specialize in designing, developing, testing, and
                       certifying products within the para category, catering to
                       diverse groups of users. Our goal is to maintain our
@@ -40,15 +40,15 @@ const Parachute = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-5 p-0 ">
+              <div className="col-sm-6 p-0  ">
                
                 <HeadingComponent heading="Technical Approach"/>
                 <div className=" bg-transparent border-0 mt-1 mt-md-3 rounded col-12">
                   <div
-                    className="prachut-card col-md-12 px-5 col-11 rounded"
+                    className="prachut-card col-md-12 px-5 py-3 col-11 rounded"
                     style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
                   >
-                    <p className="fontsecondry fontweight p-md-3 p-2">
+                    <p className="fontsecondry fontweight p-md-3 p-2 letterSpacing">
                       Our strategy employs in-house Aerodynamic-Structural
                       Design, Analysis, and Optimization techniques, including
                       Computational Fluid Dynamics and Computer Aided Design. We

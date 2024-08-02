@@ -11,7 +11,7 @@ const Industry = () => {
       <div className="content container d-flex">
         <div className="row content  mt-5 row-cols-2 col-12  ">
           <div className="col-sm-4 mt-3 p-md-3 p-1 col-6">
-            <HeadingComponent heading='Industries'/>
+            <HeadingComponent heading='Industries' />
            
             <div className=" blur-card card-margin">
               <div className=" text-white p-3 p-md-5 ">

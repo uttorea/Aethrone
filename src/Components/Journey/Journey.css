@@ -4,6 +4,28 @@
  .ourjourney{
   font-size:36px;
  }
+ .composit_owner{
+  font-size:36px;
+  font-weight:100;
+  color:#414042;
+  letter-spacing:1px;
+
+ }
+ .cofounder{
+  width:40%;
+  margin-left:auto;
+  margin-right:auto;
+ }
+ .co-founder_main{
+  margin-left:200px;
+ }
+ .coname{
+  font-size:36px;
+ }
+ .co-sub_name{
+  font-size:24px;
+  margin-left:25px;
+ }
   
   .timeline {
     display: flex;
@@ -79,8 +101,8 @@
     background-color: #3535DE;
     color: #fff;
     transform: scale(1.5);  
-    width: 188px; 
-    height: 188px;  
+    width: 150px; 
+    height: 150px;  
     font-size:48px;
    }
   .timeline-button{
