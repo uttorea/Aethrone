@@ -62,28 +62,28 @@ const TubeLauncher = () => {
   const sections = [
     {
       key: "main",
-      className: "bungee_main",
+      className: "bungee_main mt-4 mt-md-0",
       content: (
-        <div className="buggigmain col-12 d-flex gap-5">
+        <div className="buggigmain col-12 d-flex gap-1 gap-md-5">
           <div className="col-7">
-            <p className="mt-4">
+            <p className="mt-4 fontsecondry">
               This Custom Off The Shelf Launcher can be used to launch upto 10
               kgs of Foldable Wing UAVs
             </p>
-            <div className="d-flex gap-5">
+            <div className="d-flex gap-2 gap-md-5">
               <div className="mt-2">
-                <table className="table border">
+                <table className="table border fontsecondry">
                   <tbody>
                     {specifications.map((spec, index) => (
                       <tr key={index}>
-                        <td className="description-cell px-5 py-3">
+                        <td className="description-cell px-md-5 px-1 py-1 py-md-3">
                           <span
                             dangerouslySetInnerHTML={{
                               __html: spec.description,
                             }}
                           />
                         </td>
-                        <td className="value-cell px-5 py-3">{spec.value}</td>
+                        <td className="value-cell px-2 px-md-5 py-1 py-md-3">{spec.value}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -99,13 +99,13 @@ const TubeLauncher = () => {
     },
     {
       key: "hide",
-      className: "bungeehide d-flex gap-5",
+      className: "bungeehide d-flex gap-1 gap-md-5",
       content: (
         <>
           <div className="bungeenumber text-center col-7">
             <div className="bungeenumbermain">
               <h1 className="maincolor numberbungee fontfamilyPrimary">1000</h1>
-              <div className="fontfamilySecondary">
+              <div className="fontfamilySecondary fontsecondry">
                 Number of Launches [Pneumatic]
               </div>
             </div>
@@ -126,8 +126,8 @@ const TubeLauncher = () => {
       content: (
         <div className="feature_main_container d-flex">
           <div className="col-7">
-            <h1 className="mt-5">Features</h1>
-            <ul className="mt-3 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
+            <h1 className="mt-0 mt-md-5">Features</h1>
+            <ul className="mt-md-3 mt-1 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
               <li>
                 Configurable Tube for Various Diameter of UAVs upto 210 mm ID
               </li>
@@ -140,7 +140,7 @@ const TubeLauncher = () => {
             <div className="maincolor  fontfamilySecondary fw-bold fontsecondry tube-launcher">
             Tube Launcher can be used to launch upto 10 kgs of Foldable Wing UAVs
             </div>
-            <div className="mt-3 fontfamilySecondary fontsecondry  Sensor-to-shooter">
+            <div className="mt-1 mt-md-3 fontfamilySecondary fontsecondry  Sensor-to-shooter">
             Sensor-to-shooter network can operate and intertwine with allied capabilities
             </div>
           </div>
@@ -154,7 +154,7 @@ const TubeLauncher = () => {
 
   return (
     <div className="deliverybungee">
-      <div className="container">
+      <div className="container mt-5 mt-md-0">
         <HeadingComponent
           heading="Tube Launcher - FBM 10 "
           subheading="Specification"

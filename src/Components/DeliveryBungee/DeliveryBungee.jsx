@@ -66,26 +66,26 @@ const DeliveryBungee = () => {
       key: 'main',
       className: 'bungee_main',
       content: (
-        <div className="buggigmain col-12 d-flex gap-5">
-          <div className="col-7">
-            <p className="mt-4">
+        <div className="buggigmain col-12 d-flex gap-2 gap-md-5">
+          <div className="col-7 mt-5 mt-md-0">
+            <p className="mt-4 fontsecondry">
               This Custom Off The Shelf Launcher can be used to launch up to
               30 kgs of Fixed Wing UAVs
             </p>
-            <div className="d-flex gap-5">
+            <div className="d-flex gap-2 gap-md-5">
               <div className="mt-2">
-                <table className="table border">
+                <table className="table border fontsecondry">
                   <tbody>
                     {specifications.map((spec, index) => (
                       <tr key={index}>
-                        <td className="description-cell px-5 py-3">
+                        <td className="description-cell px-1 px-md-5 py-1 py-md-3">
                           <span
                             dangerouslySetInnerHTML={{
                               __html: spec.description,
                             }}
                           />
                         </td>
-                        <td className="value-cell px-5 py-3">{spec.value}</td>
+                        <td className="value-cell px-1 px-md-5 py-1 py-md-3">{spec.value}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -101,13 +101,13 @@ const DeliveryBungee = () => {
     },
     {
       key: 'hide',
-      className: 'bungeehide d-flex gap-5',
+      className: 'bungeehide d-flex gap-2 gap-md-5',
       content: (
         <>
           <div className="bungeenumber text-center col-7">
             <div className="bungeenumbermain">
               <h1 className="maincolor numberbungee fontfamilyPrimary">100</h1>
-              <div className="fontfamilySecondary">Launches per bungee</div>
+              <div className="fontfamilySecondary fontsecondry">Launches per bungee</div>
             </div>
           </div>
           <div className="col-4 bungeeimg">
@@ -122,8 +122,8 @@ const DeliveryBungee = () => {
       content: (
         <div className="feature_main_container d-flex">
           <div className="col-7">
-            <h1 className="mt-5">Features</h1>
-            <ul className="mt-3 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
+            <h1 className="mt-1 mt-md-5">Features</h1>
+            <ul className="mt-0 mt-md-3 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
               <li>
                 Configurable Trolley to accommodate wide variety of propeller
                 sizes
@@ -135,12 +135,18 @@ const DeliveryBungee = () => {
               <li>Pusher/Tractor/Blending Wing Compatibility</li>
               <li>Built Capability for upto 1000 launches</li>
             </ul>
-            <div className="maincolor mt-5 fontfamilyPrimary See-bungee">
+            <div className="maincolor mt-0 mt-md-5 fontfamilyPrimary See-bungee">
               See bungee catapult launcher in action{" "}
             </div>
-            <div className="d-flex gap-4 mt-3">
+            <div className="d-md-flex gap-md-4 gap-4 mt-md-3 mt-0 ">
+              <div>
               <Button text="Contact Us " />
-              <Button text="Download Brochure " backgroundColor="white" border='2px solid #3535DE' color="#3535DE" />
+              </div>
+              <div className="mt-2 mt-md-0">
+                
+              <Button text="Download Brochure " backgroundColor="white" border='2px solid #3535DE' color="#3535DE" 
+            />
+            </div>
             </div>
           </div>
           <div className="col-4 bungeeimg">
@@ -153,7 +159,7 @@ const DeliveryBungee = () => {
 
   return (
     <div className="deliverybungee">
-      <div className="container">
+      <div className="container mt-4 mt-md-0">
         <HeadingComponent
           heading="Bungee Catapult Launcher - YPJ 30"
           subheading="Specification"

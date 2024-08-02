@@ -89,3 +89,48 @@ line-height:45px;
 .bungeeimg {
   margin-top: 90px;
 }
+@media only screen and (max-width:425px){
+  .buneeimg {
+    width: 100%;
+    height: 220px;
+    margin-top:50px;
+  }
+  .feature_main_container,.bungeehide,.buggigmain {
+    width:95%;
+  }
+  .bungeenumbermain {
+    margin-top: 80px;
+  }
+  .numberbungee {
+    font-size: 80px;
+  }
+  .ulclassbungee{
+    
+    line-height:20px;
+    }
+    .bungeeimg {
+      margin-top: 30px;
+    }
+
+    .scroll-button {
+     
+      top: 10px;
+      right: 10px;
+      width: 20px; /* Set button width */
+      height: 80px; /* Set button height */
+      
+    }
+    .buggigmain {
+      margin-top:80px;
+    }
+    .deliverybungee {
+      width: 100%;
+      height: 100vh;
+     
+    }
+    .See-bungee{
+      font-size:14px;
+    }
+    
+   
+}
