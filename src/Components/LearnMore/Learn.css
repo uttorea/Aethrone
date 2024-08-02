@@ -1,20 +1,25 @@
 .larn-more-card {
   border: 2px solid #3535de;
-  height:400px;
-  width:400px;
+  height:380px;
+  width:350px;
 }
 .larn-more-card-1 {
   border-top: 5px solid #3535de;
   width:100%;
+  
 }
 
 .learn_imgs {
-  height:250px;
-  width: 215px;
+  height:180px;
+  width: 200px;
+  margin-bottom:40px;
 }
+
 .learn-card {
   width: 80%;
+ 
 }
+
 @media only screen and (max-width: 425px) {
   .learn-card {
     width: 100%;

@@ -50,7 +50,7 @@ const   LauncherSystem = () => {
                                 <li>Land Based Pneumatic Tube Launcher</li>
                                 <li>Air Based Underwing Pylon Pneumatic Carriage and Release</li>
                             </ul>
-                            <a href="" className='btn backgroundcolormain border-dark btn-explore-launch text-white'>Explore Launcher System <i className="bi bi-arrow-right"></i></a>
+                            <a href="" className='btn backgroundcolormain border-dark btn-explore-launch text-white px-5'>Explore Launcher System <i className="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -58,7 +58,7 @@ const   LauncherSystem = () => {
             <div className="row row-cols-3 row-cols-md-3 g-md-4 g-1  px-md-5 px-1 lunchsystemcards" >
     {cardData.map((card, index) => (
       <div className="col" key={index}>
-        <div className="card h-100 border-primary launchesystemcard">
+        <div className="card h-100  launchesystemcard">
           <img src={card.imgSrc} className="card-img-top-launch mt-2 mt-md-0" alt="..." />
           <div className="fotter_lunch px-0 w-100 ps-5">
             <h6 className="maincolor fontfamilyPrimary fontsecondry ">

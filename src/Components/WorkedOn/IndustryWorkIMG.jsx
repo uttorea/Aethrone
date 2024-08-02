@@ -1,6 +1,7 @@
 import workimg1 from '../../assets/workimg1.png';
 import workimg2 from '../../assets/workimg2.png';
 import workimg3 from '../../assets/workimg3.png';
+import workimg4 from '../../assets/workimg4.png'
 
 const cards= [
     {
@@ -19,7 +20,7 @@ const cards= [
         text: ["Flame Smoke", "Flat Radome"]
     },
     {
-        image: workimg1,
+        image: workimg4,
         title: "Airframes",
         text: ["Fixed Wing UAV", "Folding Wing UAV"]
     }

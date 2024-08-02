@@ -9,6 +9,10 @@
 .fotter_lunch{
 border-top:5px solid #3535DE;
 }
+.launchesystemcard{
+border:2px solid #3535DE;
+
+}
 
 @media only screen and (max-width:425px){
     .card-img-top1{

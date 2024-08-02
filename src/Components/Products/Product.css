@@ -12,6 +12,9 @@
   transition: 0.5s;
   object-fit: cover;
 }
+.product_card_main{
+  height:380px;
+}
 .product_card:hover .intro {
   height: 230px;
   background: white;

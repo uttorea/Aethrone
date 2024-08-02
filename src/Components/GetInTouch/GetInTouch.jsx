@@ -129,7 +129,7 @@ const GetInTouch = () => {
                 </div>
               {/* </div> */}
 
-              <div className="d-flex justify-content-center justify-content-md-end mt-4 col-md-9 col-12">
+              <div className="d-flex justify-content-center justify-content-md-end mt-4 col-md-11 ms-4 col-12">
                 <a className="mb-5 backgroundcolormain px-5 py-2 project_btn text-white text-decoration-none rounded">
                   Send Message
                 </a>

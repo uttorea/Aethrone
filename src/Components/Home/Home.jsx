@@ -42,8 +42,8 @@ const Home = () => {
                 <div className="col-sm-12 col-lg-7  whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div
-                    className="We-are-a-deep fontfamilySecondary"
-                    style={{ backgroundColor: "#0E0E0E" }}
+                    className="We-are-a-deep fontfamilySecondary rounded"
+                    
                   >
                     <p
                       className="homepage-text"

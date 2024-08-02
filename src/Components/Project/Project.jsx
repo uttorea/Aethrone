@@ -82,7 +82,7 @@ function Project() {
                 ></textarea>
               </div>
               <div className="d-flex justify-content-end mt-4">
-                <a className="mb-5 backgroundcolormain px-4 py-2 project_btn text-white text-decoration-none rounded fontfamilyPrimary">
+                <a className="mb-5 backgroundcolormain px-5 py-2 project_btn text-white text-decoration-none rounded fontfamilySecondary">
                   Send Message
                 </a>
               </div>

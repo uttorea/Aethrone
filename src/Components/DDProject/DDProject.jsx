@@ -83,7 +83,7 @@ const DDProject = () => {
           <div className="row row-cols-3 row-cols-md-3 g-2 g-md-4 ms-1 ms-md-0 ">
             {projectData.map((project, index) => (
               <div className="col px-md-3 px-1  " key={index}>
-                <div className="border rounded-2 border-primary p-1 p-md-4 ddprojectcard">
+                <div className=" rounded-2  p-1 p-md-4 ddprojectcard">
                   <div className="card-body1 ">
                     <img
                       src={project.img}
@@ -91,7 +91,7 @@ const DDProject = () => {
                       alt="..."
                     />
                     <div className="d-flex mt-2">
-                      <h1 className="card-title fw-bold text-primary mt-4 mt-md-2  p-0 col-4">
+                      <h1 className="card-title fw-bold maincolor mt-4 mt-md-2  p-0 col-4">
                         {project.title}
                       </h1>
                       <h6 className="  projecthead ">{project.subtitle}</h6>
@@ -108,7 +108,7 @@ const DDProject = () => {
           <div className="row row-cols-3 row-cols-md-3 g-4 mt-1 ms-1 ms-md-0 ">
             {principalData.map((principal, index) => (
               <div className="col px-1 px-md-3 " key={index}>
-                <div className="border rounded-2 p-1 border-primary cardddproject">
+                <div className=" rounded-2 p-1  cardddproject">
                   <img
                     src={principal.img}
                     className="pro_cardimg mt-0 mx-auto d-block  mt-md-3"

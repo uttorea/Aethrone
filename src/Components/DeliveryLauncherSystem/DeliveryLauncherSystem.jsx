@@ -21,7 +21,7 @@ const DeliveryLauncherSystem = () => {
             <div className="We-Do">
               <HeadingComponent heading='What We Do'/>
               
-              <div className='We-adapt p-2 p-md-5 bg-black opacity-75 rounded mt-0 mt-md-3 fontsecondry fontfamilySecondary fontweight'>
+              <div className='We-adapt p-2 p-md-5 rounded mt-0 mt-md-3 fontsecondry fontfamilySecondary fontweight'>
                 <p>We adapt our launcher system to fit your needs. Just tell us what you require for your product, and we'll make it happen.</p>
                 <p>Our products are aerospace/military grade, having undergone extensive testing and qualification for environmental conditions, <br/>operational vibrations, shock, max operational loads and require minimum maintenance with long shelf life.  </p>
               </div>

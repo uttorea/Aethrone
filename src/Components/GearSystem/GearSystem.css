@@ -3,6 +3,9 @@
     position: absolute;
     top: 90px;
     left: 310px;
+    background-color: rgba(13, 14, 30, 0.8); /* #0D0E1E with 80% opacity */
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    border-radius: 8px; /* Optional: Adds rounded corners */
 }
 
 @media only screen and (max-width:425px){

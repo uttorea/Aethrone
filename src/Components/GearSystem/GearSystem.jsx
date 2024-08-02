@@ -19,7 +19,7 @@ const GearSystem = () => {
       <img src={gearSystemImg} alt="Gear System" className="gearImg w-100" />
       <div className="container">
         <div className="gearCard ">
-          <div className=" gearCard bg-black bg-opacity-75 p-md-5 p-1">
+          <div className=" gearCard  p-md-5 p-1">
             <div className="card-body text-light ">
               <HeadingComponent heading="Advantages Over A Landing Gear System" />
               <div className="px-1 mt-2 mt-md-5">

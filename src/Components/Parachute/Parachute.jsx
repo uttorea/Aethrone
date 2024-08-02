@@ -29,7 +29,7 @@ const Parachute = () => {
                 <div className=" bg-transparent border-0 mt-md-3  mt-0 col-12 gap-5">
                   <div
                     className="prachut-card rounded col-11 col-md-11 px-5 py-3 "
-                    style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
+                    
                   >
                     <p className=" p-md-4 p-2 fontweight fontsecondry we-specialize letterSpacing">
                       We specialize in designing, developing, testing, and
@@ -46,7 +46,7 @@ const Parachute = () => {
                 <div className=" bg-transparent border-0 mt-1 mt-md-3 rounded col-12">
                   <div
                     className="prachut-card col-md-12 px-5 py-3 col-11 rounded"
-                    style={{ backgroundColor: "rgba(0,0,0,0.75)" }}
+                    
                   >
                     <p className="fontsecondry fontweight p-md-3 p-2 letterSpacing">
                       Our strategy employs in-house Aerodynamic-Structural

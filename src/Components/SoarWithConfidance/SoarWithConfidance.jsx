@@ -1,6 +1,7 @@
 import React from "react";
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 import "./SoarWithConfidance.css";
+import img from '../../assets/aerial12.png'
 
 const SoarWithConfidance = () => {
   return (
@@ -21,7 +22,9 @@ const SoarWithConfidance = () => {
       </div>
       <div className="mt-5 d-flex">
         <div className="col-md-5 col-5 mt-5 mt-md-0">
-          <div className="soarwith rounded mt-5 mt-md-0 "></div>
+          <div className="soarwith rounded mt-5 mt-md-0 ">
+            <img src={img} alt="" />
+          </div>
         </div>
         <div className="col-1 "></div>
         <div className="col-6 col-md-6">

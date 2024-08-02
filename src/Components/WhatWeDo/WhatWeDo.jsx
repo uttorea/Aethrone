@@ -62,7 +62,7 @@ const WhatWeDo = () => {
                     <div className="row">
                         {cardData.map((card, index) => (
                             <div className={`col-6 px-md-3 px-1 ${index == 2 ? 'mt-4' : ''}`} key={index}>
-                                <div className="Design_devolopment_card border-dark p-1 p-md-5 rounded">
+                                <div className="Design_devolopment_card  p-1 p-md-5 rounded">
                                     <div className="card-bod p-0">
                                         <img src={card.img} alt={card.heading || 'Card Image'} className='whatwedoimg  mt-3' />
                                         {card.heading && <h4 className='wwdCard_heading '>{card.heading}</h4>}

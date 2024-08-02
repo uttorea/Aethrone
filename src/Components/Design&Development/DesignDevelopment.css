@@ -24,6 +24,11 @@
 
 .wtdiv{
     width:90%;
+    background-color: rgba(1, 1, 9, 0.8);
+  backdrop-filter: blur(10px); /* Adjust the blur value as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  
+
 }
 
 

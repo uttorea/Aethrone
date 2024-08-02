@@ -26,7 +26,7 @@ const DesignDevelopment = () => {
             <div className="mt-0 mt-md-5 col-11 ms-2 ms-md-0">
             <Heading heading="What We Do"/>
             </div>
-            <div className="fontsecondry p-3 ms-2 ms-md-0 p-md-4 bg-black bg-opacity-50 rounded mt-3 wtdiv">
+            <div className="fontsecondry p-3 ms-2 ms-md-0 p-md-4 rounded mt-3 wtdiv letterSpacing">
               <p>
                 We offer Multi Physics based Design and Engineering Solutions
                 for Unmanned - Manned Aerospace and Defence Products

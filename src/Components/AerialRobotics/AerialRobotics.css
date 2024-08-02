@@ -24,8 +24,9 @@
     margin-top:50px;
 }
 .aerial_para{
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0, 0.4); 
+  background-color: rgba(1, 1, 9, 0.8); /* #010109 with 80% opacity */
+  backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+  border-radius: 8px; /* Optional: Adds rounded corners */
     letter-spacing:1px;
 }
 

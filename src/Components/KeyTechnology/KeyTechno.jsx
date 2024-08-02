@@ -19,16 +19,16 @@ const KeyTechno = () => {
           cardHeight="248.25px"
           cardWidth="191.25px"
           imgHeights={{
-            0: "166.77px",
+            0: "116.77px",
             1: "166.77px",
-            2: "160px",
+            2: "120px",
             3: "60px",
             4: "66px",
           }}
           imgWidths={{
-            0: "174.75px",
+            0: "124.75px",
             1: "174.75px",
-            2: "143.25px",
+            2: "113.25px",
             3: "168px",
             4: "168px",
           }}

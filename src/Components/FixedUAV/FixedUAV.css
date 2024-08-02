@@ -1,5 +1,7 @@
 .fixedUAV_page{
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(13, 14, 30, 0.8); /* #0D0E1E with 80% opacity */
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    border-radius: 8px; /* Optional: Adds rounded corners */
     width:85%;
 }
 

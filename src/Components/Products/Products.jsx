@@ -32,7 +32,6 @@ const productData = [
     title: "Aerial Robotics ",
     description: "We design and manufacture end-to-end Sustainable solutions for technology.",
   },
-  
 ];
 
 function Products() {
@@ -40,21 +39,26 @@ function Products() {
     <div>
       <div className="product_head">
         <div className="container-md container-fluid p-0">
-          <HeadingComponent heading="Products" subheading="What We Offer"/>
+          <HeadingComponent heading="Products" subheading="What We Offer" />
           <div className="row row-cols-4 row-cols-md-4 g-2 g-lg-4 mt-4 product-card_main">
             {productData.map((product) => (
               <div className="col product_card" key={product.id}>
-                <div className="card border-2 bordermaincolor  overflow-hidden">
-                  <img src={product.img} alt={product.title} className="product_img" />
+                <div className="card product_card_main border-2 bordermaincolor overflow-hidden">
+                  <img 
+                    src={product.img} 
+                    alt={product.title} 
+                    className="product_img" 
+                    style={product.id === 1 ? { marginTop: '-80px' } : {}} // Apply margin only to the product with id: 1
+                  />
                   <div className="seperator1"></div>
                   <div className="seperator"></div>
-                  <div className="intro d-flex flex-column"> 
+                  <div className="intro d-flex flex-column">
                     <h6 className="text-center mt-1 mt-lg-4 maincolor fontsecondry">{product.title}</h6>
-                    <img src={Productii5} alt="" className="smallimg"/>
-                    <div className="card_text text-center flex-grow-1" >
+                    <img src={Productii5} alt="" className="smallimg" />
+                    <div className="card_text text-center flex-grow-1">
                       <p>{product.description}</p>
                     </div>
-                    <p className="text-center  discover-text ">
+                    <p className="text-center discover-text pt-2">
                       Discover<i className="bi bi-arrow-right-short"></i>
                     </p>
                   </div>

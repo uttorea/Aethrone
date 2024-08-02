@@ -9,6 +9,9 @@
 }
 .We-adapt{
     letter-spacing:1px;
+    background-color: rgba(13, 14, 30, 0.8); /* #0D0E1E with 80% opacity */
+  backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+  border-radius: 8px; /* Optional: Adds rounded corners */
 }
 .We-Do{
     margin-top:90px;

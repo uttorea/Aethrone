@@ -58,7 +58,7 @@ const LauncherRecovery = () => {
                   <li>Airbag Based Land Recovery</li>
                   <li>Airbag Based Sea Recovery</li>
                 </ul>
-                <a href="" className="btn  border-dark explore-launcher  backgroundcolormain px-4 text-white ">
+                <a href="" className="btn px-5 border-dark explore-launcher  backgroundcolormain px-4 text-white ">
                   Explore Recovery System <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
