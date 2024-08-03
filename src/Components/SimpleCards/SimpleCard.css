@@ -5,6 +5,11 @@
     
 }
 
+.card_img1,
+.eng-para2{
+    cursor:pointer;
+}
+
 /* .engineer_card {
     margin-bottom: 20px;
 } */

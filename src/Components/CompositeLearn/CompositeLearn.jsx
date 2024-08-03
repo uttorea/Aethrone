@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CompositeLearn.css";
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 import CompositeLearnImg from "../../Components/CompositeLearn/CompositeLearnImg";
 import SimpleCard from "../../Components/SimpleCards/SimpleCard";
+import Popup from "../../Components/popup/Popup";
 
 const CompositeLearn = () => {
+  const [isPopupVisible, setPopupVisible] = useState(false);
+  const [selectedSystem, setSelectedSystem] = useState('');
+
+  const togglePopup = (system = '') => {
+    setSelectedSystem(system);
+    setPopupVisible(!isPopupVisible);
+  };
+
   return (
     <div>
       <div className="container mt-5">
@@ -19,6 +28,12 @@ const CompositeLearn = () => {
           responsiveCardWidths={{ 0: "120px", 1: "120px", 2: "120px" }}
           responsiveImgHeights={{ 0: '100px', 1: '100px', 2: '100px' }}
           responsiveImgWidths={{ 0: '100px', 1: '100px', 2: '100px' }}
+          togglePopup={togglePopup}
+        />
+        <Popup 
+          togglePopup={togglePopup} 
+          isPopupVisible={isPopupVisible} 
+          selectedSystem={selectedSystem} 
         />
       </div>
     </div>
@@ -26,4 +41,3 @@ const CompositeLearn = () => {
 };
 
 export default CompositeLearn;
-``

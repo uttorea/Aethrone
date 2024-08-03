@@ -43,14 +43,25 @@ const SimpleCard = ({
                 return (
                     <div className="engineer_card" key={index} style={{ height: cardHeight, width: cardWidth }}>
                         <div className="eng-card rounded-2 mb-3" style={{ height: '100%', width: '100%' }}>
-                            <div className="card-body1 no-padding d-flex justify-content-center align-items-center" style={{ height: `calc(${cardHeight} - 63.25px)`, width: '100%' }}>
-                                <img src={card.img} className="card_img1 rounded-top" alt={card.alt} style={{ height: imgHeight, width: imgWidth }} />
+                            <div 
+                                className="card-body1 no-padding d-flex justify-content-center align-items-center" 
+                                style={{ height: `calc(${cardHeight} - 63.25px)`, width: '100%' }}
+                                onClick={() => togglePopup(card.footer)} // Add onClick here
+                            >
+                                <img 
+                                    src={card.img} 
+                                    className="card_img1 rounded-top" 
+                                    alt={card.alt} 
+                                    style={{ height: imgHeight, width: imgWidth }}
+                                    onClick={() => togglePopup(card.footer)} // Add onClick here
+                                />
                             </div>
                             <div 
                                 className="card-footer eng-para2 fontsecondry text-center fontfamilySecondary fw-bold maincolor"
                                 style={{ whiteSpace: 'normal' }} // Ensure line breaks are respected
                                 dangerouslySetInnerHTML={{ __html: card.footer }}
-                                onClick={() => togglePopup(card.footer)}>
+                                onClick={() => togglePopup(card.footer)} // Add onClick here
+                            >
                             </div>
                         </div>
                     </div>
