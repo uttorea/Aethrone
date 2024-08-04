@@ -1,96 +1,105 @@
+/* DiagonalCard.css */
 .gap-1 {
-  gap: 0.25rem; /* Adjust the gap value as needed */
-}
-
-.gap-5 {
-  gap: 1.25rem; /* Adjust the gap value as needed */
-}
-
-.d_card {
-  border: 2px solid #3535de;
-  position: relative; /* Ensure absolute positioning is relative to the card */
-  overflow: hidden; /* Prevent content from overflowing */
-}
-
-.d_card_img {
-  width: 100%;
-  height: 100%;
-}
-
-.dcard-body {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-.d_card-title {
-  font-size: 24px;
-  margin: 0; /* Remove default margin */
-}
-
-.d_card-text {
-  margin: 0; /* Remove default margin */
-}
-
-.dseperator1 {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  transition: 0.9s;
-  border-right: 100vw solid transparent;
-  border-bottom: 13.9vw solid #3535de;
-}
-
-.dseperator {
-  position: absolute;
-  width: 0px;
-  height: 0px;
-  transition: 0.9s;
-  border-right: 100vw solid transparent;
-  border-bottom: 13.9vw solid white;
-}
-
-.d_card-list {
-  border-top: 2px dashed #3535de;
-  list-style-type: disc;
-  padding-left: 30px; /* Adjust padding to show bullets */
-  font-size: 18px;
-  text-align: left; /* Override text alignment for list items */
-  width: 100%; /* Ensure the list takes the full width */
-}
-
-.d_card-list li {
-  margin-bottom: 5px;
-  font-size: 18px;
-}
-
-.d_card-extra-text {
-  border-top: 2px solid #3535DE;
-}
-
-@media only screen and (max-width: 425px) {
+    gap: 0.25rem; /* Adjust the gap value as needed */
+  }
+  
+  .gap-5 {
+    gap: 1.25rem; /* Adjust the gap value as needed */
+  }
+  
+  .d_card {
+    /* width: 251.25px;
+    height: 387px; */
+    border: 2px solid #3535de;
+    position: relative; /* Ensure absolute positioning is relative to the card */
+    overflow: hidden; /* Prevent content from overflowing */
+  }
+  
   .d_card_img {
     width: 100%;
-    height: 135px;
+    height: 100%;
   }
-  /* .d_card {
-    width: 251.25px;
-    height: 230px;
-  } */
+  
+  .dcard-body {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
   .d_card-title {
-    font-size: 12px;
+    font-size: 24px;
+    margin: 0; /* Remove default margin */
   }
-  .daigonal_container {
-    width: 98%;
-    margin-left: auto;
-    margin-right: auto;
+  
+  .d_card-text {
+    margin: 0; /* Remove default margin */
   }
-  .d_card-list li {
-    margin-bottom: 0px;
-    font-size: 8px;
+  
+  .dseperator1 {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    transition: 0.9s;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid #3535de;
   }
+  
+  .dseperator {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    transition: 0.9s;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid white;
+  }
+  
   .d_card-list {
-    padding-left: 10px; /* Adjust padding to show bullets */
+    border-top: 2px dashed #3535de;
+    list-style-type: disc;
+    padding-left: 30px; /* Adjust padding to show bullets */
+    font-size: 18px;
+    text-align: left; /* Override text alignment for list items */
+    width: 100%; /* Ensure the list takes the full width */
   }
-}
+  
+  .d_card-list li {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  .d_card-extra-text{
+    border-top:2px solid #3535DE;
+  }
+  
+  @media only screen and (max-width: 425px) {
+    .d_card_img {
+      width: 100%;
+      height: 135px;
+    }
+    .d_card {
+      width: 251.25px;
+      height: 230px;
+    }
+    .d_card-title{
+        font-size:12px;
+    }
+    .daigonal_container{
+        width:98%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .d_card-list li {
+      margin-bottom: 0px;
+      font-size: 8px;
+    }
+    .d_card-list {
+     
+      padding-left: 10px; /* Adjust padding to show bullets */
+      
+    }
+    /* .d_card-extra-text{
+      height:70px;
+    } */
+    
+  }
+  
