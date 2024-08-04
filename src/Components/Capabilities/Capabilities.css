@@ -143,13 +143,16 @@
         height: 40px;
         transition: all 2s ease-in-out;
     }
+    .cardimg{
+        height:200px;
+    }
 
     .card_title {
         font-size: 16px;
     }
 
     .cap_card:hover .card_title {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     .cap_card:hover .capability_img {
@@ -162,6 +165,11 @@
         height: 20px;
     }
 
+    .cap_card:hover .aps {
+       
+        margin-top:0px;
+        
+    }
     .cap_card:hover .card-title-img {
         flex-direction: row; /* Ensure row layout on smaller screens */
         align-items: center;

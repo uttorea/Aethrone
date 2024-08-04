@@ -23,7 +23,7 @@ const SoarWithConfidance = () => {
       <div className="mt-5 d-flex">
         <div className="col-md-5 col-5 mt-5 mt-md-0">
           <div className="soarwith rounded mt-5 mt-md-0 ">
-            <img src={img} alt="" />
+            <img src={img} alt="" className="soarwith"/>
           </div>
         </div>
         <div className="col-1 "></div>

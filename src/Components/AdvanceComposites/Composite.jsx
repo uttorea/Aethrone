@@ -34,7 +34,10 @@ const Composite = () => {
                     </div>
                 </div>
             </div>
+            <div className='mt-5 mt-md-0'>
+
             <CompositeCapability />
+            </div>
             <Industry />
             <IndustyWork />
             <CompositeLearn />

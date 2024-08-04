@@ -58,7 +58,7 @@ const LauncherRecovery = () => {
                   <li>Airbag Based Land Recovery</li>
                   <li>Airbag Based Sea Recovery</li>
                 </ul>
-                <a href="" className="btn px-5 border-dark explore-launcher  backgroundcolormain px-4 text-white ">
+                <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-4 text-white ">
                   Explore Recovery System <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -76,7 +76,7 @@ const LauncherRecovery = () => {
           
           />
           <div className=" fontfamilyPrimary lunch-footer p-0 w-100">
-            <h6 className="maincolor fontsecondry fontfamilyPrimary lanchtext ps-5 ">
+            <h6 className="maincolor fontsecondry fontfamilyPrimary lanchtext ps-2 ps-md-5 ">
               {launcher.title.split(" ").slice(0, 2).join(" ")} <br />
               {launcher.title.split(" ").slice(2).join(" ")}
             </h6>

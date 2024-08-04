@@ -19,15 +19,15 @@ const Discover = () => {
       <div className="discover">
         <img src={img1} alt="" className="ddimage_main" />
         <div className="discover_main">
-          <div className=" dis p-md-4 p-2 ms-2 ms-md-0">
-            <div className="d-block d-md-flex col-12">
+          <div className=" dis p-md-4 p-2 ">
+            <div className="d-block d-md-flex  col-12">
               
               <div className="col-12 col-md-4">
                 <HeadingComponent
                   heading="Precision Manufacturing"
                   subheading="From concept to product to certification"
                 />
-                <div className="mt-3 mt-md-5 fontsecondry fontweight fontfamilysecondary letterSpacing">                
+                <div className="mt-1 mt-md-5 fontsecondry fontweight fontfamilysecondary letterSpacing">                
                 <p>Send us your Design files.</p>
                 <p>Receive Quotes within 24 hours.</p>
                 <p>Get your precision parts shipped.</p>

@@ -40,11 +40,11 @@ const KeyTechno = () => {
             4: "200px",
           }}
           responsiveCardWidths={{
-            0: "100px",
-            1: "100px",
-            2: "100px",
-            3: "100px",
-            4: "100px",
+            0: "70px",
+            1: "60px",
+            2: "65px",
+            3: "70px",
+            4: "80px",
           }}
           responsiveImgHeights={{
             0: "50px",
@@ -55,10 +55,10 @@ const KeyTechno = () => {
           }}
           responsiveImgWidths={{
             0: "50px",
-            1: "60px",
-            2: "60px",
-            3: "60px",
-            4: "60px",
+            1: "50px",
+            2: "50px",
+            3: "50px",
+            4: "50px",
           }}
         />
 </div>

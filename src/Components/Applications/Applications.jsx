@@ -19,7 +19,7 @@ const Applications = () => {
 
             <h3 className="civi fontfamilySecondary maincolor">Civilian</h3>
             </div>
-            <ul className="civil_ul fontsecondry fontfamilySecondary fontweight ps-2 ps-md-5">
+            <ul className="civil_ul fontsecondry fontfamilySecondary fontweight ps-4 ps-md-5">
               <li className="mt-3">Surveillance</li>
               <li>Mapping</li>
               <li>Delivery</li>
@@ -35,7 +35,7 @@ const Applications = () => {
 
             <h3 className="civi fontfamilySecondary maincolor">Military</h3>
             </div>
-            <ul className="civil_ul fontsecondry fontfamilySecondary fontweight ps-2 ps-md-5">
+            <ul className="civil_ul fontsecondry fontfamilySecondary fontweight ps-4 ps-md-5">
               <li className="mt-3">Aerial Targets</li>
               <li>Recovery Equipped Missiles</li>
               <li>Loitering Munition</li>

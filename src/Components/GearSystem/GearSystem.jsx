@@ -15,7 +15,7 @@ const advantages = [
 
 const GearSystem = () => {
   return (
-    <div className="mt-5 position-relative">
+    <div className="mt-5 position-relative gear_system">
       <img src={gearSystemImg} alt="Gear System" className="gearImg w-100" />
       <div className="container">
         <div className="gearCard ">

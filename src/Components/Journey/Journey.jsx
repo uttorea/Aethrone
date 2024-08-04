@@ -103,14 +103,14 @@ const Journey = () => {
               >
                 <span className="quote maincolor">
                   {" "}
-                  <img src={qu1} alt="" />{" "}
+                  <img src={qu1} alt="" className="quoteimg"/>{" "}
                 </span>
-                <h4 className=" composit_owner px-5">
+                <h4 className=" composit_owner px-3 px-md-5">
                   We At Aethrone Aerospace Aspire To Be Creative Thinkers,
                   Dynamic In Our Workspace, Durable In Our Products And Vouch
                   For Perfection To Make Machines Fly{" "}
                   <span className="quote maincolor">
-                    <img src={qu2} alt="" className="mt-4 px-2" />
+                    <img src={qu2} alt="" className="mt-3 mt-md-4 px-0 px-md-2 quoteimg" />
                   </span>
                 </h4>
               </div>

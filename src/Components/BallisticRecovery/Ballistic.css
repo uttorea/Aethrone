@@ -17,28 +17,6 @@
 }
 
 
-/* .ballistic_body1{
-    width: 0;
-    height: 54%;
-    border-left: 328px solid #3535DE;
-    border-top: 70px solid transparent;
-    position: absolute;
-    top: 162px;
-    border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ;
-} */
-
-/* .ballistic_body2{
-    width: 0;
-    height: 51.3%;
-    border-left: 328px  solid white;
-    border-top: 70px solid transparent;
-    position: absolute;
-    top: 170px;
-    border-bottom-left-radius:5px ;
-    border-bottom-right-radius:5px ;
-} */
-
 
 @media only screen and (max-width:425px){
     .imgbalstic{

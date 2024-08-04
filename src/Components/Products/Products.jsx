@@ -47,8 +47,8 @@ function Products() {
                   <img 
                     src={product.img} 
                     alt={product.title} 
-                    className="product_img" 
-                    style={product.id === 1 ? { marginTop: '-80px' } : {}} // Apply margin only to the product with id: 1
+                   
+                    className={`product_img ${product.id === 1 ? "product_img_special" : ""}`} // Apply margin only to the product with id: 1
                   />
                   <div className="seperator1"></div>
                   <div className="seperator"></div>

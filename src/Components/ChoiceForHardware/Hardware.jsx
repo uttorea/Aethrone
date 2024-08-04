@@ -62,21 +62,19 @@ const hardwareData = [
     imgSrc: hardwareimg1,
     title: "Dedicated Engineering Expertise",
     index: 1,
-    titleStyle: { left: '45px' }
+    titleClass: "title-position-1"
   },
   {
     imgSrc: hardwareimg2,
     title: "Uncompromising Quality",
     index: 2,
-    titleStyle: { left: '80px' }
-
+    titleClass: "title-position-2"
   },
   {
     imgSrc: hardwareimg3,
     title: "On-Time Delivery and Project Management",
     index: 3,
-    titleStyle: { left: '20px' }
-
+    titleClass: "title-position-3"
   }
 ];
 
@@ -169,7 +167,7 @@ const Hardware = () => {
                   <div className="hardware_card">
                     <div className="card border-primary border-2 col hardwarecardimg">
                       <img src={item.imgSrc} className="hardware_img rounded" alt="..." onClick={() => handleImageClick(item.index)} />
-                      <div className="hardware_card_items text-center" style={item.titleStyle}>
+                      <div className={`hardware_card_items text-center ${item.titleClass}`}>
                         <img
                           src={hardwareimg4}
                           className="hardware_img21"

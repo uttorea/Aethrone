@@ -63,3 +63,21 @@
   background-color: white;
   z-index: 1;
 }
+
+@media only screen and (max-width:425px){
+  .build-spacification {
+    font-size:26px;
+    
+    margin-top:140px;
+  }
+  .img-fluid_composite {
+    width: 80px;
+    height: 100px;
+  }
+  .composite_card {
+    width: 130.5px;
+    height: 170px;
+   
+  }
+
+}

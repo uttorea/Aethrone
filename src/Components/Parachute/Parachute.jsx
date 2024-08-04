@@ -28,7 +28,7 @@ const Parachute = () => {
                 <HeadingComponent heading="Product Development"/>
                 <div className=" bg-transparent border-0 mt-md-3  mt-0 col-12 gap-5">
                   <div
-                    className="prachut-card rounded col-11 col-md-11 px-5 py-3 "
+                    className="prachut-card rounded col-11 col-md-11 px-1 px-md-5 py-2 py-md-3 "
                     
                   >
                     <p className=" p-md-4 p-2 fontweight fontsecondry we-specialize letterSpacing">
@@ -40,15 +40,15 @@ const Parachute = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-sm-6 p-0  ">
+              <div className="col-sm-6 p-0  mt-3 mt-md-0 ">
                
                 <HeadingComponent heading="Technical Approach"/>
                 <div className=" bg-transparent border-0 mt-1 mt-md-3 rounded col-12">
                   <div
-                    className="prachut-card col-md-12 px-5 py-3 col-11 rounded"
+                    className="prachut-card col-md-12 px-1 px-md-5 py-2 py-md-3 col-11 rounded"
                     
                   >
-                    <p className="fontsecondry fontweight p-md-3 p-2 letterSpacing">
+                    <p className="fontsecondry fontweight p-md-3 p-2  we-specialize  letterSpacing">
                       Our strategy employs in-house Aerodynamic-Structural
                       Design, Analysis, and Optimization techniques, including
                       Computational Fluid Dynamics and Computer Aided Design. We

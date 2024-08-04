@@ -42,7 +42,7 @@ const FixedUAV = () => {
                             <div className="col" key={index}>
                                 <div className="card bg-transparent border-0 ">
                                     <img src={uav.img} className="fixed_card_img" alt={uav.title} />
-                                    <div className="card-body text-light ">
+                                    <div className="card-body text-light  m-0 p-0">
                                         <h6 className="text-center uav fontsecondry fontfamilySecondary mt-md-0 mt-1">
                                             {uav.title}
                                         </h6>

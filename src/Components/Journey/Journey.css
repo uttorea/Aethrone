@@ -117,6 +117,27 @@
     .ourjourney{
       font-size:18px;
      }
+    
+     .coname , .composit_owner{
+      font-size:18px;
+
+     }
+     .co-sub_name{
+      font-size:16px;
+      margin-left:10px;
+     }
+     
+      .co-founder_main{
+        margin-left:0px;
+       }
+       .cofounder{
+        width:80%;
+       }
+       .quoteimg{
+        width:20px;
+        height:20px;
+       }
+     
    
       .timeline-item {   
         margin: 0 8px;  

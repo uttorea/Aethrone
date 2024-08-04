@@ -10,11 +10,14 @@
 
 @media only screen and (max-width:425px){
     .gearImg{
-        height:100vh;
+        height:78vh;
     }
     .gearCard{
        width:85%;
         top: 50px;
         left: 40px;
+    }
+    .gear_system{
+        height:90vh;
     }
 }

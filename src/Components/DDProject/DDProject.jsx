@@ -74,13 +74,13 @@ const DDProject = () => {
 
           <Heading heading="Projects"  />
           </div>
-          <p className="fontsecondry ms-2 ms-md-0">
+          <p className="fontsecondry ms-2 ms-md-0 col-11">
             We have actualized projects in Aerospace, defence and UAV verticals
             which extends from engineering analysis to certifying of the sub
             system.
           </p>
 
-          <div className="row row-cols-3 row-cols-md-3 g-2 g-md-4 ms-1 ms-md-0 ">
+          <div className="row row-cols-3 row-cols-md-3 g-2 g-md-4 ms-0 ms-md-0 ">
             {projectData.map((project, index) => (
               <div className="col px-md-3 px-1  " key={index}>
                 <div className=" rounded-2  p-1 p-md-4 ddprojectcard">
@@ -102,10 +102,10 @@ const DDProject = () => {
               </div>
             ))}
           </div>
-          <h6 className="mt-5 fontsecondry ms-1 ms-md-0">
+          <h6 className="mt-5 fontsecondry ms-1 ms-md-0 col-11">
             This engineering vertical is based on below principals
           </h6>
-          <div className="row row-cols-3 row-cols-md-3 g-4 mt-1 ms-1 ms-md-0 ">
+          <div className="row row-cols-3 row-cols-md-3 g-4 mt-1 ms-0 ms-md-0 ">
             {principalData.map((principal, index) => (
               <div className="col px-1 px-md-3 " key={index}>
                 <div className=" rounded-2 p-1  cardddproject">

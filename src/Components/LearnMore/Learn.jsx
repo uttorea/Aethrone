@@ -35,9 +35,9 @@ const Learn = () => {
             <div className="row row-cols-2 row-cols-md-2 g-md-5 g-0 p-md-5 p-2 ms-2 ms-md-5 learn-card">
                 {learnData.map((item, index) => (
                     <div className="col" key={index} onClick={() => handleCardClick(item.title)}>
-                        <div className="card col-10 larn-more-card ms-5">
-                            <img src={item.imgSrc} className="learn_imgs mx-auto mt-5" alt="..." />
-                            <div className="mt-5 larn-more-card-1">
+                        <div className="card col-10 larn-more-card ms-0 ms-md-5">
+                            <img src={item.imgSrc} className="learn_imgs mx-auto mt-4 mt-md-5" alt="..." />
+                            <div className="mt-3 mt-md-5 larn-more-card-1">
                                 <h6 className="text-center maincolor fontsecondry fontfamilySecondary p-2">{item.title}</h6>
                             </div>
                         </div>

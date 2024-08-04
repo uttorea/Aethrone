@@ -27,5 +27,11 @@
   .learn_imgs {
     height: 100px;
     width: 120px;
+    margin-bottom:10px;
+  }
+  .larn-more-card {
+   
+    height:200px;
+    width:150px;
   }
 }

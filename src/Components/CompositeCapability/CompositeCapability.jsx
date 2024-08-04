@@ -112,10 +112,10 @@ const CompositeCapability = () => {
       <div className="composite_main">
         <div className="container ">
           <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
-          <div className="row p-3 mt-5 myrow gap-5">
+          <div className="row p-0 p-md-3 mt-5 myrow gap-5">
             {items.map((item, index) => (
               <div
-                className={`col-md-12 card-container ${
+                className={`col-md-12 card-container p-0 p-md-3 ${
                   index === currentIndex ? "visible" : "hidden"
                 }`}
                 key={index}
@@ -144,7 +144,7 @@ const CompositeCapability = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="fontsecondary py-5">{item.description}</div>
+                  <div className="fontsecondary py-2 py-md-5">{item.description}</div>
                 </div>
               </div>
             ))}
