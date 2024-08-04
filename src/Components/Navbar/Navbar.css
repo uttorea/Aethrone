@@ -68,8 +68,8 @@
     position: absolute;
     top: 52px;
     right: 0;
-    width: 70%;
-    background-color: white;
+    width: 90%;
+    /* background-color: black; */
     border-top: 1px solid #414042;
     z-index: 2;
   }

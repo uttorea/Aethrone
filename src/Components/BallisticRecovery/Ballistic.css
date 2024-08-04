@@ -1,32 +1,29 @@
-.ballistic_page{
+/* Ballistic.css */
+.ballistic_page {
     position: relative;
-    margin-top:-100px;
-    width:100%;
-}
-.imgbalstic{
-    width:100%;
-    height:250vh;
-    object-fit:cover;
+    margin-top: -100px;
+    width: 100%;
 }
 
+.imgbalstic {
+    width: 100%;
+    height: 250vh;
+    object-fit: cover;
+}
 
-
-.ballistic_content{
-    position:absolute;
+.ballistic_content {
+    position: absolute;
     top: 100px;
 }
 
-
-
-@media only screen and (max-width:425px){
-    .imgbalstic{
-        width:100%;
-        height:200vh;
-        object-fit:cover;
+@media only screen and (max-width: 425px) {
+    .imgbalstic {
+        width: 100%;
+        height: 200vh;
+        object-fit: cover;
     }
-    .ballistic_page{
-       width:100%;
-       height:auto;
+    .ballistic_page {
+        width: 100%;
+        height: auto;
     }
-    
 }

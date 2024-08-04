@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Poor Richard';
+  src: url('fonts/PoorRichard.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Poor Richard', 'Times New Roman', serif;
+}
+
 
 
 

@@ -1,6 +1,6 @@
-import ballisticImg1 from '../../assets/ballisticImg1.png'
-import ballisticImg2 from '../../assets/ballisticImg2.png'
-import ballisticImg3 from '../../assets/ballisticImg3.png'
+import ballisticImg1 from '../../assets/ballisticImg1.png';
+import ballisticImg2 from '../../assets/ballisticImg2.png';
+import ballisticImg3 from '../../assets/ballisticImg3.png';
 
 const cards = [
     {
@@ -42,5 +42,6 @@ const cards = [
         smallMarginTop: "25px",
         smallMarginLeft: "15px",
     },
-]
+];
+
 export default cards;

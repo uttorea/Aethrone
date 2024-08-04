@@ -10,13 +10,13 @@ const DiagonalCard = ({
   smallSeparatorTop1 = "120px",
   smallSeparatorTop2 = "130px",
   smallCardTop = "150px",
-  defaultCardWidth = "251.25px", // Default width
-  defaultCardHeight = "387px",   // Default height
-  smallCardWidth = "251.5px", // Width for small screens
-  smallCardHeight = "220px", // Height for small screens
-  isLargeSize = false,     // Optional condition to override default dimensions
-  centerText = false,      // Prop to determine text alignment
-  bgColor = "transparent"  // Prop to set background color for the entire card
+  defaultCardWidth = "349.5px",
+  defaultCardHeight = "453px",
+  smallCardWidth = "110px",
+  smallCardHeight = "200px",
+  isLargeSize = false,
+  centerText = false,
+  bgColor = "transparent"
 }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [cardWidth, setCardWidth] = useState(defaultCardWidth);
@@ -24,22 +24,23 @@ const DiagonalCard = ({
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-      if (window.innerWidth < 425) {
+      const width = window.innerWidth;
+      setWindowWidth(width);
+
+      if (width < 425) {
         setCardWidth(smallCardWidth);
         setCardHeight(smallCardHeight);
       } else {
-        setCardWidth(isLargeSize ? "300px" : defaultCardWidth);
-        setCardHeight(isLargeSize ? "400px" : defaultCardHeight);
+        setCardWidth(defaultCardWidth);
+        setCardHeight(defaultCardHeight);
       }
     };
 
     handleResize(); // Call it once to set initial values
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [defaultCardWidth, defaultCardHeight, isLargeSize, smallCardWidth, smallCardHeight]);
+  }, [defaultCardWidth, defaultCardHeight, smallCardWidth, smallCardHeight]);
 
-  // Determine the gap class based on the number of cards and window width
   const gapClass = windowWidth < 425 ? "gap-1" : (cards.length === 5 ? "gap-3" : "gap-5");
 
   return (
@@ -51,7 +52,7 @@ const DiagonalCard = ({
           style={{ 
             width: cardWidth, 
             height: cardHeight,
-            backgroundColor: bgColor // Apply the background color here
+            backgroundColor: bgColor
           }}
         >
           <div
@@ -91,7 +92,7 @@ const DiagonalCard = ({
               {card.title}
             </h5>
             {Array.isArray(card.text) ? (
-              <ul className="d_card-list mt-3 py-1 ps-3">
+              <ul className="d_card-list mt-3 mt-md-4 py-1 ps-3 ps-md-5">
                 {card.text.map((item, idx) => (
                   <li key={idx} className="mb-0 mb-md-2">
                     {item}
@@ -104,7 +105,7 @@ const DiagonalCard = ({
               </p>
             ) : null}
             {card.extraText && (
-              <p className="d_card-extra-text py-md-2 py-0 maincolor fw-bold  text-center fontsecondry fontfamilySecondary px-2">
+              <p className="d_card-extra-text py-md-2 py-0 maincolor fw-bold text-center fontsecondry fontfamilySecondary px-2">
                 {card.extraText} <i className="bi bi-arrow-right-short"></i>
               </p>
             )}
