@@ -1,0 +1,92 @@
+.ballastic_head {
+  position: relative;
+}
+
+.ballastic_card img {
+  transition: 0.5s;
+  object-fit: cover;
+  display: block;
+  margin: auto; /* Centering the image */
+}
+
+.ballastic_card_main {
+  width: 350px;
+  height: 453px;
+}
+.ball_card_main {
+  gap: 60px;
+}
+
+.introduction {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  position: absolute;
+  color: black;
+  bottom: 0px;
+  transition: 0.9s;
+  overflow: hidden;
+}
+
+.ballasticseperator1 {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 210px;
+  transition: 0.9s;
+  border-right: 100vw solid transparent;
+  border-bottom: 13.9vw solid #3535de;
+}
+
+.ballasticseperator {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  top: 220px;
+  transition: 0.9s;
+  border-right: 100vw solid transparent;
+  border-bottom: 13.9vw solid white;
+}
+.btext {
+  font-size: 24px;
+}
+.listitems-ballastic {
+  width: 100%;
+  border-top: 1px dashed #3535de;
+}
+
+@media only screen and (max-width: 450px) {
+  .ballastic_head {
+    position: relative;
+    width: 100%;
+  }
+
+  .ballastic_card_main {
+    width: 105px;
+    height: 280px;
+  }
+
+  .introduction {
+    height: 150px;
+  }
+
+  .ballasticseperator1 {
+    top: 100px;
+    border-bottom: 13.9vw solid #3535de;
+  }
+
+  .ballasticseperator {
+    top: 105px;
+    border-bottom: 13.9vw solid white;
+  }
+
+  .ballastic_img.ballastic_img_special {
+    /* margin-top: -20px; */
+  }
+  .ball_card_main {
+    gap: 25px;
+  }
+  .btext {
+    font-size: 14px;
+  }
+}
