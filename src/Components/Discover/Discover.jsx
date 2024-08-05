@@ -22,10 +22,10 @@ const Discover = () => {
           <div className=" dis p-md-4 p-2 ">
             <div className="d-block d-md-flex  col-12">
               
-              <div className="col-12 col-md-4">
+              <div className="col-12 col-md-5">
                 <HeadingComponent
                   heading="Precision Manufacturing"
-                  subheading="From concept to product to certification"
+                  // subheading="From concept to product to certification"
                 />
                 <div className="mt-1 mt-md-5 fontsecondry fontweight fontfamilysecondary letterSpacing">                
                 <p>Send us your Design files.</p>
@@ -38,11 +38,11 @@ const Discover = () => {
                 </div>
               </div>
 
-              <div className="col-12 col-md-8 g-5 d-flex py-md-5 px-md-3  p-0 mt-5 mt-md-0">
+              <div className="col-12 col-md-7 g-5 d-flex py-md-5 px-md-3  p-0 mt-5 mt-md-0">
                 {items.map((item, index) => (
                   <div className="col-4 px-2" key={index}>
                     <img src={item.img} alt={item.text} className="img_dis"/>
-                    <p className="px-md-3 px-0 text-center fontsecondry fw-bold fontfamilysecondary letterSpacing">{item.text}</p>
+                    <p className="px-md-3 px-0 text-center fontsecondry fw-md-bold  fontfamilysecondary letterSpacing">{item.text}</p>
                   </div>
                 ))}
               </div>

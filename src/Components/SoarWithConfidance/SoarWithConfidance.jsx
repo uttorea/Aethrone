@@ -36,8 +36,8 @@ const SoarWithConfidance = () => {
             </p>
             <ul>
               <li>Electric Propulsion</li>
-              <li> Hydrogen Fuel Cells,</li>
-              <li> IC Engines and</li>
+              <li> Hydrogen Fuel Cells</li>
+              <li> IC Engines </li>
               <li> Jet Engines</li>
             </ul>
             <p className="mt-1 mt-md-5">

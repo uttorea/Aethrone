@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Hardware.css';
-import Heading from '../../Components/HeadingComponent/HeadingComponent'
+import Heading from '../../Components/HeadingComponent/HeadingComponent';
 import hardwareimg1 from '../../assets/hardwareimg1.png';
 import hardwareimg2 from '../../assets/hardwareimg2.png';
 import hardwareimg3 from '../../assets/hardwareimg3.png';
@@ -72,7 +72,7 @@ const hardwareData = [
   },
   {
     imgSrc: hardwareimg3,
-    title: "On-Time Delivery and Project Management",
+    title: "On-Time Delivery <br/> and Project Management",
     index: 3,
     titleClass: "title-position-3"
   }
@@ -81,13 +81,13 @@ const hardwareData = [
 const AccordionItem = ({ index, title, content, isActive, onToggle }) => (
   <div className="card hardware-card-in">
     <div
-      className="card-header fw-bold text-primary flex-column justify-content-between   d-flex  py-md-2 px-md-3 px-0 py-0 "
+      className="card-header fw-bold flex-column justify-content-between d-flex py-md-2 px-md-3 px-0 py-0"
       onClick={() => onToggle(index)}
       aria-expanded={isActive}
     >
-      <div className="d-flex justify-content-between ">
-        <span className='hardwareintitle'>{title}</span>
-        <img src={hardwareimg4} className={`hardware_img2 ${isActive ? 'rotate' : ''} `} alt="Hardware Icon" />
+      <div className="d-flex justify-content-between">
+        <span className='hardwareintitle fontfamilySecondary maincolor'>{title}</span>
+        <img src={hardwareimg4} className={`hardware_img2 ${isActive ? 'rotate' : ''}`} alt="Hardware Icon" />
       </div>
       <span className={`accordion-icon ${isActive ? 'active' : ''}`}>
       </span>
@@ -165,7 +165,7 @@ const Hardware = () => {
               {hardwareData.map(item => (
                 <div className="col" key={item.index}>
                   <div className="hardware_card">
-                    <div className="card border-primary border-2 col hardwarecardimg">
+                    <div className="card hardwarecardimg">
                       <img src={item.imgSrc} className="hardware_img rounded" alt="..." onClick={() => handleImageClick(item.index)} />
                       <div className={`hardware_card_items text-center ${item.titleClass}`}>
                         <img
@@ -174,7 +174,11 @@ const Hardware = () => {
                           alt="..."
                           onClick={() => handleImageClick(item.index)}
                         />
-                        <h5 onClick={() => handleImageClick(item.index)} className='hardware-card-tile'>{item.title}</h5>
+                        <h5
+                          onClick={() => handleImageClick(item.index)}
+                          className='hardware-card-tile fw-bold fontfamilySecondary fontsecondry'
+                          dangerouslySetInnerHTML={{ __html: item.title }}
+                        />
                       </div>
                     </div>
                   </div>

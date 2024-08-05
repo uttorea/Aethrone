@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg"; // Original logo
 import changeLogo from "../../assets/changeLogo.png"; // New logo
 import logo1 from "../../assets/logo1.png";
-import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
@@ -23,7 +23,7 @@ const Navbar = () => {
         setTextColor("text-dark");
         setLogoSrc(changeLogo);
         setBorderTop("3px solid white"); // Correct value for border-top
-        setLogoWidth("210px"); // Change the width when scrolling past 400px
+        setLogoWidth("210px"); // Change the width when scrolling past 300px
       } else {
         setNavBackground("");
         setTextColor("text-light");
@@ -58,12 +58,14 @@ const Navbar = () => {
       <div className="container d-flex align-items-center justify-content-between p-0 pe-3">
         {isMobile ? (
           <>
-            <img
-              style={{ width: "135px", marginLeft: "-30px", marginTop: "-3px" }}
-              src={logo1}
-              alt="Logo"
-              className="logo_img ps-3"
-            />
+            <Link to="/">
+              <img
+                style={{ width: "135px", marginLeft: "-30px", marginTop: "-3px" }}
+                src={logo1}
+                alt="Logo"
+                className="logo_img ps-3"
+              />
+            </Link>
             <button
               className="navbar-toggler bg-white"
               type="button"
@@ -100,7 +102,6 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/precision-manufacturing">
                     Precision Manufacturing
                   </Link>
-                 
                 </div>
               </div>
               <div className="nav-item dropdown">
@@ -132,17 +133,19 @@ const Navbar = () => {
                     Advance Composites
                   </Link>
                   <Link className="dropdown-item" to="/aerial-robotics ">
-                  Aerial Robotics 
+                    Aerial Robotics 
                   </Link>
                 </div>
               </div>
             </div>
-            <img
-              style={{ width: logoWidth }}
-              src={logoSrc}
-              alt="Logo"
-              className="logo_img centered-logo"
-            />
+            <Link to="/">
+              <img
+                style={{ width: logoWidth }}
+                src={logoSrc}
+                alt="Logo"
+                className="logo_img centered-logo"
+              />
+            </Link>
             <div className="d-flex flex-row justify-content-end align-items-center gap-5 ">
               <Link className={`nav-item nav-link ${textColor}`} to="/career">
                 Career
@@ -188,7 +191,6 @@ const Navbar = () => {
                 <Link className="dropdown-item" to="/precision-manufacturing">
                   Precision Manufacturing
                 </Link>
-              
               </div>
             </div>
             <div className="nav-item dropdown">
@@ -218,7 +220,7 @@ const Navbar = () => {
                 </Link>
                 <Link className="dropdown-item" to="/aerial-robotics">
                   Aerial Robotics 
-                 </Link>
+                </Link>
               </div>
             </div>
             <Link className={`nav-item nav-link ${textColor}`} to="/career">

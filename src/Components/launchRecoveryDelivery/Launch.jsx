@@ -21,12 +21,12 @@ const Launch = () => {
               <HeadingComponent heading="What We Do"/>
               <h3 className="lrdimg_para1 mt-md-3 mt-2 px-2"></h3>
               <div className="lrdimg_para2 p-md-5 p-2   rounded mt-3 me-2 me-md-0">
-                <p className="lrdimg_para2 px-md-4 px-2">
+                <p className="fontsecondry letterSpacing px-md-4 px-2">
                   We design and manufacture end-to-end solutions for launch and
                   recovery/delivery of UAVs and Lighter Than Air
                   <br /> Systems.
                 </p>
-                <p className="lrdimg_para2 px-md-4 px-2">
+                <p className="fontsecondry letterSpacing px-md-4 px-2">
                   Our products are aerospace/military grade, having undergone
                   extensive testing and qualification for environmental
                   <br /> conditions, operational vibrations, shock, max
@@ -37,14 +37,14 @@ const Launch = () => {
             </div>
             <div className="launch_btn mt-3 mt-md-5">
               <Link
-                className="btn btn-light  px-md-5 px-1 ms-4 ms-md-0 launch_btn1 maincolor"
+                className="btn btn-light  px-md-5 px-1 ms-4 ms-md-0 launch_btn1 fontfamilySecondary letterSpacing maincolor"
                 to="/delivery-launcher-system"
               >
                 {" "}
                 Launcher System <i className="bi bi-arrow-down"></i>
               </Link>
               <Link
-                className="btn btn-light px-md-5 px-1 mx-md-5 mx-1 launch_btn1 maincolor"
+                className="btn btn-light px-md-5 px-1 mx-md-5 mx-1 launch_btn1 maincolor letterSpacing fontfamilySecondary"
                 to="/launch-recovery-system"
               >
                 {" "}

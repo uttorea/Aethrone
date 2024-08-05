@@ -22,7 +22,7 @@
     transition: all 2s ease-in-out;
 }
 
-.cap_card:hover .card-body-capability {
+.cardimg:hover .card-body-capability {
     flex-direction: column; /* Keep column layout */
     align-items: center;
 }
@@ -37,7 +37,7 @@
     transition: all 2s ease-in-out;
 }
 
-.cap_card:hover .productimg {
+.cardimg:hover .productimg {
     width: 50px;
     height: 50px;
 }
@@ -53,12 +53,12 @@
     justify-content:center;
     align-items:center;
 }
-.cap_card:hover .capability_img {
+.cardimg:hover .capability_img {
     width: 70px;
     height: 70px;
     
 }
-.cap_card:hover .aps {
+.cardimg:hover .aps {
     display:flex;
     flex-direction:row;
     margin-top:-40px;
@@ -77,7 +77,7 @@
     transition: all 2s ease-in-out;
 }
 
-.cap_card:hover .card_title {
+.cardimg:hover .card_title {
     font-size: 24px;
 }
 
@@ -89,7 +89,7 @@
     transition: all 2s ease-in-out;
 }
 
-.cap_card:hover .list-styled {
+.cardimg:hover .list-styled {
     display: flex;
     flex-direction: column; /* Arrange list items in a column */
     /* align-items: center;  */
@@ -98,13 +98,13 @@
     margin-top: 20px; /* Adjust margin to position the list below the images and title */
 }
 
-.cap_card:hover .card-body-capability {
+.cardimg:hover .card-body-capability {
     display: flex;
     flex-direction: column; /* Main flex direction column */
     align-items: center;
 }
 
-.cap_card:hover .card-title-img {
+.cardimg:hover .card-title-img {
     display: flex;
     flex-direction: row; /* Arrange images and title in a row */
     align-items: center;
@@ -123,7 +123,7 @@
         font-size: 9px;
     }
 
-    .cap_card:hover .list-styled {
+    .cardimg:hover .list-styled {
         display: flex;
         flex-direction: column; /* Arrange list items in a column */
         align-items: center; /* Center the list items */
@@ -151,26 +151,26 @@
         font-size: 16px;
     }
 
-    .cap_card:hover .card_title {
+    .cardimg:hover .card_title {
         font-size: 11px;
     }
 
-    .cap_card:hover .capability_img {
+    .cardimg:hover .capability_img {
         width: 20px;
         height: 20px;
     }
 
-    .cap_card:hover .productimg {
+    .cardimg:hover .productimg {
         width: 20px;
         height: 20px;
     }
 
-    .cap_card:hover .aps {
+    .cardimg:hover .aps {
        
         margin-top:0px;
         
     }
-    .cap_card:hover .card-title-img {
+    .cardimg:hover .card-title-img {
         flex-direction: row; /* Ensure row layout on smaller screens */
         align-items: center;
         justify-content: center;

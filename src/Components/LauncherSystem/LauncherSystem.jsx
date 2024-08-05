@@ -43,14 +43,14 @@ const   LauncherSystem = () => {
                 <div className="col">
                     <div className="card border-0">
                         <img src={launcherimg2} className="card-img-top1" alt="..." />
-                        <div className="card-body-launcher fontsecondry px-1 ">
-                            <ul>
+                        <div className="card-body-launcher fontsecondry px-1 ms-4">
+                            <ul className=''>
                                 <li>Land Based Bungee Catapult Launcher </li>
                                 <li>Land Based Pneumatic Catapult Launcher</li>
                                 <li>Land Based Pneumatic Tube Launcher</li>
                                 <li>Air Based Underwing Pylon Pneumatic Carriage and Release</li>
                             </ul>
-                            <a href="" className='btn backgroundcolormain border-dark btn-explore-launch text-white px-3 px-md-5'>Explore Launcher System <i className="bi bi-arrow-right"></i></a>
+                            <a href="" className='btn fontsecondry fontfamilySecondary backgroundcolormain border-dark btn-explore-launch text-white px-3 px-md-5 ms-3'>Explore Launcher System <i className="bi bi-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

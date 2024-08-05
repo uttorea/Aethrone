@@ -2,7 +2,7 @@ import React from "react";
 import "./LauncherRecovery.css";
 import Heading from '../../Components/HeadingComponent/HeadingComponent';
 import launcherimg3 from "../../assets/launcherimg3.png";
-import launcherimg4 from "../../assets/launcherimg4.jpg";
+import launcherimg4 from "../../assets/launcherimg4.png";
 import launcherimg5 from "../../assets/launcherimg5.png";
 import launcherimg9 from "../../assets/launcherimg9.png";
 import launcherimg10 from "../../assets/launcherimg10.png";
@@ -13,20 +13,20 @@ const LauncherRecovery = () => {
       id: 1,
       imgSrc: launcherimg3,
       altText: "Land Based Bungee Catapult Launcher",
-      title: "Land Based Bungee Catapult Launcher",
+      title: "Parachute Based Land Recovery",
     },
     {
       id: 2,
       imgSrc: launcherimg4,
       altText: "Land Based Pneumatic Tube launcher",
-      title: "Land Based Pneumatic Tube launcher",
+      title: "Parachute Based Sea Recovery",
       
     },
     {
       id: 3,
       imgSrc: launcherimg5,
       altText: "Land Based Pneumatic Catapult launcher",
-      title: "Land Based Pneumatic Catapult launcher",
+      title: "Airbag  Inflatable system",
     },
   ];
   return (
@@ -51,14 +51,14 @@ const LauncherRecovery = () => {
           <div className="col">
             <div className="card border-0 ">
               <img src={launcherimg10} className="card-img-top11" alt="..." />
-              <div className="card-bod2 ">
+              <div className="card-bod2 ms-4">
                 <ul className="fontsecondry ">
                   <li>Parachute Based Land Recovery </li>
                   <li>Parachute Based Sea Recovery</li>
                   <li>Airbag Based Land Recovery</li>
                   <li>Airbag Based Sea Recovery</li>
                 </ul>
-                <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-4 text-white ">
+                <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-5 fontfamilySecondary text-white ms-4 ">
                   Explore Recovery System <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
@@ -76,7 +76,7 @@ const LauncherRecovery = () => {
           
           />
           <div className=" fontfamilyPrimary lunch-footer p-0 w-100">
-            <h6 className="maincolor fontsecondry fontfamilyPrimary lanchtext ps-2 ps-md-5 ">
+            <h6 className="maincolor fontsecondry fontfamilyPrimary lanchtext letterSpacing ps-2 ps-md-5 ">
               {launcher.title.split(" ").slice(0, 2).join(" ")} <br />
               {launcher.title.split(" ").slice(2).join(" ")}
             </h6>

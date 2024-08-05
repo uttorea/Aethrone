@@ -2,13 +2,16 @@ import React from 'react'
 import './Internship.css'
 import Button from '../../Components/Button/Button'
 import interimg from '../../assets/internimg.png'
+import HeadingComponent from '../HeadingComponent/HeadingComponent'
 function Internship() {
     return (
         <>
             <div className="inetrnship_page ">
                 <div className="container">
-                    <h4 className='intern_heading fw-bold px-0 px-md-2 m-0'>Open Lap Internships</h4>
-                    <p className='px-0 px-md-3 intern_subheading'>Industrial experience</p>
+                    <HeadingComponent heading='Open Lap Internships' subheading='Industrial experience'/>
+
+                    {/* <h4 className='intern_heading fw-bold px-0 px-md-2 m-0'>Open Lap Internships</h4>
+                    <p className='px-0 px-md-3 intern_subheading'>Industrial experience</p> */}
                     <p className='fontsecondary ps-0 ps-md-2'>At Aethrone Aerospace,we believe in nurturing talent and fostering  innovation. Our open lab internship program offers hands-on experience  to <span className='fw-bold'>engineering students starting from their 6th semester onwards.</span>  Whether it's the summer heat or the winter chill, we welcome interns for  a <span className='text-primary'> duration of 4 to 6 months</span> during both sessions.</p>
                     <div className="row  ">
 

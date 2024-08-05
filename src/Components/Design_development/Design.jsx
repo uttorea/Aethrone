@@ -32,7 +32,7 @@ function Design() {
 
         <div className="container">
           <div className="dd_body">
-            <div className="rounded p-md-5 p-1 pt-3  text-dark bg-opacity-75 design_main_head" >
+            <div className="rounded p-md-4 p-1 pt-3  text-dark bg-opacity-75 design_main_head" >
               <div className="row">
                 <div className="col-sm-5 px-3">
                 <div className="text-white mt-3">
