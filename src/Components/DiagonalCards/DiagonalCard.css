@@ -58,14 +58,14 @@
     border-top: 2px dashed #3535de;
     list-style-type: disc;
     padding-left: 30px; /* Adjust padding to show bullets */
-    font-size: 18px;
+    /* font-size: 18px; */
     text-align: left; /* Override text alignment for list items */
     width: 100%; /* Ensure the list takes the full width */
   }
   
   .d_card-list li {
     margin-bottom: 5px;
-    font-size: 18px;
+    /* font-size: 18px; */
   }
   .d_card-extra-text{
     border-top:2px solid #3535DE;
@@ -81,7 +81,7 @@
       height: 230px;
     }
     .d_card-title{
-        font-size:12px;
+        font-size:14px;
     }
     .daigonal_container{
         width:98%;
@@ -90,7 +90,7 @@
     }
     .d_card-list li {
       margin-bottom: 0px;
-      font-size: 8px;
+      /* font-size: 8px; */
     }
     .d_card-list {
      

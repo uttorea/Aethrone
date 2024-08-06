@@ -40,14 +40,14 @@ const ManuCertification = () => {
   return (
     <div className='container manu-containe'>
       <HeadingComponent heading='Quality & Manufacturing Certifications'/>
-      <div className="row row-cols-4 row-cols-md-4 g-md-4 g-2 mt-2 mt-md-5">
+      <div className="row row-cols-4 row-cols-md-4 g-md-4 g-1 mt-2 mt-md-5">
         {certificateData.map(cert => (
           <div className="col" key={cert.id}>
-            <div className="border rounded  border-dark mainheadmanu">
+            <div className="rounded mainheadmanu">
               <img src={cert.img1} className="manuCertificateImg m-3" alt="..." />
-              <img src={cert.img2} className="m-md-3 m-0 manuCertificateImg2" alt="..." />
-              <div className="card-footer mt-5 border-top border-dark p-0 manuCertifititlehead ">
-                <h6 className="p-md-3 p-0 mt-4 mt-md-0 text-center fontfamilySecondary fontsecondry manuCertifititle">{cert.title}</h6>
+              <img src={cert.img2} className="m-md-2 m-0 manuCertificateImg2" alt="..." />
+              <div className="card-footer mt-5  p-0 manuCertifititlehead ">
+                <h6 className="p-md-3 p-0 mt-2 mt-md-0 text-center fontfamilySecondary fontsecondry manuCertifititle">{cert.title}</h6>
               </div>
             </div>
           </div>

@@ -31,8 +31,12 @@
     .pricioncontainer{
         width:100%;
     }
+    .manufacture_container{
+        width:100%;
+    }
     .manufactureimg{
         height:80vh;
+        width:100%;
     }
     .pre_heading{
         font-size:48px;

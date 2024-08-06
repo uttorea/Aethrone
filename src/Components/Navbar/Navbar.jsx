@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg"; // Original logo
 import changeLogo from "../../assets/changeLogo.png"; // New logo
@@ -15,6 +15,7 @@ const Navbar = () => {
   const [borderTop, setBorderTop] = useState("3px solid #3535DE");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,6 +51,14 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const getNavItemClass = (path) => {
+    return location.pathname === path ? "active" : "";
+  };
+
+  const getDropdownItemClass = (paths) => {
+    return paths.includes(location.pathname) ? "active" : "";
+  };
+
   return (
     <nav
       className={`navbar ${navBackground} fixed-top p-0 navbarmain`}
@@ -77,12 +86,19 @@ const Navbar = () => {
         ) : (
           <>
             <div className="navbar-nav d-flex flex-row align-items-center gap-3 ">
-              <Link className={`nav-item nav-link ${textColor} active`} to="/">
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/")}`}
+                to="/"
+              >
                 Home
               </Link>
               <div className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${textColor}`}
+                  className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                    "/design-development",
+                    "/precision-manufacturing",
+                    "/advance-manufacturing"
+                  ])}`}
                   href="#"
                   id="navbarDropdownMenuLinkService"
                   role="button"
@@ -96,20 +112,34 @@ const Navbar = () => {
                   className="dropdown-menu position-fixed "
                   aria-labelledby="navbarDropdownMenuLinkService"
                 >
-                  <Link className="dropdown-item" to="/design-development">
+                  <Link
+                    className="dropdown-item"
+                    to="/design-development"
+                  >
                     Design & Development
                   </Link>
-                  <Link className="dropdown-item" to="/precision-manufacturing">
+                  <Link
+                    className="dropdown-item"
+                    to="/precision-manufacturing"
+                  >
                     Precision Manufacturing
                   </Link>
-                  <Link className="dropdown-item" to="/advance-manufacturing">
+                  <Link
+                    className="dropdown-item"
+                    to="/advance-manufacturing"
+                  >
                     Advance Manufacturing
                   </Link>
                 </div>
               </div>
               <div className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${textColor}`}
+                  className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                    "/launch-recovery-delivery",
+                    "/parachutes",
+                    "/advance-composites",
+                    "/aerial-robotics"
+                  ])}`}
                   href="#"
                   id="navbarDropdownMenuLinkProduct"
                   role="button"
@@ -135,8 +165,8 @@ const Navbar = () => {
                   <Link className="dropdown-item" to="/advance-composites">
                     Advance Composites
                   </Link>
-                  <Link className="dropdown-item" to="/aerial-robotics ">
-                    Aerial Robotics 
+                  <Link className="dropdown-item" to="/aerial-robotics">
+                    Aerial Robotics
                   </Link>
                 </div>
               </div>
@@ -146,18 +176,24 @@ const Navbar = () => {
                 style={{ width: logoWidth }}
                 src={logoSrc}
                 alt="Logo"
-                className="logo_img centered-logo"
+                className="centered-logo position-absolute top-0"
               />
             </Link>
-            <div className="d-flex flex-row justify-content-end align-items-center gap-5 ">
-              <Link className={`nav-item nav-link ${textColor}`} to="/career">
+            <div className="navbar-nav d-flex flex-row align-items-center gap-3">
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/career")}`}
+                to="/career"
+              >
                 Career
               </Link>
-              <Link className={`nav-item nav-link ${textColor}`} to="/about-us">
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/about-us")}`}
+                to="/about-us"
+              >
                 About Us
               </Link>
               <Link
-                className={`nav-item nav-link ${textColor}`}
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/contact-us")}`}
                 to="/contact-us"
               >
                 Contact Us
@@ -169,12 +205,19 @@ const Navbar = () => {
       {isMobile && isMenuOpen && (
         <div className="mobile-menu mobail">
           <div className="navbar-nav d-flex flex-column align-items-start gap-3 ps-5">
-            <Link className={`nav-item nav-link ${textColor}`} to="/">
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/")}`}
+              to="/"
+            >
               Home
             </Link>
             <div className="nav-item dropdown">
               <a
-                className={`nav-link dropdown-toggle ${textColor}`}
+                className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                  "/design-development",
+                  "/precision-manufacturing",
+                  "/advance-manufacturing"
+                ])}`}
                 href="#"
                 id="navbarDropdownMenuLinkService"
                 role="button"
@@ -195,13 +238,18 @@ const Navbar = () => {
                   Precision Manufacturing
                 </Link>
                 <Link className="dropdown-item" to="/advance-manufacturing">
-                    Advance Manufacturing
+                  Advance Manufacturing
                 </Link>
               </div>
             </div>
             <div className="nav-item dropdown">
               <a
-                className={`nav-link dropdown-toggle ${textColor}`}
+                className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                  "/launch-recovery-delivery",
+                  "/parachutes",
+                  "/advance-composites",
+                  "/aerial-robotics"
+                ])}`}
                 href="#"
                 id="navbarDropdownMenuLinkProduct"
                 role="button"
@@ -215,7 +263,10 @@ const Navbar = () => {
                 className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLinkProduct"
               >
-                <Link className="dropdown-item" to="/launch-recovery-delivery">
+                <Link
+                  className="dropdown-item"
+                  to="/launch-recovery-delivery"
+                >
                   Launch & Recovery/Delivery
                 </Link>
                 <Link className="dropdown-item" to="/parachutes">
@@ -225,17 +276,26 @@ const Navbar = () => {
                   Advance Composites
                 </Link>
                 <Link className="dropdown-item" to="/aerial-robotics">
-                  Aerial Robotics 
+                  Aerial Robotics
                 </Link>
               </div>
             </div>
-            <Link className={`nav-item nav-link ${textColor}`} to="/career">
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/career")}`}
+              to="/career"
+            >
               Career
             </Link>
-            <Link className={`nav-item nav-link ${textColor}`} to="/about-us">
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/about-us")}`}
+              to="/about-us"
+            >
               About Us
             </Link>
-            <Link className={`nav-item nav-link ${textColor}`} to="/contact-us">
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/contact-us")}`}
+              to="/contact-us"
+            >
               Contact Us
             </Link>
           </div>

@@ -76,7 +76,7 @@ height:155px;
         height:70px;
         }
         .card-titlefocus{
-            font-size:18px;
+            font-size:14px;
         }
         .cardfocus{
             width:120px;
@@ -102,5 +102,9 @@ height:155px;
         }
         .focustcardtitle{
             font-size:18px;
+        }
+
+        .focusAreacard{
+            height:200px;
         }
 }

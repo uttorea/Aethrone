@@ -91,7 +91,7 @@ const DiagonalCard = ({
               {card.title}
             </h5>
             {Array.isArray(card.text) ? (
-              <ul className="d_card-list mt-3 py-1 ">
+              <ul className="d_card-list mt-3 py-1 ps-3 ps-md-5 fontsecondry">
                 {card.text.map((item, idx) => (
                   <li key={idx} className="mb-0 mb-md-2">
                     {item}

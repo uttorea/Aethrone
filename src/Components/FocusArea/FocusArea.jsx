@@ -40,13 +40,13 @@ const accordionItems = [
 const FocusArea = () => {
   return (
     <>
-      <div className="containermt-5 p-md-5 p-1 mt-5">
+      <div className="container mt-5 p-md-5 p-1 mt-5">
         <div className="focusArea">
 
         <HeadingComponent heading="Our Focus Area" />
         
 
-        <div className="row row-cols-4 row-cols-md-4 g-md-4 g-1 mt-3 mt-md-5">
+        <div className="row row-cols-4 row-cols-md-4 g-md-4 g-1 mt-3 mt-md-5 ">
           {focusAreas.map((area, index) => (
             <div className="col" key={index}>
               <div className="card align-items-center focusAreacard">
@@ -56,7 +56,7 @@ const FocusArea = () => {
                   alt={area.title}
                   style={area.style}
                 />
-                <div className="card-body">
+                <div className="card-body p-0">
                   <h5 className="card-titlefocus mt-md-5 mt-0 fw-bold maincolor">
                     {area.title}
                   </h5>
@@ -126,7 +126,7 @@ const FocusArea = () => {
                     data-bs-parent="#accordionFlushExample"
                   >
                     <div
-                      className="accordion-body fontfamilySecondary fontfamilySecondary fontsecondry text-white"
+                      className="accordion-body fontfamilySecondary fontfamilySecondary fontsecondry text-white p-1 p-md-4"
                       style={{ backgroundColor: "transparent" }}
                     >
                       {item.content}

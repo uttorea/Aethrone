@@ -4,6 +4,7 @@
 
 .advanceManu_para2{
     letter-spacing:1px;
+    
 }
 .advanceManu_page img {
     width: 100%;
@@ -33,11 +34,14 @@
     }
     .am_text{
         margin-top:-50px;
-        font-size: 48px;
+        font-size: 36px;
         line-height:40px;
     }
     .adm-heading{
         margin-top:50px;
+    }
+    .advanceManu_para2{
+        width:100%;
     }
 }
 

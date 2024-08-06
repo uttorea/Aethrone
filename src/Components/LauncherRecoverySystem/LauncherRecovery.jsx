@@ -48,17 +48,17 @@ const LauncherRecovery = () => {
               </div>
             </div>
           </div>
-          <div className="col">
+          <div className="col px-0 px-md-4">
             <div className="card border-0 ">
               <img src={launcherimg10} className="card-img-top11" alt="..." />
-              <div className="card-bod2 ms-4">
-                <ul className="fontsecondry ">
+              <div className="card-bod2 ms-md-4 ms-0">
+                <ul className="fontsecondry  ">
                   <li>Parachute Based Land Recovery </li>
                   <li>Parachute Based Sea Recovery</li>
                   <li>Airbag Based Land Recovery</li>
                   <li>Airbag Based Sea Recovery</li>
                 </ul>
-                <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-5 fontfamilySecondary text-white ms-4 ">
+                <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-5 fontfamilySecondary text-white ms-3 ms-md-4 ">
                   Explore Recovery System <i className="bi bi-arrow-right"></i>
                 </a>
               </div>
