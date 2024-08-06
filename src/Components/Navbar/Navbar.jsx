@@ -102,35 +102,31 @@ const Navbar = () => {
                   href="#"
                   id="navbarDropdownMenuLinkService"
                   role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
+                  data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
                   aria-expanded="false"
                 >
                   Service
                 </a>
-                <div
-                  className="dropdown-menu position-fixed "
+                <ul
+                  className="dropdown-menu position-fixed"
                   aria-labelledby="navbarDropdownMenuLinkService"
                 >
-                  <Link
-                    className="dropdown-item"
-                    to="/design-development"
-                  >
-                    Design & Development
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/precision-manufacturing"
-                  >
-                    Precision Manufacturing
-                  </Link>
-                  <Link
-                    className="dropdown-item"
-                    to="/advance-manufacturing"
-                  >
-                    Advance Manufacturing
-                  </Link>
-                </div>
+                  <li>
+                    <Link className="dropdown-item" to="/design-development">
+                      Design & Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/precision-manufacturing">
+                      Precision Manufacturing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/advance-manufacturing">
+                      Advance Manufacturing
+                    </Link>
+                  </li>
+                </ul>
               </div>
               <div className="nav-item dropdown">
                 <a
@@ -143,32 +139,36 @@ const Navbar = () => {
                   href="#"
                   id="navbarDropdownMenuLinkProduct"
                   role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
+                  data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
                   aria-expanded="false"
                 >
                   Product
                 </a>
-                <div
-                  className="dropdown-menu position-fixed "
+                <ul
+                  className="dropdown-menu position-fixed"
                   aria-labelledby="navbarDropdownMenuLinkProduct"
                 >
-                  <Link
-                    className="dropdown-item"
-                    to="/launch-recovery-delivery"
-                  >
-                    Launch & Recovery/Delivery
-                  </Link>
-                  <Link className="dropdown-item" to="/parachutes">
-                    Parachutes
-                  </Link>
-                  <Link className="dropdown-item" to="/advance-composites">
-                    Advance Composites
-                  </Link>
-                  <Link className="dropdown-item" to="/aerial-robotics">
-                    Aerial Robotics
-                  </Link>
-                </div>
+                  <li>
+                    <Link className="dropdown-item" to="/launch-recovery-delivery">
+                      Launch & Recovery/Delivery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/parachutes">
+                      Parachutes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/advance-composites">
+                      Advance Composites
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/aerial-robotics">
+                      Aerial Robotics
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
             <Link to="/">
@@ -219,28 +219,33 @@ const Navbar = () => {
                   "/advance-manufacturing"
                 ])}`}
                 href="#"
-                id="navbarDropdownMenuLinkService"
+                id="navbarDropdownMenuLinkMobileService"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+                data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
                 aria-expanded="false"
               >
                 Service
               </a>
-              <div
-                className="dropdown-menu "
-                aria-labelledby="navbarDropdownMenuLinkService"
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLinkMobileService"
               >
-                <Link className="dropdown-item" to="/design-development">
-                  Design & Development
-                </Link>
-                <Link className="dropdown-item" to="/precision-manufacturing">
-                  Precision Manufacturing
-                </Link>
-                <Link className="dropdown-item" to="/advance-manufacturing">
-                  Advance Manufacturing
-                </Link>
-              </div>
+                <li>
+                  <Link className="dropdown-item" to="/design-development">
+                    Design & Development
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/precision-manufacturing">
+                    Precision Manufacturing
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/advance-manufacturing">
+                    Advance Manufacturing
+                  </Link>
+                </li>
+              </ul>
             </div>
             <div className="nav-item dropdown">
               <a
@@ -251,34 +256,38 @@ const Navbar = () => {
                   "/aerial-robotics"
                 ])}`}
                 href="#"
-                id="navbarDropdownMenuLinkProduct"
+                id="navbarDropdownMenuLinkMobileProduct"
                 role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
+                data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
                 aria-expanded="false"
               >
                 Product
               </a>
-              <div
+              <ul
                 className="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLinkProduct"
+                aria-labelledby="navbarDropdownMenuLinkMobileProduct"
               >
-                <Link
-                  className="dropdown-item"
-                  to="/launch-recovery-delivery"
-                >
-                  Launch & Recovery/Delivery
-                </Link>
-                <Link className="dropdown-item" to="/parachutes">
-                  Parachutes
-                </Link>
-                <Link className="dropdown-item" to="/advance-composites">
-                  Advance Composites
-                </Link>
-                <Link className="dropdown-item" to="/aerial-robotics">
-                  Aerial Robotics
-                </Link>
-              </div>
+                <li>
+                  <Link className="dropdown-item" to="/launch-recovery-delivery">
+                    Launch & Recovery/Delivery
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/parachutes">
+                    Parachutes
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/advance-composites">
+                    Advance Composites
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/aerial-robotics">
+                    Aerial Robotics
+                  </Link>
+                </li>
+              </ul>
             </div>
             <Link
               className={`nav-item nav-link ${textColor} ${getNavItemClass("/career")}`}

@@ -36,7 +36,10 @@ const About = () => {
           </div>
         </div>
       </div>
+      <div className="keytec">
+
       <KeyTechno />
+      </div>
       <Journey />
       <Footer />
     </>

@@ -109,10 +109,10 @@ function Furtblog() {
       </div>
       <div className="join_team d-flex align-items-center justify-content-center p-3">
     <div className="d-block d-lg-flex justify-content-center align-items-center">
-        <div className="maincolor fontfamilyPrimary join-team-heading pe-2 text-center">
+        <div className="maincolor fontfamilyPrimary join-team-heading pe-0 text-center">
             Join The Team
         </div>
-        <p className="px-3 fw-bold fontfamilySecondary mt-lg-3 mt-0 join-team-sub">
+        <p className="px-1 fw-bold fontfamilySecondary mt-lg-4 mt-0 join-team-sub">
             Interested in an exciting opportunity to design and build future air
             solutions? <a className="maincolor">View open roles</a>
         </p>

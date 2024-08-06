@@ -57,7 +57,7 @@ const SimpleCard = ({
                                 />
                             </div>
                             <div 
-                                className="card-footer eng-para2 fontsecondry text-center fontfamilySecondary fw-bold maincolor"
+                                className="card-footer eng-para2 fontsecondry text-center fontfamilySecondary  maincolor"
                                 style={{ whiteSpace: 'normal' }} // Ensure line breaks are respected
                                 dangerouslySetInnerHTML={{ __html: card.footer }}
                                 onClick={() => togglePopup(card.footer)} // Add onClick here

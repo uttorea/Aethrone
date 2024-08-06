@@ -44,8 +44,11 @@
   }
   .aboutbg_img {
    
-    height: 85vh;
+    height: 100vh;
    
+  }
+  .keytec{
+    margin-top:150px;
   }
   .about_overlay{
    
