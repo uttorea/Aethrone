@@ -25,8 +25,40 @@ function Position() {
                                 <p className="fontsecondary fontfamilySecondary mt-1 mt-md-4">As part of a small aerospace engineering team, you will be responsible for the design and analysis of recovery systems for aerospace applications. This will involve you in the entire recovery system design cycle including conceptual design, mathematical modeling, code-based qualification, testing, and technical documentation.</p>
                                 <p className='maincolor fontsecondary'>Explore more job opportunities on our LinkedIn page.</p>
                                 <div className='d-flex'>
-                                    <Button text='Apply Now' className="" />
-                                    <Button text={<><i className="bi bi-linkedin mx-2"></i>Linkedin</>} backgroundColor='white' color='#3535DE' border='1px solid #3535DE'/>
+                                    <a 
+                                        href="/contact-us" // Change to your actual contact page route
+                                        className="btn" // Use your button class here
+                                        style={{
+                                            backgroundColor: 'rgb(53, 53, 222)', // Match your button's background color
+                                            color: 'white', // Match your button's text color
+                                            // padding: '0.75rem 1.5rem', // Adjust padding as needed
+                                            textDecoration: 'none', // Remove underline
+                                            display: 'flex', // Flex to align icon and text
+                                            alignItems: 'center', // Center the icon and text vertically
+                                            justifyContent: 'center' // Center the text and icon
+                                        }}
+                                    >
+                                        Apply Now
+                                    </a>
+                                    <a 
+                                        href="https://www.linkedin.com/company/aethrone-aerospace/" 
+                                        target="_blank" 
+                                        rel="noopener noreferrer" 
+                                        className="btn" // Use your button class here
+                                        style={{
+                                            backgroundColor: 'white', // Match your button's background color
+                                            color: '#3535DE', // Match your button's text color
+                                            border: '1px solid #3535DE', // Match your button's border
+                                            display: 'flex', // Flex to align icon and text
+                                            alignItems: 'center', // Center the icon and text vertically
+                                            // padding: '0.75rem 1.5rem', // Increase padding for a larger button
+                                            textDecoration: 'none', // Remove underline
+                                            justifyContent: 'center', // Center the text and icon
+                                            marginLeft:'20px'
+                                        }}
+                                    >
+                                        <i className="bi bi-linkedin mx-2"></i>Linkedin
+                                    </a>
                                 </div>
                             </div>
                         </div>

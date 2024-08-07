@@ -25,6 +25,7 @@ function Footer() {
                                 <div className="fontweight fontsecondry graycolor ">
                                     <p>Design and Development</p>
                                     <p>Precision Manufacturing</p>
+                                    <p>Advance Manufacturing</p>
                                 </div>
                             </div>
                             <div className="col-lg-3 col-7 col-md-6  text-white mt-0 mt-md-5 card-body41">
@@ -49,9 +50,11 @@ function Footer() {
                 <div className="justify-content-between d-flex lastfooter">
                     <div className="">
                         <div className="d-flex align-items-center">
-                            <div className='social_icon1'>
-                                <i className="bi bi-linkedin"></i>
-                            </div>
+                        <div className='social_icon1'>
+    <a href="https://www.linkedin.com/company/aethrone-aerospace/" target="_blank" rel="noopener noreferrer">
+        <i className="bi bi-linkedin"></i>
+    </a>
+</div>
                             <div className='social_icon2'>
                                 <i className="bi bi-twitter"></i>
                             </div>

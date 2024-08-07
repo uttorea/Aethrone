@@ -30,7 +30,7 @@
        // Simulate a loading delay
        setTimeout(() => {
          setLoading(false);
-       }, 10000); // Adjust the delay as needed
+       }, 3000); // Adjust the delay as needed
      }, []);
 
      return (
