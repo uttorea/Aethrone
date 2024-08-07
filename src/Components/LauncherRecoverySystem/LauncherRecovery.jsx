@@ -58,9 +58,18 @@ const LauncherRecovery = () => {
                   <li>Airbag Based Land Recovery</li>
                   <li>Airbag Based Sea Recovery</li>
                 </ul>
-                <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-5 fontfamilySecondary text-white ms-3 ms-md-4 ">
+                {/* <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-5 fontfamilySecondary text-white ms-3 ms-md-4 ">
                   Explore Recovery System <i className="bi bi-arrow-right"></i>
-                </a>
+                </a> */}
+                <a
+  href="/launch-recovery-system"
+  className="btn fontsecondry fontfamilySecondary backgroundcolormain btn-explore-launch text-white px-1 px-md-5 ms-md-3 ms-0"
+  style={{ color: 'white' }} // Default color
+  onMouseEnter={(e) => (e.currentTarget.style.color = 'black')}
+  onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
+>
+Explore Recovery System <i className="bi bi-arrow-right"></i>
+</a>
               </div>
             </div>
           </div>

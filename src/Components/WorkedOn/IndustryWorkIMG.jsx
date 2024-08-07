@@ -17,7 +17,7 @@ const cards= [
     {
         image: workimg3,
         title: "Avionics Composite",
-        text: ["Flame Smoke", "Flat Radome"]
+        text: ["Flame Smoke Toxicity", "Flat Radome"]
     },
     {
         image: workimg4,
