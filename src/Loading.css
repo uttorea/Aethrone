@@ -1,32 +1,30 @@
-/* Loading.css */
 .loading-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f8f8f8; /* Light grey background */
-  }
-  
-  .loading-image {
-    width: 150px; /* Adjust the size as needed */
-    margin-bottom: 20px;
-  }
-  
-  .loading-text {
-    text-align: center;
-  }
-  
-  .loading-text h1 {
-    font-family: 'Arial', sans-serif; /* Use a similar font */
-    font-size: 24px;
-    color: #000; /* Black color */
-    margin: 0;
-  }
-  
-  .loading-text p {
-    font-family: 'Arial', sans-serif; /* Use a similar font */
-    font-size: 16px;
-    color: #000; /* Black color */
-    margin: 0;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8; /* Light grey background */
+}
+
+.loading-gif {
+  width: 100px; /* Adjust the size as needed */
+  margin: -61px; /* Remove margin to minimize gap */
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px; /* Reduce padding to minimize gap */
+  text-align: center;
+}
+
+.drone-gif {
+  width: 170px; /* Adjust the size as needed */
+  margin-bottom: -91px; /* Add some space between the drone and the logo */
+}
+
+.logo-image {
+  width: 400px; /* Adjust the size as needed */
+}

@@ -1,17 +1,19 @@
 import React from 'react';
 import './Loading.css'; // CSS file for styling
-import logo from '../src/assets/d1.png'; // Update the path to your image
+import loadingGif from '../src/assets/loading.gif'; // Update the path to your loading GIF
+import droneGif from '../src/assets/drone1.gif'; // Update the path to your drone GIF
+import logo from '../src/assets/aethrone_logo.png'; // Update the path to your combined logo image
 
 const Loading = () => {
     return (
-      <div className="loading-container">
-        <img src={logo} alt="Loading" className="loading-image" />
-        <div className="loading-text">
-          <h1>AETHRONE AEROSPACE</h1>
-          <p>Ingenuity | Dynamism | Perfection</p>
+        <div className="loading-container">
+            <div className="logo-container">
+            <img src={loadingGif} alt="Loading" className="loading-gif" />
+                <img src={droneGif} alt="Drone" className="drone-gif" />
+                <img src={logo} alt="Aethrone Aerospace" className="logo-image" />
+            </div>
         </div>
-      </div>
     );
-  };
-  
-  export default Loading;
+};
+
+export default Loading;
