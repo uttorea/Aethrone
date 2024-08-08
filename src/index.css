@@ -36,7 +36,9 @@ border:2px solid #3535DE;
   background-color:#3535DE;
 }
 .fontfamilyPrimary{
-  font-family:"poor Richard"
+  font-family: 'Poor Richard';
+  src: url('fonts/PoorRichard.ttf') format('truetype');
+
 }
 .fontweight{
   font-weight:100;
@@ -79,6 +81,7 @@ font-size:18px;
       width:100%;      
     }
     .fontfamilyPrimary{
-      font-family:"Poor Richard"
+      font-family: 'Poor Richard';
+      src: url('fonts/PoorRichard.ttf') format('truetype');
     }
 }
