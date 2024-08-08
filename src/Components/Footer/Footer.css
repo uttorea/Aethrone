@@ -24,6 +24,7 @@
 .emailtext{
     color:white;
     font-size:18px;
+    text-decoration: none;
 }
 .lastfooter2{
     font-size:18px;
@@ -75,7 +76,10 @@ font-size:18px;
    color:rgba(155, 155, 155, 1)
 
 }
-
+.no-link-style {
+    text-decoration: none;
+    color: inherit; /* This will inherit the color from the parent element */
+}
 
 
 @media only screen and (max-width:450px){
