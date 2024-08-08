@@ -63,12 +63,11 @@ const LauncherRecovery = () => {
                 </a> */}
                 <Link
       to="/launch-recovery-system"
-      className="btn fontsecondry fontfamilySecondary backgroundcolormain btn-explore-launch text-white px-1 px-md-5 ms-md-3 ms-0"
-      style={{ color: 'white' }} // Default color
+      className="btn fontsecondry fontfamilySecondary backgroundcolormain btn-explore-launch text-white "
+      style={{ color: 'white',padding:'5px' }} // Default color
       onMouseEnter={(e) => (e.currentTarget.style.color = 'black')}
       onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
-    >
-      Explore Recovery System <i className="bi bi-arrow-right"></i>
+    >Explore Recovery System   <i className="bi bi-arrow-right"></i>
     </Link>
               </div>
             </div>
