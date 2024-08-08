@@ -6,7 +6,7 @@ import launcherimg4 from "../../assets/launcherimg4.png";
 import launcherimg5 from "../../assets/launcherimg5.png";
 import launcherimg9 from "../../assets/launcherimg9.png";
 import launcherimg10 from "../../assets/launcherimg10.png";
-
+import { Link } from 'react-router-dom';
 const LauncherRecovery = () => {
   const launchers = [
     {
@@ -61,15 +61,15 @@ const LauncherRecovery = () => {
                 {/* <a href="" className="btn border-dark explore-launcher  backgroundcolormain px-1 px-md-5 fontfamilySecondary text-white ms-3 ms-md-4 ">
                   Explore Recovery System <i className="bi bi-arrow-right"></i>
                 </a> */}
-                <a
-  href="/launch-recovery-system"
-  className="btn fontsecondry fontfamilySecondary backgroundcolormain btn-explore-launch text-white px-1 px-md-5 ms-md-3 ms-0"
-  style={{ color: 'white' }} // Default color
-  onMouseEnter={(e) => (e.currentTarget.style.color = 'black')}
-  onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
->
-Explore Recovery System <i className="bi bi-arrow-right"></i>
-</a>
+                <Link
+      to="/launch-recovery-system"
+      className="btn fontsecondry fontfamilySecondary backgroundcolormain btn-explore-launch text-white px-1 px-md-5 ms-md-3 ms-0"
+      style={{ color: 'white' }} // Default color
+      onMouseEnter={(e) => (e.currentTarget.style.color = 'black')}
+      onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
+    >
+      Explore Recovery System <i className="bi bi-arrow-right"></i>
+    </Link>
               </div>
             </div>
           </div>
