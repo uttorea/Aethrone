@@ -70,93 +70,82 @@ const items = [
   },
   // Add more items as necessary
 ];
-
-const CompositeCapability = () => {
+const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [dragPosition, setDragPosition] = useState(0);
-  const [isDragging, setIsDragging] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (isDragging) {
-        const newPosition = e.clientY - 100; // Adjust for initial button position
-        const clampedPosition = Math.max(0, Math.min(newPosition, 300)); // Clamp position between 0 and 300px
-        setDragPosition(clampedPosition);
+  const handleScroll = (e) => {
+      if (isScrolling || canScroll) return;
 
-        const newIndex = Math.floor((clampedPosition / 300) * items.length);
-        if (newIndex !== currentIndex && newIndex < items.length) {
+      setIsScrolling(true);
+      e.preventDefault();
+
+      const scrollDirection = e.deltaY > 0 ? 1 : -1;
+      const newIndex = currentIndex + scrollDirection;
+
+      if (newIndex >= 0 && newIndex < items.length) {
           setCurrentIndex(newIndex);
-        }
       }
-    };
 
-    const handleMouseUp = () => {
-      setIsDragging(false);
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, [isDragging, currentIndex, items.length]);
-
-  const handleMouseDown = () => {
-    setIsDragging(true);
+      setTimeout(() => {
+          setIsScrolling(false);
+          if (newIndex === items.length - 1 && scrollDirection > 0) {
+              onScrollComplete('down'); // Notify parent when scrolling down completes
+          } else if (newIndex === 0 && scrollDirection < 0) {
+              onScrollComplete('up'); // Notify parent when scrolling up completes
+          }
+      }, 500); // Adjust the delay as needed
   };
 
+  useEffect(() => {
+      window.addEventListener("wheel", handleScroll, { passive: false });
+
+      return () => {
+          window.removeEventListener("wheel", handleScroll);
+      };
+  }, [currentIndex, isScrolling, canScroll]);
+
   return (
-    <>
       <div className="composite_main">
-        <div className="container ">
-          <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
-          <div className="row p-0 p-md-3 mt-5 myrow gap-5">
-            {items.map((item, index) => (
-              <div
-                className={`col-md-12 card-container p-0 p-md-3 ${
-                  index === currentIndex ? "visible" : "hidden"
-                }`}
-                key={index}
-                style={{
-                  transform: index === currentIndex ? "scale(1)" : "scale(0.8)",
-                  transition: "transform 0.3s",
-                }}
-              >
-                <div id="list-example" className="list-group">
-                  <div className="composite_items" href="#list-item-1">
-                    <div className="d-flex ">
-                      <div className="col-7 ">
-                        <p className="fontsecondary fixed-main-text">
-                          {item.mainText}
-                        </p>
-                        <div className="build-spacification fw-bold ">
-                          {item.spec}
-                        </div>
+          <div className="container">
+              <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
+              <div className="row p-0 p-md-3 mt-5 myrow gap-5">
+                  {items.map((item, index) => (
+                      <div
+                          className={`col-md-12 card-container p-0 p-md-3 ${index === currentIndex ? "visible" : "hidden"}`}
+                          key={index}
+                          style={{
+                              transform: index === currentIndex ? "scale(1)" : "scale(0.8)",
+                              transition: "transform 0.3s",
+                          }}
+                      >
+                          <div id="list-example" className="list-group">
+                              <div className="composite_items" href="#list-item-1">
+                                  <div className="d-flex">
+                                      <div className="col-7">
+                                          <p className="fontsecondary fixed-main-text">
+                                              {item.mainText}
+                                          </p>
+                                          <div className="build-spacification fw-bold">
+                                              {item.spec}
+                                          </div>
+                                      </div>
+                                      <div className="col-5 d-flex justify-content-center align-items-center composite_card rounded">
+                                          <img
+                                              src={item.img}
+                                              alt=""
+                                              className="img-fluid_composite"
+                                          />
+                                      </div>
+                                  </div>
+                              </div>
+                              <div className="fontsecondary py-2 py-md-5">{item.description}</div>
+                          </div>
                       </div>
-                      <div className="col-5 d-flex justify-content-center align-items-center composite_card rounded">
-                        <img
-                          src={item.img}
-                          alt=""
-                          className="img-fluid_composite"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="fontsecondary py-2 py-md-5">{item.description}</div>
-                </div>
+                  ))}
               </div>
-            ))}
           </div>
-        </div>
-        <div
-          className="scroll-button rounded"
-          style={{ top: `${dragPosition}px` }}
-          onMouseDown={handleMouseDown}
-        ></div>
       </div>
-    </>
   );
 };
 
