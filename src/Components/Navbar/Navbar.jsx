@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
-import changeLogo from "../../assets/changeLogo.png";
+import logo from "../../assets/logo.svg"; // Original logo
+import changeLogo from "../../assets/changeLogo.png"; // New logo
 import logo1 from "../../assets/logo1.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
@@ -10,12 +10,12 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 const Navbar = () => {
   const [navBackground, setNavBackground] = useState("");
   const [textColor, setTextColor] = useState("text-light");
-  const [logoSrc, setLogoSrc] = useState(logo);
+  const [logoSrc, setLogoSrc] = useState(logo); // Initial logo state
   const [logoWidth, setLogoWidth] = useState("250px");
   const [borderTop, setBorderTop] = useState("3px solid #3535DE");
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 450);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [dropdownOpen, setDropdownOpen] = useState({ service: false, product: false });
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -23,14 +23,14 @@ const Navbar = () => {
         setNavBackground("bg-white");
         setTextColor("text-dark");
         setLogoSrc(changeLogo);
-        setBorderTop("3px solid white");
-        setLogoWidth("210px");
+        setBorderTop("3px solid white"); // Correct value for border-top
+        setLogoWidth("210px"); // Change the width when scrolling past 300px
       } else {
         setNavBackground("");
         setTextColor("text-light");
-        setLogoSrc(logo);
-        setLogoWidth("250px");
-        setBorderTop("3px solid #3535DE");
+        setLogoSrc(logo); // Revert to the original logo
+        setLogoWidth("250px"); // Revert to the original logo width
+        setBorderTop("3px solid #3535DE"); // Revert to the original border-top value
       }
     };
 
@@ -51,22 +51,12 @@ const Navbar = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
+  const getNavItemClass = (path) => {
+    return location.pathname === path ? "active" : "";
   };
 
-  const toggleDropdown = (dropdown) => {
-    setDropdownOpen((prevState) => ({
-      ...prevState,
-      [dropdown]: !prevState[dropdown]
-    }));
-  };
-
-  const closeDropdown = (dropdown) => {
-    setDropdownOpen((prevState) => ({
-      ...prevState,
-      [dropdown]: false
-    }));
+  const getDropdownItemClass = (paths) => {
+    return paths.includes(location.pathname) ? "active" : "";
   };
 
   return (
@@ -77,7 +67,7 @@ const Navbar = () => {
       <div className="container d-flex align-items-center justify-content-between p-0 pe-3">
         {isMobile ? (
           <>
-            <Link to="/" onClick={closeMenu}>
+            <Link to="/">
               <img
                 style={{ width: "135px", marginLeft: "-30px", marginTop: "-3px" }}
                 src={logo1}
@@ -96,83 +86,116 @@ const Navbar = () => {
         ) : (
           <>
             <div className="navbar-nav d-flex flex-row align-items-center gap-3 ">
-              <Link className={`nav-item nav-link ${textColor} active`} to="/" onClick={closeMenu}>
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/")}`}
+                to="/"
+              >
                 Home
               </Link>
               <div className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${textColor}`}
+                  className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                    "/design-development",
+                    "/precision-manufacturing",
+                    "/advance-manufacturing"
+                  ])}`}
                   href="#"
                   id="navbarDropdownMenuLinkService"
                   role="button"
-                  aria-haspopup="true"
-                  aria-expanded={dropdownOpen.service ? "true" : "false"}
-                  onClick={() => toggleDropdown("service")}
+                  data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
+                  aria-expanded="false"
                 >
                   Service
                 </a>
-                <div
-                  className={`dropdown-menu position-fixed ${dropdownOpen.service ? "show" : ""}`}
+                <ul
+                  className="dropdown-menu position-fixed"
                   aria-labelledby="navbarDropdownMenuLinkService"
                 >
-                  <Link className="dropdown-item" to="/design-development" onClick={() => { closeMenu(); closeDropdown("service"); }}>
-                    Design & Development
-                  </Link>
-                  <Link className="dropdown-item" to="/precision-manufacturing" onClick={() => { closeMenu(); closeDropdown("service"); }}>
-                    Precision Manufacturing
-                  </Link>
-                  <Link className="dropdown-item" to="/advance-manufacturing" onClick={() => { closeMenu(); closeDropdown("service"); }}>
-                    Advance Manufacturing
-                  </Link>
-                </div>
+                  <li>
+                    <Link className="dropdown-item" to="/design-development">
+                      Design & Development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/precision-manufacturing">
+                      Precision Manufacturing
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/advance-manufacturing">
+                      Advance Manufacturing
+                    </Link>
+                  </li>
+                </ul>
               </div>
               <div className="nav-item dropdown">
                 <a
-                  className={`nav-link dropdown-toggle ${textColor}`}
+                  className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                    "/launch-recovery-delivery",
+                    "/parachutes",
+                    "/advance-composites",
+                    "/aerial-robotics"
+                  ])}`}
                   href="#"
                   id="navbarDropdownMenuLinkProduct"
                   role="button"
-                  aria-haspopup="true"
-                  aria-expanded={dropdownOpen.product ? "true" : "false"}
-                  onClick={() => toggleDropdown("product")}
+                  data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
+                  aria-expanded="false"
                 >
                   Product
                 </a>
-                <div
-                  className={`dropdown-menu position-fixed ${dropdownOpen.product ? "show" : ""}`}
+                <ul
+                  className="dropdown-menu position-fixed"
                   aria-labelledby="navbarDropdownMenuLinkProduct"
                 >
-                  <Link className="dropdown-item" to="/launch-recovery-delivery" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                    Launch & Recovery/Delivery
-                  </Link>
-                  <Link className="dropdown-item" to="/parachutes" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                    Parachutes
-                  </Link>
-                  <Link className="dropdown-item" to="/advance-composites" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                    Advance Composites
-                  </Link>
-                  <Link className="dropdown-item" to="/aerial-robotics" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                    Aerial Robotics
-                  </Link>
-                </div>
+                  <li>
+                    <Link className="dropdown-item" to="/launch-recovery-delivery">
+                      Launch & Recovery/Delivery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/parachutes">
+                      Parachutes
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/advance-composites">
+                      Advance Composites
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/aerial-robotics">
+                      Aerial Robotics
+                    </Link>
+                  </li>
+                </ul>
               </div>
             </div>
-            <Link to="/" onClick={closeMenu}>
+            <Link to="/">
               <img
                 style={{ width: logoWidth }}
                 src={logoSrc}
                 alt="Logo"
-                className="logo_img centered-logo"
+                className="centered-logo position-absolute top-0"
               />
             </Link>
-            <div className="d-flex flex-row justify-content-end align-items-center gap-5">
-              <Link className={`nav-item nav-link ${textColor}`} to="/career" onClick={closeMenu}>
+            <div className="navbar-nav d-flex flex-row align-items-center gap-3">
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/career")}`}
+                to="/career"
+              >
                 Career
               </Link>
-              <Link className={`nav-item nav-link ${textColor}`} to="/about-us" onClick={closeMenu}>
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/about-us")}`}
+                to="/about-us"
+              >
                 About Us
               </Link>
-              <Link className={`nav-item nav-link ${textColor}`} to="/contact-us" onClick={closeMenu}>
+              <Link
+                className={`nav-item nav-link ${textColor} ${getNavItemClass("/contact-us")}`}
+                to="/contact-us"
+              >
                 Contact Us
               </Link>
             </div>
@@ -182,73 +205,106 @@ const Navbar = () => {
       {isMobile && isMenuOpen && (
         <div className="mobile-menu mobail">
           <div className="navbar-nav d-flex flex-column align-items-start gap-3 ps-5">
-            <Link className={`nav-item nav-link ${textColor}`} to="/" onClick={closeMenu}>
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/")}`}
+              to="/"
+            >
               Home
             </Link>
             <div className="nav-item dropdown">
               <a
-                className={`nav-link dropdown-toggle ${textColor}`}
+                className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                  "/design-development",
+                  "/precision-manufacturing",
+                  "/advance-manufacturing"
+                ])}`}
                 href="#"
-                id="navbarDropdownMenuLinkServiceMobile"
+                id="navbarDropdownMenuLinkMobileService"
                 role="button"
-                aria-haspopup="true"
-                aria-expanded={dropdownOpen.service ? "true" : "false"}
-                onClick={() => toggleDropdown("service")}
+                data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
+                aria-expanded="false"
               >
                 Service
               </a>
-              <div
-                className={`dropdown-menu ${dropdownOpen.service ? "show" : ""}`}
-                aria-labelledby="navbarDropdownMenuLinkServiceMobile"
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLinkMobileService"
               >
-                <Link className="dropdown-item" to="/design-development" onClick={() => { closeMenu(); closeDropdown("service"); }}>
-                  Design & Development
-                </Link>
-                <Link className="dropdown-item" to="/precision-manufacturing" onClick={() => { closeMenu(); closeDropdown("service"); }}>
-                  Precision Manufacturing
-                </Link>
-                <Link className="dropdown-item" to="/advance-manufacturing" onClick={() => { closeMenu(); closeDropdown("service"); }}>
-                  Advance Manufacturing
-                </Link>
-              </div>
+                <li>
+                  <Link className="dropdown-item" to="/design-development">
+                    Design & Development
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/precision-manufacturing">
+                    Precision Manufacturing
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/advance-manufacturing">
+                    Advance Manufacturing
+                  </Link>
+                </li>
+              </ul>
             </div>
             <div className="nav-item dropdown">
               <a
-                className={`nav-link dropdown-toggle ${textColor}`}
+                className={`nav-link dropdown-toggle ${textColor} ${getDropdownItemClass([
+                  "/launch-recovery-delivery",
+                  "/parachutes",
+                  "/advance-composites",
+                  "/aerial-robotics"
+                ])}`}
                 href="#"
-                id="navbarDropdownMenuLinkProductMobile"
+                id="navbarDropdownMenuLinkMobileProduct"
                 role="button"
-                aria-haspopup="true"
-                aria-expanded={dropdownOpen.product ? "true" : "false"}
-                onClick={() => toggleDropdown("product")}
+                data-bs-toggle="dropdown" // Use data-bs-toggle for Bootstrap 5
+                aria-expanded="false"
               >
                 Product
               </a>
-              <div
-                className={`dropdown-menu ${dropdownOpen.product ? "show" : ""}`}
-                aria-labelledby="navbarDropdownMenuLinkProductMobile"
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLinkMobileProduct"
               >
-                <Link className="dropdown-item" to="/launch-recovery-delivery" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                  Launch & Recovery/Delivery
-                </Link>
-                <Link className="dropdown-item" to="/parachutes" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                  Parachutes
-                </Link>
-                <Link className="dropdown-item" to="/advance-composites" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                  Advance Composites
-                </Link>
-                <Link className="dropdown-item" to="/aerial-robotics" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                  Aerial Robotics
-                </Link>
-              </div>
+                <li>
+                  <Link className="dropdown-item" to="/launch-recovery-delivery">
+                    Launch & Recovery/Delivery
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/parachutes">
+                    Parachutes
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/advance-composites">
+                    Advance Composites
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/aerial-robotics">
+                    Aerial Robotics
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <Link className={`nav-item nav-link ${textColor}`} to="/career" onClick={closeMenu}>
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/career")}`}
+              to="/career"
+            >
               Career
             </Link>
-            <Link className={`nav-item nav-link ${textColor}`} to="/about-us" onClick={closeMenu}>
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/about-us")}`}
+              to="/about-us"
+            >
               About Us
             </Link>
-            <Link className={`nav-item nav-link ${textColor}`} to="/contact-us" onClick={closeMenu}>
+            <Link
+              className={`nav-item nav-link ${textColor} ${getNavItemClass("/contact-us")}`}
+              to="/contact-us"
+            >
               Contact Us
             </Link>
           </div>
