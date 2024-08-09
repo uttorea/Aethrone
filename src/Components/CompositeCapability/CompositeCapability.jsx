@@ -73,6 +73,7 @@ const items = [
 const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [touchStartY, setTouchStartY] = useState(null);
 
   const handleScroll = (e) => {
       if (isScrolling || canScroll) return;
@@ -97,13 +98,46 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
       }, 500); // Adjust the delay as needed
   };
 
+  const handleTouchStart = (e) => {
+      setTouchStartY(e.touches[0].clientY);
+  };
+
+  const handleTouchMove = (e) => {
+      if (isScrolling || canScroll || touchStartY === null) return;
+
+      setIsScrolling(true);
+      e.preventDefault();
+
+      const touchEndY = e.touches[0].clientY;
+      const scrollDirection = touchEndY < touchStartY ? 1 : -1;
+      const newIndex = currentIndex + scrollDirection;
+
+      if (newIndex >= 0 && newIndex < items.length) {
+          setCurrentIndex(newIndex);
+      }
+
+      setTimeout(() => {
+          setIsScrolling(false);
+          setTouchStartY(null);
+          if (newIndex === items.length - 1 && scrollDirection > 0) {
+              onScrollComplete('down');
+          } else if (newIndex === 0 && scrollDirection < 0) {
+              onScrollComplete('up');
+          }
+      }, 500);
+  };
+
   useEffect(() => {
       window.addEventListener("wheel", handleScroll, { passive: false });
+      window.addEventListener("touchstart", handleTouchStart, { passive: false });
+      window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
       return () => {
           window.removeEventListener("wheel", handleScroll);
+          window.removeEventListener("touchstart", handleTouchStart);
+          window.removeEventListener("touchmove", handleTouchMove);
       };
-  }, [currentIndex, isScrolling, canScroll]);
+  }, [currentIndex, isScrolling, canScroll, touchStartY]);
 
   return (
       <div className="composite_main">
