@@ -90,6 +90,7 @@
 
   .mobail {
     background-color: rgba(0, 0, 0, 0.9);
+    
   }
 
   .mobile-menu .dropdown-menu {
@@ -103,8 +104,7 @@
 
 @media only screen and (min-width: 451px) {
   .navbar-nav .nav-item.active {
-    border-bottom: 5px solid #3535DE;
-    color:#3535DE;
+    border-bottom: 2px solid #3535DE;
   }
 
   .navbar-nav .nav-item.active > .nav-link {
