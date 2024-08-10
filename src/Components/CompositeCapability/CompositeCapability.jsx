@@ -73,15 +73,13 @@ const items = [
 const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const [touchStart, setTouchStart] = useState(0);
+  const [touchStartY, setTouchStartY] = useState(0);
 
-  const handleScroll = (e) => {
+  const handleScroll = (scrollDirection) => {
     if (isScrolling || canScroll) return;
 
     setIsScrolling(true);
-    e.preventDefault();
 
-    const scrollDirection = e.deltaY > 0 ? 1 : -1;
     const newIndex = currentIndex + scrollDirection;
 
     if (newIndex >= 0 && newIndex < items.length) {
@@ -91,33 +89,38 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
     setTimeout(() => {
       setIsScrolling(false);
       if (newIndex === items.length - 1 && scrollDirection > 0) {
-        onScrollComplete('down'); // Notify parent when scrolling down completes
+        onScrollComplete('down');
       } else if (newIndex === 0 && scrollDirection < 0) {
-        onScrollComplete('up'); // Notify parent when scrolling up completes
+        onScrollComplete('up');
       }
-    }, 1000); // Adjust the delay as needed
+    }, 1000);
+  };
+
+  const handleWheelScroll = (e) => {
+    e.preventDefault();
+    const scrollDirection = e.deltaY > 0 ? 1 : -1;
+    handleScroll(scrollDirection);
   };
 
   const handleTouchStart = (e) => {
-    setTouchStart(e.touches[0].clientY);
+    setTouchStartY(e.touches[0].clientY);
   };
 
   const handleTouchMove = (e) => {
-    if (isScrolling || canScroll) return;
+    e.preventDefault();
+    const touchEndY = e.touches[0].clientY;
+    const scrollDirection = touchStartY - touchEndY > 0 ? 1 : -1;
 
-    const touchEnd = e.touches[0].clientY;
-    const scrollDirection = touchStart - touchEnd > 0 ? 1 : -1;
-
-    handleScroll({ deltaY: scrollDirection });
+    handleScroll(scrollDirection);
   };
 
   useEffect(() => {
-    window.addEventListener("wheel", handleScroll, { passive: false });
+    window.addEventListener("wheel", handleWheelScroll, { passive: false });
     window.addEventListener("touchstart", handleTouchStart, { passive: false });
     window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
     return () => {
-      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("wheel", handleWheelScroll);
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchmove", handleTouchMove);
     };
