@@ -107,7 +107,6 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   };
 
   const handleTouchMove = (e) => {
-    e.preventDefault();
     const touchEndY = e.touches[0].clientY;
     const scrollDirection = touchStartY - touchEndY > 0 ? 1 : -1;
 
