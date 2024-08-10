@@ -8,6 +8,7 @@ import CompositeLearn from '../../Components/CompositeLearn/CompositeLearn';
 import Project from '../Project/Project';
 import Footer from '../Footer/Footer';
 import HeadingComponent from '../HeadingComponent/HeadingComponent';
+// import Scrollingeffect from '../scrollingeffect/Scrollingeffect'
 
 const Composite = () => {
     const [canScroll, setCanScroll] = useState(false);
@@ -44,6 +45,7 @@ const Composite = () => {
                     </div>
                 </div>
             </div>
+                {/* <Scrollingeffect/> */}
             <div className='mt-5 mt-md-0'>
                 <CompositeCapability onScrollComplete={handleScrollComplete} canScroll={canScroll} />
             </div>

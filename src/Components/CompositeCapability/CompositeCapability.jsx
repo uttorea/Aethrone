@@ -114,10 +114,10 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
                       <div
                           className={`col-md-12 card-container p-0 p-md-3 ${index === currentIndex ? "visible" : "hidden"}`}
                           key={index}
-                          // style={{
-                          //     transform: index === currentIndex ? "scale(1)" : "scale(0.8)",
-                          //     transition: "transform 0.8s",
-                          // }}
+                          style={{
+                              transform: index === currentIndex ? "scale(1)" : "scale(0.8)",
+                              transition: "transform 0.8s",
+                          }}
                       >
                           <div id="list-example" className="list-group">
                               <div className="composite_items" href="#list-item-1">

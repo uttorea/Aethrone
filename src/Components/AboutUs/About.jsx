@@ -1,5 +1,6 @@
 import React from "react";
 import "./About.css";
+// import Scrollingeffect from "../scrollingeffect/Scrollingeffect";
 import aboutbgimg from "../../assets/aboutbgimg.png";
 import KeyTechno from "../../Components/KeyTechnology/KeyTechno";
 import Journey from "../../Components/Journey/Journey";
@@ -40,6 +41,7 @@ const About = () => {
 
       <KeyTechno />
       </div>
+      {/* <Scrollingeffect/> */}
       <Journey />
       <Footer />
     </>

@@ -1,69 +1,74 @@
-.about-container{
+/* General Styles */
+.about-container {
     position: relative;
     width: 100%;
     height: 100vh;
-    
 }
 
 .aboutbg_img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-size: cover;
     background-position: center;
     z-index: -1;
-  }
-  .about_overlay{
+}
+
+.about_overlay {
     position: absolute;
     top: 140px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 140px); /* Adjust height to account for the top offset */
     z-index: 1;
     color: white;
-  }
-  .about_heading{
-    font-size: 96px;
-    letter-spacing: 7px;
-  }
-  .story_heading{
-    border-left: 6px solid #3535DE;
-  }
-  .aboutHead_para{
-    background-color: rgba(1, 1, 9, 0.8); /* #010109 with 80% opacity */
-  backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-    font-weight: 100;
-    letter-spacing:1px;
-}
-@media only screen and (max-width:425px){
-  .aboutHead_para{
-    width:100%;
-    font-weight: 100;
-  }
-  .aboutbg_img {
-   
-    height: 100vh;
-   
-  }
-  .keytec{
-    margin-top:150px;
-  }
-  .about_overlay{
-   
-    height: 60%;
-    top:100px;
-   
-  }
-  .about-container{
-   
-    height: 80vh;
-    
-}
-.about_heading{
-  font-size:48px;
 }
 
- 
+.about_heading {
+    font-size: 96px;
+    letter-spacing: 7px;
+}
+
+.story_heading {
+    border-left: 6px solid #3535DE;
+}
+
+.aboutHead_para {
+    background-color: rgba(1, 1, 9, 0.8); /* #010109 with 80% opacity */
+    backdrop-filter: blur(10px); /* Optional: Adds a blur effect to the background */
+    border-radius: 8px; /* Optional: Adds rounded corners */
+    font-weight: 100;
+    letter-spacing: 1px;
+    padding: 1em; /* Ensure there's padding inside the element */
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 425px) {
+    .aboutHead_para {
+        width: 100%;
+        font-weight: 100;
+        padding: 1em; /* Ensure padding is consistent on small screens */
+    }
+
+    .aboutbg_img {
+        height: 80vh; /* Adjust for smaller screens */
+    }
+
+    .keytec {
+        margin-top: 150px;
+    }
+
+    .about_overlay {
+        height: 60%;
+        top: 100px;
+    }
+
+    .about-container {
+        height: 80vh;
+    }
+
+    .about_heading {
+        font-size: 48px;
+    }
 }
