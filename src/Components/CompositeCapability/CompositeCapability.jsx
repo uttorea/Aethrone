@@ -73,79 +73,93 @@ const items = [
 const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [touchStart, setTouchStart] = useState(0);
 
   const handleScroll = (e) => {
-      if (isScrolling || canScroll) return;
+    if (isScrolling || canScroll) return;
 
-      setIsScrolling(true);
-      e.preventDefault();
+    setIsScrolling(true);
+    e.preventDefault();
 
-      const scrollDirection = e.deltaY > 0 ? 1 : -1;
-      const newIndex = currentIndex + scrollDirection;
+    const scrollDirection = e.deltaY > 0 ? 1 : -1;
+    const newIndex = currentIndex + scrollDirection;
 
-      if (newIndex >= 0 && newIndex < items.length) {
-          setCurrentIndex(newIndex);
+    if (newIndex >= 0 && newIndex < items.length) {
+      setCurrentIndex(newIndex);
+    }
+
+    setTimeout(() => {
+      setIsScrolling(false);
+      if (newIndex === items.length - 1 && scrollDirection > 0) {
+        onScrollComplete('down'); // Notify parent when scrolling down completes
+      } else if (newIndex === 0 && scrollDirection < 0) {
+        onScrollComplete('up'); // Notify parent when scrolling up completes
       }
+    }, 1000); // Adjust the delay as needed
+  };
 
-      setTimeout(() => {
-          setIsScrolling(false);
-          if (newIndex === items.length - 1 && scrollDirection > 0) {
-              onScrollComplete('down'); // Notify parent when scrolling down completes
-          } else if (newIndex === 0 && scrollDirection < 0) {
-              onScrollComplete('up'); // Notify parent when scrolling up completes
-          }
-      }, 1000); // Adjust the delay as needed
+  const handleTouchStart = (e) => {
+    setTouchStart(e.touches[0].clientY);
+  };
+
+  const handleTouchMove = (e) => {
+    if (isScrolling || canScroll) return;
+
+    const touchEnd = e.touches[0].clientY;
+    const scrollDirection = touchStart - touchEnd > 0 ? 1 : -1;
+
+    handleScroll({ deltaY: scrollDirection });
   };
 
   useEffect(() => {
-      window.addEventListener("wheel", handleScroll, { passive: false });
+    window.addEventListener("wheel", handleScroll, { passive: false });
+    window.addEventListener("touchstart", handleTouchStart, { passive: false });
+    window.addEventListener("touchmove", handleTouchMove, { passive: false });
 
-      return () => {
-          window.removeEventListener("wheel", handleScroll);
-      };
+    return () => {
+      window.removeEventListener("wheel", handleScroll);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
   }, [currentIndex, isScrolling, canScroll]);
 
   return (
-      <div className="composite_main">
-          <div className="container">
-              <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
-              <div className="row p-0 p-md-3 mt-5 myrow gap-5">
-                  {items.map((item, index) => (
-                      <div
-                          className={`col-md-12 card-container p-0 p-md-3 ${index === currentIndex ? "visible" : "hidden"}`}
-                          key={index}
-                          // style={{
-                          //     transform: index === currentIndex ? "scale(1)" : "scale(0.8)",
-                          //     transition: "transform 0.8s",
-                          // }}
-                      >
-                          <div id="list-example" className="list-group">
-                              <div className="composite_items" href="#list-item-1">
-                                  <div className="d-flex">
-                                      <div className="col-7">
-                                          <p className="fontsecondary fixed-main-text">
-                                              {item.mainText}
-                                          </p>
-                                          <div className="build-spacification fw-bold">
-                                              {item.spec}
-                                          </div>
-                                      </div>
-                                      <div className="col-5 d-flex justify-content-center align-items-center composite_card rounded">
-                                          <img
-                                              src={item.img}
-                                              alt=""
-                                              className="img-fluid_composite"
-                                          />
-                                      </div>
-                                  </div>
-                              </div>
-                              <div className="fontsecondary py-2 py-md-5">{item.description}</div>
-                          </div>
+    <div className="composite_main">
+      <div className="container">
+        <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
+        <div className="row p-0 p-md-3 mt-5 myrow gap-5">
+          {items.map((item, index) => (
+            <div
+              className={`col-md-12 card-container p-0 p-md-3 ${index === currentIndex ? "visible" : "hidden"}`}
+              key={index}
+            >
+              <div id="list-example" className="list-group">
+                <div className="composite_items" href="#list-item-1">
+                  <div className="d-flex">
+                    <div className="col-7">
+                      <p className="fontsecondary fixed-main-text">
+                        {item.mainText}
+                      </p>
+                      <div className="build-spacification fw-bold">
+                        {item.spec}
                       </div>
-                  ))}
+                    </div>
+                    <div className="col-5 d-flex justify-content-center align-items-center composite_card rounded">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="img-fluid_composite"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="fontsecondary py-2 py-md-5">{item.description}</div>
               </div>
-          </div>
+            </div>
+          ))}
+        </div>
       </div>
+    </div>
   );
 };
 
