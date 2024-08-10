@@ -73,13 +73,15 @@ const items = [
 const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
-  const [touchStartY, setTouchStartY] = useState(0);
+  const [startY, setStartY] = useState(0);
 
-  const handleScroll = (scrollDirection) => {
+  const handleWheelScroll = (e) => {
     if (isScrolling || canScroll) return;
 
     setIsScrolling(true);
+    e.preventDefault();
 
+    const scrollDirection = e.deltaY > 0 ? 1 : -1;
     const newIndex = currentIndex + scrollDirection;
 
     if (newIndex >= 0 && newIndex < items.length) {
@@ -96,32 +98,50 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
     }, 1000);
   };
 
-  const handleWheelScroll = (e) => {
-    e.preventDefault();
-    const scrollDirection = e.deltaY > 0 ? 1 : -1;
-    handleScroll(scrollDirection);
-  };
-
   const handleTouchStart = (e) => {
-    setTouchStartY(e.touches[0].clientY);
+    setStartY(e.touches[0].clientY);
   };
 
   const handleTouchMove = (e) => {
-    const touchEndY = e.touches[0].clientY;
-    const scrollDirection = touchStartY - touchEndY > 0 ? 1 : -1;
+    if (isScrolling || canScroll) return;
 
-    handleScroll(scrollDirection);
+    const deltaY = e.touches[0].clientY - startY;
+    const scrollDirection = deltaY < 0 ? 1 : -1;
+
+    const newIndex = currentIndex + scrollDirection;
+
+    if (newIndex >= 0 && newIndex < items.length) {
+      setCurrentIndex(newIndex);
+    }
+
+    setIsScrolling(true);
+    setTimeout(() => {
+      setIsScrolling(false);
+      if (newIndex === items.length - 1 && scrollDirection > 0) {
+        onScrollComplete('down');
+      } else if (newIndex === 0 && scrollDirection < 0) {
+        onScrollComplete('up');
+      }
+    }, 1000);
   };
 
   useEffect(() => {
-    window.addEventListener("wheel", handleWheelScroll, { passive: false });
-    window.addEventListener("touchstart", handleTouchStart, { passive: false });
-    window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    if (window.innerWidth > 768) {
+      // For larger screens, use wheel scroll
+      window.addEventListener("wheel", handleWheelScroll, { passive: false });
+    } else {
+      // For smaller screens, use touch events
+      window.addEventListener("touchstart", handleTouchStart);
+      window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    }
 
     return () => {
-      window.removeEventListener("wheel", handleWheelScroll);
-      window.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchmove", handleTouchMove);
+      if (window.innerWidth > 768) {
+        window.removeEventListener("wheel", handleWheelScroll);
+      } else {
+        window.removeEventListener("touchstart", handleTouchStart);
+        window.removeEventListener("touchmove", handleTouchMove);
+      }
     };
   }, [currentIndex, isScrolling, canScroll]);
 
