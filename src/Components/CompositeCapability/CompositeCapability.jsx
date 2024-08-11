@@ -73,79 +73,115 @@ const items = [
 const CompositeCapability = ({ onScrollComplete, canScroll }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isScrolling, setIsScrolling] = useState(false);
+  const [startY, setStartY] = useState(0);
 
-  const handleScroll = (e) => {
-      if (isScrolling || canScroll) return;
+  const handleWheelScroll = (e) => {
+    if (isScrolling || canScroll) return;
 
-      setIsScrolling(true);
-      e.preventDefault();
+    setIsScrolling(true);
+    e.preventDefault();
 
-      const scrollDirection = e.deltaY > 0 ? 1 : -1;
-      const newIndex = currentIndex + scrollDirection;
+    const scrollDirection = e.deltaY > 0 ? 1 : -1;
+    const newIndex = currentIndex + scrollDirection;
 
-      if (newIndex >= 0 && newIndex < items.length) {
-          setCurrentIndex(newIndex);
+    if (newIndex >= 0 && newIndex < items.length) {
+      setCurrentIndex(newIndex);
+    }
+
+    setTimeout(() => {
+      setIsScrolling(false);
+      if (newIndex === items.length - 1 && scrollDirection > 0) {
+        onScrollComplete('down');
+      } else if (newIndex === 0 && scrollDirection < 0) {
+        onScrollComplete('up');
       }
+    }, 1000);
+  };
 
-      setTimeout(() => {
-          setIsScrolling(false);
-          if (newIndex === items.length - 1 && scrollDirection > 0) {
-              onScrollComplete('down'); // Notify parent when scrolling down completes
-          } else if (newIndex === 0 && scrollDirection < 0) {
-              onScrollComplete('up'); // Notify parent when scrolling up completes
-          }
-      }, 1000); // Adjust the delay as needed
+  const handleTouchStart = (e) => {
+    setStartY(e.touches[0].clientY);
+  };
+
+  const handleTouchMove = (e) => {
+    if (isScrolling || canScroll) return;
+
+    const deltaY = e.touches[0].clientY - startY;
+    const scrollDirection = deltaY < 0 ? 1 : -1;
+
+    const newIndex = currentIndex + scrollDirection;
+
+    if (newIndex >= 0 && newIndex < items.length) {
+      setCurrentIndex(newIndex);
+    }
+
+    setIsScrolling(true);
+    setTimeout(() => {
+      setIsScrolling(false);
+      if (newIndex === items.length - 1 && scrollDirection > 0) {
+        onScrollComplete('down');
+      } else if (newIndex === 0 && scrollDirection < 0) {
+        onScrollComplete('up');
+      }
+    }, 1000);
   };
 
   useEffect(() => {
-      window.addEventListener("wheel", handleScroll, { passive: false });
+    if (window.innerWidth > 768) {
+      // For larger screens, use wheel scroll
+      window.addEventListener("wheel", handleWheelScroll, { passive: false });
+    } else {
+      // For smaller screens, use touch events
+      window.addEventListener("touchstart", handleTouchStart);
+      window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    }
 
-      return () => {
-          window.removeEventListener("wheel", handleScroll);
-      };
+    return () => {
+      if (window.innerWidth > 768) {
+        window.removeEventListener("wheel", handleWheelScroll);
+      } else {
+        window.removeEventListener("touchstart", handleTouchStart);
+        window.removeEventListener("touchmove", handleTouchMove);
+      }
+    };
   }, [currentIndex, isScrolling, canScroll]);
 
   return (
-      <div className="composite_main">
-          <div className="container">
-              <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
-              <div className="row p-0 p-md-3 mt-5 myrow gap-5">
-                  {items.map((item, index) => (
-                      <div
-                          className={`col-md-12 card-container p-0 p-md-3 ${index === currentIndex ? "visible" : "hidden"}`}
-                          key={index}
-                          style={{
-                              transform: index === currentIndex ? "scale(1)" : "scale(0.8)",
-                              transition: "transform 0.8s",
-                          }}
-                      >
-                          <div id="list-example" className="list-group">
-                              <div className="composite_items" href="#list-item-1">
-                                  <div className="d-flex">
-                                      <div className="col-7">
-                                          <p className="fontsecondary fixed-main-text">
-                                              {item.mainText}
-                                          </p>
-                                          <div className="build-spacification fw-bold">
-                                              {item.spec}
-                                          </div>
-                                      </div>
-                                      <div className="col-5 d-flex justify-content-center align-items-center composite_card rounded">
-                                          <img
-                                              src={item.img}
-                                              alt=""
-                                              className="img-fluid_composite"
-                                          />
-                                      </div>
-                                  </div>
-                              </div>
-                              <div className="fontsecondary py-2 py-md-5">{item.description}</div>
-                          </div>
+    <div className="composite_main">
+      <div className="container">
+        <HeadingComponent heading="Capability " subheading="Manufacture of a simple composite structure" />
+        <div className="row p-0 p-md-3 mt-5 myrow gap-5">
+          {items.map((item, index) => (
+            <div
+              className={`col-md-12 card-container p-0 p-md-3 ${index === currentIndex ? "visible" : "hidden"}`}
+              key={index}
+            >
+              <div id="list-example" className="list-group">
+                <div className="composite_items" href="#list-item-1">
+                  <div className="d-flex">
+                    <div className="col-7">
+                      <p className="fontsecondary fixed-main-text">
+                        {item.mainText}
+                      </p>
+                      <div className="build-spacification fw-bold">
+                        {item.spec}
                       </div>
-                  ))}
+                    </div>
+                    <div className="col-5 d-flex justify-content-center align-items-center composite_card rounded">
+                      <img
+                        src={item.img}
+                        alt=""
+                        className="img-fluid_composite"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="fontsecondary py-2 py-md-5">{item.description}</div>
               </div>
-          </div>
+            </div>
+          ))}
+        </div>
       </div>
+    </div>
   );
 };
 
