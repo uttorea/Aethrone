@@ -11,9 +11,7 @@
     margin: 0;
 }
 
-.compo_para1 {
-    border-left: 6px solid #3535DE;
-}
+
 
 .compo_para2 {
     background-color: rgba(1, 1, 9, 0.8); /* #010109 with 80% opacity */
@@ -22,6 +20,11 @@
     border-radius: 5px;
     width:90%;
     letter-spacing:1px;
+}
+.compositemain11{
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 @media only screen and (max-width:425px){
@@ -38,9 +41,14 @@
     }
     .compo_para2{
         font-size:12px;
+        width:95%;
     }
     .composite_content {
        
         top: 80px;
+    }
+    .compositemain11{
+        width:95%;
+       
     }
 }

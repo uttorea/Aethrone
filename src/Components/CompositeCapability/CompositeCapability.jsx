@@ -158,7 +158,7 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
               <div id="list-example" className="list-group">
                 <div className="composite_items" href="#list-item-1">
                   <div className="d-flex">
-                    <div className="col-7">
+                    <div className="col-7 ps-3">
                       <p className="fontsecondary fixed-main-text">
                         {item.mainText}
                       </p>
@@ -175,7 +175,7 @@ const CompositeCapability = ({ onScrollComplete, canScroll }) => {
                     </div>
                   </div>
                 </div>
-                <div className="fontsecondary py-2 py-md-5">{item.description}</div>
+                <div className="fontsecondary py-2 py-md-5 ps-3">{item.description}</div>
               </div>
             </div>
           ))}

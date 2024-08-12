@@ -19,23 +19,23 @@ const Composite = () => {
     return (
         <>
             <div className='composite_page'>
-                <img src={compositeBgImg} alt="" className='compositeimg1 w-100' />
+                <img src={compositeBgImg} alt="" className='compositeimg1 w-100 ' />
                 <div className="row">
                     <div className="col">
-                        <div className="container">
+                        <div className="compositemain11">
                             <div className='composite_content'>
-                                <h1 className='m-0 Advance-Composite'>Advance Composite</h1>
-                                <p className='fontfamilySecondary fontsecondry'>
+                                <h1 className='m-0 Advance-Composite col-10'>Advance Composite</h1>
+                                <p className='fontfamilySecondary fontsecondry col-10'>
                                     From concept to product to certification
                                 </p>
-                                <div className='mt-2 mt-md-5'>
+                                <div className='mt-2 mt-md-5 col-10'>
                                     <HeadingComponent heading='What We Do' />
                                 </div>
-                                <div className='compo_para2 p-4 p-md-5 mt-2'>
-                                    <p className='fontfamilySecondary fontsecondry px-3'>
+                                <div className='compo_para2 p-3 p-md-5 mt-0 mt-md-2'>
+                                    <p className='fontfamilySecondary fontsecondry px-0 px-md-3'>
                                         We have a vertically integrated team for composite matrix design and analysis, tooling and post processing, and quality assessment. This ensures timely delivery in development programs and series production.
                                     </p>
-                                    <p className='fontfamilySecondary fontsecondry px-3'>
+                                    <p className='fontfamilySecondary fontsecondry px-0 px-md-3'>
                                         We design, develop and manufacture rotary-propulsion composite components, critical aero-structure members, and sub-systems. We utilize out-of-autoclave methods with tooling capacity of up to 5m in length.
                                     </p>
                                 </div>

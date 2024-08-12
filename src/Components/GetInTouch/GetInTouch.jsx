@@ -84,7 +84,8 @@ const GetInTouch = () => {
                       <input
                         type="text"
                         className="form-control border-0 mt-md-4 mt-1 "
-                        placeholder="Your Full Name"  
+                        placeholder="Your Full Name" 
+                        style= {{outline: "none" , boxShadow: "none"}}
                       />
                     </div>
                   </div>
@@ -95,6 +96,8 @@ const GetInTouch = () => {
                         type="text"
                         className="form-control border-0 mt-md-4 mt-1"
                         placeholder="Phno. name"
+                        style= {{outline: "none" , boxShadow: "none"}}
+
                       />
                     </div>
                   </div>
@@ -105,6 +108,8 @@ const GetInTouch = () => {
                         type="email"
                         className="form-control border-0 mt-md-4 mt-1"
                         placeholder="Your email address"
+                        style= {{outline: "none" , boxShadow: "none"}}
+
                       />
                     </div>
                   </div>
@@ -115,6 +120,8 @@ const GetInTouch = () => {
                         type="text"
                         className="form-control border-0 mt-md-4 mt-1"
                         placeholder="Reason for the message"
+                        style= {{outline: "none" , boxShadow: "none"}}
+
                       />
                     </div>
                   </div>
@@ -123,7 +130,9 @@ const GetInTouch = () => {
                     <textarea
                       className="form-control border-dark mt-md-3 mt-1"
                       placeholder="Write Your Message..."
-                      style={{ height: "200px", resize:'none'}}
+                      style={{ height: "200px", resize:'none',outline: "none" , boxShadow: "none"}}
+                      
+
                     ></textarea>
                   </div>
                 </div>

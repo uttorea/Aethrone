@@ -1,9 +1,5 @@
 import React from "react";
 import "./About.css";
-
-import TubeLauncher from '../TubeLauncher/TubeLauncher'
-import DeliveryBungee from "../DeliveryBungee/DeliveryBungee";
-
 import aboutbgimg from "../../assets/aboutbgimg.png";
 import KeyTechno from "../../Components/KeyTechnology/KeyTechno";
 import Journey from "../../Components/Journey/Journey";
@@ -44,8 +40,7 @@ const About = () => {
 
       <KeyTechno />
       </div>
-      {/* <DeliveryBungee/> */}
-      <TubeLauncher/>
+     
       <Journey />
       <Footer />
     </>
