@@ -23,10 +23,10 @@ function TubeLauncher() {
       });
 
       ScrollTrigger.create({
-        trigger: ".gallery",
+        trigger: ".gallery1",
         start: "top top",
         end: "bottom bottom",
-        pin: ".rightblock",
+        pin: ".rightblock1",
         animation: animation,
         scrub: true,
         
@@ -44,7 +44,7 @@ function TubeLauncher() {
             subheading="Specification"
             />
             </div>
-      <Box className="gallery container pt-0" sx={{ display: "flex",}}>
+      <Box className="gallery1 container pt-0" sx={{ display: "flex",}}>
         <Box
           className="leftblock"
           sx={{
@@ -141,7 +141,7 @@ function TubeLauncher() {
           </Box>
         </Box>
         <Box
-          className="rightblock"
+          className="rightblock1"
           sx={{
             height: "100vh",
             display: "flex",

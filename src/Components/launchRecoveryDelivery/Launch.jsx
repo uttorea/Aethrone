@@ -36,13 +36,13 @@ const Launch = () => {
               </div>
             </div>
             <div className="launch_btn mt-3 mt-md-5">
-              <Link
+              <a
                 className="btn btn-light  px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
-                to="/delivery-launcher-system"
+                href="/delivery-launcher-system"
               >
                 {" "}
                 Launcher System <i className="bi bi-arrow-down"></i>
-              </Link>
+              </a>
               <Link
                 className="btn btn-light px-md-5 px-1 mx-md-5 mx-1 launch_btn1 maincolor fontfamilySecondary"
                 to="/launch-recovery-system"

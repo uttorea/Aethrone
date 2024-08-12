@@ -3,10 +3,10 @@ import './DeliveryLauncherSystem.css'
 import launcherRecovery1 from '../../assets/launcherRecovery1.png'
 import DeliveryApplication from '../../Components/DeliveryApplication/DeliveryApplication'
 import GearSystem from '../GearSystem/GearSystem'
-// import DeliveryBungee from '../DeliveryBungee/DeliveryBungee'
+import DeliveryBungee from '../DeliveryBungee/DeliveryBungee'
 
 import BungeeCatapult from '../BungeeCatapult/BungeeCatapult'
-// import TubeLauncher from '../TubeLauncher/TubeLauncher'
+import TubeLauncher from '../TubeLauncher/TubeLauncher'
 import Project from '../Project/Project'
 import Footer from '../Footer/Footer'
 import HeadingComponent from '../HeadingComponent/HeadingComponent'
@@ -34,11 +34,11 @@ const DeliveryLauncherSystem = () => {
         <DeliveryApplication/>
         <GearSystem/>
        
-        {/* <DeliveryBungee/> */}
+        <DeliveryBungee/>
         <BungeeCatapult/>
-        {/* <TubeLauncher/> */}
+        <TubeLauncher/>
         <Project />
-<Footer/>
+        <Footer/>
     </div>
   )
 }

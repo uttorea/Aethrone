@@ -17,9 +17,9 @@
    import ParachuteRecovery from './Components/ParachuteRecovery/ParachuteRecovery';
    import DeliveryLauncherSystem from './Components/DeliveryLauncherSystem/DeliveryLauncherSystem';
    import AerialRobotics from './Components/AerialRobotics/AerialRobotics';
-   import 'bootstrap/dist/css/bootstrap.min.css';
-   import 'bootstrap-icons/font/bootstrap-icons.css';
-   import 'bootstrap/dist/js/bootstrap.bundle.min';
+  //  import 'bootstrap/dist/css/bootstrap.min.css';
+  //  import 'bootstrap-icons/font/bootstrap-icons.css';
+  //  import 'bootstrap/dist/js/bootstrap.bundle.min';
    import Loading from './Loading'; // Import the Loading component
    import ScrollToTop from './ScrollToTop'; // Import the ScrollToTop component
 
