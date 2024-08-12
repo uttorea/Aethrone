@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import "./DeliveryBungee.css";
 import HeadingComponent from "../../Components/HeadingComponent/HeadingComponent";
@@ -7,50 +8,10 @@ import bungee2 from "../../assets/BungeeImg2.png";
 import Button from "../../Components/Button/Button";
 
 const DeliveryBungee = () => {
-  const [visibleSection, setVisibleSection] = useState('main');
-  const [dragPosition, setDragPosition] = useState(10);
-  const [isDragging, setIsDragging] = useState(false);
+  const [visibleSection, setVisibleSection] = useState(0);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (isDragging) {
-        const newPosition = e.clientY - 10; // Adjust for initial button position
-        const clampedPosition = Math.max(10, Math.min(newPosition, 210)); // Adjusted for 200px scroll range
 
-        setDragPosition(clampedPosition);
-
-        // Toggle visibility based on position
-        if (clampedPosition >= 190) {
-          // Near bottom of the scroll range
-          setVisibleSection('features');
-        } else if (clampedPosition >= 110) {
-          // Middle of the scroll range
-          setVisibleSection('hide');
-        } else {
-          // Near top of the scroll range
-          setVisibleSection('main');
-        }
-      }
-    };
-
-    const handleMouseUp = () => {
-      setIsDragging(false);
-    };
-
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, [isDragging]);
-
-  const handleMouseDown = () => {
-    setIsDragging(true);
-  };
-
-  const specifications = [
+     const specifications = [
     {
       description: "Maximum Aircraft Weight <br/> Corresponding Max Velocity",
       value: "30 kgs / 30m/s",
@@ -60,7 +21,6 @@ const DeliveryBungee = () => {
     { description: "Launch Angle", value: "15 - 35 Deg" },
     { description: "Indigenous Content", value: "75 %" },
   ];
-
   const sections = [
     {
       key: 'main',
@@ -140,13 +100,16 @@ const DeliveryBungee = () => {
             </div>
             <div className="d-md-flex gap-md-4 gap-4 mt-md-3 mt-0 ">
               <div>
-              <Button text="Contact Us " />
+                <Button text="Contact Us " />
               </div>
               <div className="mt-2 mt-md-0">
-                
-              <Button text="Download Brochure " backgroundColor="white" border='2px solid #3535DE' color="#3535DE" 
-            />
-            </div>
+                <Button
+                  text="Download Brochure "
+                  backgroundColor="white"
+                  border="2px solid #3535DE"
+                  color="#3535DE"
+                />
+              </div>
             </div>
           </div>
           <div className="col-4 bungeeimg">
@@ -157,6 +120,43 @@ const DeliveryBungee = () => {
     },
   ];
 
+  useEffect(() => {
+    const handleScroll = (deltaY) => {
+      setVisibleSection((prev) => {
+        const newSection = prev + (deltaY > 0 ? 1 : -1);
+        return Math.max(0, Math.min(newSection, sections.length - 1));
+      });
+    };
+
+    const handleWheel = (e) => {
+      e.preventDefault();
+      handleScroll(e.deltaY);
+    };
+
+    let touchStartY = 0;
+
+    const handleTouchStart = (e) => {
+      touchStartY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      const deltaY = touchStartY - e.touches[0].clientY;
+      if (Math.abs(deltaY) > 50) {
+        handleScroll(deltaY);
+      }
+    };
+
+    document.addEventListener("wheel", handleWheel);
+    document.addEventListener("touchstart", handleTouchStart);
+    document.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      document.removeEventListener("wheel", handleWheel);
+      document.removeEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+    };
+  }, [sections.length]);
+
   return (
     <div className="deliverybungee">
       <div className="container mt-4 mt-md-0">
@@ -164,17 +164,12 @@ const DeliveryBungee = () => {
           heading="Bungee Catapult Launcher - YPJ 30"
           subheading="Specification"
         />
-        <div
-          className="scroll-button rounded"
-          style={{ top: `${dragPosition}px` }}
-          onMouseDown={handleMouseDown}
-        ></div>
         <div className="bungee_head"></div>
 
-        {sections.map((section) => (
+        {sections.map((section, index) => (
           <div
             key={section.key}
-            className={`${section.className} ${visibleSection === section.key ? 'visible' : ''}`}
+            className={`${section.className} ${visibleSection === index ? 'visible' : ''}`}
           >
             {section.content}
           </div>
