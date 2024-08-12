@@ -5,7 +5,10 @@
   position: relative;
 }
 
-
+.css-qoa8yx .photo img {
+  height: 75%;
+  width: 100%;
+}
 
 .bungee_head {
   position: relative; 
@@ -27,11 +30,6 @@
 }
 .See-bungee{
   font-size:24px;
-}
-.css-qoa8yx .photo img {
-  height: 100%;
-  width: 100%;
-  margin-top: 206px;
 }
 .ulclassbungee{
 color:#414042;

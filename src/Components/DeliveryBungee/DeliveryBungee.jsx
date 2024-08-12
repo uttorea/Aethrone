@@ -6,7 +6,7 @@ import HeadingComponent from "../../Components/HeadingComponent/HeadingComponent
 import bungeeImg from "../../assets/bungeeImg.png";
 import bungee from "../../assets/bungee.gif";
 import bungee2 from "../../assets/BungeeImg2.png";
-import './DeliveryBungee.css'
+import './DeliveryBungee.css';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -113,7 +113,7 @@ function DeliveryBungee() {
             </div>
           </Box>
           <Box sx={{}}>
-            <div className="bungeenumber d-flex justify-content-center align-items-center">
+            <div className="bungeenumber d-flex align-items-center justify-content-between">
               <div className="bungeenumbermain">
                 <h1 className="maincolor numberbungee fontfamilyPrimary">
                   100
@@ -122,9 +122,9 @@ function DeliveryBungee() {
                   Launches per bungee
                 </div>
               </div>
-              {/* <div className="image-container">
-                <img src={bungee} alt="Bungee GIF" />
-              </div> */}
+              <div className="image-container">
+                <img src={bungee} alt="Bungee GIF" className="fixed-image" />
+              </div>
             </div>
           </Box>
           <Box sx={{ height: "100vh" }}>
