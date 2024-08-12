@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "./DeliveryBungee.css";
 import HeadingComponent from "../../Components/HeadingComponent/HeadingComponent";
@@ -10,8 +9,7 @@ import Button from "../../Components/Button/Button";
 const DeliveryBungee = () => {
   const [visibleSection, setVisibleSection] = useState(0);
 
-
-     const specifications = [
+  const specifications = [
     {
       description: "Maximum Aircraft Weight <br/> Corresponding Max Velocity",
       value: "30 kgs / 30m/s",
@@ -21,6 +19,7 @@ const DeliveryBungee = () => {
     { description: "Launch Angle", value: "15 - 35 Deg" },
     { description: "Indigenous Content", value: "75 %" },
   ];
+
   const sections = [
     {
       key: 'main',
@@ -83,7 +82,7 @@ const DeliveryBungee = () => {
         <div className="feature_main_container d-flex">
           <div className="col-7">
             <h1 className="mt-1 mt-md-5">Features</h1>
-            <ul className="mt-0 mt-md-3 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
+            <ul className="mt-0 mt-md-3 ulclassbungee fontfamilySecondary fontweight fontsecondry">
               <li>
                 Configurable Trolley to accommodate wide variety of propeller
                 sizes
@@ -96,7 +95,7 @@ const DeliveryBungee = () => {
               <li>Built Capability for upto 1000 launches</li>
             </ul>
             <div className="maincolor mt-0 mt-md-5 fontfamilyPrimary See-bungee">
-              See bungee catapult launcher in action{" "}
+              See bungee catapult launcher in action
             </div>
             <div className="d-md-flex gap-md-4 gap-4 mt-md-3 mt-0 ">
               <div>
@@ -121,9 +120,10 @@ const DeliveryBungee = () => {
   ];
 
   useEffect(() => {
+    const scrollSensitivity = 1; // Adjust this value to control scroll speed
     const handleScroll = (deltaY) => {
       setVisibleSection((prev) => {
-        const newSection = prev + (deltaY > 0 ? 1 : -1);
+        const newSection = prev + Math.round(deltaY * scrollSensitivity);
         return Math.max(0, Math.min(newSection, sections.length - 1));
       });
     };
@@ -170,6 +170,10 @@ const DeliveryBungee = () => {
           <div
             key={section.key}
             className={`${section.className} ${visibleSection === index ? 'visible' : ''}`}
+            style={{
+              transition: 'opacity 0.8s ease-in-out', // Adjusted to slow down the transition
+              opacity: visibleSection === index ? 1 : 0,
+            }}
           >
             {section.content}
           </div>
