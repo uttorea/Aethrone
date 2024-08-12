@@ -45,6 +45,7 @@ function Project() {
                   <div className="">
                     <label className="form-label text-white">Name</label>
                     <input
+                    style={{outline: "none" , boxShadow: "none"}}
                       type="text"
                       className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"
                       placeholder="Enter your Name"
@@ -55,6 +56,7 @@ function Project() {
                   <div className="">
                     <label className="form-label text-white ">Subject</label>
                     <input
+                    style={{outline: "none" , boxShadow: "none"}}
                       type="text"
                       className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"
                       placeholder="Your Message"
@@ -65,6 +67,7 @@ function Project() {
               <div className="mt-5">
                 <label className="form-label text-white">Email</label>
                 <input
+                style={{outline: "none" , boxShadow: "none"}}
                   type="email"
                   className="form-control bg-transparent border-bottom border-0 rounded-0 text-white"
                   placeholder="Enter your Email"
@@ -73,12 +76,13 @@ function Project() {
               <div className="mt-5">
                 <label className="form-label text-white">Message</label>
                 <textarea
+                
                   className="form-control p-3 text-white w-100 bg-transparent rounded mt-3"
                   id="floatingTextarea2"
                   placeholder="Write Your Message..."
                   rows={5}
                   cols={50}
-                  style={{ resize: 'none' }}
+                  style={{ resize: 'none', outline: "none" , boxShadow: "none"}}
                 ></textarea>
               </div>
               <div className="d-flex justify-content-end mt-4">
