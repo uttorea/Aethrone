@@ -20,14 +20,14 @@ function DeliveryBungee() {
         scale: 1,
         duration: 1,
         stagger: 1,
-        ease: "power1.inOut", // Adjust easing to make the animation smooth in both directions
+        ease: "power1.inOut",
         scrollTrigger: {
           trigger: ".gallery",
           start: "top top",
           end: "bottom bottom",
           pin: ".rightblock",
           scrub: true,
-          markers: false, // Optional: Use markers to debug the scroll behavior
+          markers: false,
         },
       });
 
@@ -38,7 +38,7 @@ function DeliveryBungee() {
         pin: ".rightblock",
         animation: animation,
         scrub: true,
-        anticipatePin: 1, // Improves scroll behavior
+        anticipatePin: 1,
       });
     });
     return () => ctx.revert();
@@ -113,7 +113,7 @@ function DeliveryBungee() {
             </div>
           </Box>
           <Box sx={{}}>
-            <div className="bungeenumber text-center">
+            <div className="bungeenumber d-flex justify-content-center align-items-center">
               <div className="bungeenumbermain">
                 <h1 className="maincolor numberbungee fontfamilyPrimary">
                   100
@@ -122,6 +122,9 @@ function DeliveryBungee() {
                   Launches per bungee
                 </div>
               </div>
+              {/* <div className="image-container">
+                <img src={bungee} alt="Bungee GIF" />
+              </div> */}
             </div>
           </Box>
           <Box sx={{ height: "100vh" }}>
