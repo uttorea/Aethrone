@@ -36,13 +36,12 @@ const Launch = () => {
               </div>
             </div>
             <div className="launch_btn mt-3 mt-md-5">
-              <a
-                className="btn btn-light  px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
-                href="/delivery-launcher-system"
-              >
-                {" "}
-                Launcher System <i className="bi bi-arrow-down"></i>
-              </a>
+            <button
+  className="btn btn-light px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
+  onClick={() => window.location.href = '/delivery-launcher-system'}
+>
+  Launcher System <i className="bi bi-arrow-down"></i>
+</button>
               <Link
                 className="btn btn-light px-md-5 px-1 mx-md-5 mx-1 launch_btn1 maincolor fontfamilySecondary"
                 to="/launch-recovery-system"
