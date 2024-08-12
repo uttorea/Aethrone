@@ -6,156 +6,177 @@ import bungee from "../../assets/bungee.gif";
 import bungee2 from "../../assets/BungeeImg2.png";
 import Button from "../../Components/Button/Button";
 
+const sections = [
+  {
+    key: 'main',
+    className: 'bungee_main',
+    content: (
+      <div className="buggigmain col-12 d-flex gap-2 gap-md-5">
+        <div className="col-7 mt-5 mt-md-0">
+          <p className="mt-4 fontsecondry">
+            This Custom Off The Shelf Launcher can be used to launch up to
+            30 kgs of Fixed Wing UAVs
+          </p>
+          <div className="d-flex gap-2 gap-md-5">
+            <div className="mt-2">
+              <table className="table border fontsecondry">
+                <tbody>
+                  <tr>
+                    <td className="description-cell px-1 px-md-5 py-1 py-md-3">
+                      Maximum Aircraft Weight <br/> Corresponding Max Velocity
+                    </td>
+                    <td className="value-cell px-1 px-md-5 py-1 py-md-3">30 kgs / 30m/s</td>
+                  </tr>
+                  <tr>
+                    <td className="description-cell px-1 px-md-5 py-1 py-md-3">
+                      G load on aircraft
+                    </td>
+                    <td className="value-cell px-1 px-md-5 py-1 py-md-3">5Gs</td>
+                  </tr>
+                  <tr>
+                    <td className="description-cell px-1 px-md-5 py-1 py-md-3">
+                      Launcher Weight
+                    </td>
+                    <td className="value-cell px-1 px-md-5 py-1 py-md-3">72 kgs</td>
+                  </tr>
+                  <tr>
+                    <td className="description-cell px-1 px-md-5 py-1 py-md-3">
+                      Launch Angle
+                    </td>
+                    <td className="value-cell px-1 px-md-5 py-1 py-md-3">15 - 35 Deg</td>
+                  </tr>
+                  <tr>
+                    <td className="description-cell px-1 px-md-5 py-1 py-md-3">
+                      Indigenous Content
+                    </td>
+                    <td className="value-cell px-1 px-md-5 py-1 py-md-3">75 %</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div className="bungeeimg col-4">
+          <img src={bungeeImg} alt="Bungee Image" className="buneeimg" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: 'hide',
+    className: 'bungeehide',
+    content: (
+      <div className="bungeenumber text-center col-7">
+        <div className="bungeenumbermain">
+          <h1 className="maincolor numberbungee fontfamilyPrimary">100</h1>
+          <div className="fontfamilySecondary fontsecondry">Launches per bungee</div>
+        </div>
+        <div className="col-4 bungeeimg">
+          <img src={bungee} alt="Bungee Animation" className="buneeimg" />
+        </div>
+      </div>
+    ),
+  },
+  {
+    key: 'features',
+    className: 'feature_container',
+    content: (
+      <div className="feature_main_container d-flex">
+        <div className="col-7">
+          <h1 className="mt-1 mt-md-5">Features</h1>
+          <ul className="mt-0 mt-md-3 ulclassbungee fontfamilySecondary fontweight fontsecondry">
+            <li>Configurable Trolley to accommodate wide variety of propeller sizes</li>
+            <li>Launch Speed Indicated</li>
+            <li>Variable Angle of Launch</li>
+            <li>Automated Launching Mechanism</li>
+            <li>Ruggedized Portable Container</li>
+            <li>Pusher/Tractor/Blending Wing Compatibility</li>
+            <li>Built Capability for upto 1000 launches</li>
+          </ul>
+          <div className="maincolor mt-0 mt-md-5 fontfamilyPrimary See-bungee">
+            See bungee catapult launcher in action{" "}
+          </div>
+          <div className="d-md-flex gap-md-4 gap-4 mt-md-3 mt-0">
+            <Button text="Contact Us " />
+            <Button
+              text="Download Brochure "
+              backgroundColor="white"
+              border="2px solid #3535DE"
+              color="#3535DE"
+            />
+          </div>
+        </div>
+        <div className="col-4 bungeeimg">
+          <img src={bungee2} alt="" className="buneeimg" />
+        </div>
+      </div>
+    ),
+  },
+];
+
 const DeliveryBungee = () => {
-  const [visibleSection, setVisibleSection] = useState('main');
-  const [dragPosition, setDragPosition] = useState(10);
-  const [isDragging, setIsDragging] = useState(false);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  useEffect(() => {
-    const handleMouseMove = (e) => {
-      if (isDragging) {
-        const newPosition = e.clientY - 10; // Adjust for initial button position
-        const clampedPosition = Math.max(10, Math.min(newPosition, 210)); // Adjusted for 200px scroll range
+  const handleWheelScroll = (e) => {
+    if (isScrolling) return;
 
-        setDragPosition(clampedPosition);
+    setIsScrolling(true);
+    e.preventDefault();
 
-        // Toggle visibility based on position
-        if (clampedPosition >= 190) {
-          // Near bottom of the scroll range
-          setVisibleSection('features');
-        } else if (clampedPosition >= 110) {
-          // Middle of the scroll range
-          setVisibleSection('hide');
-        } else {
-          // Near top of the scroll range
-          setVisibleSection('main');
-        }
-      }
-    };
+    const scrollDirection = e.deltaY > 0 ? 1 : -1;
+    const newIndex = currentIndex + scrollDirection;
 
-    const handleMouseUp = () => {
-      setIsDragging(false);
-    };
+    if (newIndex >= 0 && newIndex < sections.length) {
+      setCurrentIndex(newIndex);
+    }
 
-    document.addEventListener("mousemove", handleMouseMove);
-    document.addEventListener("mouseup", handleMouseUp);
-
-    return () => {
-      document.removeEventListener("mousemove", handleMouseMove);
-      document.removeEventListener("mouseup", handleMouseUp);
-    };
-  }, [isDragging]);
-
-  const handleMouseDown = () => {
-    setIsDragging(true);
+    setTimeout(() => {
+      setIsScrolling(false);
+    }, 1000);
   };
 
-  const specifications = [
-    {
-      description: "Maximum Aircraft Weight <br/> Corresponding Max Velocity",
-      value: "30 kgs / 30m/s",
-    },
-    { description: "G load on aircraft", value: "5Gs" },
-    { description: "Launcher Weight", value: "72 kgs" },
-    { description: "Launch Angle", value: "15 - 35 Deg" },
-    { description: "Indigenous Content", value: "75 %" },
-  ];
+  const handleTouchStart = (e) => {
+    setStartY(e.touches[0].clientY);
+  };
 
-  const sections = [
-    {
-      key: 'main',
-      className: 'bungee_main',
-      content: (
-        <div className="buggigmain col-12 d-flex gap-2 gap-md-5">
-          <div className="col-7 mt-5 mt-md-0">
-            <p className="mt-4 fontsecondry">
-              This Custom Off The Shelf Launcher can be used to launch up to
-              30 kgs of Fixed Wing UAVs
-            </p>
-            <div className="d-flex gap-2 gap-md-5">
-              <div className="mt-2">
-                <table className="table border fontsecondry">
-                  <tbody>
-                    {specifications.map((spec, index) => (
-                      <tr key={index}>
-                        <td className="description-cell px-1 px-md-5 py-1 py-md-3">
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: spec.description,
-                            }}
-                          />
-                        </td>
-                        <td className="value-cell px-1 px-md-5 py-1 py-md-3">{spec.value}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div className="bungeeimg col-4">
-            <img src={bungeeImg} alt="Bungee Image" className="buneeimg" />
-          </div>
-        </div>
-      ),
-    },
-    {
-      key: 'hide',
-      className: 'bungeehide d-flex gap-2 gap-md-5',
-      content: (
-        <>
-          <div className="bungeenumber text-center col-7">
-            <div className="bungeenumbermain">
-              <h1 className="maincolor numberbungee fontfamilyPrimary">100</h1>
-              <div className="fontfamilySecondary fontsecondry">Launches per bungee</div>
-            </div>
-          </div>
-          <div className="col-4 bungeeimg">
-            <img src={bungee} alt="Bungee Animation" className="buneeimg" />
-          </div>
-        </>
-      ),
-    },
-    {
-      key: 'features',
-      className: 'feature_container',
-      content: (
-        <div className="feature_main_container d-flex">
-          <div className="col-7">
-            <h1 className="mt-1 mt-md-5">Features</h1>
-            <ul className="mt-0 mt-md-3 ulclassbungee fontfamilySecondary fontweight fontsecondry ">
-              <li>
-                Configurable Trolley to accommodate wide variety of propeller
-                sizes
-              </li>
-              <li>Launch Speed Indicated</li>
-              <li>Variable Angle of Launch</li>
-              <li>Automated Launching Mechanism</li>
-              <li>Ruggedized Portable Container</li>
-              <li>Pusher/Tractor/Blending Wing Compatibility</li>
-              <li>Built Capability for upto 1000 launches</li>
-            </ul>
-            <div className="maincolor mt-0 mt-md-5 fontfamilyPrimary See-bungee">
-              See bungee catapult launcher in action{" "}
-            </div>
-            <div className="d-md-flex gap-md-4 gap-4 mt-md-3 mt-0 ">
-              <div>
-              <Button text="Contact Us " />
-              </div>
-              <div className="mt-2 mt-md-0">
-                
-              <Button text="Download Brochure " backgroundColor="white" border='2px solid #3535DE' color="#3535DE" 
-            />
-            </div>
-            </div>
-          </div>
-          <div className="col-4 bungeeimg">
-            <img src={bungee2} alt="" className="buneeimg" />
-          </div>
-        </div>
-      ),
-    },
-  ];
+  const handleTouchMove = (e) => {
+    if (isScrolling) return;
+
+    const deltaY = e.touches[0].clientY - startY;
+    const scrollDirection = deltaY < 0 ? 1 : -1;
+
+    const newIndex = currentIndex + scrollDirection;
+
+    if (newIndex >= 0 && newIndex < sections.length) {
+      setCurrentIndex(newIndex);
+    }
+
+    setIsScrolling(true);
+    setTimeout(() => {
+      setIsScrolling(false);
+    }, 1000);
+  };
+
+  useEffect(() => {
+    if (window.innerWidth > 768) {
+      // For larger screens, use wheel scroll
+      window.addEventListener("wheel", handleWheelScroll, { passive: false });
+    } else {
+      // For smaller screens, use touch events
+      window.addEventListener("touchstart", handleTouchStart);
+      window.addEventListener("touchmove", handleTouchMove, { passive: false });
+    }
+
+    return () => {
+      if (window.innerWidth > 768) {
+        window.removeEventListener("wheel", handleWheelScroll);
+      } else {
+        window.removeEventListener("touchstart", handleTouchStart);
+        window.removeEventListener("touchmove", handleTouchMove);
+      }
+    };
+  }, [currentIndex, isScrolling]);
 
   return (
     <div className="deliverybungee">
@@ -164,17 +185,10 @@ const DeliveryBungee = () => {
           heading="Bungee Catapult Launcher - YPJ 30"
           subheading="Specification"
         />
-        <div
-          className="scroll-button rounded"
-          style={{ top: `${dragPosition}px` }}
-          onMouseDown={handleMouseDown}
-        ></div>
-        <div className="bungee_head"></div>
-
-        {sections.map((section) => (
+        {sections.map((section, index) => (
           <div
             key={section.key}
-            className={`${section.className} ${visibleSection === section.key ? 'visible' : ''}`}
+            className={`${section.className} ${index === currentIndex ? "visible" : "hidden"}`}
           >
             {section.content}
           </div>

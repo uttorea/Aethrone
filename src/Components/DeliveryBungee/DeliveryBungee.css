@@ -22,7 +22,26 @@
 .bungee_head {
   position: relative; /* Ensure the button is positioned relative to this div */
 }
+.bungeenumber {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.bungeenumbermain {
+  flex: 1;
+}
+
+.bungeeimg {
+  flex-shrink: 0;
+  max-width: 40%;
+}
+
+.bungeenumber .bungeeimg img {
+  width: 241%;
+  height: auto;
+  margin-left: 265px;
+}
 .bungee_main,
 .bungeehide,
 .feature_container {
@@ -131,6 +150,11 @@ line-height:45px;
     .See-bungee{
       font-size:14px;
     }
+    .bungeenumber .bungeeimg img {
+      /* width: 241%; */
+      /* height: auto; */
+      margin-left: 40px;
+  }
     
    
 }
