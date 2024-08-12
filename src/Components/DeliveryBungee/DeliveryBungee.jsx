@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import "./DeliveryBungee.css";
 import HeadingComponent from "../../Components/HeadingComponent/HeadingComponent";
@@ -9,9 +8,9 @@ import Button from "../../Components/Button/Button";
 
 const DeliveryBungee = () => {
   const [visibleSection, setVisibleSection] = useState(0);
+  const [scrollTimeout, setScrollTimeout] = useState(null);
 
-
-     const specifications = [
+  const specifications = [
     {
       description: "Maximum Aircraft Weight <br/> Corresponding Max Velocity",
       value: "30 kgs / 30m/s",
@@ -21,6 +20,7 @@ const DeliveryBungee = () => {
     { description: "Launch Angle", value: "15 - 35 Deg" },
     { description: "Indigenous Content", value: "75 %" },
   ];
+
   const sections = [
     {
       key: 'main',
@@ -130,7 +130,12 @@ const DeliveryBungee = () => {
 
     const handleWheel = (e) => {
       e.preventDefault();
-      handleScroll(e.deltaY);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
+      setScrollTimeout(
+        setTimeout(() => handleScroll(e.deltaY), 100) // Adjust the timeout duration as needed
+      );
     };
 
     let touchStartY = 0;
@@ -143,6 +148,7 @@ const DeliveryBungee = () => {
       const deltaY = touchStartY - e.touches[0].clientY;
       if (Math.abs(deltaY) > 50) {
         handleScroll(deltaY);
+        touchStartY = e.touches[0].clientY; // Update touchStartY to avoid multiple triggers
       }
     };
 
@@ -154,8 +160,11 @@ const DeliveryBungee = () => {
       document.removeEventListener("wheel", handleWheel);
       document.removeEventListener("touchstart", handleTouchStart);
       document.removeEventListener("touchmove", handleTouchMove);
+      if (scrollTimeout) {
+        clearTimeout(scrollTimeout);
+      }
     };
-  }, [sections.length]);
+  }, [sections.length, scrollTimeout]);
 
   return (
     <div className="deliverybungee">
