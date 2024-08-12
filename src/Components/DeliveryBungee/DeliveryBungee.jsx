@@ -120,7 +120,7 @@ const DeliveryBungee = () => {
   ];
 
   useEffect(() => {
-    const scrollSensitivity = -2; // Adjust this value to control scroll speed
+    const scrollSensitivity = 1; // Adjust this value to control scroll speed
     const handleScroll = (deltaY) => {
       setVisibleSection((prev) => {
         const newSection = prev + Math.round(deltaY * scrollSensitivity);
