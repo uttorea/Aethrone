@@ -1,28 +1,18 @@
 .deliverybungee {
   width: 100%;
   height: 100vh;
-  overflow: hidden; /* Prevent page scrolling */
+  overflow: hidden; 
   position: relative;
 }
 
-.scroll-button {
-  position: absolute;
-  top: 10px;
-  right: 50px;
-  width: 40px; /* Set button width */
-  height: 120px; /* Set button height */
-  background-color: gray;
-  color: white;
-  border: none;
-  cursor: pointer;
-  z-index: 1000; /* Ensure it sits above other content */
-  transition: background-color 0.3s ease, top 0.3s ease;
-}
+
 
 .bungee_head {
-  position: relative; /* Ensure the button is positioned relative to this div */
+  position: relative; 
 }
-
+.photo{
+  top:80px;
+}
 .bungee_main,
 .bungeehide,
 .feature_container {
@@ -31,7 +21,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  transition: opacity 0.5s ease, transform 0.5s ease; /* Added transform transition */
+  transition: opacity 0.5s ease, transform 0.5s ease;
   opacity: 0;
   visibility: hidden;
 }
@@ -44,7 +34,7 @@ line-height:45px;
 }
 
 .feature_main_container,.bungeehide,.buggigmain {
-  width:80%;
+  width:100%;
   margin-left:auto;
   margin-right:auto;
   margin-top:120px;
@@ -60,7 +50,7 @@ line-height:45px;
 .description-cell, .value-cell {
   position: relative;
   letter-spacing: 1px;
-  padding: 10px; /* Adjust the padding as needed */
+  padding: 10px; 
 }
 
 .description-cell::after {
@@ -75,6 +65,7 @@ line-height:45px;
 
 .bungeenumbermain {
   margin-top: 180px;
+  height:100vh;
 }
 
 .numberbungee {
@@ -89,6 +80,18 @@ line-height:45px;
 .bungeeimg {
   margin-top: 90px;
 }
+.rightblockcontainer{
+  width: 80vh;
+  height: 40vw;
+  margin-left:30px;
+}
+.leftblock{
+  width:50%;
+}
+.rightblock{
+  width:50%;
+
+}
 @media only screen and (max-width:425px){
   .buneeimg {
     width: 100%;
@@ -99,7 +102,8 @@ line-height:45px;
     width:95%;
   }
   .bungeenumbermain {
-    margin-top: 80px;
+    margin-top: 50px;
+    height:80vh;
   }
   .numberbungee {
     font-size: 80px;
@@ -112,14 +116,7 @@ line-height:45px;
       margin-top: 30px;
     }
 
-    .scroll-button {
-     
-      top: 10px;
-      right: 10px;
-      width: 20px; /* Set button width */
-      height: 80px; /* Set button height */
-      
-    }
+    
     .buggigmain {
       margin-top:80px;
     }
@@ -132,5 +129,19 @@ line-height:45px;
       font-size:14px;
     }
     
-   
+    .photo{
+      top:0px;
+      height:100%;
+    }
+    .rightblockcontainer{
+      width: 29vh;
+      height:60vw;
+      margin-left:0px;
+    }
+    .leftblock{
+      width:55%;
+    }
+    .rightblock{
+      width:45%;
+    }
 }
