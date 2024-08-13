@@ -22,8 +22,9 @@ const ParachuteProduct = () => {
             separatorTop2="180px"
             d_cardTop="210px"
             smallCardTop="130px"
-            smallSeparatorTop1="110px"
-            smallSeparatorTop2="120px"
+            smallSeparatorTop1="105px"
+            smallSeparatorTop2="110px"
+            smallCardHeight="300px"
           />
         </div>
       </div>

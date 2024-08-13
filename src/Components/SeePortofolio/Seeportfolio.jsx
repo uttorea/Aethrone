@@ -22,8 +22,8 @@ const Seeportfolio = () => {
           <Heading heading="See Detailed Solution Portfolio" />
         </div>
         <div className="d-flex mt-5">
-          <div className="col-2 d-none d-md-block"></div>
-          <div className="col-12 col-md-9">
+          <div className="col-1 col-md-2  d-block"></div>
+          <div className="col-10 col-md-9">
             <SimpleCard
               images={SeeportfolioIMG}
               cardHeight="390px"

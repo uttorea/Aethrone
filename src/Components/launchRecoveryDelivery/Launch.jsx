@@ -35,7 +35,7 @@ const Launch = () => {
                 </p>
               </div>
             </div>
-            <div className="launch_btn mt-3 mt-md-5">
+            <div className="launch_btn mt-3 mt-md-5 ms-2 ms-md-0">
               <a
                 className="btn btn-light  px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
                 href="/delivery-launcher-system"

@@ -6,7 +6,7 @@ import launcherimg2 from "../../assets/launcherimg2.png";
 import launcherimg6 from "../../assets/launcherimg6.png";
 import launcherimg7 from "../../assets/launcherimg7.png";
 import launcherimg8 from "../../assets/launcherimg8.png";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const LauncherSystem = () => {
   const cardData = [
@@ -31,12 +31,11 @@ const LauncherSystem = () => {
     <>
       <div className="container p-0 lancontainer">
         <div className="col-10 ms-2 ms-md-0">
-
-        <Heading
-          heading="Launcher Systems"
-          subheading="Systems for UAV & Loitering Munition"
+          <Heading
+            heading="Launcher Systems"
+            subheading="Systems for UAV & Loitering Munition"
           />
-          </div>
+        </div>
         <div className="row row-cols-2 row-cols-md-2 g-1 g-md-4 ">
           <div className="col">
             <div className="card mt-3 mt-md-5 border-0">
@@ -64,13 +63,14 @@ const LauncherSystem = () => {
                     Air Based Underwing Pylon Pneumatic Carriage and Release
                   </li>
                 </ul>
+                <div className="ms-3 ms-md-0">
                 <a
-      className="btn btn-light px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
-      href="/delivery-launcher-system"
-      
-    >
-      Launcher System <i className="bi bi-arrow-down"></i>
-    </a>
+                  className="btn btn-light px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
+                  href="/delivery-launcher-system"
+                >
+                  Launcher System <i className="bi bi-arrow-down"></i>
+                </a>
+                </div>
               </div>
             </div>
           </div>

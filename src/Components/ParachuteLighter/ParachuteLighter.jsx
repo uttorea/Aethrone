@@ -15,7 +15,10 @@ const ParachuteLighter = () => {
      
      
 
-<DiagonalCard cards={ParachuteIMG} />
+<DiagonalCard cards={ParachuteIMG}
+smallCardHeight='230px'
+
+/>
       
     </div>
   );

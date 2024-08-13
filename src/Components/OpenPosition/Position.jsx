@@ -30,19 +30,17 @@ function Position() {
                                         href="https://www.linkedin.com/company/aethrone-aerospace/" 
                                         target="_blank" 
                                         rel="noopener noreferrer" 
-                                        className="btn btn-lg btn-primary" // Use your button class here
+                                        className="btn btn-lg  fontsecondary fontfamilySecondary px-5 py-1 gap-2" // Use your button class here
                                         style={{
                                             backgroundColor: 'white', // Match your button's background color
                                             color: '#3535DE', // Match your button's text color
                                             border: '1px solid #3535DE', // Match your button's border
                                             display: 'flex', // Flex to align icon and text
                                             alignItems: 'center', // Center the icon and text vertically
-                                            padding: '0px',// Match your button's padding
                                             textDecoration: 'none', // Remove underline
-                                            marginTop:'-3px'
                                         }}
                                     >
-                                        <i className="bi bi-linkedin mx-4">Linkedin</i>
+                                        <i className="bi bi-linkedin "></i>Linkedin
                                     </a>
                                 </div>
                             </div>
