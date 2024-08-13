@@ -9,7 +9,7 @@
     font-family:arimo;
     font-weight:bold;
 }
-.foryouraccording{
+.accordion-heading{
     font-size:36px;
     font-family:arimo;
 }
@@ -18,8 +18,8 @@
     .according-container{
         width:100%;
     }
-    .whyAccording , .foryouraccording{
-        font-size:21px;
+    .whyAccording , .accordion-heading{
+        font-size:12px;
     }
     .accordion{
         width:100%;
