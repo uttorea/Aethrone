@@ -114,7 +114,7 @@ function Furtblog() {
         </div>
         <p className="px-1 fw-bold fontfamilySecondary mt-lg-4 mt-0 join-team-sub">
             Interested in an exciting opportunity to design and build future air
-            solutions? <a className="maincolor">View open roles</a>
+            solutions? <a href="/career" className="maincolor">View open roles</a>
         </p>
     </div>
 </div>

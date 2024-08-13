@@ -9,7 +9,9 @@ const cards= [
       'Lightweight and high-strength components',
       'Ideal for demanding applications needs',
     ],
-    extraText: 'Explore Advance Composite',
+    extraText:{text:'Explore Advance Composite',
+      link:'/advance-composites'
+    }    
    
   },
   {
@@ -19,7 +21,9 @@ const cards= [
       'Exceptional accuracy and repeatability',
       'Tailored to your specific hardware',
     ],
-    extraText: 'Explore Precision Manufacturing ',
+    extraText: {text:'Explore Precision Manufacturing ',
+      link:'/precision-manufacturing'
+    }
    
     },
 ];

@@ -18,32 +18,35 @@ function Footer() {
                   alt="Card Image"
                 />
                 <div className="card-body2 mt-2 mt-md-4 text-white fontweight fontsecondry">
-                  <p className="number1 m-0 fotteranq">
+                  <p className="number1 m-0 anq">
                     <a
                       href="https://wa.me/917219286003"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="text-white "
                      
                     >
                       +91 721 928 6003
                     </a>
                   </p>
-                  <p className="number2 fotteranq">
+                  <p className="number2 anq">
                     <a
                       href="https://wa.me/917219286003"
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="text-white"
                       
                     >
                       +91 721 928 6003
                     </a>
                   </p>
                 </div>
-                <p className="emailtext text-wrap fontweight fotteranq">
+                <p className="emailtext text-wrap fontweight anq">
                   <a
                     href="mailto:info@aethroneaerospace.com"
                     target="_blank"
                     rel="noopener noreferrer"
+                    className="text-white"
                     
                   >
                     info@aethroneaerospace.com

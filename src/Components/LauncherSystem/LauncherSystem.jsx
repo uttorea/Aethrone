@@ -65,7 +65,7 @@ const LauncherSystem = () => {
                 </ul>
                 <div className="ms-3 ms-md-0">
                 <a
-                  className="btn btn-light px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
+                  className="btn btn-light px-md-5 px-1 ms-0 ms-md-4 text-white  fontfamilySecondary maincolor lauchbtn"
                   href="/delivery-launcher-system"
                 >
                   Launcher System <i className="bi bi-arrow-down"></i>

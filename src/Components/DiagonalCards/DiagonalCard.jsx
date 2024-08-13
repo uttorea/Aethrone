@@ -104,8 +104,14 @@ const DiagonalCard = ({
               </p>
             ) : null}
             {card.extraText && (
-              <p className="d_card-extra-text py-md-2 py-0 maincolor fw-bold  text-center fontsecondry fontfamilySecondary px-2">
-                {card.extraText} <i className="bi bi-arrow-right-short"></i>
+              <p className="d_card-extra-text py-md-2 py-0 maincolor fw-bold text-center fontsecondry fontfamilySecondary px-2">
+                {card.extraText.link ? (
+                  <a href={card.extraText.link} className="decora" >
+                    {card.extraText.text} <i className="bi bi-arrow-right-short"></i>
+                  </a>
+                ) : (
+                  card.extraText.text
+                )}
               </p>
             )}
           </div>

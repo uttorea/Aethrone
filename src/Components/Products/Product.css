@@ -95,6 +95,12 @@
 .discover-text {
   font-size: 18px;
   border-top: 2px solid #3535DE;
+  text-decoration:none;
+}
+.disco{
+  text-decoration:none;
+  color:black;
+
 }
 @media only screen and (max-width: 450px) {
   .product_head {

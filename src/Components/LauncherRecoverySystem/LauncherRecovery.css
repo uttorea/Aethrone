@@ -26,9 +26,10 @@ margin-top:70px;
 .lanchtext{
     width:100%;
 }
-/* .explore-launcher{
+.laubtn{
     background-color:#3535DE;
-} */
+    
+}
 @media only screen and (max-width:425px){
     .card-img-top11{
         height:200px;

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Product.css";
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 import productimg1 from "../../assets/productimg1.png";
@@ -13,24 +14,29 @@ const productData = [
     img: productimg1,
     title: "Launch and Recovery",
     description: "We design and manufacture end-to-end solutions for launch and recovery/delivery of UAVs and Lighter Than Air Systems.",
+    link: "/launch-recovery-delivery",
+    
   },
   {
     id: 2,
     img: productimg2,
     title: "Parachutes & LTA Systems",
     description: "We design, develop, test and certify products in the para category for various spectrum of users and are motivated to remain segment leaders in India.",
+    link: "/parachutes",
   },
   {
     id: 3,
     img: productimg3,
     title: "Advanced Composites",
     description: "We design, develop and manufacture rotary-propulsion composites components, critical aero-structure members and sub-systems.",
+    link: "/advance-composites",
   },
   {
     id: 4,
     img: productimg4,
     title: "Aerial Robotics ",
     description: "We design and manufacture end-to-end Sustainable solutions for technology.",
+    link: "/aerial-robotics",
   },
 ];
 
@@ -59,7 +65,7 @@ function Products() {
                       <p>{product.description}</p>
                     </div>
                     <p className="text-center discover-text pt-2">
-                      Discover<i className="bi bi-arrow-right-short"></i>
+                    <Link to={product.link} className="disco">Discover<i className="bi bi-arrow-right-short"></i></Link>
                     </p>
                   </div>
                 </div>

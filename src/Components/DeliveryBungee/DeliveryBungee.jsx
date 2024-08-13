@@ -7,7 +7,7 @@ import bungeeImg from "../../assets/bungeeImg.png";
 import bungee from "../../assets/bungee.gif";
 import bungee2 from "../../assets/BungeeImg2.png";
 import Button from "../../Components/Button/Button";
-import './DeliveryBungee.css'
+import "./DeliveryBungee.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -30,7 +30,6 @@ function DeliveryBungee() {
         pin: ".rightblock",
         animation: animation,
         scrub: true,
-        
       });
     });
     return () => ctx.revert();
@@ -38,14 +37,13 @@ function DeliveryBungee() {
 
   return (
     <React.Fragment>
-        <div className="container p-0">
-
+      <div className="container p-0">
         <HeadingComponent
-            heading="Bungee Catapult Launcher - YPJ 30"
-            subheading="Specification"
-            />
-            </div>
-      <Box className="gallery container pt-0" sx={{ display: "flex",}}>
+          heading="Bungee Catapult Launcher - YPJ 30"
+          subheading="Specification"
+        />
+      </div>
+      <Box className="gallery container pt-0" sx={{ display: "flex" }}>
         <Box
           className="leftblock"
           sx={{
@@ -63,7 +61,6 @@ function DeliveryBungee() {
             },
           }}
         >
-          
           <Box sx={{ height: "100vh" }}>
             <div className="buggigmain  d-flex gap-2 gap-md-5 p-0">
               <div className="  mt-md-0">
@@ -139,7 +136,7 @@ function DeliveryBungee() {
               </div>
               <div className="d-md-flex gap-md-4 gap-4 mt-md-3 mt-0 ">
                 <div>
-                  <Button text="Contact Us " />
+                  <Button text="Contact Us "  to='/contact-us'/>
                 </div>
                 <div className="mt-3 mt-md-0">
                   <Button
@@ -162,9 +159,9 @@ function DeliveryBungee() {
             justifyContent: "center",
           }}
         >
-          <Box className='rightblockcontainer'
+          <Box
+            className="rightblockcontainer"
             sx={{
-             
               position: "relative",
               "& .photo": {
                 position: "absolute",
