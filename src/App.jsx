@@ -37,9 +37,9 @@
        <div className="vh-100">
          <BrowserRouter>
            <ScrollToTop /> {/* Add ScrollToTop component here */}
-           {/* {loading ? (
-            //  <Loading />
-           ) : ( */}
+           {loading ? (
+             <Loading />
+           ) : (
              <>
                <Navbar />
                <div className="">
@@ -61,7 +61,7 @@
                  </Routes>
                </div>
              </>
-           {/* )} */}
+            )} 
          </BrowserRouter>
        </div>
      );
