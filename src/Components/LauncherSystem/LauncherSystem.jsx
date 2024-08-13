@@ -65,13 +65,11 @@ const LauncherSystem = () => {
                   </li>
                 </ul>
                 <a
+      className="btn btn-light px-md-5 px-1 ms-0 ms-md-4 launch_btn1 fontfamilySecondary maincolor"
       href="/delivery-launcher-system"
-      className="btn fontsecondry fontfamilySecondary backgroundcolormain btn-explore-launch text-white px-1 px-md-5 ms-md-3 ms-0"
-      style={{ color: 'white' }} // Default color
-      onMouseEnter={(e) => (e.currentTarget.style.color = 'black')}
-      onMouseLeave={(e) => (e.currentTarget.style.color = 'white')}
+      
     >
-      Explore Launcher System <i className="bi bi-arrow-right"></i>
+      Launcher System <i className="bi bi-arrow-down"></i>
     </a>
               </div>
             </div>
