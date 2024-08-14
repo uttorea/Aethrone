@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./GetInTouch.css";
 import HeadingComponent from "../../Components/HeadingComponent/HeadingComponent";
 
@@ -42,6 +42,69 @@ const contactDetails = [
 ];
 
 const GetInTouch = () => {
+  const [formData, setFormData] = useState({
+    fullName: "",
+    phoneNumber: "",
+    email: "",
+    reason: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://127.0.0.1:8000/contact/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "X-CSRFToken": getCookie('csrftoken'), // Include CSRF token if needed
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        alert("Message sent successfully!");
+        setFormData({
+          fullName: "",
+          phoneNumber: "",
+          email: "",
+          reason: "",
+          message: "",
+        }); // Reset form
+      } else {
+        alert(`Failed to send the message: ${result.error}`);
+      }
+    } catch (error) {
+      alert("An error occurred. Please try again later.");
+      console.error("Error:", error);
+    }
+  };
+
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+
   return (
     <div className="touch_page">
       <div className="container mt-md-0 mt-5">
@@ -75,74 +138,90 @@ const GetInTouch = () => {
           </div>
 
           <div className="col-md-9 col-12 d-flex mt-sm-0 mt-5">
-              <div className="hrliness" ></div>
+            <div className="hrliness"></div>
             <div className="card border-0 col-12">
-                <div className="row px-md-5 px-2">
-                  <div className="col-sm-6">
-                    <div className="contact_border">
-                      <label className="form-label">Name</label>
-                      <input
-                        type="text"
-                        className="form-control border-0 mt-md-4 mt-1 "
-                        placeholder="Your Full Name" 
-                        style= {{outline: "none" , boxShadow: "none"}}
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6 mt-md-0 mt-1">
-                    <div className="contact_border">
-                      <label className="form-label">Contact</label>
-                      <input
-                        type="text"
-                        className="form-control border-0 mt-md-4 mt-1"
-                        placeholder="Phno. name"
-                        style= {{outline: "none" , boxShadow: "none"}}
-
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6 mt-md-5 mt-2">
-                    <div className="contact_border">
-                      <label className="form-label">Email</label>
-                      <input
-                        type="email"
-                        className="form-control border-0 mt-md-4 mt-1"
-                        placeholder="Your email address"
-                        style= {{outline: "none" , boxShadow: "none"}}
-
-                      />
-                    </div>
-                  </div>
-                  <div className="col-sm-6 mt-md-5 mt-2">
-                    <div className="contact_border">
-                      <label className="form-label">Subject</label>
-                      <input
-                        type="text"
-                        className="form-control border-0 mt-md-4 mt-1"
-                        placeholder="Reason for the message"
-                        style= {{outline: "none" , boxShadow: "none"}}
-
-                      />
-                    </div>
-                  </div>
-                  <div className="mt-md-5 mt-2">
-                    <label className="form-label">Message</label>
-                    <textarea
-                      className="form-control border-dark mt-md-3 mt-1"
-                      placeholder="Write Your Message..."
-                      style={{ height: "200px", resize:'none',outline: "none" , boxShadow: "none"}}
-                      
-
-                    ></textarea>
+              <form onSubmit={handleSubmit} className="row px-md-5 px-2">
+                <div className="col-sm-6">
+                  <div className="contact_border">
+                    <label className="form-label">Name</label>
+                    <input
+                      type="text"
+                      name="fullName"
+                      value={formData.fullName}
+                      onChange={handleChange}
+                      className="form-control border-0 mt-md-4 mt-1"
+                      placeholder="Your Full Name"
+                      style={{ outline: "none", boxShadow: "none" }}
+                      required
+                    />
                   </div>
                 </div>
-              {/* </div> */}
-
-              <div className="d-flex justify-content-center justify-content-md-end mt-4 col-md-11 ms-4 col-11">
-                <a className="mb-5 backgroundcolormain px-5 py-2 project_btn text-white text-decoration-none rounded">
-                  Send Message
-                </a>
-              </div>
+                <div className="col-sm-6 mt-md-0 mt-1">
+                  <div className="contact_border">
+                    <label className="form-label">Contact</label>
+                    <input
+                      type="text"
+                      name="phoneNumber"
+                      value={formData.phoneNumber}
+                      onChange={handleChange}
+                      className="form-control border-0 mt-md-4 mt-1"
+                      placeholder="Phno."
+                      style={{ outline: "none", boxShadow: "none" }}
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="col-sm-6 mt-md-5 mt-2">
+                  <div className="contact_border">
+                    <label className="form-label">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      className="form-control border-0 mt-md-4 mt-1"
+                      placeholder="Your email address"
+                      style={{ outline: "none", boxShadow: "none" }}
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="col-sm-6 mt-md-5 mt-2">
+                  <div className="contact_border">
+                    <label className="form-label">Subject</label>
+                    <input
+                      type="text"
+                      name="reason"
+                      value={formData.reason}
+                      onChange={handleChange}
+                      className="form-control border-0 mt-md-4 mt-1"
+                      placeholder="Reason for the message"
+                      style={{ outline: "none", boxShadow: "none" }}
+                      required
+                    />
+                  </div>
+                </div>
+                <div className="mt-md-5 mt-2">
+                  <label className="form-label">Message</label>
+                  <textarea
+                    name="message"
+                    value={formData.message}
+                    onChange={handleChange}
+                    className="form-control border-dark mt-md-3 mt-1"
+                    placeholder="Write Your Message..."
+                    style={{ height: "200px", resize: "none", outline: "none", boxShadow: "none" }}
+                    required
+                  ></textarea>
+                </div>
+                <div className="d-flex justify-content-center justify-content-md-end mt-4 col-md-11 ms-4 col-11">
+                  <button
+                    type="submit"
+                    className="mb-5 backgroundcolormain px-5 py-2 project_btn text-white text-decoration-none rounded"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>

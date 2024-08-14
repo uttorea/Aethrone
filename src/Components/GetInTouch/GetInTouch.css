@@ -36,6 +36,13 @@
     background-color:lightgray;
     border:2px solid lightgray;
 }
+.form-control {
+    color: #000; /* Ensure text color is black */
+  }
+  
+  .form-control::placeholder {
+    color: #000; /* Ensure placeholder text color is also black */
+  }
 @media only screen and (max-width:425px){
     .touch_page{
         width:100%;
