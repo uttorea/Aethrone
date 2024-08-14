@@ -21,7 +21,7 @@ function Project() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://127.0.0.1:8000/havea/', formData, {
+      await axios.post('https://alexrai.pythonanywhere.com/havea/', formData, {
         headers: {
           'Content-Type': 'application/json'
         }
