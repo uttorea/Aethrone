@@ -50,7 +50,7 @@
                    <Route path="/contact-us" element={<Contact />} />
                    <Route path="/design-development" element={<DesignDevelopment />} />
                    <Route path="/precision-manufacturing" element={<PricisionManu />} />
-                   <Route path="/launch-recovery-delivery" element={<Launch />} />
+                   <Route path="/launch-recovery-delivery" element={<Launch/>} />
                    <Route path="/parachutes" element={<Parachute />} />
                    <Route path="/launch-recovery-system" element={<ParachuteRecovery />} />
                    <Route path="/all-blog" element={<AllBlogs />} />

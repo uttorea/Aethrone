@@ -66,7 +66,7 @@ const BungeeCatapult = () => {
               </a>
               <a
                 href="#"
-                className="btn mx-3 px-md-5 px-1 py-1 py-md-3 maincolor fontfamilyPrimary Download-Brochure mt-2"
+                className="btn mx-1 mx-md-3 px-md-5 px-1 py-1 py-md-3 maincolor fontfamilyPrimary Download-Brochure mt-2"
                 onClick={(event) => {
                   event.preventDefault(); // Prevents the default anchor behavior
                   handleCardClick("Bungee Catapult Launcher");

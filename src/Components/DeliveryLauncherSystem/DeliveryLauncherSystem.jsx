@@ -34,9 +34,9 @@ const DeliveryLauncherSystem = () => {
         <DeliveryApplication/>
         <GearSystem/>
        
-        <DeliveryBungee/>
+        <DeliveryBungee />
         <BungeeCatapult/>
-        <TubeLauncher/>
+        <TubeLauncher />
         <Project />
         <Footer/>
     </div>

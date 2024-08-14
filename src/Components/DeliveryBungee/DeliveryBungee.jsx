@@ -165,8 +165,8 @@ function DeliveryBungee() {
               position: "relative",
               "& .photo": {
                 position: "absolute",
-                width: "100%",
-                height: "80%",
+                width: "90%",
+                height: "100%",
                 "& img": {
                   height: "100%",
                   width: "100%",
