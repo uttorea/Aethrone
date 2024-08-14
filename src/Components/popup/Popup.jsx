@@ -19,7 +19,7 @@ const Popup = ({ togglePopup, isPopupVisible, selectedSystem }) => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://uttoria.pythonanywhere.com/send_brochure_request/",
+        "https://alexrai.pythonanywhere.com/send_brochure_request/",
         { 
           system: selectedSystem, 
           fullName: formData.fullName, 

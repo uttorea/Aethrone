@@ -6,7 +6,7 @@ const cards = [
   {
     img: portfolioimg1,
    
-    footer: 'Download Design and Development brochure'
+    footer: 'Download project catalogue'
   },
   {
     img: portfolioimg2,
