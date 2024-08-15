@@ -8,7 +8,7 @@
     margin:0;
     letter-spacing:5px;
     line-height:110px;
-    font-weight:600;
+    font-weight:500;
 }
 .ingenuity{
     font-size:27px;
@@ -48,6 +48,9 @@
 }
 .product_home{
     margin-top:100px;
+}
+.discover-section{
+    margin-top:14%;
 }
 
 @media only screen and (max-width: 425px) {

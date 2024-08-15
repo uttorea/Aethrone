@@ -14,22 +14,22 @@ const EngineerServiceIMG = [
     {
         img: engineerimg2,
         alt: 'Composite Matrix Design',
-        footer: 'Composite Matrix Design'
+        footer: 'Computational Fluid Dynamics'
     },
     {
         img: engineerimg3,
         alt: 'Fluid Structure Integration',
-        footer: 'Fluid Structure Integration'
+        footer: 'Composite Matrix Design'
     },
     {
         img: engineerimg4,
         alt: 'Noise ~ Vibrations ~ Harshness',
-        footer: 'Noise~ Vibrations ~Harshness'
+        footer: 'Fluid Structure Interaction'
     },
     {
         img: engineerimg5,
         alt: 'Artificial Intelligence',
-        footer: 'Artificial Intelligence'
+        footer: 'Noise-Vibrations-Harshness '
     }
 ];
 

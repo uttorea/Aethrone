@@ -3,7 +3,6 @@ import "./Design.css";
 import Heading from '../../Components/HeadingComponent/HeadingComponent';
 import Button from "../Button/Button";
 import DD1 from "../../assets/DD1.png";
-import DD2 from "../../assets/DD2.png";
 import DDcardImg1 from "../../assets/DDcardImg1.png";
 import DDcardImg2 from "../../assets/DDcardImg2.png";
 import DDcardImg3 from "../../assets/DDcardImg3.png";
@@ -25,12 +24,12 @@ function Design() {
   return (
     <>
       <div className="design_head">
-        <div className="designimg d-flex">
+        <div className="designimg ">
           <img src={DD1} alt="" className="ddimg1" />
-          <img src={DD2} alt="" className="ddimg2" />
-        </div>
+         
+        
 
-        <div className="container">
+        <div className="container dddd">
           <div className="dd_body">
             <div className="rounded p-md-4 p-1 pt-3  text-dark bg-opacity-75 design_main_head" >
               <div className="row">
@@ -69,6 +68,7 @@ function Design() {
                   </div>
                 </div>
               </div>
+            </div>
             </div>
           </div>
         </div>

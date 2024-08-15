@@ -77,7 +77,7 @@ const Home = () => {
       <Design  />
           
           </div>
-          <div>
+          <div className="discover-section">
             <Discover/>
           </div>
           

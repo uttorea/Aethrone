@@ -14,12 +14,12 @@ import arrowplain2 from '../../assets/arrowplain2.png';
 import HeadingComponent from "../HeadingComponent/HeadingComponent";
 
 const images = [
+  { src: planeimg4, alt: "Plane 4", caption: "Loitering Munition" },
+  { src: planeimg6, alt: "Plane 6", caption: "Cruise Missiles" },
   { src: planeimg1, alt: "Plane 1", caption: "Light Combat Helicopter" },
   { src: planeimg2, alt: "Plane 2", caption: "Light Utility Helicopter" },
   { src: planeimg3, alt: "Plane 3", caption: "Advance Light Helicopter" },
-  { src: planeimg4, alt: "Plane 4", caption: "Loitering Munition" },
   { src: planeimg5, alt: "Plane 5", caption: "RUAVs" },
-  { src: planeimg6, alt: "Plane 6", caption: "Cruise Missiles" },
   { src: planeimg7, alt: "Plane 7", caption: "Target UAV" },
   { src: planeimg8, alt: "Plane 8", caption: "Advance Air Mobility" },
 ];
