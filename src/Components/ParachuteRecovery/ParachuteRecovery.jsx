@@ -16,7 +16,7 @@ const ParachuteRecovery = () => {
           <div className="container">
             <div className="paraRecovery_content">
               <h1 className="Recovery-Systems">Recovery Systems</h1>
-              <p className="fontsecondry fontfamilySecondary fontweight letterSpacing">Plug and Play Solution</p>
+              {/* <p className="fontsecondry fontfamilySecondary fontweight letterSpacing">Plug and Play Solution</p> */}
               <div className="headingrecovery">
 
               <HeadingComponent heading="What We Do" />

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import aerial from "../../assets/aerial.png";
 import "./AerialRobotics.css";
 import UAVdesignManufacturing from '../UAVdesignManufacturing/UAVdesignManufacturing';
@@ -18,10 +18,10 @@ const AerialRobotics = () => {
         <div className=" container">
           <div className="aerial_robotics_main text-white">
             <h1 className="aerial_robotics">Aerial Robotics </h1>
-            <p className="fontsecondry fontfamilySecondary fontweight">
+            {/* <p className="fontsecondry fontfamilySecondary fontweight">
               {" "}
               From concept to Cloud
-            </p>
+            </p> */}
             <div className="heading_aerial">
               <HeadingComponent heading="What we do" />
               <div className="mt-2 rounded aerial_para col-11 p-md-5 p-4 ">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import  { useState } from 'react';
 import './Composite.css';
 import compositeBgImg from '../../assets/compositeBgImg.png';
 import CompositeCapability from '../CompositeCapability/CompositeCapability';
@@ -24,10 +24,10 @@ const Composite = () => {
                     <div className="col">
                         <div className="compositemain11">
                             <div className='composite_content'>
-                                <h1 className='m-0 Advance-Composite col-10'>Advance Composite</h1>
-                                <p className='fontfamilySecondary fontsecondry col-10'>
+                                <h1 className='m-0 Advance-Composite col-10'>Advanced Composites</h1>
+                                {/* <p className='fontfamilySecondary fontsecondry col-10'>
                                     From concept to product to certification
-                                </p>
+                                </p> */}
                                 <div className='mt-2 mt-md-5 col-10'>
                                     <HeadingComponent heading='What We Do' />
                                 </div>

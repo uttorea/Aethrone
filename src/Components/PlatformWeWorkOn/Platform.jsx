@@ -11,7 +11,7 @@ const Platform = () => {
       <div className="paltform-container mt-5 ">
         <div className='ms-0 ms-md-0'>
 
-        <Heading heading='Platform We Work On'/>
+        <Heading heading='Platforms We Work On'/>
         </div>
         <DiagonalCard cards={platformIMg}/>
       </div>

@@ -42,7 +42,7 @@ const Parachute = () => {
               </div>
               <div className="col-sm-6 p-0  mt-3 mt-md-0 ">
                
-                <HeadingComponent heading="Technical Approach"/>
+                <HeadingComponent heading="Technological Approach"/>
                 <div className=" bg-transparent border-0 mt-1 mt-md-3 rounded col-12">
                   <div
                     className="prachut-card col-md-12 px-1 px-md-5 py-2 py-md-3 col-11 rounded"

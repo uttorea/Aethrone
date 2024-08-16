@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './AllBlogs.css';
 import frtimg1 from '../../assets/frtimg1.png';
 import DroneFails from '../DroneFails/DroneFails';
@@ -9,7 +9,7 @@ import HeadingComponent from '../HeadingComponent/HeadingComponent';
 const blogData = [
     {
         id: 1,
-        title: 'What is Your drone fails',
+        title: 'What if Your drone fails',
         description: 'Emergency parachute recovery system',
         date: 'Mar 18, 2024',
         img: frtimg1,

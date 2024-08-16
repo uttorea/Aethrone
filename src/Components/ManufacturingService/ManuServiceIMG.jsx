@@ -4,19 +4,19 @@ import manuServiceimg2 from '../../assets/manuServiceimg2.png';
 const cards= [
   {
     image: manuServiceimg1,
-    title: 'Advance Composites',
+    title: 'Advanced Composites',
     text: [
       'Lightweight and high-strength components',
       'Ideal for demanding applications needs',
     ],
-    extraText:{text:'Explore Advance Composite',
+    extraText:{text:'Explore Advanced Composites',
       link:'/advance-composites'
     }    
    
   },
   {
     image: manuServiceimg2,
-    title: 'Precising Manufacturing',
+    title: 'Precision Manufacturing',
     text: [
       'Exceptional accuracy and repeatability',
       'Tailored to your specific hardware',

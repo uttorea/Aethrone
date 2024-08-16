@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import './DeliveryApplication.css';
 import launcherRecovery2 from '../../assets/launcherRecovery2.png';
 import launcherRecovery3 from '../../assets/launcherRecovery3.png';
@@ -8,7 +8,7 @@ const DeliveryApplication = () => {
     return (
         <div>
             <div className="container mt-5">
-                <HeadingComponent heading='Application' subheading='UAVs and Lighter Than Air Systems.'/>
+                <HeadingComponent heading='Applications' subheading='UAVs and Lighter Than Air Systems.'/>
                 
                 <p className='launcher-para fontfamilyPrimary mt-3 mt-md-5 fontweight'>Launchers can be used for UAV's in following application</p>
                 <div className="d-flex gap-1 gap-md-5 ">

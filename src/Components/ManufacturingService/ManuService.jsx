@@ -7,7 +7,7 @@ import ManuServiceIMG from "./ManuServiceIMG";
 const ManuService = () => {
   return (
     <div className="container mt-5 ">
-      <Heading heading="Manufacturing Service" />
+      <Heading heading="Manufacturing Services" />
       <div className="d-flex ">
         <div className="col-md-1 col-0"></div>
         <DiagonalCard
