@@ -26,10 +26,10 @@ function Footer() {
                       className="text-white "
                      
                     >
-                      +91 721 928 6003
+                      +91 721 945 0026
                     </a>
                   </p>
-                  <p className="number2 anq">
+                  {/* <p className="number2 anq">
                     <a
                       href="https://wa.me/917219286003"
                       target="_blank"
@@ -39,7 +39,7 @@ function Footer() {
                     >
                       +91 721 928 6003
                     </a>
-                  </p>
+                  </p> */}
                 </div>
                 <p className="emailtext text-wrap fontweight anq">
                   <a
@@ -101,13 +101,21 @@ function Footer() {
                 </a>
               </div>
               <div className="social_icon2">
-                <i className="bi bi-twitter"></i>
+
+              <a
+                  href="https://x.com/Aethrone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i className="bi bi-twitter"></i>
+                </a>
+                
               </div>
             </div>
           </div>
           <div className="">
             <p className="text-light lastfooter2">
-              © 2015 Aethrone Aerospace. All rights reserved
+              © 2015 - 2025 Aethrone Aerospace. All rights reserved
             </p>
           </div>
         </div>

@@ -149,7 +149,7 @@ const Navbar = () => {
                     Parachutes
                   </Link>
                   <Link className="dropdown-item" to="/advance-composites" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                    Advance Composites
+                    Advanced Composites
                   </Link>
                   <Link className="dropdown-item" to="/aerial-robotics" onClick={() => { closeMenu(); closeDropdown("product"); }}>
                     Aerial Robotics
@@ -235,7 +235,7 @@ const Navbar = () => {
                   Parachutes
                 </Link>
                 <Link className="dropdown-item" to="/advance-composites" onClick={() => { closeMenu(); closeDropdown("product"); }}>
-                  Advance Composites
+                  Advanced Composites
                 </Link>
                 <Link className="dropdown-item" to="/aerial-robotics" onClick={() => { closeMenu(); closeDropdown("product"); }}>
                   Aerial Robotics
