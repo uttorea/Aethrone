@@ -38,8 +38,8 @@ const Home = () => {
               </p>
 
               <div className="mt-5 d-flex Home-para-main">
-                <div className="col-md-2 ms-0 ms-md-5 col-0 col-sm-1 "></div>
-                <div className="col-sm-12 col-lg-7  whoWeare  " >
+                <div className="col-md-1 ms-0 ms-md-5 col-0 col-sm-1 "></div>
+                <div className="col-sm-12 col-lg-8  whoWeare  " >
                   <HeadingComponent heading="Who We Are" />
                   <div
                     className="We-are-a-deep fontfamilySecondary rounded"

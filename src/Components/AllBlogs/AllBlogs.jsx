@@ -1,5 +1,6 @@
 import React from 'react';
 import './AllBlogs.css';
+import blogimg from '../../assets/blogimg.png'
 import frtimg1 from '../../assets/frtimg1.png';
 import DroneFails from '../DroneFails/DroneFails';
 import DesignPartner from '../../Components/DesignPartner/DesignPartner';
@@ -46,10 +47,15 @@ const blogData = [
 const AllBlogs = () => {
     return (
         <>
-            <div className="container">
-                <div className="blog_page mt-5">
+                    <div className='blogimg'>
+                        <img src={blogimg} alt="" className='imgblog'/>
+                        <div className='headingbolg'>
                     <HeadingComponent heading='Blogs'/>
-                    <div className="row mt-4 row-cols-2">
+                        </div>
+                    </div>
+            <div className="container mt-md-0 mt-4">
+                <div className="blog_page">
+                    <div className="row  row-cols-2">
                         <div className="col-sm-6">
                             {blogData.slice(0, 1).map((blog) => (
                                 <div key={blog.id} className=" border-0">
