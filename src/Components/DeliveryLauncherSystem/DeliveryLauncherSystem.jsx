@@ -18,7 +18,7 @@ const DeliveryLauncherSystem = () => {
       <div className="container">
           <div className='recovery_content text-white'>
             <h1 className='Launcher-Systems'>Launcher Systems</h1>
-            <p className='fontsecondry fontfamilySecondary fontweight'>We design and manufacture end-to-end solutions for launcher systems for  UAVs,<br/> target drones and Loitering Munitions</p>
+            {/* <p className='fontsecondry fontfamilySecondary fontweight'>We design and manufacture end-to-end solutions for launcher systems for  UAVs,<br/> target drones and Loitering Munitions</p> */}
             <p></p>
             <div className="We-Do">
               <HeadingComponent heading='What We Do'/>

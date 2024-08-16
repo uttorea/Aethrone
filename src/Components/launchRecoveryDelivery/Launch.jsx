@@ -41,7 +41,7 @@ const Launch = () => {
                 href="/delivery-launcher-system"
               >
                 {" "}
-                Launcher System <i className="bi bi-arrow-down"></i>
+                Launcher Systems <i className="bi bi-arrow-down"></i>
               </a>
               <Link
                 className="btn btn-light px-md-5 px-1 mx-md-5 mx-1 launch_btn1 maincolor fontfamilySecondary"

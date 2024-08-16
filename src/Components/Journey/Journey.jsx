@@ -51,7 +51,9 @@ const Journey = () => {
   return (
     <div className="journey_page mt-5">
       <div className="container">
-        <Heading heading="Our Journey" />
+        {/* <Heading heading="Our Journey" /> */}
+              <Heading heading="Our Journey" subheading="What we work with"/>
+
         <div className="">
           <p className="ourjourney fontfamilyPrimary fontweight maincolor text-center ">
             {yearTextMap[activeYear] || "Founded In"}

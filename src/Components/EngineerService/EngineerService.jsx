@@ -8,7 +8,7 @@ const EngineerService = () => {
   return (
     <div className="Engineering-Service mt-5">
       <div className="ms-2 ms-md-0">
-        <Heading heading="Engineering Service " />
+        <Heading heading="Engineering Services " />
       </div>
       <p className=" ms-2 ms-md-0 fontsecondry">
         Our leadership comes from a background of physics based simulation with

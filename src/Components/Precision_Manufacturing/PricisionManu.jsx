@@ -21,7 +21,7 @@ const PricisionManu = () => {
               </h5>
               <h5 className="pmcontaint px-md-5 px-1">
                 Recive Quotes within{" "}
-                <span className="  pmcontaintpara"> 24 hours </span>
+                <span className="  pmcontaintpara"> 24 hours. </span>
               </h5>
               <h5 className="pmcontaint px-md-5 px-1">
                 Get Your Precision parts shipped.

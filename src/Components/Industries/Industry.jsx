@@ -26,7 +26,7 @@ const Industry = () => {
           </div>
           <div className='col-1 d-none d-md-block'></div>
           <div className="col-sm-6 mt-3 p-md-3 p-1 col-6">
-            <HeadingComponent heading='Quality Report For Rotary Composites'/>
+            <HeadingComponent heading='Quality Reports For Rotary Composites'/>
             <div className=" blur-card card-margin col-12 col-md-8">
               <div className="text-white p-md-5 p-3">
                 <h6 className='fontsecondry fontfamilySecondary fontweight'>Dimensional Accuracy</h6>

@@ -43,7 +43,7 @@ const FocusArea = () => {
       <div className="container mt-5 p-md-5 p-1 mt-5">
         <div className="focusArea">
 
-        <HeadingComponent heading="Our Focus Area" />
+        <HeadingComponent heading="Our Focus Areas" />
         
 
         <div className="row row-cols-4 row-cols-md-4 g-md-4 g-1 mt-3 mt-md-5 ">

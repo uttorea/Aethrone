@@ -65,7 +65,7 @@ const LauncherRecovery = () => {
                   href="/launch-recovery-system"
                   className="btn btn-light px-md-4 px-1 ms-0 ms-md-4 text-white  fontfamilySecondary maincolor laubtn"
                 >
-                  Explore Recovery System <i className="bi bi-arrow-right"></i>
+                  Explore Recovery Systems <i className="bi bi-arrow-right"></i>
                 </a>
                 </div>
                 

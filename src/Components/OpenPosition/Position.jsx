@@ -20,7 +20,7 @@ function Position() {
                     <div className="col-sm-6">
                         <div className="card border-0">
                             <div className="card-body1">
-                                <h4 className="Aerosynamic-Design maincolor">Aerosynamic Design Engineer</h4>
+                                <h4 className="Aerosynamic-Design maincolor">Aerodynamic Design Engineer</h4>
                                 <small className='fontfamilyPrimary fontsecondary maincolor '>Summary</small>
                                 <p className="fontsecondary fontfamilySecondary mt-1 mt-md-4">As part of a small aerospace engineering team, you will be responsible for the design and analysis of recovery systems for aerospace applications. This will involve you in the entire recovery system design cycle including conceptual design, mathematical modeling, code-based qualification, testing, and technical documentation.</p>
                                 <p className='maincolor fontsecondary'>Explore more job opportunities on our LinkedIn page.</p>

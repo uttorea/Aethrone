@@ -11,7 +11,7 @@ const UAVdesignManufacturing = () => {
       <HeadingComponent heading="Your complete UAV  design & Manufacturing partner " />
       <div>
         <p className="fontsecondry fontfamilySecondary fontweight mt-3">
-          Our platforms can be used as UAVs in following applications:
+          Problem statement to Prototype
         </p>
         <SimpleCards
           images={UAVdesignManufacturIMG}
