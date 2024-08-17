@@ -1,7 +1,7 @@
 import workimg1 from '../../assets/workimg1.png';
 import workimg2 from '../../assets/workimg2.png';
 import workimg3 from '../../assets/workimg3.png';
-import workimg4 from '../../assets/workimg4.png'
+import workimg4 from '../../assets/workimg4.jpg'
 
 const cards= [
     {
