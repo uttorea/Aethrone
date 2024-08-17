@@ -29,7 +29,7 @@ function Footer() {
                       +91 721 945 0026
                     </a>
                   </p>
-                  {/* <p className="number2 anq">
+                  <p className="number2 anq">
                     <a
                       href="https://wa.me/917219286003"
                       target="_blank"
@@ -39,7 +39,7 @@ function Footer() {
                     >
                       +91 721 928 6003
                     </a>
-                  </p> */}
+                  </p>
                 </div>
                 <p className="emailtext text-wrap fontweight anq">
                   <a
@@ -82,8 +82,23 @@ function Footer() {
                   >
                     Oz Plaza Viman Nagar Pune Maharashtra 411014
                   </a>
+                  
                 </div>
+                <h3 className="headingfooter">North-Office</h3>
+                <div className="card-body3 fotteranq">
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=Startup+Incubation+and+Innovation+Centre+IIT+Kanpur"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="fontsecondary"
+                  >
+                    Startup Incubation and Innovation Centre, IIT Kanpur
+                  </a>
+                  
+                </div>
+                
               </div>
+              
             </div>
           </div>
           <hr className="w-full" style={{ border: "2px solid #414042" }} />
