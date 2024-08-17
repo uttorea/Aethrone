@@ -18,7 +18,7 @@ const Home = () => {
     <div>
       <Helmet>
         {/* Title and Meta Tags for SEO */}
-        <title>Best Aerospace Company in Pune | Aethrone Aerospace</title>
+        <title>Aethrone Aerospace</title>
         <meta 
           name="description" 
           content="Aethrone Aerospace is a deep tech start-up incubated from SIIC-IIT Kanpur. We specialize in designing, developing, manufacturing, and supporting critical mission systems for the Aerospace and Defence sectors." 
