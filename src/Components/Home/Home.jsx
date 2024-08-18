@@ -25,7 +25,7 @@ const Home = () => {
         />
         <meta 
           name="keywords" 
-          content="Aerospace, Defence, Aerospace Company in Pune, Design & Development, Precision Manufacturing, Aerospace Systems, Aethrone Aerospace" 
+          content="Aerospace, Defence, Aerospace Company in Pune, Design & Development, Precision Manufacturing, Aerospace Systems, Aethrone Aerospace, aerospace and defense companies in India, aerospace design and development, aerospace precision manufacturing, drone company in India, UAV company in India, UAS company in India, best aerospace companies in India, aerospace composites in India, parachutes manufacturers in India, aerospace defense manufacturers, IIT Kanpur aerospace startups, deep tech startup in India, aerospace development Pune, aerospace company from IIT Kanpur, aerospace manufacturing companies in India, mission critical systems aerospace, aerospace technology development India, design services (CFD, FEA, drone, launcher)"
         />
         <meta name="author" content="Aethrone Aerospace" />
         <meta name="robots" content="index,follow" />
@@ -57,13 +57,13 @@ const Home = () => {
         <div className="home_main_containt">
           <div className="carouselitem">
             <div className="home_heading text-white ">
-              <p className="headingtext  fontfamilyPrimary  mt-4 ms-md-0 ">
+              <p className="headingtext fontfamilyPrimary mt-4 ms-md-0 ">
                 AETHRONE
                 <br />
                 AEROSPACE
               </p>
               <p className="text-light ingenuity fontfamilySecondary ms-md-0">
-                <span className=" ingenuityspan">Ingenuity</span>
+                <span className="ingenuityspan">Ingenuity</span>
                 <span className="ingenuityspan">|</span>
                 <span className="ingenuityspan">Dynamism</span>
                 <span className="ingenuityspan">|</span>
